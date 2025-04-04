@@ -8,12 +8,16 @@ class LoginPage:
         self.driver = driver
         self.my_locators = LoginPageLocators
 
+    def wait_for_element_visible(self, element):
+        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(element))
+
+
     def input_eMail(self, email):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.my_locators.eMail)).send_keys(email)
+        self.wait_for_element_visible(self.my_locators.eMail).send_keys(email)
 
     def input_password(self, password):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.my_locators.password)).send_keys(password)
+        self.wait_for_element_visible(self.my_locators.password).send_keys(password)
 
     def click_login_button(self):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.my_locators.loginButton)).click()
+        self.wait_for_element_visible(self.my_locators.loginButton).click()
 

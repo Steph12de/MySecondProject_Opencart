@@ -1,31 +1,46 @@
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from base.base_driver import Base_driver
+
 from utilities.locators.loginPageLocators import LoginPageLocators
 
-class LoginPage:
 
+class LoginPage(Base_driver):
     def __init__(self, driver):
+        super().__init__(driver)
         self.driver = driver
         self.my_locators = LoginPageLocators
 
-    def wait_for_element_visible(self, element):
-        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(element))
+    def getEmailField(self):
+        return self.wait_for_element_visible(self.my_locators.eMail)
 
-    def text_to_be_present_in_element(self, element, text):
-        return WebDriverWait(self.driver, 10).until(EC.text_to_be_present_in_element(element, text))
+    def getPasswordField(self):
+        return self.wait_for_element_visible(self.my_locators.password)
 
+    def getLoginButton(self):
+        return self.wait_for_element_visible(self.my_locators.loginButton)
+
+    def getErrorMessageBox(self):
+        return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message, "Warning")
+
+    def getForgottenPasswordText(self):
+        return self.wait_for_element_visible(self.my_locators.forgotten_password_text)
 
     def input_eMail(self, email):
-        self.wait_for_element_visible(self.my_locators.eMail).send_keys(email)
+        self.getEmailField().clear()
+        self.getEmailField().send_keys(email)
 
     def input_password(self, password):
-        self.wait_for_element_visible(self.my_locators.password).send_keys(password)
+        self.getPasswordField().clear()
+        self.getPasswordField().send_keys(password)
 
     def click_login_button(self):
-        self.wait_for_element_visible(self.my_locators.loginButton).click()
+        self.getLoginButton().click()
 
     def check_error_message(self):
-         try:
-            return self.text_to_be_present_in_element(self.my_locators.login_error_message, "Warning")
-         except:
+        try:
+            return self.getErrorMessageBox()
+        except:
             return False
+
+    def click_on_forgotten_password_text(self):
+        self.getForgottenPasswordText().click()

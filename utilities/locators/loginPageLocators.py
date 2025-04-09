@@ -7,4 +7,5 @@ class LoginPageLocators:
     password = (By.ID, "input-password")
     loginButton = (By.XPATH, "//input[@type='submit']")
     login_error_message = (By.XPATH, "//div[@class='alert alert-danger alert-dismissible']")
+    forgotten_password_text = (By.LINK_TEXT, "Forgotten Password")
 

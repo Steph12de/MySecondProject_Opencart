@@ -1,6 +1,7 @@
 from utilities.locators.forgottenPasswordPageLocators import ForgottenPasswordPageLocators
 from base.base_driver import Base_driver
 
+
 class ForgottenPasswordPage(Base_driver):
     def __init__(self, driver):
         super().__init__(driver)
@@ -15,5 +16,3 @@ class ForgottenPasswordPage(Base_driver):
             return self.getForgottenPasswordText()
         except:
             return False
-
-

@@ -1,19 +1,25 @@
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from utilities.locators.homePageLocators import HomePageLocators
+from base.base_driver import Base_driver
 
-class HomePage:
+class HomePage(Base_driver):
 
     def __init__(self, driver):
+        super().__init__(driver)
         self.driver = driver
         self.locators = HomePageLocators
-        self.my_wait = WebDriverWait(self.driver, 10)
 
-    def wait_for_element_visible(self, element):
-        return self.my_wait.until(EC.visibility_of_element_located(element))
+    def getMyAccountButtonHomePage(self):
+        return self.wait_for_element_visible(self.locators.my_account_button)
+
+    def getLoginButtonHomePage(self):
+        return self.wait_for_element_visible(self.locators.my_account_login)
 
     def click_my_account(self):
-        self.wait_for_element_visible(self.locators.my_account_button).click()
+        self.getMyAccountButtonHomePage().click()
 
-    def click_my_account_login(self):
-        self.wait_for_element_visible(self.locators.my_account_login).click()
+    def click_my_account_login_HomePage(self):
+        self.getLoginButtonHomePage().click()
+
+    def bring_me_to_login_page(self):
+        self.click_my_account()
+        self.click_my_account_login_HomePage()

@@ -6,8 +6,9 @@ from utilities.custom_logger import LogGen
 
 
 class Test_001_login:
-
     logger = LogGen.loggen()
+
+    @pytest.mark.sanity
     @pytest.mark.parametrize("email, password, title, error",
                              [
                                  ("username@gmail.de", "admin", "My Account", False),
@@ -31,6 +32,7 @@ class Test_001_login:
 
         self.driver.close()
 
+    @pytest.mark.regression
     def test_presence_of_forgotten_password_text(self, setUp):
         self.logger.info("*****Check the presence of forgotten password text test is started*****")
         self.driver = setUp
@@ -48,6 +50,7 @@ class Test_001_login:
 
         self.driver.close()
 
+    @pytest.mark.regression
     def test_login_using_keyboard_keys(self, setUp):
         self.logger.info("*****Login using keyboard keys test is started*****")
         self.driver = setUp
@@ -64,3 +67,31 @@ class Test_001_login:
             assert False
 
         self.driver.close()
+
+    @pytest.mark.regression
+    def test_existing_of_placeholder_text_in_email_password_field(self, setUp):
+        self.logger.info("*****Checking existing of placeholder text test is started*****")
+        self.driver = setUp
+        home_page = HomePage(self.driver)
+        home_page.bring_me_to_login_page()
+        login_page = LoginPage(self.driver)
+        if login_page.check_placeholder_text_in_email_field() and login_page.check_placeholder_text_in_password_field():
+            assert True
+            self.logger.info("*******The placeholder texts exist in the fields*********")
+        else:
+            self.logger.info("*******The placeholder texts aren't available in the fields*********")
+            assert False
+
+    @pytest.mark.regression
+    def test_password_text_is_hidden(self, setUp):
+        self.logger.info("*****Checking visibility text of password test is started*****")
+        self.driver = setUp
+        home_page = HomePage(self.driver)
+        home_page.bring_me_to_login_page()
+        login_page = LoginPage(self.driver)
+        if login_page.check_visibility_of_password_text():
+            assert True
+            self.logger.info("*****The password is hidden*****")
+        else:
+            self.logger.info("*****The password isn't hidden*****")
+            assert False

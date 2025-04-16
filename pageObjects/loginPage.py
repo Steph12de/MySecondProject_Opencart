@@ -57,3 +57,23 @@ class LoginPage(Base_driver):
         self.input_password(password)
         self.getPasswordField().send_keys(Keys.TAB)
         self.getLoginButton().send_keys(Keys.ENTER)
+
+    def check_placeholder_text_in_email_field(self):
+        if self.getEmailField().get_attribute("placeholder") == "E-Mail Address":
+            return True
+        else:
+            return False
+
+    def check_placeholder_text_in_password_field(self):
+        if self.getPasswordField().get_attribute("placeholder") == "Password":
+            return True
+        else:
+            return False
+
+    def check_visibility_of_password_text(self):
+        if self.getPasswordField().get_attribute("type") == "password":
+            return True
+        else:
+            return False
+
+

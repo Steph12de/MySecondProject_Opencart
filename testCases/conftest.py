@@ -13,9 +13,6 @@ def setUp(browser):
     elif browser == "edge":
         driver = webdriver.Edge()
 
-    else:
-        driver = webdriver.Ie()
-
     driver.get("https://awesomeqa.com/ui")
     driver.maximize_window()
     return driver

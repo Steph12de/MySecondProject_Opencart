@@ -2,6 +2,8 @@ from selenium.webdriver.common import keys
 from selenium.webdriver.support.ui import WebDriverWait
 from base.base_driver import Base_driver
 from selenium.webdriver.common.keys import Keys
+
+from pageObjects.forgottenPasswordPage import ForgottenPasswordPage
 from utilities.locators.loginPageLocators import LoginPageLocators
 
 
@@ -45,6 +47,8 @@ class LoginPage(Base_driver):
 
     def click_on_forgotten_password_text(self):
         self.getForgottenPasswordText().click()
+        fpassword_page = ForgottenPasswordPage(self.driver)
+        return fpassword_page
 
     def log_me_in(self, email, password):
         self.input_eMail(email)

@@ -61,3 +61,55 @@
 2025-04-16 12:22:17,756 :INFO :*******The placeholder texts exist in the fields*********
 2025-04-16 12:22:21,522 :INFO :*****Checking visibility text of password test is started*****
 2025-04-16 12:22:22,517 :INFO :*****The password is hidden*****
+2025-04-22 10:44:25,301 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-22 10:44:25,301 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-22 10:44:27,238 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-22 10:44:27,238 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-22 10:44:35,259 :INFO :*****Login using keyboard keys test is started*****
+2025-04-22 10:44:35,259 :INFO :*****Login using keyboard keys test is started*****
+2025-04-22 10:44:38,590 :INFO :*******The login test using keyboard keys is passed*********
+2025-04-22 10:44:38,590 :INFO :*******The login test using keyboard keys is passed*********
+2025-04-22 10:44:42,687 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-22 10:44:42,687 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-22 10:44:43,498 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-22 10:44:43,498 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-22 10:44:47,550 :INFO :*****Checking visibility text of password test is started*****
+2025-04-22 10:44:47,550 :INFO :*****Checking visibility text of password test is started*****
+2025-04-22 10:44:48,410 :INFO :*****The password is hidden*****
+2025-04-22 10:44:48,410 :INFO :*****The password is hidden*****
+2025-04-22 12:10:27,256 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-22 12:10:27,256 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-22 12:10:29,965 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-22 12:10:29,965 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-22 12:10:34,684 :INFO :*****Login using keyboard keys test is started*****
+2025-04-22 12:10:34,684 :INFO :*****Login using keyboard keys test is started*****
+2025-04-22 12:10:37,169 :INFO :*******The login test using keyboard keys is passed*********
+2025-04-22 12:10:37,169 :INFO :*******The login test using keyboard keys is passed*********
+2025-04-22 12:10:41,614 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-22 12:10:41,614 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-22 12:10:42,612 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-22 12:10:42,612 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-22 12:10:46,914 :INFO :*****Checking visibility text of password test is started*****
+2025-04-22 12:10:46,914 :INFO :*****Checking visibility text of password test is started*****
+2025-04-22 12:10:47,828 :INFO :*****The password is hidden*****
+2025-04-22 12:10:47,828 :INFO :*****The password is hidden*****
+2025-04-22 14:31:05,406 :INFO :The product was successfully added
+2025-04-22 14:31:05,406 :INFO :The product was successfully added
+2025-04-22 14:40:35,356 :INFO :The product was successfully added
+2025-04-22 14:40:35,356 :INFO :The product was successfully added
+2025-04-22 15:30:40,385 :INFO :The product was successfully added
+2025-04-22 15:30:40,385 :INFO :The product was successfully added
+2025-04-22 21:48:11,993 :INFO :*****Login using keyboard keys test is started*****
+2025-04-22 21:48:15,320 :INFO :*******The login test using keyboard keys is passed*********
+2025-04-22 21:48:24,578 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-22 21:48:25,700 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-22 21:48:34,904 :INFO :*****Checking visibility text of password test is started*****
+2025-04-22 21:48:35,801 :INFO :*****The password is hidden*****
+2025-04-22 21:54:49,837 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-22 21:54:51,846 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-22 21:54:58,770 :INFO :*****Login using keyboard keys test is started*****
+2025-04-22 21:55:01,052 :INFO :*******The login test using keyboard keys is passed*********
+2025-04-22 21:55:21,453 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-22 21:55:22,411 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-22 21:55:28,966 :INFO :*****Checking visibility text of password test is started*****
+2025-04-22 21:55:30,233 :INFO :*****The password is hidden*****

@@ -1,6 +1,7 @@
 from base.base_driver import Base_driver
 from utilities.locators.searchPageLocators import SearchPageLocators
 
+
 class SearchPage(Base_driver):
     def __init__(self, driver):
         super().__init__(driver)

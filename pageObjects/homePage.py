@@ -1,9 +1,11 @@
 from pageObjects.loginPage import LoginPage
 from utilities.locators.homePageLocators import HomePageLocators
 from base.base_driver import Base_driver
+from utilities.custom_logger import LogGen
 
 
 class HomePage(Base_driver):
+    logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -25,5 +27,4 @@ class HomePage(Base_driver):
     def bring_me_to_login_page(self):
         self.click_my_account()
         self.click_my_account_login_HomePage()
-        login_page = LoginPage(self.driver)
-        return login_page
+        self.logger.info(("*****Login test is started*****"))

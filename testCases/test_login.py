@@ -1,30 +1,43 @@
+import unittest
+
 import pytest
+
 from pageObjects.loginPage import LoginPage
 from pageObjects.homePage import HomePage
 from pageObjects.forgottenPasswordPage import ForgottenPasswordPage
 from utilities.custom_logger import LogGen
+from utilities.utils import Utils
+from ddt import ddt, data, unpack
 
-
-class Test_001_login:
+@ddt
+class Test_001_login(unittest.TestCase):
     logger = LogGen.loggen()
 
-    @pytest.mark.sanity
-    @pytest.mark.parametrize("email, password, title, error",
-                             [
-                                 ("username@gmail.de", "admin", "My Account", False),
-                                 ("username@gmail123.de", "admin123", "Account Login", True),
-                                 ("username@gmail.de123", "admin", "Account Login", True),
-                                 ("username@gmail.de", "admin123", "Account Login", True),
-                                 ("", "", "Account Login", True),
-                             ]
-                             )
-    def test_login_with_multiple_combi(self, setUp, email, password, title, error):
+    @pytest.fixture(autouse=True)
+    def class_setup(self, setUp):
         self.driver = setUp
-        home_page = HomePage(self.driver)
-        login_page_result = home_page.bring_me_to_login_page()
-        login_page_result.log_me_in(email, password)
+        self.home_page = HomePage(self.driver)
+        self.login_page = LoginPage(self.driver)
+
+    # @pytest.mark.parametrize("email, password, title, error",
+    #                          [
+    #                              ("username@gmail.de", "admin", "My Account", False),
+    #                              ("username@gmail123.de", "admin123", "Account Login", True),
+    #                              ("username@gmail.de123", "admin", "Account Login", True),
+    #                              ("username@gmail.de", "admin123", "Account Login", True),
+    #                              ("", "", "Account Login", True),
+    #                          ]
+    #
+    #                          )
+    @pytest.mark.sanity
+    @data(*Utils.read_data_from_excel("C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx", "Tabelle1"))
+    @unpack
+    def test_login_with_multiple_combi(self, email, password, title, error):
+        self.home_page.bring_me_to_login_page()
+        self.login_page.log_me_in(email, password)
         current_title = self.driver.title
-        if error == login_page_result.check_error_message() and current_title == title:
+        actual_error = self.login_page.check_error_message()
+        if error == str(actual_error) and current_title == title:
             assert True
         else:
             assert False
@@ -32,9 +45,8 @@ class Test_001_login:
         self.driver.close()
 
     @pytest.mark.regression
-    def test_presence_of_forgotten_password_text(self, setUp):
+    def test_presence_of_forgotten_password_text(self):
         self.logger.info("*****Check the presence of forgotten password text test is started*****")
-        self.driver = setUp
         home_page = HomePage(self.driver)
         login_page_result = home_page.bring_me_to_login_page()
         fpassword_page_result = login_page_result.click_on_forgotten_password_text()
@@ -48,31 +60,18 @@ class Test_001_login:
         self.driver.close()
 
     @pytest.mark.regression
-    def test_login_using_keyboard_keys(self, setUp):
+    def test_login_using_keyboard_keys(self):
         self.logger.info("*****Login using keyboard keys test is started*****")
-        self.driver = setUp
-        home_page = HomePage(self.driver)
-        home_page.bring_me_to_login_page()
-        login_page = LoginPage(self.driver)
-        login_page.log_me_in_using_keyboard("username@gmail.de", "admin")
+        self.home_page.bring_me_to_login_page()
+        self.login_page.log_me_in_using_keyboard("username@gmail.de", "admin")
         current_title = self.driver.title
-        if current_title == "My Account":
-            assert True
-            self.logger.info("*******The login test using keyboard keys is passed*********")
-        else:
-            self.logger.info("*******The login test using keyboard keys is failed*********")
-            assert False
-
+        assert current_title == "My Account"
         self.driver.close()
 
     @pytest.mark.regression
-    def test_existing_of_placeholder_text_in_email_password_field(self, setUp):
+    def test_existing_of_placeholder_text_in_email_password_field(self):
         self.logger.info("*****Checking existing of placeholder text test is started*****")
-        self.driver = setUp
-        home_page = HomePage(self.driver)
-        home_page.bring_me_to_login_page()
-        login_page = LoginPage(self.driver)
-        if login_page.check_placeholder_text_in_email_field() and login_page.check_placeholder_text_in_password_field():
+        if self.login_page.check_placeholder_text_in_email_field() and self.login_page.check_placeholder_text_in_password_field():
             assert True
             self.logger.info("*******The placeholder texts exist in the fields*********")
         else:
@@ -82,13 +81,10 @@ class Test_001_login:
         self.driver.close()
 
     @pytest.mark.regression
-    def test_password_text_is_hidden(self, setUp):
+    def test_password_text_is_hidden(self):
         self.logger.info("*****Checking visibility text of password test is started*****")
-        self.driver = setUp
-        home_page = HomePage(self.driver)
-        home_page.bring_me_to_login_page()
-        login_page = LoginPage(self.driver)
-        if login_page.check_visibility_of_password_text():
+        self.home_page.bring_me_to_login_page()
+        if self.login_page.check_visibility_of_password_text():
             assert True
             self.logger.info("*****The password is hidden*****")
         else:

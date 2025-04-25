@@ -5,3 +5,4 @@ class ProductInfoPageLocators:
     addToCart_button = (By.XPATH, "//button[@id='button-cart']")
     item_button = (By.XPATH, "//span[@id='cart-total']")
     success_message = (By.XPATH, "//div[@class='alert alert-success alert-dismissible']")
+    shopping_cart_link = (By.LINK_TEXT, "shopping cart")

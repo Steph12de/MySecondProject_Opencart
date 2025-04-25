@@ -11,27 +11,35 @@ class ProductInfoPage(Base_driver):
         self.driver = driver
         self.locators = ProductInfoPageLocators
 
-    def get_add_to_cart_button(self):
+    def getAddtoCartButton(self):
         return self.wait_for_element_visible(self.locators.addToCart_button)
 
-    def get_item_button(self, count):
+    def getItemButton(self, count):
         expected_text = count + " item"
         return self.wait_text_to_be_present_in_element(self.locators.item_button, expected_text)
 
-    def get_success_added_message(self):
+    def getSuccessAddedMessage(self):
         return self.wait_text_to_be_present_in_element(self.locators.success_message, "Success: You have added")
 
-    def click_on_add_to_cart_button(self):
-        self.get_add_to_cart_button().click()
+    def getShoppingCartLink(self):
+        return self.wait_for_element_visible(self.locators.shopping_cart_link)
 
-    def click_on_going_to_cart(self):
-        self.get_item_button().click()
+    def click_on_add_to_cart_button(self):
+        self.getAddtoCartButton().click()
+
+    def click_on_item_button(self):
+        self.getItemButton().click()
 
     def check_success_message(self):
-        if self.get_success_added_message():
+        if self.getSuccessAddedMessage():
+            self.logger.info("***The Message is displayed***")
             return True
         else:
+            self.logger.error("***The Message isn't displayed***")
             return False
+
+    def click_on_shopping_cart_link(self):
+        self.getShoppingCartLink().click()
 
 
 

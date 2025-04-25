@@ -113,3 +113,75 @@
 2025-04-22 21:55:22,411 :INFO :*******The placeholder texts exist in the fields*********
 2025-04-22 21:55:28,966 :INFO :*****Checking visibility text of password test is started*****
 2025-04-22 21:55:30,233 :INFO :*****The password is hidden*****
+2025-04-24 12:38:11,192 :INFO :***The Message is displayed***
+2025-04-24 12:38:11,192 :INFO :***The Message is displayed***
+2025-04-24 12:41:16,923 :INFO :***The Message is displayed arcin***
+2025-04-24 12:41:16,923 :INFO :***The Message is displayed arcin***
+2025-04-24 12:41:20,489 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-24 12:41:20,489 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-25 12:38:10,047 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-25 13:06:23,013 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-25 13:09:27,974 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-25 13:27:39,802 :INFO :*****Login test is started*****
+2025-04-25 13:27:39,802 :INFO :*****Login test is started*****
+2025-04-25 13:27:39,802 :INFO :*****Login test is started*****
+2025-04-25 13:27:41,606 :INFO :***Error message wasn't displayed***
+2025-04-25 13:27:41,606 :INFO :***Error message wasn't displayed***
+2025-04-25 13:27:41,606 :INFO :***Error message wasn't displayed***
+2025-04-25 13:27:46,961 :ERROR :***Error message is displayed***
+2025-04-25 13:27:46,961 :ERROR :***Error message is displayed***
+2025-04-25 13:27:46,961 :ERROR :***Error message is displayed***
+2025-04-25 13:27:52,958 :INFO :*****Login test is started*****
+2025-04-25 13:27:52,958 :INFO :*****Login test is started*****
+2025-04-25 13:27:52,958 :INFO :*****Login test is started*****
+2025-04-25 13:27:54,221 :INFO :***Error message wasn't displayed***
+2025-04-25 13:27:54,221 :INFO :***Error message wasn't displayed***
+2025-04-25 13:27:54,221 :INFO :***Error message wasn't displayed***
+2025-04-25 13:27:59,988 :INFO :*****Login test is started*****
+2025-04-25 13:27:59,988 :INFO :*****Login test is started*****
+2025-04-25 13:27:59,988 :INFO :*****Login test is started*****
+2025-04-25 13:28:01,138 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:01,138 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:01,138 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:07,206 :INFO :*****Login test is started*****
+2025-04-25 13:28:07,206 :INFO :*****Login test is started*****
+2025-04-25 13:28:07,206 :INFO :*****Login test is started*****
+2025-04-25 13:28:08,433 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:08,433 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:08,433 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:14,469 :INFO :*****Login test is started*****
+2025-04-25 13:28:14,469 :INFO :*****Login test is started*****
+2025-04-25 13:28:14,469 :INFO :*****Login test is started*****
+2025-04-25 13:28:15,581 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:15,581 :INFO :***Error message wasn't displayed***
+2025-04-25 13:28:15,581 :INFO :***Error message wasn't displayed***

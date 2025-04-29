@@ -4,7 +4,7 @@ from utilities.locators.productinfoPageLocators import ProductInfoPageLocators
 
 
 class ProductInfoPage(Base_driver):
-    logger = LogGen.loggen()
+    #logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -32,10 +32,8 @@ class ProductInfoPage(Base_driver):
 
     def check_success_message(self):
         if self.getSuccessAddedMessage():
-            self.logger.info("***The Message is displayed***")
             return True
         else:
-            self.logger.error("***The Message isn't displayed***")
             return False
 
     def click_on_shopping_cart_link(self):

@@ -185,3 +185,628 @@ OSError: [WinError 6] Das Handle ist ungültig
 2025-04-25 13:28:15,581 :INFO :***Error message wasn't displayed***
 2025-04-25 13:28:15,581 :INFO :***Error message wasn't displayed***
 2025-04-25 13:28:15,581 :INFO :***Error message wasn't displayed***
+2025-04-28 13:51:51,267 :INFO :*****Login test is started*****
+2025-04-28 13:51:51,267 :INFO :*****Login test is started*****
+2025-04-28 13:51:51,267 :INFO :*****Login test is started*****
+2025-04-28 13:51:51,267 :INFO :*****Login test is started*****
+2025-04-28 13:51:55,670 :INFO :***The Message is displayed***
+2025-04-28 13:51:55,670 :INFO :***The Message is displayed***
+2025-04-28 13:51:55,670 :INFO :***The Message is displayed***
+2025-04-28 13:51:55,670 :INFO :***The Message is displayed***
+2025-04-28 13:51:58,803 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-28 13:51:58,803 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-28 13:51:58,803 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-28 13:51:58,803 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-28 17:52:55,547 :INFO :*****Login test is started*****
+2025-04-28 17:52:55,547 :INFO :*****Login test is started*****
+2025-04-28 17:52:55,547 :INFO :*****Login test is started*****
+2025-04-28 17:52:55,547 :INFO :*****Login test is started*****
+2025-04-28 18:15:57,410 :INFO :*****Login test is started*****
+2025-04-28 18:15:57,410 :INFO :*****Login test is started*****
+2025-04-28 18:15:57,410 :INFO :*****Login test is started*****
+2025-04-28 18:15:57,410 :INFO :*****Login test is started*****
+2025-04-28 18:16:03,406 :INFO :***The Message is displayed***
+2025-04-28 18:16:03,406 :INFO :***The Message is displayed***
+2025-04-28 18:16:03,406 :INFO :***The Message is displayed***
+2025-04-28 18:16:03,406 :INFO :***The Message is displayed***
+2025-04-28 18:16:48,704 :INFO :*****Login test is started*****
+2025-04-28 18:16:48,704 :INFO :*****Login test is started*****
+2025-04-28 18:16:48,704 :INFO :*****Login test is started*****
+2025-04-28 18:16:48,704 :INFO :*****Login test is started*****
+2025-04-28 18:16:54,298 :INFO :***The Message is displayed***
+2025-04-28 18:16:54,298 :INFO :***The Message is displayed***
+2025-04-28 18:16:54,298 :INFO :***The Message is displayed***
+2025-04-28 18:16:54,298 :INFO :***The Message is displayed***
+2025-04-28 20:05:33,954 :INFO :*****Login test is started*****
+2025-04-28 20:05:33,954 :INFO :*****Login test is started*****
+2025-04-28 20:05:33,954 :INFO :*****Login test is started*****
+2025-04-28 20:05:33,954 :INFO :*****Login test is started*****
+2025-04-28 20:05:38,986 :INFO :***The Message is displayed***
+2025-04-28 20:05:38,986 :INFO :***The Message is displayed***
+2025-04-28 20:05:38,986 :INFO :***The Message is displayed***
+2025-04-28 20:05:38,986 :INFO :***The Message is displayed***
+2025-04-28 20:24:29,883 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:24:29,883 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:24:29,883 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:24:46,016 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:24:46,016 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:24:46,016 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:24:46,951 :INFO :*****Login test is started*****
+2025-04-28 20:24:46,951 :INFO :*****Login test is started*****
+2025-04-28 20:24:46,951 :INFO :*****Login test is started*****
+2025-04-28 20:25:04,908 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:25:04,908 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:25:04,908 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:25:05,689 :INFO :*****Login test is started*****
+2025-04-28 20:25:05,689 :INFO :*****Login test is started*****
+2025-04-28 20:25:05,689 :INFO :*****Login test is started*****
+2025-04-28 20:25:05,737 :INFO :*****The password is hidden*****
+2025-04-28 20:25:05,737 :INFO :*****The password is hidden*****
+2025-04-28 20:25:05,737 :INFO :*****The password is hidden*****
+2025-04-28 20:25:19,252 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:25:19,252 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:25:19,252 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:25:19,959 :INFO :*****Login test is started*****
+2025-04-28 20:25:19,959 :INFO :*****Login test is started*****
+2025-04-28 20:25:19,959 :INFO :*****Login test is started*****
+2025-04-28 20:25:20,842 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:25:20,842 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:25:20,842 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:28:44,858 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:28:44,858 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:28:44,858 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:28:54,735 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:28:54,735 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:28:54,735 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:28:55,879 :INFO :*****Login test is started*****
+2025-04-28 20:28:55,879 :INFO :*****Login test is started*****
+2025-04-28 20:28:55,879 :INFO :*****Login test is started*****
+2025-04-28 20:29:03,721 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:29:03,721 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:29:03,721 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:29:04,501 :INFO :*****Login test is started*****
+2025-04-28 20:29:04,501 :INFO :*****Login test is started*****
+2025-04-28 20:29:04,501 :INFO :*****Login test is started*****
+2025-04-28 20:29:04,584 :INFO :*****The password is hidden*****
+2025-04-28 20:29:04,584 :INFO :*****The password is hidden*****
+2025-04-28 20:29:04,584 :INFO :*****The password is hidden*****
+2025-04-28 20:29:10,275 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:29:10,275 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:29:10,275 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:29:11,036 :INFO :*****Login test is started*****
+2025-04-28 20:29:11,036 :INFO :*****Login test is started*****
+2025-04-28 20:29:11,036 :INFO :*****Login test is started*****
+2025-04-28 20:29:12,213 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:29:12,213 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:29:12,213 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:30:43,906 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:30:43,906 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:30:43,906 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:30:44,725 :INFO :*****Login test is started*****
+2025-04-28 20:30:44,725 :INFO :*****Login test is started*****
+2025-04-28 20:30:44,725 :INFO :*****Login test is started*****
+2025-04-28 20:30:44,824 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:30:44,824 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:30:44,824 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:30:48,967 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:30:48,967 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:30:48,967 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:30:49,744 :INFO :*****Login test is started*****
+2025-04-28 20:30:49,744 :INFO :*****Login test is started*****
+2025-04-28 20:30:49,744 :INFO :*****Login test is started*****
+2025-04-28 20:30:57,439 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:30:57,439 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:30:57,439 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:30:58,189 :INFO :*****Login test is started*****
+2025-04-28 20:30:58,189 :INFO :*****Login test is started*****
+2025-04-28 20:30:58,189 :INFO :*****Login test is started*****
+2025-04-28 20:30:58,247 :INFO :*****The password is hidden*****
+2025-04-28 20:30:58,247 :INFO :*****The password is hidden*****
+2025-04-28 20:30:58,247 :INFO :*****The password is hidden*****
+2025-04-28 20:31:10,268 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:31:10,268 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:31:10,268 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:31:11,270 :INFO :*****Login test is started*****
+2025-04-28 20:31:11,270 :INFO :*****Login test is started*****
+2025-04-28 20:31:11,270 :INFO :*****Login test is started*****
+2025-04-28 20:31:11,959 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:31:11,959 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:31:11,959 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:31:42,985 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:31:42,985 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:31:42,985 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:31:43,949 :INFO :*****Login test is started*****
+2025-04-28 20:31:43,949 :INFO :*****Login test is started*****
+2025-04-28 20:31:43,949 :INFO :*****Login test is started*****
+2025-04-28 20:31:44,020 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:31:44,020 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:31:44,020 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:31:56,487 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:31:56,487 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:31:56,487 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:31:57,257 :INFO :*****Login test is started*****
+2025-04-28 20:31:57,257 :INFO :*****Login test is started*****
+2025-04-28 20:31:57,257 :INFO :*****Login test is started*****
+2025-04-28 20:32:11,674 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:32:11,674 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:32:11,674 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:32:12,757 :INFO :*****Login test is started*****
+2025-04-28 20:32:12,757 :INFO :*****Login test is started*****
+2025-04-28 20:32:12,757 :INFO :*****Login test is started*****
+2025-04-28 20:32:12,805 :INFO :*****The password is hidden*****
+2025-04-28 20:32:12,805 :INFO :*****The password is hidden*****
+2025-04-28 20:32:12,805 :INFO :*****The password is hidden*****
+2025-04-28 20:32:25,108 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:32:25,108 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:32:25,108 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:32:25,881 :INFO :*****Login test is started*****
+2025-04-28 20:32:25,881 :INFO :*****Login test is started*****
+2025-04-28 20:32:25,881 :INFO :*****Login test is started*****
+2025-04-28 20:32:26,594 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:32:26,594 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:32:26,594 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:34:29,692 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:34:29,692 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:34:29,692 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:34:30,581 :INFO :*****Login test is started*****
+2025-04-28 20:34:30,581 :INFO :*****Login test is started*****
+2025-04-28 20:34:30,581 :INFO :*****Login test is started*****
+2025-04-28 20:34:30,682 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:34:30,682 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:34:30,682 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:34:43,532 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:34:43,532 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:34:43,532 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:34:44,409 :INFO :*****Login test is started*****
+2025-04-28 20:34:44,409 :INFO :*****Login test is started*****
+2025-04-28 20:34:44,409 :INFO :*****Login test is started*****
+2025-04-28 20:34:55,677 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:34:55,677 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:34:55,677 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:34:56,677 :INFO :*****Login test is started*****
+2025-04-28 20:34:56,677 :INFO :*****Login test is started*****
+2025-04-28 20:34:56,677 :INFO :*****Login test is started*****
+2025-04-28 20:34:56,727 :INFO :*****The password is hidden*****
+2025-04-28 20:34:56,727 :INFO :*****The password is hidden*****
+2025-04-28 20:34:56,727 :INFO :*****The password is hidden*****
+2025-04-28 20:35:09,786 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:35:09,786 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:35:09,786 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:35:10,632 :INFO :*****Login test is started*****
+2025-04-28 20:35:10,632 :INFO :*****Login test is started*****
+2025-04-28 20:35:10,632 :INFO :*****Login test is started*****
+2025-04-28 20:35:11,594 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:35:11,594 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:35:11,594 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:36:05,470 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:36:05,470 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:36:05,470 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:36:06,165 :INFO :*****Login test is started*****
+2025-04-28 20:36:06,165 :INFO :*****Login test is started*****
+2025-04-28 20:36:06,165 :INFO :*****Login test is started*****
+2025-04-28 20:36:06,271 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:36:06,271 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:36:06,271 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:36:12,235 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:36:12,235 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:36:12,235 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:36:12,969 :INFO :*****Login test is started*****
+2025-04-28 20:36:12,969 :INFO :*****Login test is started*****
+2025-04-28 20:36:12,969 :INFO :*****Login test is started*****
+2025-04-28 20:36:20,689 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:36:20,689 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:36:20,689 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:36:21,594 :INFO :*****Login test is started*****
+2025-04-28 20:36:21,594 :INFO :*****Login test is started*****
+2025-04-28 20:36:21,594 :INFO :*****Login test is started*****
+2025-04-28 20:36:21,643 :INFO :*****The password is hidden*****
+2025-04-28 20:36:21,643 :INFO :*****The password is hidden*****
+2025-04-28 20:36:21,643 :INFO :*****The password is hidden*****
+2025-04-28 20:36:27,318 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:36:27,318 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:36:27,318 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:36:28,111 :INFO :*****Login test is started*****
+2025-04-28 20:36:28,111 :INFO :*****Login test is started*****
+2025-04-28 20:36:28,111 :INFO :*****Login test is started*****
+2025-04-28 20:36:28,754 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:36:28,754 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:36:28,754 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:37:00,372 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:37:00,372 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:37:00,372 :INFO :*****Checking existing of placeholder text test is started*****
+2025-04-28 20:37:01,272 :INFO :*****Login test is started*****
+2025-04-28 20:37:01,272 :INFO :*****Login test is started*****
+2025-04-28 20:37:01,272 :INFO :*****Login test is started*****
+2025-04-28 20:37:01,410 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:37:01,410 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:37:01,410 :INFO :*******The placeholder texts exist in the fields*********
+2025-04-28 20:37:06,186 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:37:06,186 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:37:06,186 :INFO :*****Login using keyboard keys test is started*****
+2025-04-28 20:37:06,907 :INFO :*****Login test is started*****
+2025-04-28 20:37:06,907 :INFO :*****Login test is started*****
+2025-04-28 20:37:06,907 :INFO :*****Login test is started*****
+2025-04-28 20:37:14,083 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:37:14,083 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:37:14,083 :INFO :*****Checking visibility text of password test is started*****
+2025-04-28 20:37:14,926 :INFO :*****Login test is started*****
+2025-04-28 20:37:14,926 :INFO :*****Login test is started*****
+2025-04-28 20:37:14,926 :INFO :*****Login test is started*****
+2025-04-28 20:37:15,025 :INFO :*****The password is hidden*****
+2025-04-28 20:37:15,025 :INFO :*****The password is hidden*****
+2025-04-28 20:37:15,025 :INFO :*****The password is hidden*****
+2025-04-28 20:37:19,667 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:37:19,667 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:37:19,667 :INFO :*****Check the presence of forgotten password text test is started*****
+2025-04-28 20:37:20,535 :INFO :*****Login test is started*****
+2025-04-28 20:37:20,535 :INFO :*****Login test is started*****
+2025-04-28 20:37:20,535 :INFO :*****Login test is started*****
+2025-04-28 20:37:21,255 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:37:21,255 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-28 20:37:21,255 :INFO :*******Forgotten Password Text Test is passed*********
+2025-04-29 09:50:23,619 :INFO :Starting login Test
+2025-04-29 09:50:23,619 :INFO :Starting login Test
+2025-04-29 09:50:23,619 :INFO :Starting login Test
+2025-04-29 09:50:24,638 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:24,638 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:24,638 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:24,688 :ERROR :Test felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 09:50:24,688 :ERROR :Test felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 09:50:24,688 :ERROR :Test felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 09:50:30,151 :INFO :Starting login Test
+2025-04-29 09:50:30,151 :INFO :Starting login Test
+2025-04-29 09:50:30,151 :INFO :Starting login Test
+2025-04-29 09:50:31,102 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:31,102 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:31,102 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:31,185 :INFO :Login erfolgreich
+2025-04-29 09:50:31,185 :INFO :Login erfolgreich
+2025-04-29 09:50:31,185 :INFO :Login erfolgreich
+2025-04-29 09:50:37,325 :INFO :Starting login Test
+2025-04-29 09:50:37,325 :INFO :Starting login Test
+2025-04-29 09:50:37,325 :INFO :Starting login Test
+2025-04-29 09:50:38,374 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:38,374 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:38,374 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:38,456 :INFO :Login erfolgreich
+2025-04-29 09:50:38,456 :INFO :Login erfolgreich
+2025-04-29 09:50:38,456 :INFO :Login erfolgreich
+2025-04-29 09:50:49,429 :INFO :Starting login Test
+2025-04-29 09:50:49,429 :INFO :Starting login Test
+2025-04-29 09:50:49,429 :INFO :Starting login Test
+2025-04-29 09:50:50,102 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:50,102 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:50,102 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:50,514 :INFO :Login erfolgreich
+2025-04-29 09:50:50,514 :INFO :Login erfolgreich
+2025-04-29 09:50:50,514 :INFO :Login erfolgreich
+2025-04-29 09:50:55,467 :INFO :Starting login Test
+2025-04-29 09:50:55,467 :INFO :Starting login Test
+2025-04-29 09:50:55,467 :INFO :Starting login Test
+2025-04-29 09:50:56,464 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:56,464 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:56,464 :INFO :***Error message wasn't displayed***
+2025-04-29 09:50:56,543 :INFO :Login erfolgreich
+2025-04-29 09:50:56,543 :INFO :Login erfolgreich
+2025-04-29 09:50:56,543 :INFO :Login erfolgreich
+2025-04-29 09:58:00,255 :INFO :Starting login Test
+2025-04-29 09:58:00,255 :INFO :Starting login Test
+2025-04-29 09:58:00,255 :INFO :Starting login Test
+2025-04-29 09:58:01,311 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:01,311 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:01,311 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:07,448 :INFO :Starting login Test
+2025-04-29 09:58:07,448 :INFO :Starting login Test
+2025-04-29 09:58:07,448 :INFO :Starting login Test
+2025-04-29 09:58:08,763 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:08,763 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:08,763 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:14,249 :INFO :Starting login Test
+2025-04-29 09:58:14,249 :INFO :Starting login Test
+2025-04-29 09:58:14,249 :INFO :Starting login Test
+2025-04-29 09:58:15,348 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:15,348 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:15,348 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:20,406 :INFO :Starting login Test
+2025-04-29 09:58:20,406 :INFO :Starting login Test
+2025-04-29 09:58:20,406 :INFO :Starting login Test
+2025-04-29 09:58:21,603 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:21,603 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:21,603 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:26,733 :INFO :Starting login Test
+2025-04-29 09:58:26,733 :INFO :Starting login Test
+2025-04-29 09:58:26,733 :INFO :Starting login Test
+2025-04-29 09:58:27,708 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:27,708 :INFO :***Error message wasn't displayed***
+2025-04-29 09:58:27,708 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:07,986 :INFO :Starting login Test
+2025-04-29 10:04:07,986 :INFO :Starting login Test
+2025-04-29 10:04:07,986 :INFO :Starting login Test
+2025-04-29 10:04:09,134 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:09,134 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:09,134 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:09,188 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:04:09,188 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:04:09,188 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:04:13,610 :INFO :Starting login Test
+2025-04-29 10:04:13,610 :INFO :Starting login Test
+2025-04-29 10:04:13,610 :INFO :Starting login Test
+2025-04-29 10:04:14,510 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:14,510 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:14,510 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:14,558 :INFO :Login erfolgreich
+2025-04-29 10:04:14,558 :INFO :Login erfolgreich
+2025-04-29 10:04:14,558 :INFO :Login erfolgreich
+2025-04-29 10:04:20,379 :INFO :Starting login Test
+2025-04-29 10:04:20,379 :INFO :Starting login Test
+2025-04-29 10:04:20,379 :INFO :Starting login Test
+2025-04-29 10:04:21,270 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:21,270 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:21,270 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:21,342 :INFO :Login erfolgreich
+2025-04-29 10:04:21,342 :INFO :Login erfolgreich
+2025-04-29 10:04:21,342 :INFO :Login erfolgreich
+2025-04-29 10:04:32,491 :INFO :Starting login Test
+2025-04-29 10:04:32,491 :INFO :Starting login Test
+2025-04-29 10:04:32,491 :INFO :Starting login Test
+2025-04-29 10:04:33,144 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:33,144 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:33,144 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:33,559 :INFO :Login erfolgreich
+2025-04-29 10:04:33,559 :INFO :Login erfolgreich
+2025-04-29 10:04:33,559 :INFO :Login erfolgreich
+2025-04-29 10:04:37,753 :INFO :Starting login Test
+2025-04-29 10:04:37,753 :INFO :Starting login Test
+2025-04-29 10:04:37,753 :INFO :Starting login Test
+2025-04-29 10:04:38,333 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:38,333 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:38,333 :INFO :***Error message wasn't displayed***
+2025-04-29 10:04:38,714 :INFO :Login erfolgreich
+2025-04-29 10:04:38,714 :INFO :Login erfolgreich
+2025-04-29 10:04:38,714 :INFO :Login erfolgreich
+2025-04-29 10:06:38,661 :INFO :Starting login Test
+2025-04-29 10:06:38,661 :INFO :Starting login Test
+2025-04-29 10:06:38,661 :INFO :Starting login Test
+2025-04-29 10:06:39,842 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:39,842 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:39,842 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:39,918 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:06:39,918 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:06:39,918 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:06:45,990 :INFO :Starting login Test
+2025-04-29 10:06:45,990 :INFO :Starting login Test
+2025-04-29 10:06:45,990 :INFO :Starting login Test
+2025-04-29 10:06:47,028 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:47,028 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:47,028 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:47,077 :INFO :Login erfolgreich
+2025-04-29 10:06:47,077 :INFO :Login erfolgreich
+2025-04-29 10:06:47,077 :INFO :Login erfolgreich
+2025-04-29 10:06:51,873 :INFO :Starting login Test
+2025-04-29 10:06:51,873 :INFO :Starting login Test
+2025-04-29 10:06:51,873 :INFO :Starting login Test
+2025-04-29 10:06:52,939 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:52,939 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:52,939 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:52,989 :INFO :Login erfolgreich
+2025-04-29 10:06:52,989 :INFO :Login erfolgreich
+2025-04-29 10:06:52,989 :INFO :Login erfolgreich
+2025-04-29 10:06:58,266 :INFO :Starting login Test
+2025-04-29 10:06:58,266 :INFO :Starting login Test
+2025-04-29 10:06:58,266 :INFO :Starting login Test
+2025-04-29 10:06:59,355 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:59,355 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:59,355 :INFO :***Error message wasn't displayed***
+2025-04-29 10:06:59,396 :INFO :Login erfolgreich
+2025-04-29 10:06:59,396 :INFO :Login erfolgreich
+2025-04-29 10:06:59,396 :INFO :Login erfolgreich
+2025-04-29 10:07:04,588 :INFO :Starting login Test
+2025-04-29 10:07:04,588 :INFO :Starting login Test
+2025-04-29 10:07:04,588 :INFO :Starting login Test
+2025-04-29 10:07:05,717 :INFO :***Error message wasn't displayed***
+2025-04-29 10:07:05,717 :INFO :***Error message wasn't displayed***
+2025-04-29 10:07:05,717 :INFO :***Error message wasn't displayed***
+2025-04-29 10:07:05,782 :INFO :Login erfolgreich
+2025-04-29 10:07:05,782 :INFO :Login erfolgreich
+2025-04-29 10:07:05,782 :INFO :Login erfolgreich
+2025-04-29 10:25:49,564 :INFO :Starting login Test
+2025-04-29 10:25:49,564 :INFO :Starting login Test
+2025-04-29 10:25:49,564 :INFO :Starting login Test
+2025-04-29 10:25:50,284 :INFO :***Error message wasn't displayed***
+2025-04-29 10:25:50,284 :INFO :***Error message wasn't displayed***
+2025-04-29 10:25:50,284 :INFO :***Error message wasn't displayed***
+2025-04-29 10:25:50,740 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:25:50,740 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:25:50,740 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:25:57,073 :INFO :Starting login Test
+2025-04-29 10:25:57,073 :INFO :Starting login Test
+2025-04-29 10:25:57,073 :INFO :Starting login Test
+2025-04-29 10:25:58,399 :INFO :***Error message wasn't displayed***
+2025-04-29 10:25:58,399 :INFO :***Error message wasn't displayed***
+2025-04-29 10:25:58,399 :INFO :***Error message wasn't displayed***
+2025-04-29 10:25:58,452 :INFO :Login erfolgreich
+2025-04-29 10:25:58,452 :INFO :Login erfolgreich
+2025-04-29 10:25:58,452 :INFO :Login erfolgreich
+2025-04-29 10:26:08,175 :INFO :Starting login Test
+2025-04-29 10:26:08,175 :INFO :Starting login Test
+2025-04-29 10:26:08,175 :INFO :Starting login Test
+2025-04-29 10:26:09,615 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:09,615 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:09,615 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:09,698 :INFO :Login erfolgreich
+2025-04-29 10:26:09,698 :INFO :Login erfolgreich
+2025-04-29 10:26:09,698 :INFO :Login erfolgreich
+2025-04-29 10:26:15,052 :INFO :Starting login Test
+2025-04-29 10:26:15,052 :INFO :Starting login Test
+2025-04-29 10:26:15,052 :INFO :Starting login Test
+2025-04-29 10:26:16,103 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:16,103 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:16,103 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:16,149 :INFO :Login erfolgreich
+2025-04-29 10:26:16,149 :INFO :Login erfolgreich
+2025-04-29 10:26:16,149 :INFO :Login erfolgreich
+2025-04-29 10:26:20,178 :INFO :Starting login Test
+2025-04-29 10:26:20,178 :INFO :Starting login Test
+2025-04-29 10:26:20,178 :INFO :Starting login Test
+2025-04-29 10:26:21,098 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:21,098 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:21,098 :INFO :***Error message wasn't displayed***
+2025-04-29 10:26:21,155 :INFO :Login erfolgreich
+2025-04-29 10:26:21,155 :INFO :Login erfolgreich
+2025-04-29 10:26:21,155 :INFO :Login erfolgreich
+2025-04-29 10:48:05,963 :INFO :Starting login Test
+2025-04-29 10:48:05,963 :INFO :Starting login Test
+2025-04-29 10:48:05,963 :INFO :Starting login Test
+2025-04-29 10:48:07,012 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:48:07,012 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:48:07,012 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 10:48:11,867 :INFO :Starting login Test
+2025-04-29 10:48:11,867 :INFO :Starting login Test
+2025-04-29 10:48:11,867 :INFO :Starting login Test
+2025-04-29 10:48:13,171 :INFO :Login erfolgreich
+2025-04-29 10:48:13,171 :INFO :Login erfolgreich
+2025-04-29 10:48:13,171 :INFO :Login erfolgreich
+2025-04-29 10:48:20,143 :INFO :Starting login Test
+2025-04-29 10:48:20,143 :INFO :Starting login Test
+2025-04-29 10:48:20,143 :INFO :Starting login Test
+2025-04-29 10:48:21,468 :INFO :Login erfolgreich
+2025-04-29 10:48:21,468 :INFO :Login erfolgreich
+2025-04-29 10:48:21,468 :INFO :Login erfolgreich
+2025-04-29 10:48:27,649 :INFO :Starting login Test
+2025-04-29 10:48:27,649 :INFO :Starting login Test
+2025-04-29 10:48:27,649 :INFO :Starting login Test
+2025-04-29 10:48:29,399 :INFO :Login erfolgreich
+2025-04-29 10:48:29,399 :INFO :Login erfolgreich
+2025-04-29 10:48:29,399 :INFO :Login erfolgreich
+2025-04-29 10:48:35,847 :INFO :Starting login Test
+2025-04-29 10:48:35,847 :INFO :Starting login Test
+2025-04-29 10:48:35,847 :INFO :Starting login Test
+2025-04-29 10:48:36,935 :INFO :Login erfolgreich
+2025-04-29 10:48:36,935 :INFO :Login erfolgreich
+2025-04-29 10:48:36,935 :INFO :Login erfolgreich
+2025-04-29 11:33:02,419 :INFO :Starting login Test
+2025-04-29 11:33:03,461 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 11:33:09,032 :INFO :Starting login Test
+2025-04-29 11:33:10,353 :INFO :Login erfolgreich
+2025-04-29 11:33:15,124 :INFO :Starting login Test
+2025-04-29 11:33:16,519 :INFO :Login erfolgreich
+2025-04-29 11:33:23,566 :INFO :Starting login Test
+2025-04-29 11:33:24,788 :INFO :Login erfolgreich
+2025-04-29 11:33:29,023 :INFO :Starting login Test
+2025-04-29 11:33:30,100 :INFO :Login erfolgreich
+2025-04-29 11:37:14,684 :INFO :Starting login Test
+2025-04-29 11:37:15,844 :ERROR :Login felgeschlagen: Login failed!
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-04-29 11:37:20,719 :INFO :Starting login Test
+2025-04-29 11:37:21,833 :INFO :Login erfolgreich
+2025-04-29 11:37:27,520 :INFO :Starting login Test
+2025-04-29 11:37:28,687 :INFO :Login erfolgreich
+2025-04-29 11:37:33,242 :INFO :Starting login Test
+2025-04-29 11:37:34,434 :INFO :Login erfolgreich
+2025-04-29 11:37:38,706 :INFO :Starting login Test
+2025-04-29 11:37:39,904 :INFO :Login erfolgreich
+2025-04-29 12:37:19,754 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-04-29 12:37:32,480 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig

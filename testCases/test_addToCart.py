@@ -8,6 +8,7 @@ from pageObjects.myAccountPage import MyAccountPage
 from pageObjects.productInfoPage import ProductInfoPage
 from pageObjects.searchPage import SearchPage
 from pageObjects.shoppingCartPage import ShoppingCartPage
+from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from ddt import ddt, data, unpack
 import unittest
@@ -25,19 +26,39 @@ class Test_002_addToCart(unittest.TestCase):
         self.myAccount_page = MyAccountPage(self.driver)
         self.search_page = SearchPage(self.driver)
         self.product_page = ProductInfoPage(self.driver)
+        self.wishList_page = WishListPage(self.driver)
 
     @data(("username@gmail.de", "admin"))
     @unpack
     def test_add_to_cart_from_product_display(self, email, password):
         self.home_page.bring_me_to_login_page()
         self.login_page.log_me_in(email, password)
-        self.myAccount_page.input_search_element("imac")
-        self.myAccount_page.click_on_search_button()
+        self.myAccount_page.inputSearchElement("imac")
+        self.myAccount_page.clickOnSearchButton()
         self.search_page.click_on_imac_image()
         self.product_page.click_on_add_to_cart_button()
-        assert self.product_page.check_success_message() == True
+        try:
+            assert self.product_page.check_success_message() == True, "Test failed"
+            self.logger.info("successful message is displayed")
+        except AssertionError as e:
+            self.logger.error(f"Test felgeschlagen: {e}")
+
         self.product_page.click_on_shopping_cart_link()
         cart_page = ShoppingCartPage(self.driver)
-        assert cart_page.check_product_name() == True
+        try:
+            assert cart_page.check_product_name() == True, "Test failed"
+            self.logger.info("The product is successfully added")
+        except AssertionError as e:
+            self.logger.error(f"Test felgeschlagen: {e}")
 
         self.driver.close()
+
+    @pytest.mark.regression
+    @data(("username@gmail.de", "admin"))
+    @unpack
+    def test_add_product_to_wish_list(self, email, password):
+        self.home_page.bring_me_to_login_page()
+        self.login_page.log_me_in(email, password)
+        self.myAccount_page.clickOnWishListButton()
+        self.wishList_page.clickOnAddToCartIcon()
+        self.wishList_page.clickOnShoppingCartHeaderIcon()

@@ -10,7 +10,7 @@ from utilities.custom_logger import LogGen
 
 class LoginPage(Base_driver):
 
-    logger = LogGen.loggen()
+    #logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -45,16 +45,12 @@ class LoginPage(Base_driver):
 
     def check_error_message(self):
         try:
-            self.logger.info("***Error message wasn't displayed***")
             return self.getErrorMessageBox()
         except:
-            self.logger.error("***Error message is displayed***")
             return False
 
     def click_on_forgotten_password_text(self):
         self.getForgottenPasswordText().click()
-        fpassword_page = ForgottenPasswordPage(self.driver)
-        return fpassword_page
 
     def log_me_in(self, email, password):
         self.input_eMail(email)

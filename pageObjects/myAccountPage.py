@@ -8,17 +8,23 @@ class MyAccountPage(Base_driver):
         self.driver = driver
         self.locators = MyAccountPageLocators
 
-    def get_search_input_field(self):
+    def getSearchInputField(self):
         return self.wait_for_element_visible(self.locators.search_input_field)
 
-    def get_search_button(self):
+    def getSearchButton(self):
         return self.wait_for_element_visible(self.locators.search_button)
 
-    def input_search_element(self, element):
-        self.get_search_input_field().clear()
-        self.get_search_input_field().send_keys(element)
+    def getWishListButton(self):
+        return self.wait_for_element_visible(self.locators.wish_list_button)
 
-    def click_on_search_button(self):
-        self.get_search_button().click()
+    def inputSearchElement(self, element):
+        self.getSearchInputField().clear()
+        self.getSearchInputField().send_keys(element)
+
+    def clickOnSearchButton(self):
+        self.getSearchButton().click()
+
+    def clickOnWishListButton(self):
+        self.getWishListButton().click()
 
 

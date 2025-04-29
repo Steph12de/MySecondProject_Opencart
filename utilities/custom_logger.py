@@ -12,5 +12,6 @@ class LogGen:
         formatter = logging.Formatter("%(asctime)s :%(levelname)s :%(message)s")
         filehandler.setFormatter(formatter)
         logger.addHandler(filehandler)
+
         return logger
 

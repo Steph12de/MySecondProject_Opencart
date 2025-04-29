@@ -5,7 +5,7 @@ from utilities.custom_logger import LogGen
 
 
 class HomePage(Base_driver):
-    logger = LogGen.loggen()
+    #logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -27,4 +27,3 @@ class HomePage(Base_driver):
     def bring_me_to_login_page(self):
         self.click_my_account()
         self.click_my_account_login_HomePage()
-        self.logger.info(("*****Login test is started*****"))

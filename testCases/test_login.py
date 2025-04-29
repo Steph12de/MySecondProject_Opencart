@@ -20,16 +20,6 @@ class Test_001_login(unittest.TestCase):
         self.login_page = LoginPage(self.driver)
         self.fpassword_page = ForgottenPasswordPage(self.driver)
 
-    # @pytest.mark.parametrize("email, password, title, error",
-    #                          [
-    #                              ("username@gmail.de", "admin", "My Account", False),
-    #                              ("username@gmail123.de", "admin123", "Account Login", True),
-    #                              ("username@gmail.de123", "admin", "Account Login", True),
-    #                              ("username@gmail.de", "admin123", "Account Login", True),
-    #                              ("", "", "Account Login", True),
-    #                          ]
-    #
-    #                          )
     @pytest.mark.sanity
     @data(*Utils.read_data_from_excel("C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx", "Tabelle1"))
     @unpack
@@ -41,9 +31,9 @@ class Test_001_login(unittest.TestCase):
         actual_error = self.login_page.check_error_message()
         try:
             assert error == str(actual_error) and current_title == title, "Login failed!"
-            self.logger.info("Login erfolgreich")
+            self.logger.info("Login successful")
         except AssertionError as e:
-            self.logger.error(f"Login felgeschlagen: {e}")
+            self.logger.error(f"Login Test: {e}")
             raise AssertionError
 
         self.driver.close()
@@ -53,10 +43,11 @@ class Test_001_login(unittest.TestCase):
         self.home_page.bring_me_to_login_page()
         self.login_page.click_on_forgotten_password_text()
         result_text = self.fpassword_page.check_presence_of_forgot_password_text()
-        if result_text:
-            assert True
-        else:
-            assert False
+        try:
+            assert result_text == True, "Test failed"
+            self.logger.info("Forgotten password Text is available")
+        except AssertionError as e:
+            self.logger.error(f"Check presence of forgotten password Text: {e}")
 
         self.driver.close()
 
@@ -65,26 +56,35 @@ class Test_001_login(unittest.TestCase):
         self.home_page.bring_me_to_login_page()
         self.login_page.log_me_in_using_keyboard("username@gmail.de", "admin")
         current_title = self.driver.title
-        assert current_title == "My Account"
+        try:
+           assert current_title == "My Account", "Test failed"
+           self.logger.info("Login using keyboard key successful")
+        except AssertionError as e:
+            self.logger.error(f"Test using keyboard keys: {e}")
         self.driver.close()
 
     @pytest.mark.regression
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.home_page.bring_me_to_login_page()
-        if self.login_page.check_placeholder_text_in_email_field() and self.login_page.check_placeholder_text_in_password_field():
-            assert True
-        else:
-            assert False
+        placeholder_text_emailB = self.login_page.check_placeholder_text_in_email_field()
+        placeholder_text_passwordB = self.login_page.check_placeholder_text_in_password_field()
+        try:
+            assert placeholder_text_emailB == True and placeholder_text_passwordB == True, "Test failed"
+            self.logger.info("Placeholder Text are available in the fields")
+        except AssertionError as e:
+            self.logger.error(f"Check presence of placeholder Text: {e}")
 
         self.driver.close()
 
     @pytest.mark.regression
     def test_password_text_is_hidden(self):
         self.home_page.bring_me_to_login_page()
-        if self.login_page.check_visibility_of_password_text():
-            assert True
-        else:
-            assert False
+        password_visibility = self.login_page.check_visibility_of_password_text()
+        try:
+            assert password_visibility == True, "Test failed"
+            self.logger.info("Password Text is hidden")
+        except AssertionError as e:
+            self.logger.error(f"Check visibility of password text: {e}" )
 
         self.driver.close()
 

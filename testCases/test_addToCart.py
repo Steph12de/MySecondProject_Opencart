@@ -27,7 +27,9 @@ class Test_002_addToCart(unittest.TestCase):
         self.search_page = SearchPage(self.driver)
         self.product_page = ProductInfoPage(self.driver)
         self.wishList_page = WishListPage(self.driver)
+        self.cart_page = ShoppingCartPage(self.driver)
 
+    #@pytest.mark.regression
     @data(("username@gmail.de", "admin"))
     @unpack
     def test_add_to_cart_from_product_display(self, email, password):
@@ -44,9 +46,32 @@ class Test_002_addToCart(unittest.TestCase):
             self.logger.error(f"Test felgeschlagen: {e}")
 
         self.product_page.click_on_shopping_cart_link()
-        cart_page = ShoppingCartPage(self.driver)
+        time.sleep(10)
         try:
-            assert cart_page.check_product_name() == True, "Test failed"
+            assert self.cart_page.check_product_name("iMac") == True, "Test failed"
+            self.logger.info("The product is successfully added")
+        except AssertionError as e:
+            self.logger.error(f"Test felgeschlagen: {e}")
+
+        self.driver.close()
+
+    #@pytest.mark.regression
+    @data(("username@gmail.de", "admin"))
+    @unpack
+    def test_add_product_to_wish_list(self, email, password):
+        self.home_page.bring_me_to_login_page()
+        self.login_page.log_me_in(email, password)
+        self.myAccount_page.clickOnWishListButton()
+        self.wishList_page.clickOnAddToCartIcon("Samsung SyncMaster 941BW")
+        try:
+            assert self.product_page.check_success_message() == True, "Test failed"
+            self.logger.info("successful message is displayed")
+        except AssertionError as e:
+            self.logger.error(f"Test felgeschlagen: {e}")
+
+        self.wishList_page.clickOnShoppingCartHeaderIcon()
+        try:
+            assert self.cart_page.check_product_name("Samsung SyncMaster 941BW") == True, "Test failed"
             self.logger.info("The product is successfully added")
         except AssertionError as e:
             self.logger.error(f"Test felgeschlagen: {e}")
@@ -54,11 +79,7 @@ class Test_002_addToCart(unittest.TestCase):
         self.driver.close()
 
     @pytest.mark.regression
-    @data(("username@gmail.de", "admin"))
-    @unpack
-    def test_add_product_to_wish_list(self, email, password):
-        self.home_page.bring_me_to_login_page()
-        self.login_page.log_me_in(email, password)
-        self.myAccount_page.clickOnWishListButton()
-        self.wishList_page.clickOnAddToCartIcon()
-        self.wishList_page.clickOnShoppingCartHeaderIcon()
+    def test_add_to_cart_from_desktops(self):
+        self.home_page.go_to_desktops()
+        self.driver.close()
+

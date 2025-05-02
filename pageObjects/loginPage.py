@@ -1,16 +1,12 @@
-from selenium.webdriver.common import keys
-from selenium.webdriver.support.ui import WebDriverWait
 from base.base_driver import Base_driver
 from selenium.webdriver.common.keys import Keys
-
-from pageObjects.forgottenPasswordPage import ForgottenPasswordPage
 from utilities.locators.loginPageLocators import LoginPageLocators
 from utilities.custom_logger import LogGen
 
 
 class LoginPage(Base_driver):
 
-    #logger = LogGen.loggen()
+    # logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -81,5 +77,3 @@ class LoginPage(Base_driver):
             return True
         else:
             return False
-
-

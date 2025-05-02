@@ -810,3 +810,254 @@ Traceback (most recent call last):
   File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
     _winapi.TerminateProcess(self._handle, 1)
 OSError: [WinError 6] Das Handle ist ungültig
+2025-04-29 14:58:37,812 :INFO :Placeholder Text are available in the fields
+2025-04-29 14:58:43,419 :INFO :Login using keyboard key successful
+2025-04-29 14:58:47,703 :INFO :Starting login Test
+2025-04-29 14:58:54,258 :INFO :Login successful
+2025-04-29 14:58:58,514 :INFO :Starting login Test
+2025-04-29 14:59:05,643 :INFO :Login successful
+2025-04-29 14:59:09,818 :INFO :Starting login Test
+2025-04-29 14:59:10,906 :INFO :Login successful
+2025-04-29 14:59:15,514 :INFO :Starting login Test
+2025-04-29 14:59:16,778 :INFO :Login successful
+2025-04-29 14:59:22,669 :INFO :Starting login Test
+2025-04-29 14:59:24,178 :INFO :Login successful
+2025-04-29 14:59:29,408 :INFO :Password Text is hidden
+2025-04-29 14:59:36,546 :INFO :Forgotten password Text is available
+2025-05-02 10:17:57,290 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('Samsung SyncMaster 941BW')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000026714FBC770>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000026714FBC770> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_product_to_wish_list_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:18:12,747 :INFO :successful message is displayed
+2025-05-02 10:18:13,483 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002671503AD80>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002671503AD80> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:26:47,762 :INFO :successful message is displayed
+2025-05-02 10:28:47,068 :INFO :successful message is displayed
+2025-05-02 10:35:01,225 :INFO :successful message is displayed
+2025-05-02 10:39:28,883 :INFO :successful message is displayed
+2025-05-02 10:41:19,464 :INFO :successful message is displayed
+2025-05-02 10:44:49,653 :INFO :successful message is displayed
+2025-05-02 10:46:00,835 :INFO :successful message is displayed
+2025-05-02 10:48:32,525 :INFO :successful message is displayed
+2025-05-02 10:51:23,378 :INFO :successful message is displayed
+2025-05-02 10:51:24,367 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000026343086630>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000026343086630> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:51:26,550 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 10:53:07,633 :INFO :successful message is displayed
+2025-05-02 10:54:19,424 :INFO :successful message is displayed
+2025-05-02 10:54:57,999 :INFO :successful message is displayed
+2025-05-02 10:54:58,777 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001BCB2E67B30>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001BCB2E67B30> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:55:00,283 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 10:55:51,419 :INFO :successful message is displayed
+2025-05-02 10:55:52,444 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001C0CAF6AE40>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001C0CAF6AE40> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:55:53,917 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 10:56:48,462 :INFO :successful message is displayed
+2025-05-02 10:56:49,340 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000018941870380>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000018941870380> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:56:50,831 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 10:57:57,547 :INFO :successful message is displayed
+2025-05-02 10:57:58,201 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000023FBC319190>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000023FBC319190> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 10:57:59,647 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 11:01:25,667 :INFO :successful message is displayed
+2025-05-02 11:01:26,346 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x00000250C1E64F80>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x00000250C1E64F80> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 11:01:27,754 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 11:04:41,987 :INFO :successful message is displayed
+2025-05-02 11:04:42,737 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001B1E02367B0>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001B1E02367B0> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 11:04:44,507 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 11:05:51,087 :INFO :successful message is displayed
+2025-05-02 11:06:02,383 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002A3843F5220>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002A3843F5220> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 11:07:58,639 :INFO :successful message is displayed
+2025-05-02 11:08:09,199 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000020BEF537B30>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000020BEF537B30> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 11:08:10,659 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 11:10:00,164 :INFO :successful message is displayed
+2025-05-02 11:10:10,929 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('imac')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002CAD07378F0>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002CAD07378F0> = <testCases.test_addToCart.Test_002_addToCart testMethod=test_add_to_cart_from_product_display_1___username_gmail_de____admin__>.cart_page
+2025-05-02 11:10:12,381 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 11:11:04,574 :INFO :successful message is displayed
+2025-05-02 11:11:15,899 :INFO :The product is successfully added
+2025-05-02 11:59:00,526 :INFO :successful message is displayed
+2025-05-02 11:59:11,653 :INFO :The product is successfully added
+2025-05-02 12:01:47,085 :INFO :successful message is displayed
+2025-05-02 12:01:49,409 :INFO :The product is successfully added
+2025-05-02 12:02:42,088 :INFO :successful message is displayed
+2025-05-02 12:02:42,876 :INFO :The product is successfully added
+2025-05-02 12:03:43,876 :INFO :successful message is displayed
+2025-05-02 12:03:44,770 :INFO :The product is successfully added
+2025-05-02 12:03:56,518 :INFO :successful message is displayed
+2025-05-02 12:04:07,372 :INFO :The product is successfully added
+2025-05-02 14:41:12,673 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 14:41:37,322 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 14:42:45,567 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 14:54:17,388 :INFO :Move hover to Desktops
+2025-05-02 14:54:17,388 :INFO :Move hover to Desktops
+2025-05-02 15:16:21,653 :INFO :Move hover to Desktops
+2025-05-02 15:16:21,653 :INFO :Move hover to Desktops
+2025-05-02 15:37:58,771 :INFO :Move hover to Desktops
+2025-05-02 15:37:58,771 :INFO :Move hover to Desktops
+2025-05-02 15:39:05,901 :INFO :Move hover to Desktops
+2025-05-02 15:39:05,901 :INFO :Move hover to Desktops
+2025-05-02 15:45:36,450 :INFO :Move hover to Desktops
+2025-05-02 15:45:36,450 :INFO :Move hover to Desktops
+2025-05-02 15:46:51,734 :INFO :Move hover to Desktops
+2025-05-02 15:46:51,734 :INFO :Move hover to Desktops
+2025-05-02 15:51:51,268 :INFO :Move hover to Desktops
+2025-05-02 15:51:51,268 :INFO :Move hover to Desktops
+2025-05-02 15:54:43,190 :INFO :Move hover to Desktops
+2025-05-02 15:54:43,190 :INFO :Move hover to Desktops
+2025-05-02 15:58:06,842 :INFO :Move hover to Desktops
+2025-05-02 15:58:06,842 :INFO :Move hover to Desktops
+2025-05-02 15:59:23,415 :INFO :Move hover to Desktops
+2025-05-02 15:59:23,415 :INFO :Move hover to Desktops
+2025-05-02 16:00:15,373 :INFO :Move hover to Desktops
+2025-05-02 16:00:15,373 :INFO :Move hover to Desktops
+2025-05-02 16:01:08,971 :INFO :Move hover to Desktops
+2025-05-02 16:01:08,971 :INFO :Move hover to Desktops
+2025-05-02 16:02:13,541 :INFO :Move hover to Desktops
+2025-05-02 16:02:13,541 :INFO :Move hover to Desktops
+2025-05-02 16:16:45,261 :INFO :Move hover to Desktops
+2025-05-02 16:16:45,261 :INFO :Move hover to Desktops
+2025-05-02 16:17:23,470 :INFO :Move hover to Desktops
+2025-05-02 16:17:23,470 :INFO :Move hover to Desktops
+2025-05-02 16:17:34,466 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 16:17:34,466 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 16:17:50,212 :INFO :Move hover to Desktops
+2025-05-02 16:17:50,212 :INFO :Move hover to Desktops
+2025-05-02 16:18:00,984 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-02 16:18:00,984 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig

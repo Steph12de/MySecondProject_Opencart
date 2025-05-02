@@ -61,6 +61,7 @@ class Test_001_login(unittest.TestCase):
            self.logger.info("Login using keyboard key successful")
         except AssertionError as e:
             self.logger.error(f"Test using keyboard keys: {e}")
+            raise AssertionError
         self.driver.close()
 
     @pytest.mark.regression

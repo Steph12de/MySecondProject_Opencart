@@ -22,6 +22,9 @@ class LoginPage(Base_driver):
     def getLoginButton(self):
         return self.wait_for_element_visible(self.my_locators.loginButton)
 
+    def getLoginButtonRightHandMenu(self):
+        return self.wait_for_element_visible(self.my_locators.loginButtonRightHandMenu)
+
     def getErrorMessageBox(self):
         return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message, "Warning")
 
@@ -39,6 +42,9 @@ class LoginPage(Base_driver):
     def click_login_button(self):
         self.getLoginButton().click()
 
+    def click_login_button_right_hand_menu(self):
+        self.getLoginButtonRightHandMenu().click()
+
     def check_error_message(self):
         try:
             return self.getErrorMessageBox()
@@ -52,6 +58,7 @@ class LoginPage(Base_driver):
         self.input_eMail(email)
         self.input_password(password)
         self.click_login_button()
+
 
     def log_me_in_using_keyboard(self, email, password):
         self.input_eMail(email)

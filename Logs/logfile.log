@@ -1061,3 +1061,77 @@ Traceback (most recent call last):
   File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
     _winapi.TerminateProcess(self._handle, 1)
 OSError: [WinError 6] Das Handle ist ungültig
+2025-05-14 10:34:59,158 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:34:59,158 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:35:14,414 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:35:14,414 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:35:43,721 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:35:43,721 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:36:30,538 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:36:30,538 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:38:17,747 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:38:17,747 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:39:23,529 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:39:23,529 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 10:41:14,025 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 10:41:14,025 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 10:42:19,047 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 10:42:19,047 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 10:47:08,595 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 10:47:08,595 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 10:48:43,770 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 11:14:56,090 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert ('Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login). Actual Title: Account Login
+2025-05-14 11:16:41,723 :ERROR :Login wasn't successfull: Test failed: User wasn't logged in, the title is wrong
+assert ('Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login). Actual Title: Account Login
+2025-05-14 11:19:11,248 :ERROR :Login wasn't successfully: Test failed: User wasn't logged in, the title is wrong
+assert ('Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login). Actual Title: Account Login
+2025-05-14 11:19:43,097 :ERROR :Login wasn't successfully: Test failed: User wasn't logged in, the title is wrong
+assert ('Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login). Actual Title: Account Login
+2025-05-14 12:51:55,944 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-05-14 12:52:25,020 :ERROR :Login via right hand menu wasn't successfully: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-05-14 13:31:57,715 :INFO :User logged successfully in by using login at the right-hand-menu

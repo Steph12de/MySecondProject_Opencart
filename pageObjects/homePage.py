@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 
 
 class HomePage(Base_driver):
-    logger = LogGen.loggen()
+    #logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)

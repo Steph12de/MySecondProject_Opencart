@@ -26,8 +26,17 @@ class WishListPage(Base_driver):
     def getShoppingCartHeaderIcon(self):
         return self.wait_for_element_visible(self.locators.shopping_cart_header_icon)
 
-    # def clickOnAddToCartIcon(self):
-    #     self.getAddToCartIcon().click()
+    def getLogoutButtonRightHandMenu(self):
+        return self.wait_for_element_visible(self.locators.logout_right_hand_menu)
+
+    def getpasswordButtonRightHandMenu(self):
+        return self.wait_for_element_visible(self.locators.password_right_hand_menu)
 
     def clickOnShoppingCartHeaderIcon(self):
         self.getShoppingCartHeaderIcon().click()
+
+    def clickOnLogoutButtonRightHandMenu(self):
+        self.getLogoutButtonRightHandMenu().click()
+
+    def clickOnpasswordRightHandMenu(self):
+        self.getpasswordButtonRightHandMenu().click()

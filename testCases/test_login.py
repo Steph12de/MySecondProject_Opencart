@@ -1,3 +1,4 @@
+import os
 import time
 import unittest
 
@@ -11,6 +12,7 @@ from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from utilities.utils import Utils
 from ddt import ddt, data, unpack
+
 
 @ddt
 class Test_001_login(unittest.TestCase):
@@ -26,50 +28,72 @@ class Test_001_login(unittest.TestCase):
         self.wishlist = WishListPage(self.driver)
 
     @pytest.mark.sanity
-    @data(*Utils.read_data_from_excel("C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx", "Tabelle1"))
+    @data(*Utils.read_data_from_excel(
+        "C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx",
+        "Tabelle1"))
     @unpack
     def test_login_with_multiple_combi(self, email, password, title, error):
         self.home_page.bring_me_to_login_page()
-        self.logger.info("Starting login Test")
+        self.logger.info("Starting login Test with multiple combi")
         self.login_page.log_me_in(email, password)
         current_title = self.driver.title
         actual_error = self.login_page.check_error_message()
+        # print(type(actual_error))
+        # print(type(error))
         try:
-            assert error == str(actual_error) and current_title == title, "Login failed!"
-            self.logger.info("Login successful")
+            assert error == str(actual_error) and current_title == title, (
+                f"Login failed!\n"
+                f"Expected error: {error}, but got: {actual_error}\n"
+                f"Expected title: '{title}', but got: '{current_title}'"
+            )
+            self.logger.info(f"Login successful - Email: {email}, Expected Title: '{title}'")
         except AssertionError as e:
-            self.logger.error(f"Login Test: {e}")
-            raise AssertionError
+            self.logger.error(f"Test failed: {e}")
+            self.driver.save_screenshot(os.path.join(os.getcwd(), "login_error_screenshot.png"))
+            raise
 
-        self.driver.close()
+        self.driver.quit()
 
-    #@pytest.mark.regression
+    @pytest.mark.regression
     def test_presence_of_forgotten_password_text(self):
         self.home_page.bring_me_to_login_page()
         self.login_page.click_on_forgotten_password_text()
         result_text = self.fpassword_page.check_presence_of_forgot_password_text()
         try:
-            assert result_text == True, "Test failed"
-            self.logger.info("Forgotten password Text is available")
+            assert result_text is True, (
+                f"Test failed: Expected forgotten password text to be present, but it was not found\n"
+                f"Expected: True, Actual: {result_text}\n"
+            )
+            self.logger.info(f"Forgotten password text is displayed correctly.")
         except AssertionError as e:
-            self.logger.error(f"Check presence of forgotten password Text: {e}")
+            self.logger.error(f"Error Details: {e}")
+            self.driver.save_screenshot(os.path.join(os.getcwd(), "forgot_password_error.png"))
+            raise
 
         self.driver.close()
 
-    #@pytest.mark.regression
+    # @pytest.mark.regression
     def test_login_using_keyboard_keys(self):
         self.home_page.bring_me_to_login_page()
+        self.logger.info("Starting login Test using keyboard keys")
         self.login_page.log_me_in_using_keyboard("username@gmail.de", "admin")
         current_title = self.driver.title
         try:
-           assert current_title == "My Account", "Test failed"
-           self.logger.info("Login using keyboard key successful")
+            assert current_title == "My Account", (
+                f"Login failed!\n"
+                f"Expected page title: 'My Account', but got: '{current_title}'"
+            )
+            self.logger.info(f"Login successful - User redirected to '{current_title}'")
         except AssertionError as e:
-            self.logger.error(f"Test using keyboard keys: {e}")
-            raise AssertionError
+            self.logger.error(
+                f"Login test using keyboard keys failed!\n"
+                f"Error details: {e}"
+            )
+            self.driver.save_screenshot(os.path.join(os.getcwd(), "login_error.png"))
+            raise
         self.driver.close()
 
-    #@pytest.mark.regression
+    # @pytest.mark.regression
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.home_page.bring_me_to_login_page()
         placeholder_text_emailB = self.login_page.check_placeholder_text_in_email_field()
@@ -82,7 +106,7 @@ class Test_001_login(unittest.TestCase):
 
         self.driver.close()
 
-    #@pytest.mark.regression
+    # @pytest.mark.regression
     def test_password_text_is_hidden(self):
         self.home_page.bring_me_to_login_page()
         password_visibility = self.login_page.check_visibility_of_password_text()
@@ -90,12 +114,12 @@ class Test_001_login(unittest.TestCase):
             assert password_visibility == True, "Test failed"
             self.logger.info("Password Text is hidden")
         except AssertionError as e:
-            self.logger.error(f"Check visibility of password text: {e}" )
+            self.logger.error(f"Check visibility of password text: {e}")
 
         self.driver.close()
 
-    #@pytest.mark.regression
-    @data(("username@gmail.de", "admin"))
+    # @pytest.mark.regression
+    @data(("username@gmail.de", "admin1"))
     @unpack
     def test_login_via_right_hand_menu(self, email, password):
         self.home_page.bring_me_to_login_page()
@@ -109,7 +133,7 @@ class Test_001_login(unittest.TestCase):
             self.logger.error(f"Login via right hand menu wasn't successfully: {e}. Actual Title: {current_title}")
             assert False
 
-    @pytest.mark.regression
+    # @pytest.mark.regression
     @data(("username@gmail.de", "admin1"))
     @unpack
     def test_login_logout(self, email, password):
@@ -123,15 +147,3 @@ class Test_001_login(unittest.TestCase):
         self.driver.back()
         self.wishlist.clickOnpasswordRightHandMenu()
         time.sleep(2)
-
-
-
-
-
-
-
-
-
-
-
-

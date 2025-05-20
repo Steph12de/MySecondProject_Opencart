@@ -1262,3 +1262,79 @@ assert False is True
   Expected: True, Actual: False
   
 assert False is True
+2025-05-20 11:10:26,725 :INFO :Starting the Login and Logout test execution
+2025-05-20 11:10:31,294 :INFO :Login successful - User redirected to 'My Account'
+2025-05-20 11:12:05,977 :INFO :Logout was successful as expected. Actual title: Account Login.
+2025-05-20 11:16:59,883 :INFO :Starting the Login and Logout test execution
+2025-05-20 11:17:01,500 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-20 11:35:18,511 :INFO :Starting 
+2025-05-20 11:35:18,618 :INFO :Placeholder text is correctly displayed in both email and password fields.
+2025-05-20 11:39:07,626 :INFO :Navigated to login page
+2025-05-20 11:39:07,627 :INFO :Starting the placeholder check test process 
+2025-05-20 11:39:07,753 :ERROR :Placeholder text validation failed!
+Error details: Test failed: Placeholder text is missing in one or both fields.
+  Expected placeholders to be present in both fields.
+  Email field detected: False, Password field detected: True
+  
+assert (False == True)
+2025-05-20 11:46:13,422 :INFO :Navigated to login page
+2025-05-20 11:46:13,422 :INFO :Starting the placeholder check test process 
+2025-05-20 11:46:13,517 :ERROR :Placeholder text validation failed!
+Error details: Test failed: Placeholder text is missing in one or both fields.
+  Expected placeholders to be present in both fields.
+  Email field detected: False, Password field detected: True
+  
+assert (False == True)
+2025-05-20 11:56:32,926 :INFO :Navigated to login page
+2025-05-20 11:56:32,928 :INFO :Starting the placeholder check test process 
+2025-05-20 11:56:33,063 :ERROR :Placeholder text validation failed!
+Error details: Test failed: Placeholder text is missing in one or both fields.
+  Expected placeholders to be present in both fields.
+  Expected: Email field Boolean value (True), but got: FalseExpected: Password field Boolean value (True), but got: True
+assert (False == True)
+2025-05-20 11:58:19,687 :INFO :Navigated to login page
+2025-05-20 11:58:19,687 :INFO :Starting the placeholder check test process 
+2025-05-20 11:58:19,843 :ERROR :Placeholder text validation failed!
+Error details: Test failed: Placeholder text is missing in one or both fields.
+  Expected placeholders to be present in both fields.
+  Expected: Email field Boolean value (True), but got: False
+  Expected: Password field Boolean value (True), but got: True
+assert (False == True)
+
+2025-05-20 12:03:18,546 :INFO :Navigated to login page
+2025-05-20 12:03:18,549 :INFO :Starting password visibility check test execution
+2025-05-20 12:03:18,599 :ERROR :Password visibility test failed!
+Error details: Test failed: Password field is not hidden.
+  Expected: Hidden (True), but got: False
+assert False == True
+2025-05-20 12:04:12,268 :INFO :Navigated to login page
+2025-05-20 12:04:12,268 :INFO :Starting password visibility check test execution
+2025-05-20 12:04:12,309 :ERROR :Password visibility test failed!
+Error details: Test failed: Password field is not hidden.
+  Expected: Hidden (True), but got: False
+assert False == True
+2025-05-20 12:05:08,975 :INFO :Navigated to login page
+2025-05-20 12:05:08,976 :INFO :Starting password visibility check test execution
+2025-05-20 12:05:09,038 :INFO :Password field is correctly masked.
+2025-05-20 12:56:09,407 :INFO :Starting the Login and Logout test execution
+2025-05-20 12:56:11,165 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-20 13:05:56,948 :INFO :Starting the Login and Logout test execution
+2025-05-20 13:05:58,821 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 

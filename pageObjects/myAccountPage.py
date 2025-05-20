@@ -17,6 +17,8 @@ class MyAccountPage(Base_driver):
     def getWishListButton(self):
         return self.wait_for_element_visible(self.locators.wish_list_button)
 
+    def getPasswordButton(self):
+        return self.wait_for_element_visible(self.locators.password_button)
 
     def inputSearchElement(self, element):
         self.getSearchInputField().clear()
@@ -27,6 +29,9 @@ class MyAccountPage(Base_driver):
 
     def clickOnWishListButton(self):
         self.getWishListButton().click()
+
+    def clickOnPasswordButton(self):
+        self.getPasswordButton().click()
 
 
 

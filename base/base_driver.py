@@ -14,3 +14,4 @@ class Base_driver():
         my_Wait = WebDriverWait(self.driver, 5)
         return my_Wait.until(EC.text_to_be_present_in_element(element, text))
 
+

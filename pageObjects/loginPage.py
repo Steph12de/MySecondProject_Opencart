@@ -26,7 +26,14 @@ class LoginPage(Base_driver):
         return self.wait_for_element_visible(self.my_locators.loginButtonRightHandMenu)
 
     def getErrorMessageBox(self):
-        return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message, "Warning")
+            return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message, "Warning")
+
+    # def getErrorMessage(self):
+    #     try:
+    #         error_message = self.wait_for_element_visible(self.my_locators.login_error_message).text
+    #         return error_message
+    #     except:
+    #         return None
 
     def getForgottenPasswordText(self):
         return self.wait_for_element_visible(self.my_locators.forgotten_password_text)

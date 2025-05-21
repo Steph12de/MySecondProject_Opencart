@@ -1338,3 +1338,97 @@ assert 'Account Login' == 'My Account'
   
   - My Account
   + Account Login 
+2025-05-21 10:52:12,250 :INFO :Starting the change password test after login.
+2025-05-21 10:52:13,708 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 10:55:33,656 :INFO :Starting the change password test after login.
+2025-05-21 10:55:34,598 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 10:56:08,461 :INFO :Starting the change password test after login.
+2025-05-21 10:56:09,710 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 10:57:28,992 :INFO :Starting the change password test after login.
+2025-05-21 10:57:30,343 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 11:20:03,458 :INFO :Starting the change password test after login.
+2025-05-21 11:20:05,139 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 11:20:39,679 :INFO :Starting the change password test after login.
+2025-05-21 11:20:40,632 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 11:21:04,450 :INFO :Starting the change password test after login.
+2025-05-21 11:21:05,726 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 11:55:49,940 :INFO :Starting the change password test after login.
+2025-05-21 11:55:51,303 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 11:55:53,111 :ERROR :Error details: Password was not successful updated, check password again
+  Expected title is: 'My Account', Actual title is: 'My Account'
+  
+assert ('My Account' == 'My Account'
+  
+    My Account and 'Success: Your password has been successfully updated.' in 'Success: Your password has been successfully updated')
+ +  where 'Success: Your password has been successfully updated.' = getSuccessMessagePasswordUpdate()
+ +    where getSuccessMessagePasswordUpdate = <pageObjects.myAccountPage.MyAccountPage object at 0x0000021CED1AFA10>.getSuccessMessagePasswordUpdate
+ +      where <pageObjects.myAccountPage.MyAccountPage object at 0x0000021CED1AFA10> = <testCases.test_login.Test_001_login testMethod=test_change_password_after_login_1___username_gmail_de____admin1__>.my_account 
+2025-05-21 12:03:09,339 :INFO :Starting the change password test after login.
+2025-05-21 12:03:10,872 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 12:03:12,909 :INFO :Password change successful
+2025-05-21 12:03:20,347 :ERROR :Login test was not successful!Your password is wrong, please enter your new password.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 12:15:31,073 :INFO :Starting the change password test after login.
+2025-05-21 12:15:32,476 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 12:15:34,357 :INFO :Password change successful
+2025-05-21 12:15:41,328 :ERROR :Login test was not successful!Your password is wrong, please enter your new password.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 12:33:05,099 :INFO :Starting the change password test after login.
+2025-05-21 12:33:08,170 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 12:33:09,872 :INFO :Password change successful
+2025-05-21 12:33:13,205 :ERROR :Login test was not successful!Your password is wrong, please enter your new password.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 12:42:08,232 :INFO :Starting the change password test after login.
+2025-05-21 12:42:08,958 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 12:43:05,300 :INFO :Starting the change password test after login.
+2025-05-21 12:43:05,935 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-21 12:43:32,267 :INFO :Starting the change password test after login.
+2025-05-21 12:43:33,519 :INFO :Login successful - User redirected to 'My Account'
+2025-05-21 12:43:35,310 :INFO :Password change was successful. User is on 'My Account' page.
+2025-05-21 12:43:35,310 :INFO :Proceeding with logout and login verification after password change.
+2025-05-21 12:43:37,887 :ERROR :Login test was not successful!Your password is wrong, please enter your new password.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 

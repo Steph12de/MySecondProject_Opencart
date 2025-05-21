@@ -4,9 +4,11 @@ import unittest
 
 import pytest
 
+from pageObjects.changePasswordPage import ChangePasswordPage
 from pageObjects.loginPage import LoginPage
 from pageObjects.homePage import HomePage
 from pageObjects.forgottenPasswordPage import ForgottenPasswordPage
+from pageObjects.logoutPage import LogoutPage
 from pageObjects.myAccountPage import MyAccountPage
 from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
@@ -26,6 +28,8 @@ class Test_001_login(unittest.TestCase):
         self.fpassword_page = ForgottenPasswordPage(self.driver)
         self.my_account = MyAccountPage(self.driver)
         self.wishlist = WishListPage(self.driver)
+        self.changePassword_page = ChangePasswordPage(self.driver)
+        self.logout_page = LogoutPage(self.driver)
 
     @pytest.mark.sanity
     @data(*Utils.read_data_from_excel(
@@ -42,7 +46,7 @@ class Test_001_login(unittest.TestCase):
         # print(type(error))
         try:
             assert error == str(actual_error) and current_title == title, (
-                f"Login failed!\n"
+                "Login failed!\n"
                 f"Expected error: {error}, but got: {actual_error}\n"
                 f"Expected title: '{title}', but got: '{current_title}'"
             )
@@ -61,10 +65,10 @@ class Test_001_login(unittest.TestCase):
         result_text = self.fpassword_page.check_presence_of_forgot_password_text()
         try:
             assert result_text is True, (
-                f"Test failed: Expected forgotten password text to be present, but it was not found\n"
+                "Test failed: Expected forgotten password text to be present, but it was not found\n"
                 f"Expected: True, Actual: {result_text}\n"
             )
-            self.logger.info(f"Forgotten password text is displayed correctly.")
+            self.logger.info("Forgotten password text is displayed correctly.")
         except AssertionError as e:
             self.logger.error(f"Error Details: {e}")
             self.driver.save_screenshot(os.path.join(os.getcwd(), "forgot_password_error.png"))
@@ -80,13 +84,13 @@ class Test_001_login(unittest.TestCase):
         current_title = self.driver.title
         try:
             assert current_title == "My Account", (
-                f"Login failed!\n"
+                "Login failed!\n"
                 f"Expected page title: 'My Account', but got: '{current_title}'"
             )
             self.logger.info(f"Login successful - User redirected to '{current_title}'")
         except AssertionError as e:
             self.logger.error(
-                f"Login test using keyboard keys failed!\n"
+                "Login test using keyboard keys failed!\n"
                 f"Error details: {e}"
             )
             self.driver.save_screenshot(os.path.join(os.getcwd(), "login_error.png"))
@@ -102,15 +106,15 @@ class Test_001_login(unittest.TestCase):
         placeholder_text_passwordB = self.login_page.check_placeholder_text_in_password_field()
         try:
             assert placeholder_text_emailB == True and placeholder_text_passwordB == True, (
-                f"Test failed: Placeholder text is missing in one or both fields.\n"
-                f"Expected placeholders to be present in both fields.\n"
+                "Test failed: Placeholder text is missing in one or both fields.\n"
+                "Expected placeholders to be present in both fields.\n"
                 f"Expected: Email field Boolean value (True), but got: {placeholder_text_emailB}\n"
                 f"Expected: Password field Boolean value (True), but got: {placeholder_text_passwordB}"
             )
             self.logger.info("Placeholder text is correctly displayed in both email and password fields.")
         except AssertionError as e:
             self.logger.error(
-                f"Placeholder text validation failed!\n"
+                "Placeholder text validation failed!\n"
                 f"Error details: {e}\n"
             )
             self.driver.save_screenshot(".\\Screenshots\\placeholderText.png")
@@ -132,7 +136,7 @@ class Test_001_login(unittest.TestCase):
             self.logger.info("Password field is correctly masked.")
         except AssertionError as e:
             self.logger.error(
-                f"Password visibility test failed!\n"
+                "Password visibility test failed!\n"
                 f"Error details: {e}"
             )
             raise
@@ -147,13 +151,13 @@ class Test_001_login(unittest.TestCase):
         self.login_page.log_me_in(email, password)
         current_title = self.driver.title
         try:
-            assert current_title == "My Account", f"Test failed: User wasn't logged in, the title is wrong"
+            assert current_title == "My Account", "Test failed: User wasn't logged in, the title is wrong"
             self.logger.info("User logged successfully in by using login at the right-hand-menu")
         except AssertionError as e:
             self.logger.error(f"Login via right hand menu wasn't successfully: {e}. Actual Title: {current_title}")
             assert False
 
-    @pytest.mark.regression
+    #@pytest.mark.regression
     @data(("username@gmail.de", "admin1"))
     @unpack
     def test_login_logout(self, email, password):
@@ -164,13 +168,13 @@ class Test_001_login(unittest.TestCase):
         current_title = self.driver.title
         try:
             assert current_title == "My Account", (
-                f"Login failed!\n"
+                "Login failed!\n"
                 f"Expected page title: 'My Account', but got: '{current_title}'"
             )
             self.logger.info(f"Login successful - User redirected to '{current_title}'")
         except AssertionError as e:
             self.logger.error(
-                f"Login test was not successful!" "The login/logout test cannot be proceeded.\n"
+                "Login test was not successful!" "The login/logout test cannot be proceeded.\n"
                 f"Error details: {e} "
             )
             raise
@@ -182,19 +186,20 @@ class Test_001_login(unittest.TestCase):
         second_current_title = self.driver.title
         try:
             assert second_current_title == "Account Login", (
-                f"Logout failed!\n"
+                "Logout failed!\n"
                 f"Expected page title: 'My Account', but got: '{second_current_title}"
             )
             self.logger.info(f"Logout was successful as expected. Actual title: {second_current_title}.")
         except AssertionError as e:
             self.driver.save_screenshot(os.path.join(os.getcwd(), "logout.png"))
             self.logger.error(
-                f"The logout functionality is not working as expected."
+                "The logout functionality is not working as expected."
                 f"Error details: {e} "
             )
             raise
         self.driver.close()
 
+    @pytest.mark.regression
     @data(("username@gmail.de", "admin1"))
     @unpack
     def test_change_password_after_login(self, email, password):
@@ -204,15 +209,54 @@ class Test_001_login(unittest.TestCase):
         current_title = self.driver.title
         try:
             assert current_title == "My Account", (
-                f"Login failed!\n"
+                "Login failed!\n"
                 f"Expected page title: 'My Account', but got: '{current_title}'"
             )
             self.logger.info(f"Login successful - User redirected to '{current_title}'")
         except AssertionError as e:
             self.logger.error(
-                f"Login test was not successful!" "The change password after login test cannot be proceeded.\n"
+                "Login test was not successful!" "The change password after login test cannot be proceeded.\n"
                 f"Error details: {e} "
             )
             raise
         self.my_account.clickOnPasswordButton()
+        self.changePassword_page.input_new_password("admin")
+        self.changePassword_page.input_confirm_new_password("admin")
+        self.changePassword_page.click_on_continue_button()
+        current_success_message = self.my_account.getSuccessMessagePasswordUpdate()
+        success_message = "Success: Your password has been successfully updated."
+        current_title = self.driver.title
 
+        try:
+            assert current_title == "My Account" and current_success_message in success_message, (
+                "Password update validation failed!\n"
+                f"Expected page title: 'My Account', but got: '{current_title}'\n"
+                f"Expected error message: '{success_message}', Actual error message: '{self.my_account.getSuccessMessagePasswordUpdate()}'\n"
+            )
+            self.logger.info("Password change was successful. User is on 'My Account' page.")
+        except AssertionError as e:
+            self.logger.error(
+                "Password change verification failed!\n"
+                f"Error details: {e} "
+            )
+            raise
+
+        self.logger.info("Proceeding with logout and login verification after password change.")
+        self.my_account.clickOnLogoutButton()
+        self.logout_page.clickOnLoginButton()
+        self.login_page.log_me_in(email, password)
+        current_title = self.driver.title
+
+        try:
+            assert current_title == "My Account", (
+                "Login failed!\n"
+                f"Expected page title: 'My Account', but got: '{current_title}'"
+            )
+            self.logger.info(f"Login successful - User redirected to '{current_title}'")
+        except AssertionError as e:
+            self.logger.error(
+                "Login attempt was unsuccessful! Incorrect password entered.\n"
+                "Please enter your new password to proceed.\n"
+                f"Error details: {e}"
+            )
+            raise

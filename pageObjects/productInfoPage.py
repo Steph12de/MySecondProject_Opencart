@@ -1,9 +1,9 @@
-from base.base_driver import Base_driver
+from base.base_driver import BaseDriver
 from utilities.custom_logger import LogGen
 from utilities.locators.productinfoPageLocators import ProductInfoPageLocators
 
 
-class ProductInfoPage(Base_driver):
+class ProductInfoPage(BaseDriver):
     #logger = LogGen.loggen()
 
     def __init__(self, driver):

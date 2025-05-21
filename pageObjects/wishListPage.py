@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
 
-from base.base_driver import Base_driver
+from base.base_driver import BaseDriver
 from utilities.locators.wishListPageLocators import WishListPageLocators
 
 
-class WishListPage(Base_driver):
+class WishListPage(BaseDriver):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver

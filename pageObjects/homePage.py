@@ -3,12 +3,12 @@ import time
 from selenium.webdriver import ActionChains
 
 from utilities.locators.homePageLocators import HomePageLocators
-from base.base_driver import Base_driver
+from base.base_driver import BaseDriver
 from utilities.custom_logger import LogGen
 from selenium.webdriver.common.by import By
 
 
-class HomePage(Base_driver):
+class HomePage(BaseDriver):
     #logger = LogGen.loggen()
 
     def __init__(self, driver):

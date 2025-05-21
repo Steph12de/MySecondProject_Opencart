@@ -1,8 +1,8 @@
 from utilities.locators.forgottenPasswordPageLocators import ForgottenPasswordPageLocators
-from base.base_driver import Base_driver
+from base.base_driver import BaseDriver
 
 
-class ForgottenPasswordPage(Base_driver):
+class ForgottenPasswordPage(BaseDriver):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver

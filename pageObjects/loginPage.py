@@ -1,10 +1,10 @@
-from base.base_driver import Base_driver
+from base.base_driver import BaseDriver
 from selenium.webdriver.common.keys import Keys
 from utilities.locators.loginPageLocators import LoginPageLocators
 from utilities.custom_logger import LogGen
 
 
-class LoginPage(Base_driver):
+class LoginPage(BaseDriver):
 
     # logger = LogGen.loggen()
 

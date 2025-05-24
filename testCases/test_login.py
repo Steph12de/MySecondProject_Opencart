@@ -12,6 +12,7 @@ from pageObjects.logoutPage import LogoutPage
 from pageObjects.myAccountPage import MyAccountPage
 from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
+from utilities.readProperties import ReadConfig
 from utilities.utils import Utils
 from ddt import ddt, data, unpack
 
@@ -19,6 +20,10 @@ from ddt import ddt, data, unpack
 @ddt
 class Test_001_login(unittest.TestCase):
     logger = LogGen.loggen()
+    email = ReadConfig.getEmail()
+    password = ReadConfig.getPassword()
+    new_password = ReadConfig.getNewPassword()
+    wrong_password = ReadConfig.getWrongPassword()
 
     @pytest.fixture(autouse=True)
     def class_setup(self, setUp):
@@ -97,7 +102,7 @@ class Test_001_login(unittest.TestCase):
             raise
         self.driver.close()
 
-    #@pytest.mark.regression
+    # @pytest.mark.regression
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Navigated to login page")
@@ -122,7 +127,7 @@ class Test_001_login(unittest.TestCase):
 
         self.driver.close()
 
-    #@pytest.mark.regression
+    # @pytest.mark.regression
     def test_password_text_is_hidden(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Navigated to login page")
@@ -157,15 +162,14 @@ class Test_001_login(unittest.TestCase):
             self.logger.error(f"Login via right hand menu wasn't successfully: {e}. Actual Title: {current_title}")
             assert False
 
-    #@pytest.mark.regression
-    @data(("username@gmail.de", "admin1"))
-    @unpack
-    def test_login_logout(self, email, password):
+    # @pytest.mark.regression
+    def test_login_logout(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Starting the Login and Logout test execution")
         self.login_page.click_login_button_right_hand_menu()
-        self.login_page.log_me_in(email, password)
+        self.login_page.log_me_in(self.email, self.password)
         current_title = self.driver.title
+
         try:
             assert current_title == "My Account", (
                 "Login failed!\n"
@@ -178,12 +182,14 @@ class Test_001_login(unittest.TestCase):
                 f"Error details: {e} "
             )
             raise
+
         self.my_account.clickOnWishListButton()
         self.wishlist.clickOnLogoutButtonRightHandMenu()
         time.sleep(2)
         self.driver.back()
         self.wishlist.clickOnpasswordRightHandMenu()
         second_current_title = self.driver.title
+
         try:
             assert second_current_title == "Account Login", (
                 "Logout failed!\n"
@@ -200,12 +206,10 @@ class Test_001_login(unittest.TestCase):
         self.driver.close()
 
     @pytest.mark.regression
-    @data(("username@gmail.de", "admin1"))
-    @unpack
-    def test_change_password_after_login(self, email, password):
+    def test_change_password_after_login(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Starting the change password test after login.")
-        self.login_page.log_me_in(email, password)
+        self.login_page.log_me_in(self.email, self.password)
         current_title = self.driver.title
         try:
             assert current_title == "My Account", (
@@ -220,15 +224,15 @@ class Test_001_login(unittest.TestCase):
             )
             raise
         self.my_account.clickOnPasswordButton()
-        self.changePassword_page.input_new_password("admin")
-        self.changePassword_page.input_confirm_new_password("admin")
+        self.changePassword_page.input_new_password(self.new_password)
+        self.changePassword_page.input_confirm_new_password(self.new_password)
         self.changePassword_page.click_on_continue_button()
         current_success_message = self.my_account.getSuccessMessagePasswordUpdate()
         success_message = "Success: Your password has been successfully updated."
         current_title = self.driver.title
 
         try:
-            assert current_title == "My Account" and current_success_message in success_message, (
+            assert current_title == "My Account" and success_message in current_success_message, (
                 "Password update validation failed!\n"
                 f"Expected page title: 'My Account', but got: '{current_title}'\n"
                 f"Expected error message: '{success_message}', Actual error message: '{self.my_account.getSuccessMessagePasswordUpdate()}'\n"
@@ -241,10 +245,33 @@ class Test_001_login(unittest.TestCase):
             )
             raise
 
-        self.logger.info("Proceeding with logout and login verification after password change.")
+        self.logger.info("Proceeding with logout and re-login verification after password change.")
         self.my_account.clickOnLogoutButton()
         self.logout_page.clickOnLoginButton()
-        self.login_page.log_me_in(email, password)
+        self.login_page.log_me_in(self.email, self.password)
+        current_title = self.driver.title
+        expected_title = "Account Login"
+
+        try:
+            assert current_title == expected_title, (
+                "Login verification failed!\n"
+                f"Expected page title: '{expected_title}', but got: '{current_title}'"
+            )
+            self.logger.info(f"Test passed: Login unsuccessful as expected - User was not redirected to 'My Account'.")
+        except AssertionError as e:
+            self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "passwordChangeLogin.png"))
+            self.logger.error(
+                "Unexpected login success despite incorrect password!\n"
+                f"Error details: {e}"
+            )
+            raise
+
+    #@pytest.mark.regression
+    def test_change_password_after_login_negative_test(self):
+        self.home_page.bring_me_to_login_page()
+        self.logger.info("Starting negative test for password change after login.")
+
+        self.login_page.log_me_in(self.email, self.new_password)
         current_title = self.driver.title
 
         try:
@@ -255,8 +282,34 @@ class Test_001_login(unittest.TestCase):
             self.logger.info(f"Login successful - User redirected to '{current_title}'")
         except AssertionError as e:
             self.logger.error(
-                "Login attempt was unsuccessful! Incorrect password entered.\n"
-                "Please enter your new password to proceed.\n"
-                f"Error details: {e}"
+                "Login test was not successful!" "The change password after login test cannot be proceeded.\n"
+                f"Error details: {e} "
             )
             raise
+
+        self.my_account.clickOnPasswordButton()
+        self.changePassword_page.input_new_password(self.new_password)
+        self.changePassword_page.input_confirm_new_password(self.wrong_password)
+        self.changePassword_page.click_on_continue_button()
+
+        actual_error_message = self.changePassword_page.getErrorMessage()
+        expected_error_message = "Password confirmation does not match password!"
+        current_title = self.driver.title
+        expected_title = "Change Password"
+
+        try:
+            assert current_title == expected_title and expected_error_message in actual_error_message, (
+                "Mismatch was not handled correctly.\n"
+                f"Expected page title: '{expected_title}', but got: '{current_title}'.\n"
+                #f"Expected error message: '{expected_error_message}', but received: '{actual_error_message}'."
+            )
+            self.logger.info(f"Test passed: Password mismatch correctly detected - Error message: '{actual_error_message}'.")
+        except AssertionError as e:
+            self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "wrongpassword.png"))
+            self.logger.error(
+                "Negative test for password change failed!\n"
+                f"Error details: {e} "
+            )
+            raise
+
+

@@ -18,6 +18,10 @@ class ChangePasswordPage(BaseDriver):
     def getContinueButton(self):
         return self.wait_for_element_visible(self.locators.continue_button)
 
+    def getErrorMessage(self):
+        expected_error_message = self.wait_for_element_visible(self.locators.expected_error_message).text
+        return expected_error_message
+
     def input_new_password(self, password):
         self.getPasswordField().send_keys(password)
 

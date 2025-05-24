@@ -13,10 +13,14 @@ from utilities.custom_logger import LogGen
 from ddt import ddt, data, unpack
 import unittest
 
+from utilities.readProperties import ReadConfig
+
 
 @ddt
 class Test_002_addToCart(unittest.TestCase):
     logger = LogGen.loggen()
+    email = ReadConfig.getEmail()
+    password = ReadConfig.getPassword()
 
     @pytest.fixture(autouse=True)
     def class_setup(self, setUp):
@@ -29,12 +33,10 @@ class Test_002_addToCart(unittest.TestCase):
         self.wishList_page = WishListPage(self.driver)
         self.cart_page = ShoppingCartPage(self.driver)
 
-    #@pytest.mark.regression
-    @data(("username@gmail.de", "admin"))
-    @unpack
-    def test_add_to_cart_from_product_display(self, email, password):
+    # @pytest.mark.regression
+    def test_add_to_cart_from_product_display(self):
         self.home_page.bring_me_to_login_page()
-        self.login_page.log_me_in(email, password)
+        self.login_page.log_me_in(self.email, self.password)
         self.myAccount_page.inputSearchElement("imac")
         self.myAccount_page.clickOnSearchButton()
         self.search_page.click_on_imac_image()
@@ -55,12 +57,10 @@ class Test_002_addToCart(unittest.TestCase):
 
         self.driver.close()
 
-    #@pytest.mark.regression
-    @data(("username@gmail.de", "admin"))
-    @unpack
-    def test_add_product_to_wish_list(self, email, password):
+    # @pytest.mark.regression
+    def test_add_product_to_wish_list(self):
         self.home_page.bring_me_to_login_page()
-        self.login_page.log_me_in(email, password)
+        self.login_page.log_me_in(self.email, self.password)
         self.myAccount_page.clickOnWishListButton()
         self.wishList_page.clickOnAddToCartIcon("Samsung SyncMaster 941BW")
         try:
@@ -82,4 +82,3 @@ class Test_002_addToCart(unittest.TestCase):
     def test_add_to_cart_from_desktops(self):
         self.home_page.go_to_desktops()
         self.driver.close()
-

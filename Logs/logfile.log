@@ -1432,3 +1432,67 @@ assert 'Account Login' == 'My Account'
   
   - My Account
   + Account Login 
+2025-05-24 14:09:29,944 :INFO :Starting the change password test after login.
+2025-05-24 14:09:30,723 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-24 14:10:30,656 :INFO :Starting the change password test after login.
+2025-05-24 14:10:31,713 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-24 14:13:04,435 :INFO :Starting the change password test after login.
+2025-05-24 14:13:05,699 :INFO :Login successful - User redirected to 'My Account'
+2025-05-24 14:13:08,297 :INFO :Password change was successful. User is on 'My Account' page.
+2025-05-24 14:13:08,298 :INFO :Proceeding with logout and login verification after password change.
+2025-05-24 14:13:12,166 :ERROR :Login attempt was unsuccessful! Incorrect password entered.
+Please enter your new password to proceed.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-05-24 15:06:41,688 :INFO :Starting negative test for password change after login.
+2025-05-24 15:06:43,345 :INFO :Login successful - User redirected to 'My Account'
+2025-05-24 15:06:45,016 :INFO :Test passed: Password mismatch correctly detected - Error message: 'Password confirmation does not match password!'.
+2025-05-24 15:12:00,429 :INFO :Starting the change password test after login.
+2025-05-24 15:12:01,749 :INFO :Login successful - User redirected to 'My Account'
+2025-05-24 15:12:03,345 :INFO :Password change was successful. User is on 'My Account' page.
+2025-05-24 15:12:03,345 :INFO :Proceeding with logout and login verification after password change.
+2025-05-24 15:12:07,595 :ERROR :Login attempt was unsuccessful! Incorrect password entered.
+Please enter your new password to proceed.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-05-24 15:46:12,864 :INFO :Starting the change password test after login.
+2025-05-24 15:46:14,251 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-24 15:53:45,234 :INFO :Starting the change password test after login.
+2025-05-24 15:53:47,073 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-24 15:54:30,182 :INFO :Starting the change password test after login.
+2025-05-24 15:54:32,423 :INFO :Login successful - User redirected to 'My Account'
+2025-05-24 15:54:35,487 :INFO :Password change was successful. User is on 'My Account' page.
+2025-05-24 15:54:35,487 :INFO :Proceeding with logout and re-login verification after password change.
+2025-05-24 15:54:38,110 :INFO :Test passed: Login unsuccessful as expected - User was not redirected to 'My Account'.

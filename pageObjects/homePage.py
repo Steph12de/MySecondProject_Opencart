@@ -27,6 +27,15 @@ class HomePage(BaseDriver):
         #element  = self.wait_for_element_visible(self.locators.desktop_button)
         #return self.driver.find_element(By.XPATH, "//a[@class='dropdown-toggle' and text()='Desktops']")
 
+    def getSearchInputField(self):
+        return self.wait_for_element_visible(self.locators.search_input_field)
+
+    def getWishListButton(self):
+        return self.wait_for_element_visible(self.locators.wish_list_button)
+
+    def getSearchButton(self):
+        return self.wait_for_element_visible(self.locators.search_button)
+
     def getShowAllDesktopsButton(self):
         return self.wait_for_element_visible(self.locators.show_all_desktops_button)
 
@@ -49,4 +58,14 @@ class HomePage(BaseDriver):
         self.getShowAllDesktopsButton().click()
         time.sleep(3)
         #print(self.getShowAllDesktopsButton())
+
+    def InputSearchElement(self, element):
+        self.getSearchInputField().clear()
+        self.getSearchInputField().send_keys(element)
+
+    def clickOnWishListButton(self):
+        self.getWishListButton().click()
+
+    def clickOnSearchButton(self):
+        self.getSearchButton().click()
 

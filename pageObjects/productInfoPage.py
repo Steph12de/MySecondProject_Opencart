@@ -31,9 +31,9 @@ class ProductInfoPage(BaseDriver):
         self.getItemButton().click()
 
     def check_success_message(self):
-        if self.getSuccessAddedMessage():
-            return True
-        else:
+        try:
+            return self.getSuccessAddedMessage()
+        except:
             return False
 
     def click_on_shopping_cart_link(self):

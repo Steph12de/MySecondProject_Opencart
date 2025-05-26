@@ -1496,3 +1496,344 @@ assert 'Account Login' == 'My Account'
 2025-05-24 15:54:35,487 :INFO :Password change was successful. User is on 'My Account' page.
 2025-05-24 15:54:35,487 :INFO :Proceeding with logout and re-login verification after password change.
 2025-05-24 15:54:38,110 :INFO :Test passed: Login unsuccessful as expected - User was not redirected to 'My Account'.
+2025-05-26 12:21:28,549 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:21:29,101 :INFO :Searching for 'iMac'.
+2025-05-26 12:21:30,273 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:21:30,455 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:21:31,028 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 12:21:31,558 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 12:21:36,591 :INFO :Product verification successful - 'iMac' is in the shopping cart.
+2025-05-26 12:21:36,795 :INFO :Test execution completed - Browser closed.
+2025-05-26 12:22:47,650 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:22:47,993 :INFO :Searching for 'iMac'.
+2025-05-26 12:22:49,137 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:22:49,305 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:26:21,552 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:26:21,924 :INFO :Searching for 'iMac'.
+2025-05-26 12:26:23,473 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:26:23,769 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:30:28,280 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:30:28,579 :INFO :Searching for 'iMac'.
+2025-05-26 12:30:30,523 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:30:30,678 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:37:34,722 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:37:35,201 :INFO :Searching for 'iMac'.
+2025-05-26 12:37:36,349 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:37:36,489 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:40:48,270 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:40:48,584 :INFO :Searching for 'iMac'.
+2025-05-26 12:40:49,739 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:40:49,878 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:42:09,856 :INFO :Starting the change password test after login.
+2025-05-26 12:42:10,940 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-05-26 12:43:27,259 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:43:27,675 :INFO :Searching for 'iMac'.
+2025-05-26 12:43:29,038 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:43:29,351 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:43:35,259 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_add_to_cart_success_message.png
+Error details: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF66CBFCF45+75717]
+	GetHandleVerifier [0x00007FF66CBFCFA0+75808]
+	(No symbol) [0x00007FF66C9C8F9A]
+	(No symbol) [0x00007FF66CA1F4C6]
+	(No symbol) [0x00007FF66CA1F77C]
+	(No symbol) [0x00007FF66CA72577]
+	(No symbol) [0x00007FF66CA473BF]
+	(No symbol) [0x00007FF66CA6F39C]
+	(No symbol) [0x00007FF66CA47153]
+	(No symbol) [0x00007FF66CA10421]
+	(No symbol) [0x00007FF66CA111B3]
+	GetHandleVerifier [0x00007FF66CEFD71D+3223453]
+	GetHandleVerifier [0x00007FF66CEF7CC2+3200322]
+	GetHandleVerifier [0x00007FF66CF15AF3+3322739]
+	GetHandleVerifier [0x00007FF66CC16A1A+180890]
+	GetHandleVerifier [0x00007FF66CC1E11F+211359]
+	GetHandleVerifier [0x00007FF66CC05294+109332]
+	GetHandleVerifier [0x00007FF66CC05442+109762]
+	GetHandleVerifier [0x00007FF66CBEBA59+4825]
+	BaseThreadInitThunk [0x00007FFC088BE8D7+23]
+	RtlUserThreadStart [0x00007FFC09B3C5DC+44]
+
+2025-05-26 12:50:43,991 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 12:50:44,401 :INFO :Searching for 'iMac'.
+2025-05-26 12:50:46,721 :INFO :Navigating to iMac product detail page.
+2025-05-26 12:50:46,890 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 12:50:52,799 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_add_to_cart_success_message.png
+Error details: Failed to display success message after adding product.
+  Expected success message was not found.
+assert False is True
+ +  where False = check_success_message()
+ +    where check_success_message = <pageObjects.productInfoPage.ProductInfoPage object at 0x0000023DB6B65520>.check_success_message
+ +      where <pageObjects.productInfoPage.ProductInfoPage object at 0x0000023DB6B65520> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.product_page
+2025-05-26 13:04:41,322 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:04:41,518 :INFO :Searching for 'iMac'.
+2025-05-26 13:04:43,259 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:04:43,409 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:04:44,038 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:04:44,762 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:04:50,217 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert None is True
+ +  where None = check_product_name('iMacx')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000021B993B5340>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000021B993B5340> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 13:06:57,473 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:06:57,837 :INFO :Searching for 'iMac'.
+2025-05-26 13:06:59,234 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:06:59,405 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:06:59,966 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:07:00,530 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:08:14,795 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:08:15,144 :INFO :Searching for 'iMac'.
+2025-05-26 13:08:16,477 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:08:16,650 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:08:17,274 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:08:17,755 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:09:30,907 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:09:31,288 :INFO :Searching for 'iMac'.
+2025-05-26 13:09:32,442 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:09:32,593 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:09:33,150 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:09:33,656 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:13:21,213 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:13:21,515 :INFO :Searching for 'iMac'.
+2025-05-26 13:13:22,821 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:13:22,985 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:13:23,544 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:13:24,077 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:14:12,725 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:14:13,087 :INFO :Searching for 'iMac'.
+2025-05-26 13:14:14,233 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:14:14,440 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:14:15,002 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:14:15,537 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:14:20,575 :INFO :Product verification successful - 'iMac' is in the shopping cart.
+2025-05-26 13:14:20,844 :INFO :Test execution completed - Browser closed.
+2025-05-26 13:15:09,704 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:15:10,140 :INFO :Searching for 'iMac'.
+2025-05-26 13:15:13,703 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:15:13,832 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:15:14,480 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:15:15,091 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:15:20,133 :INFO :Product verification successful - 'iMac test' is in the shopping cart.
+2025-05-26 13:15:20,436 :INFO :Test execution completed - Browser closed.
+2025-05-26 13:17:16,688 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:17:16,863 :INFO :Searching for 'iMac'.
+2025-05-26 13:17:18,044 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:17:18,221 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:17:18,778 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:17:19,262 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:21:56,815 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:21:57,154 :INFO :Searching for 'iMac'.
+2025-05-26 13:21:58,994 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:21:59,142 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:21:59,764 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:22:00,327 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:25:36,794 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:25:37,195 :INFO :Searching for 'iMac'.
+2025-05-26 13:25:38,313 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:25:38,483 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:25:39,061 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:25:39,556 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:27:49,389 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:27:49,736 :INFO :Searching for 'iMac'.
+2025-05-26 13:27:51,031 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:27:51,325 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:27:51,902 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:27:52,664 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:31:15,299 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:31:15,739 :INFO :Searching for 'iMac'.
+2025-05-26 13:31:16,831 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:31:16,995 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:31:17,552 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:31:18,032 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:31:23,442 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000021E69E914F0>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000021E69E914F0> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 13:32:55,665 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:32:55,984 :INFO :Searching for 'iMac'.
+2025-05-26 13:32:57,488 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:32:57,923 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:32:57,975 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:32:58,439 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:33:03,842 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000023A46BC5400>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000023A46BC5400> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 13:35:51,470 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:35:51,887 :INFO :Searching for 'iMac'.
+2025-05-26 13:35:53,143 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:35:53,368 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:35:53,986 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:35:54,598 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:36:00,031 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002671F535610>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002671F535610> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 13:40:17,774 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:40:18,113 :INFO :Searching for 'iMac'.
+2025-05-26 13:40:20,051 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:40:20,196 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:40:20,751 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:40:21,259 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:40:26,830 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001C5C22A1370>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001C5C22A1370> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 13:42:53,698 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:42:54,030 :INFO :Searching for 'iMac'.
+2025-05-26 13:42:55,251 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:42:55,390 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:42:55,950 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:42:56,442 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:43:01,882 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x00000289AA108830>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x00000289AA108830> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 13:45:25,892 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 13:45:26,191 :INFO :Searching for 'iMac'.
+2025-05-26 13:45:27,394 :INFO :Navigating to iMac product detail page.
+2025-05-26 13:45:27,549 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 13:45:28,100 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 13:45:28,653 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 13:45:34,117 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000027FE49F4EC0>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000027FE49F4EC0> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 14:11:28,973 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 14:11:29,410 :INFO :Searching for 'iMac'.
+2025-05-26 14:11:30,817 :INFO :Navigating to iMac product detail page.
+2025-05-26 14:11:31,035 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 14:11:31,601 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 14:11:32,479 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:11:38,136 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000028275BD4350>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000028275BD4350> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-26 14:24:04,076 :INFO :successful message is displayed
+2025-05-26 14:24:04,905 :INFO :The product is successfully added
+2025-05-26 14:24:07,323 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-26 14:24:39,347 :INFO :successful message is displayed
+2025-05-26 14:24:39,961 :INFO :The product is successfully added
+2025-05-26 14:26:26,814 :INFO :successful message is displayed
+2025-05-26 14:26:32,495 :INFO :The product is successfully added
+2025-05-26 14:27:20,158 :INFO :successful message is displayed
+2025-05-26 14:27:25,886 :ERROR :Test felgeschlagen: Test failed
+assert False == True
+ +  where False = check_product_name('Samsung SyncMaster 941BW add')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001E4D4A490D0>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001E4D4A490D0> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_product_to_wish_list>.cart_page
+2025-05-26 14:42:18,548 :INFO :Starting test: Add product to wish list.
+2025-05-26 14:42:19,339 :INFO :Navigating to Login section.
+2025-05-26 14:42:20,567 :INFO :Logging in to proceed with adding product from wish list.
+2025-05-26 14:42:21,067 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-05-26 14:42:21,667 :INFO :Success message correctly displayed after adding product.
+2025-05-26 14:42:22,261 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:42:22,323 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-05-26 14:42:22,475 :INFO :Test execution completed - Browser closed.
+2025-05-26 14:43:07,757 :INFO :Starting test: Add product to wish list.
+2025-05-26 14:43:08,410 :INFO :Navigating to Login section.
+2025-05-26 14:43:09,460 :INFO :Logging in to proceed with adding product from wish list.
+2025-05-26 14:43:09,903 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-05-26 14:43:10,503 :INFO :Success message correctly displayed after adding product.
+2025-05-26 14:43:11,225 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:43:11,887 :ERROR :Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_wishlist_product_cart_verification.png
+Error details: Error: 'Samsung SyncMaster 941BW' not found in shopping cart after adding from wish list.
+  
+assert False is True
+ +  where False = check_product_name('Samsung SyncMaster 941BW add')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000015E8A7E8D40>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000015E8A7E8D40> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_product_to_wish_list>.cart_page
+2025-05-26 14:45:04,021 :INFO :Starting test: Add product to wish list.
+2025-05-26 14:45:04,799 :INFO :Navigating to Login section.
+2025-05-26 14:45:05,826 :INFO :Logging in to proceed with adding product from wish list.
+2025-05-26 14:45:06,186 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-05-26 14:45:06,249 :INFO :Success message correctly displayed after adding product.
+2025-05-26 14:45:07,558 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:45:07,865 :ERROR :Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_wishlist_product_cart_verification.png
+Error details: Error: 'Samsung SyncMaster 941BW' not found in shopping cart after adding from wish list.
+  
+assert False is True
+ +  where False = check_product_name('Samsung SyncMaster 941BW add')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001C7BB625550>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001C7BB625550> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_product_to_wish_list>.cart_page
+2025-05-26 14:47:02,759 :INFO :Starting test: Add product to wish list.
+2025-05-26 14:47:03,496 :INFO :Navigating to Login section.
+2025-05-26 14:47:04,555 :INFO :Logging in to proceed with adding product from wish list.
+2025-05-26 14:47:04,932 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-05-26 14:47:04,950 :INFO :Success message correctly displayed after adding product.
+2025-05-26 14:47:05,328 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:47:05,403 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-05-26 14:47:07,238 :INFO :Test execution completed - Browser closed.
+2025-05-26 14:47:41,627 :INFO :Starting test: Add product to wish list.
+2025-05-26 14:47:42,619 :INFO :Navigating to Login section.
+2025-05-26 14:47:43,637 :INFO :Logging in to proceed with adding product from wish list.
+2025-05-26 14:47:44,033 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-05-26 14:47:44,636 :INFO :Success message correctly displayed after adding product.
+2025-05-26 14:47:45,214 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:47:45,266 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-05-26 14:47:45,578 :INFO :Test execution completed - Browser closed.
+2025-05-26 14:47:47,755 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-26 14:48:05,172 :INFO :Starting test: Add product to wish list.
+2025-05-26 14:48:05,931 :INFO :Navigating to Login section.
+2025-05-26 14:48:07,037 :INFO :Logging in to proceed with adding product from wish list.
+2025-05-26 14:48:07,586 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-05-26 14:48:08,184 :INFO :Success message correctly displayed after adding product.
+2025-05-26 14:48:08,678 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:48:08,743 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-05-26 14:48:09,001 :INFO :Test execution completed - Browser closed.
+2025-05-26 14:48:14,090 :INFO :Starting test: Add product to cart from product display.
+2025-05-26 14:48:14,417 :INFO :Searching for 'iMac'.
+2025-05-26 14:48:15,619 :INFO :Navigating to iMac product detail page.
+2025-05-26 14:48:15,764 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-05-26 14:48:16,316 :INFO :Success message displayed correctly after adding the product.
+2025-05-26 14:48:16,813 :INFO :Navigating to shopping cart to verify product presence.
+2025-05-26 14:48:17,300 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002495BF99A30>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002495BF99A30> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page

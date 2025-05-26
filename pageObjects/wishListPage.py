@@ -11,7 +11,8 @@ class WishListPage(BaseDriver):
         self.locators = WishListPageLocators
 
     def getNumberTotalOfRows(self):
-        Trows = len(self.locators.numbers_of_rows)
+        rows = self.wait_for_elements_visible(self.locators.numbers_of_rows)
+        Trows = len(rows)
         return Trows
 
     def clickOnAddToCartIcon(self, currentProductName):
@@ -21,7 +22,8 @@ class WishListPage(BaseDriver):
                                                        row) + "]//td[2]//a").text
             if productName == currentProductName:
                 self.wait_for_element_visible(self.locators.add_to_cart_icon).click()
-            break
+
+        return False
 
     def getShoppingCartHeaderIcon(self):
         return self.wait_for_element_visible(self.locators.shopping_cart_header_icon)

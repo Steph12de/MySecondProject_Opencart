@@ -18,7 +18,7 @@ from ddt import ddt, data, unpack
 
 
 @ddt
-class Test_001_login(unittest.TestCase):
+class Test_002_login(unittest.TestCase):
     logger = LogGen.loggen()
     email = ReadConfig.getEmail()
     password = ReadConfig.getPassword()

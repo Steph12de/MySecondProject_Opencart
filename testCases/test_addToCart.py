@@ -17,7 +17,7 @@ from utilities.readProperties import ReadConfig
 
 
 @ddt
-class Test_002_addToCart(unittest.TestCase):
+class Test_004_addToCart(unittest.TestCase):
     logger = LogGen.loggen()
     email = ReadConfig.getEmail()
     password = ReadConfig.getPassword()

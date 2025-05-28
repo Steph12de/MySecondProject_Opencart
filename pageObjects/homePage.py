@@ -5,7 +5,6 @@ from selenium.webdriver import ActionChains
 from utilities.locators.homePageLocators import HomePageLocators
 from base.base_driver import BaseDriver
 from utilities.custom_logger import LogGen
-from selenium.webdriver.common.by import By
 
 
 class HomePage(BaseDriver):
@@ -24,8 +23,6 @@ class HomePage(BaseDriver):
 
     def getDesktopsButton(self):
         return self.wait_for_element_visible(self.locators.desktop_button)
-        #element  = self.wait_for_element_visible(self.locators.desktop_button)
-        #return self.driver.find_element(By.XPATH, "//a[@class='dropdown-toggle' and text()='Desktops']")
 
     def getSearchInputField(self):
         return self.wait_for_element_visible(self.locators.search_input_field)
@@ -52,12 +49,9 @@ class HomePage(BaseDriver):
     def go_to_desktops(self):
         action_chain = ActionChains(self.driver)
         action_chain.move_to_element(self.getDesktopsButton()).perform()
-        self.logger.info("Move hover to Desktops")
-        time.sleep(5)
+        #time.sleep(2)
         #print(self.getDesktopsButton().text)
         self.getShowAllDesktopsButton().click()
-        time.sleep(3)
-        #print(self.getShowAllDesktopsButton())
 
     def inputSearchElement(self, element):
         self.getSearchInputField().clear()

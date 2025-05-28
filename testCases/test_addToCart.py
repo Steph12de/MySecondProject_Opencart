@@ -9,6 +9,7 @@ from pageObjects.myAccountPage import MyAccountPage
 from pageObjects.productInfoPage import ProductInfoPage
 from pageObjects.searchPage import SearchPage
 from pageObjects.shoppingCartPage import ShoppingCartPage
+from pageObjects.subcategoryDesktopsPage import SubcategoryDesktopsPage
 from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from ddt import ddt, data, unpack
@@ -33,6 +34,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.product_page = ProductInfoPage(self.driver)
         self.wishList_page = WishListPage(self.driver)
         self.cart_page = ShoppingCartPage(self.driver)
+        self.desktops_page = SubcategoryDesktopsPage(self.driver)
 
     #@pytest.mark.regression
     def test_add_to_cart_from_product_display(self):
@@ -135,7 +137,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    @pytest.mark.regression
+    #@pytest.mark.regression
     def test_add_to_cart_from_search_result(self):
         self.logger.info("Starting test: Add product to cart from search results.")
 
@@ -193,10 +195,9 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
+    @pytest.mark.regression
+    def test_add_to_cart_from_desktops_subcategory(self):
+        self.home_page.go_to_desktops()
+        self.desktops_page.clickOnProductCompareLink()
+        time.sleep(3)
 
-
-
-    # @pytest.mark.regression
-    # def test_add_to_cart_from_desktops(self):
-    #     self.home_page.go_to_desktops()
-    #     self.driver.close()

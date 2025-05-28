@@ -34,15 +34,15 @@ class Test_004_addToCart(unittest.TestCase):
         self.wishList_page = WishListPage(self.driver)
         self.cart_page = ShoppingCartPage(self.driver)
 
-    @pytest.mark.regression
+    #@pytest.mark.regression
     def test_add_to_cart_from_product_display(self):
         self.logger.info("Starting test: Add product to cart from product display.")
 
-        self.home_page.InputSearchElement("iMac")
+        self.home_page.inputSearchElement("iMac")
         self.logger.info("Searching for 'iMac'.")
 
         self.home_page.clickOnSearchButton()
-        self.search_page.click_on_imac_image()
+        self.search_page.clickOnImacImage()
         self.logger.info("Navigating to iMac product detail page.")
 
         self.product_page.click_on_add_to_cart_button()
@@ -53,11 +53,11 @@ class Test_004_addToCart(unittest.TestCase):
                 "Failed to display success message after adding product.\n"
                 "Expected success message was not found."
             )
-            print("Pass assert")
+            #print("Pass assert")
             self.logger.info("Success message displayed correctly after adding the product.")
         except AssertionError as e:
-            print("has error")
-            screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_add_to_cart_success_message.png")
+            #print("has error")
+            screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_product_page_add_success_message.png")
             self.driver.save_screenshot(screenshot_path)
             self.logger.error(
                 f"Error message Screenshot saved at: {screenshot_path}\n"
@@ -85,8 +85,8 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    @pytest.mark.regression
-    def test_add_product_to_wish_list(self):
+    #@pytest.mark.regression
+    def test_add_to_cart_from_wish_list(self):
         self.logger.info("Starting test: Add product to wish list.")
 
         self.home_page.clickOnWishListButton()
@@ -105,7 +105,8 @@ class Test_004_addToCart(unittest.TestCase):
             )
             self.logger.info("Success message correctly displayed after adding product.")
         except AssertionError as e:
-            screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_wishlist_add_to_cart_success_message.png")
+            screenshot_path = os.path.join(os.getcwd(), "Screenshots",
+                                           "failed_wishlist_add_to_cart_success_message.png")
             self.driver.save_screenshot(screenshot_path)
             self.logger.error(
                 "Error: Success message was not shown after adding product from wish list.\n"
@@ -134,7 +135,68 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    # @pytest.mark.regression
-    def test_add_to_cart_from_desktops(self):
-        self.home_page.go_to_desktops()
+    @pytest.mark.regression
+    def test_add_to_cart_from_search_result(self):
+        self.logger.info("Starting test: Add product to cart from search results.")
+
+        self.home_page.inputSearchElement("iMac")
+        self.logger.info("Searching for 'iMac'.")
+
+        self.home_page.clickOnSearchButton()
+        text_before = self.search_page.getCardTotalText()
+        self.search_page.clickOnAddToCartButton()
+
+        expected_success_message = "Success: You have added iMac to your shopping cart!"
+
+        try:
+            assert expected_success_message in self.search_page.getSuccessMessageText(), (
+                "Add to cart validation failed!\n"
+                "Expected success message was not displayed after adding product.\n"
+                f"Expected message: '{expected_success_message}'\n"
+                f"Actual message: '{self.search_page.getSuccessMessageText()}'"
+            )
+            self.logger.info("Success message displayed correctly after adding the product.")
+        except AssertionError as e:
+            screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_add_to_cart_success_message.png")
+            self.driver.save_screenshot(screenshot_path)
+            self.logger.error(
+                f"Error message Screenshot saved at: {screenshot_path}\n"
+                f"Error details: {e}"
+            )
+            raise
+
+        self.logger.info(f"Waiting for shopping cart count to change from '{text_before}' to a new updated value.")
+        text_after = text_before
+        while text_after == text_before:
+            text_after = self.search_page.getCardTotalText()
+
+        self.logger.info(f"Cart item count updated. Previous: '{text_before}', New: '{text_after}'")
+
+        self.search_page.clickOnBlackCardButton()
+        self.search_page.clickOnViewCartButton()
+
+        try:
+            assert self.cart_page.check_product_name("iMa") is True, (
+                "Shopping cart verification failed!\n"
+                "'iMac' was expected in the cart but was not found."
+            )
+            self.logger.info("'iMac' was successfully added to the shopping cart.")
+        except AssertionError as e:
+            screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_cart_product_verification.png")
+            self.driver.save_screenshot(screenshot_path)
+            self.logger.error(
+                f"Screenshot saved at: {screenshot_path}\n"
+                f"Error details: {e}"
+            )
+            raise
+
         self.driver.close()
+        self.logger.info("Test execution completed - Browser closed.")
+
+
+
+
+    # @pytest.mark.regression
+    # def test_add_to_cart_from_desktops(self):
+    #     self.home_page.go_to_desktops()
+    #     self.driver.close()

@@ -59,7 +59,7 @@ class HomePage(BaseDriver):
         time.sleep(3)
         #print(self.getShowAllDesktopsButton())
 
-    def InputSearchElement(self, element):
+    def inputSearchElement(self, element):
         self.getSearchInputField().clear()
         self.getSearchInputField().send_keys(element)
 

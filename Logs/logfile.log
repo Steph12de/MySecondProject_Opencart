@@ -1837,3 +1837,111 @@ assert False is True
  +  where False = check_product_name('iMac test')
  +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002495BF99A30>.check_product_name
  +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000002495BF99A30> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-05-27 10:39:19,106 :INFO :Starting test: Add product to cart from search result.
+2025-05-27 10:39:19,651 :INFO :Searching for 'iMac'.
+2025-05-27 13:11:28,539 :INFO :Starting test: Add product to cart from search result.
+2025-05-27 13:11:29,052 :INFO :Searching for 'iMac'.
+2025-05-27 13:11:30,472 :INFO :Success message displayed correctly after adding the product.
+2025-05-27 13:12:16,486 :INFO :Starting test: Add product to cart from search result.
+2025-05-27 13:12:16,844 :INFO :Searching for 'iMac'.
+2025-05-27 13:12:18,368 :INFO :Success message displayed correctly after adding the product.
+2025-05-27 13:13:01,615 :INFO :Starting test: Add product to cart from search result.
+2025-05-27 13:13:02,016 :INFO :Searching for 'iMac'.
+2025-05-27 13:13:03,390 :INFO :Success message displayed correctly after adding the product.
+2025-05-27 13:18:51,378 :INFO :Starting test: Add product to cart from search result.
+2025-05-27 13:18:51,679 :INFO :Searching for 'iMac'.
+2025-05-27 13:18:52,996 :INFO :Success message displayed correctly after adding the product.
+2025-05-27 13:20:24,432 :INFO :Starting test: Add product to cart from search result.
+2025-05-27 13:20:24,815 :INFO :Searching for 'iMac'.
+2025-05-27 13:20:26,130 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 00:37:25,107 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 00:37:25,643 :INFO :Searching for 'iMac'.
+2025-05-28 00:37:27,145 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 00:38:05,945 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 00:38:06,227 :INFO :Searching for 'iMac'.
+2025-05-28 00:38:07,598 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 00:38:15,032 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-28 09:48:52,534 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 09:48:53,013 :INFO :Searching for 'iMac'.
+2025-05-28 09:48:54,597 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 09:49:33,790 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 09:49:34,250 :INFO :Searching for 'iMac'.
+2025-05-28 09:49:35,787 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 09:49:43,595 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-28 09:53:23,856 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 09:53:24,142 :INFO :Searching for 'iMac'.
+2025-05-28 09:53:25,493 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 09:53:33,620 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-28 10:02:37,054 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 10:02:37,429 :INFO :Searching for 'iMac'.
+2025-05-28 10:02:38,725 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 10:02:40,101 :ERROR :Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_wishlist_product_cart_verification.png
+Error details: Error: 'iMac' not found in shopping cart after adding from search page.
+  
+assert False is True
+ +  where False = check_product_name('iMa')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001FDFAC6F4D0>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x000001FDFAC6F4D0> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_search_result>.cart_page
+2025-05-28 10:03:55,511 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 10:03:55,729 :INFO :Searching for 'iMac'.
+2025-05-28 10:04:24,052 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 10:04:24,375 :INFO :Searching for 'iMac'.
+2025-05-28 10:04:25,746 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 10:04:26,609 :INFO :'iMac' was successfully added to the shopping cart.
+2025-05-28 10:04:26,725 :INFO :Test execution completed - Browser closed.
+2025-05-28 10:04:29,007 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-28 10:07:00,977 :INFO :Starting test: Add product to cart from search result.
+2025-05-28 10:07:01,269 :INFO :Searching for 'iMac'.
+2025-05-28 10:07:02,928 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 10:07:03,669 :INFO :'iMac' was successfully added to the shopping cart.
+2025-05-28 10:07:04,006 :INFO :Test execution completed - Browser closed.
+2025-05-28 10:07:06,197 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-05-28 10:31:19,706 :INFO :Starting test: Add product to cart from search results.
+2025-05-28 10:31:20,059 :INFO :Searching for 'iMac'.
+2025-05-28 10:31:21,459 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 10:31:21,459 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-05-28 10:31:21,525 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-05-28 10:31:22,295 :INFO :'iMac' was successfully added to the shopping cart.
+2025-05-28 10:31:22,578 :INFO :Test execution completed - Browser closed.
+2025-05-28 10:35:05,105 :INFO :Starting test: Add product to cart from search results.
+2025-05-28 10:35:05,409 :INFO :Searching for 'iMac'.
+2025-05-28 10:35:06,775 :INFO :Success message displayed correctly after adding the product.
+2025-05-28 10:35:06,775 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-05-28 10:35:06,823 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-05-28 10:35:08,015 :ERROR :Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_cart_product_verification.png
+Error details: Shopping cart verification failed!
+  'iMac' was expected in the cart but was not found.
+assert False is True
+ +  where False = check_product_name('iMa')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000019E6F325670>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000019E6F325670> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_search_result>.cart_page

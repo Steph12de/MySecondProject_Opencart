@@ -1945,3 +1945,14 @@ assert False is True
  +  where False = check_product_name('iMa')
  +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000019E6F325670>.check_product_name
  +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000019E6F325670> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_search_result>.cart_page
+2025-06-02 10:13:56,320 :INFO :Login successful - User redirected to 'My Account'
+2025-06-02 11:45:27,628 :INFO :Login successful - User redirected to 'My Account'
+2025-06-02 11:46:21,265 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-02 11:46:36,611 :INFO :Login successful - User redirected to 'My Account'
+2025-06-02 11:47:21,211 :INFO :Login successful - User redirected to 'My Account'

@@ -3,6 +3,7 @@ import time
 
 import pytest
 
+from pageObjects.comparisonPage import ComparisonPage
 from pageObjects.homePage import HomePage
 from pageObjects.loginPage import LoginPage
 from pageObjects.myAccountPage import MyAccountPage
@@ -35,6 +36,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.wishList_page = WishListPage(self.driver)
         self.cart_page = ShoppingCartPage(self.driver)
         self.desktops_page = SubcategoryDesktopsPage(self.driver)
+        self.comparison_page = ComparisonPage(self.driver)
 
     #@pytest.mark.regression
     def test_add_to_cart_from_product_display(self):
@@ -195,9 +197,25 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    @pytest.mark.regression
-    def test_add_to_cart_from_desktops_subcategory(self):
-        self.home_page.go_to_desktops()
-        self.desktops_page.clickOnProductCompareLink()
-        time.sleep(3)
+    # @pytest.mark.regression
+    # def test_add_to_cart_via_product_comparison_page(self):
+    #     self.home_page.bring_me_to_login_page()
+    #     self.login_page.log_me_in(self.email, self.password)
+    #     current_title = self.driver.title
+    #     try:
+    #         assert current_title == "My Account", (
+    #             "Login failed!\n"
+    #             f"Expected page title: 'My Account', but got: '{current_title}'"
+    #         )
+    #         self.logger.info(f"Login successful - User redirected to '{current_title}'")
+    #     except AssertionError as e:
+    #         self.logger.error(
+    #             "Login test was not successful!" "The change password after login test cannot be proceeded.\n"
+    #             f"Error details: {e} "
+    #         )
+    #         raise
+    #     self.home_page.go_to_desktops()
+    #     self.desktops_page.clickOnProductCompareLink()
+    #     self.comparison_page.getAddToCartIpodClassic()
+    #     time.sleep(3)
 

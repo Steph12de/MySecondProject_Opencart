@@ -8,7 +8,7 @@ from utilities.custom_logger import LogGen
 
 
 class HomePage(BaseDriver):
-    #logger = LogGen.loggen()
+    # logger = LogGen.loggen()
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -20,6 +20,9 @@ class HomePage(BaseDriver):
 
     def getLoginButtonHomePage(self):
         return self.wait_for_element_visible(self.locators.my_account_login)
+
+    def getRegisterButtonHomePage(self):
+        return self.wait_for_element_visible(self.locators.my_account_register)
 
     def getDesktopsButton(self):
         return self.wait_for_element_visible(self.locators.desktop_button)
@@ -42,15 +45,22 @@ class HomePage(BaseDriver):
     def click_my_account_login_HomePage(self):
         self.getLoginButtonHomePage().click()
 
+    def click_my_account_register_homePage(self):
+        self.getRegisterButtonHomePage().click()
+
     def bring_me_to_login_page(self):
         self.click_my_account()
         self.click_my_account_login_HomePage()
 
+    def bring_me_to_register_page(self):
+        self.click_my_account()
+        self.click_my_account_register_homePage()
+
     def go_to_desktops(self):
         action_chain = ActionChains(self.driver)
         action_chain.move_to_element(self.getDesktopsButton()).perform()
-        #time.sleep(2)
-        #print(self.getDesktopsButton().text)
+        # time.sleep(2)
+        # print(self.getDesktopsButton().text)
         self.getShowAllDesktopsButton().click()
 
     def inputSearchElement(self, element):
@@ -62,4 +72,3 @@ class HomePage(BaseDriver):
 
     def clickOnSearchButton(self):
         self.getSearchButton().click()
-

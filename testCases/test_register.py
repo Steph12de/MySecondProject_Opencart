@@ -21,5 +21,8 @@ class Test_001_Register(unittest.TestCase):
             mydb = mysql.connector.connect(host="localhost", port="3306", user="root", password="MyPassword1234", database="mydb")
             cursor = mydb.cursor()
             cursor.execute("SELECT * FROM Registration")
+            result = cursor.fetchall()
+            for row in result:
+                print(row[2])
         except:
             print("Connection unsuccessfully...")

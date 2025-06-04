@@ -1956,3 +1956,34 @@ assert 'Account Login' == 'My Account'
   + Account Login 
 2025-06-02 11:46:36,611 :INFO :Login successful - User redirected to 'My Account'
 2025-06-02 11:47:21,211 :INFO :Login successful - User redirected to 'My Account'
+2025-06-04 12:35:09,569 :INFO :
+2025-06-04 12:38:42,861 :INFO :connection successfull
+2025-06-04 12:45:30,314 :INFO :connection successfull
+2025-06-04 12:47:50,081 :INFO :connection successfull
+2025-06-04 12:48:17,063 :INFO :test passed
+2025-06-04 12:48:17,066 :INFO :connection closed
+2025-06-04 12:57:31,365 :INFO :connection successfull
+2025-06-04 12:57:39,820 :INFO :test passed
+2025-06-04 12:57:41,194 :INFO :connection closed
+2025-06-04 13:01:55,109 :INFO :connection successfull
+2025-06-04 13:02:05,963 :INFO :test passed
+2025-06-04 13:02:07,257 :INFO :test passed
+2025-06-04 13:02:07,263 :INFO :connection closed
+2025-06-04 13:02:35,599 :INFO :connection successfull
+2025-06-04 13:02:44,727 :INFO :test passed
+2025-06-04 13:02:45,919 :ERROR :test failed
+2025-06-04 13:02:46,214 :INFO :connection closed
+2025-06-04 13:35:23,669 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-06-04 13:36:43,822 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig

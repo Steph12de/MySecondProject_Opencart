@@ -265,6 +265,7 @@ class Test_002_login(unittest.TestCase):
                 f"Error details: {e}"
             )
             raise
+        self.driver.close()
 
     #@pytest.mark.regression
     def test_change_password_after_login_negative_test(self):
@@ -312,4 +313,4 @@ class Test_002_login(unittest.TestCase):
             )
             raise
 
-
+        self.driver.close()

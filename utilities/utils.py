@@ -1,3 +1,6 @@
+import string
+import random
+
 from openpyxl import workbook, load_workbook
 
 
@@ -16,3 +19,8 @@ class Utils:
                 row.append(ws.cell(r, c).value)
             data_list.append(row)
         return data_list
+
+    @staticmethod
+    def random_email():
+        domains = ["gmail.com", "yahoo.com", "outlook.com"]
+        return f"emailtest{random.randint(1, 1000)}@{random.choice(domains)}"

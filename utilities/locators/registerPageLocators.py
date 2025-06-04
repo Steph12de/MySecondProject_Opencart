@@ -5,7 +5,7 @@ class RegisterPageLocators:
     first_name_input = (By.XPATH, "//input[@id='input-firstname']")
     last_name_input = (By.XPATH, "//input[@id='input-lastname']")
     eMail_input = (By.XPATH, "//input[@id='input-email']")
-    telephone_input = (By.ID, "input-email")
+    telephone_input = (By.ID, "input-telephone")
     password_input = (By.NAME, "password")
     password_confirm_input = (By.ID, "input-confirm")
     newsletter_subscribe = (By.XPATH, "//label[@class='radio-inline']//input[@value='0']")

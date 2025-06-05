@@ -9,4 +9,5 @@ class LoginPageLocators:
     login_error_message = (By.XPATH, "//div[@class='alert alert-danger alert-dismissible']")
     forgotten_password_text = (By.LINK_TEXT, "Forgotten Password")
     loginButtonRightHandMenu = (By.XPATH, "//div[@class='list-group']//a[1]")
+    continue_button = (By.LINK_TEXT, "Continue")
 

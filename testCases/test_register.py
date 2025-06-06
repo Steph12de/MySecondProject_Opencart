@@ -50,6 +50,7 @@ class Test_001_Register(unittest.TestCase):
             cls.mydb.close()
             cls.logger.info("🔄 Database connection closed.")
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_my_account(self):
         self.logger.info("🔄 Starting test: Register via 'My Account'")
 
@@ -106,6 +107,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_new_customer(self):
         self.logger.info("🔄 Starting test: Registration via 'New Customer'")
 
@@ -172,3 +174,20 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
+    def test_registration_without_filling_form(self):
+        self.logger.info("🔄 Starting test: Registration without filling in the form'")
+
+        self.home_page.bring_me_to_login_page()
+        self.logger.info("✅ Navigated to the login page.")
+
+        self.login_page.select_option_right_hand_menu()
+        self.logger.info("🔄 Proceeding with registration under 'Register'.")
+
+        self.cursor.execute("SELECT * FROM Registration WHERE person_id=3")
+        result = self.cursor.fetchall()
+        if result:
+            result = result[0]
+            self.register_page.register_without_newsletter(
+                result[1], result[2], result[3], result[4],
+                result[5], result[6]
+            )

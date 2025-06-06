@@ -97,3 +97,12 @@ class LoginPage(BaseDriver):
             return True
         else:
             return False
+
+    def select_option_right_hand_menu(self):
+        elements = self.wait_for_elements_visible(self.my_locators.right_hand_menu_elements)
+        for element in elements:
+            if element.text == "Register":
+                print(element.text)
+                element.click()
+                break
+        return False

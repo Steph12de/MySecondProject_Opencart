@@ -10,4 +10,6 @@ class LoginPageLocators:
     forgotten_password_text = (By.LINK_TEXT, "Forgotten Password")
     loginButtonRightHandMenu = (By.XPATH, "//div[@class='list-group']//a[1]")
     continue_button = (By.LINK_TEXT, "Continue")
+    right_hand_menu_elements = (By.XPATH, "//div[@class='list-group']//a")
+
 

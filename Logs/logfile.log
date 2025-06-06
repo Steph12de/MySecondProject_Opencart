@@ -1994,3 +1994,10 @@ Traceback (most recent call last):
   File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
     _winapi.TerminateProcess(self._handle, 1)
 OSError: [WinError 6] Das Handle ist ungültig
+2025-06-06 09:17:13,902 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig

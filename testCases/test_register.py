@@ -16,7 +16,6 @@ from utilities.utils import Utils
 
 class Test_001_Register(unittest.TestCase):
     logger = LogGen.loggen()
-    random_mail = Utils.random_email()
 
     @pytest.fixture(autouse=True)
     def class_setup(self, setUp):
@@ -25,6 +24,7 @@ class Test_001_Register(unittest.TestCase):
         self.login_page = LoginPage(self.driver)
         self.register_page = RegisterPage(self.driver)
         self.created_page = AccountCreatedPage(self.driver)
+        self.random_mail = Utils.random_email()
 
     @classmethod
     def setup_class(cls):
@@ -120,9 +120,10 @@ class Test_001_Register(unittest.TestCase):
         # Retrieve registration data from the database
         self.logger.info("🔍 Fetching registration data for person_id=2 from 'Registration' table.")
         self.cursor.execute("SELECT * FROM Registration WHERE Person_id=2")
-        result = self.cursor.fetchone()
+        result = self.cursor.fetchall()
 
         if result:
+            result = result[0]
             self.logger.info(f"✅ Retrieved registration data: {result}")
 
             # Perform registration process

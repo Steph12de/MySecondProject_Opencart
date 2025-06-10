@@ -1,11 +1,14 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from utilities.custom_logger import LogGen
+
 
 class BaseDriver():
     def __init__(self, driver):
         self.driver = driver
         self.my_Wait = WebDriverWait(self.driver, 5)
+        self.logger = LogGen.loggen()
 
     def wait_for_element_visible(self, locator):
         return self.my_Wait.until(EC.visibility_of_element_located(locator))

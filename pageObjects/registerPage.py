@@ -38,6 +38,36 @@ class RegisterPage(BaseDriver):
     def get_continue_button(self):
         return self.wait_for_element_visible(self.locators.continue_button)
 
+    def get_presence_warning_message_privacy_policy(self):
+        return self.wait_text_to_be_present_in_element(self.locators.warning_message,
+                                                       " Warning: You must agree to the Privacy Policy!"
+                                                       )
+
+    def get_presence_warning_message_first_name(self):
+        return self.wait_text_to_be_present_in_element(self.locators.first_name_warning_message,
+                                                       "First Name must be between 1 and 32 characters!"
+                                                       )
+
+    def get_presence_warning_message_last_name(self):
+        return self.wait_text_to_be_present_in_element(self.locators.last_name_warning_message,
+                                                       "Last Name must be between 1 and 32 characters!"
+                                                       )
+
+    def get_presence_warning_message_eMail(self):
+        return self.wait_text_to_be_present_in_element(self.locators.eMail_warning_message,
+                                                       "E-Mail Address does not appear to be valid!"
+                                                       )
+
+    def get_presence_warning_message_telephone(self):
+        return self.wait_text_to_be_present_in_element(self.locators.telephone_warning_message,
+                                                       "Telephone must be between 3 and 32 characters!"
+                                                       )
+
+    def get_presence_password_message_password(self):
+        return self.wait_text_to_be_present_in_element(self.locators.password_warning_message,
+                                                       "Password must be between 4 and 20 characters!"
+                                                       )
+
     def input_first_name(self, firstName):
         self.get_first_nameInput().clear()
         self.get_first_nameInput().send_keys(firstName)
@@ -96,5 +126,50 @@ class RegisterPage(BaseDriver):
         self.click_on_privacy_checkBox()
         self.click_on_continue_button()
 
+    def check_warning_message_privacy_policy(self):
+        try:
+            self.logger.info("Checking presence of privacy policy warning message.")
+            return self.get_presence_warning_message_privacy_policy()
+        except Exception as e:
+            self.logger.error(f"Privacy policy warning message check failed: {e}")
+            return False
 
+    def check_warning_message_first_name(self):
+        try:
+            self.logger.info("Checking presence of first name warning message.")
+            return self.get_presence_warning_message_first_name()
+        except Exception as e:
+            self.logger.error(f"first name warning message check failed: {e}")
+            return False
 
+    def check_warning_message_last_name(self):
+        try:
+            self.logger.info("Checking presence of last name warning message.")
+            return self.get_presence_warning_message_last_name()
+        except Exception as e:
+            self.logger.error(f"last name warning message check failed: {e}")
+            return False
+
+    def check_warning_message_eMail(self):
+        try:
+            self.logger.info("Checking presence of eMail warning message.")
+            return self.get_presence_warning_message_eMail()
+        except Exception as e:
+            self.logger.error(f"eMail warning message check failed: {e}")
+            return False
+
+    def check_warning_message_telephone(self):
+        try:
+            self.logger.info("Checking presence of telephone warning message.")
+            return self.get_presence_warning_message_telephone()
+        except Exception as e:
+            self.logger.error(f"telephone warning message check failed: {e}")
+            return False
+
+    def check_warning_message_password(self):
+        try:
+            self.logger.info("Checking presence of password warning message.")
+            return self.get_presence_password_message_password()
+        except Exception as e:
+            self.logger.error(f"password warning message check failed: {e}")
+            return False

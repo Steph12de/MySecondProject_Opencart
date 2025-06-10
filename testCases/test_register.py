@@ -191,3 +191,7 @@ class Test_001_Register(unittest.TestCase):
                 result[1], result[2], result[3], result[4],
                 result[5], result[6]
             )
+            self.logger.info("✅ Registration process completed successfully.")
+
+            current_title = self.driver.title
+            expected_title = "Register Account"

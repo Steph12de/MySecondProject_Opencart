@@ -4121,3 +4121,29 @@ assert 'My Account' == 'My Account1'
 2025-06-11 10:59:03,958 :INFO :Registration process executed successfully.
 2025-06-11 10:59:09,980 :ERROR :Registration validation failed: Expected warning messages were missing.
 2025-06-11 10:59:09,987 :INFO :Database connection closed.
+2025-06-11 18:35:09,136 :INFO :Establishing database connection...
+2025-06-11 18:35:09,406 :INFO :Database connection established successfully.
+2025-06-11 18:35:14,775 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-11 18:35:16,240 :INFO :User navigated to the registration page.
+2025-06-11 18:35:16,240 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-11 18:35:20,055 :INFO :Registration process executed successfully.
+2025-06-11 18:35:20,116 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-11 18:35:26,921 :INFO :Starting test: Registration without filling in the form
+2025-06-11 18:35:27,583 :INFO :Navigated to the login page.
+2025-06-11 18:35:28,421 :INFO :Initiating registration via the 'Register' option.
+2025-06-11 18:35:29,768 :INFO :Registration process executed successfully.
+2025-06-11 18:35:35,868 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-11 18:35:36,313 :INFO :Database connection closed.
+2025-06-11 19:06:20,112 :INFO :Establishing database connection...
+2025-06-11 19:06:20,361 :INFO :Database connection established successfully.
+2025-06-11 19:06:34,611 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-11 19:06:45,552 :INFO :User navigated to the registration page.
+2025-06-11 19:06:45,558 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-11 19:07:05,931 :INFO :Registration process executed successfully.
+2025-06-11 19:07:06,546 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-11 19:07:24,412 :INFO :Starting test: Registration without filling in the form
+2025-06-11 19:07:27,348 :INFO :Navigated to the login page.
+2025-06-11 19:07:31,849 :INFO :Initiating registration via the 'Register' option.
+2025-06-11 19:07:45,181 :INFO :Registration process executed successfully.
+2025-06-11 19:07:55,815 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-11 19:07:58,165 :INFO :Database connection closed.

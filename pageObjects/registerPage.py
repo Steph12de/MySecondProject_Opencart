@@ -67,6 +67,11 @@ class RegisterPage(BaseDriver):
                                                        "Password must be between 4 and 20 characters! test"
                                                        )
 
+    def get_presence_confirm_password_message(self):
+        return self.wait_text_to_be_present_in_element(self.locators.confirm_password_warning_message,
+                                                       "Password confirmation does not match password!"
+                                                       )
+
     def input_first_name(self, firstName):
         self.get_first_nameInput().clear()
         self.get_first_nameInput().send_keys(firstName)
@@ -170,6 +175,12 @@ class RegisterPage(BaseDriver):
             return self.get_presence_password_message_password()
         except Exception as e:
             # self.logger.error(f"password warning message check failed: {e}")
+            return False
+
+    def check_warning_message_confirm_password(self):
+        try:
+            return self.get_presence_confirm_password_message()
+        except Exception as e:
             return False
 
     def check_warning_messages(self):

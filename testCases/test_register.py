@@ -50,7 +50,7 @@ class Test_001_Register(unittest.TestCase):
             cls.mydb.close()
             cls.logger.info("Database connection closed.")
 
-    #@pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_my_account(self):
         self.logger.info("Starting test: Register via 'My Account'")
 
@@ -64,8 +64,8 @@ class Test_001_Register(unittest.TestCase):
         if result:
             self.logger.info(f"Retrieved registration data: {result}")
             self.register_page.register_with_newsletter(result[1], result[2], self.random_mail, result[4],
-                                                           result[5], result[6], newsletter=False
-            )
+                                                        result[5], result[6], newsletter=False
+                                                        )
             self.logger.info("Registration process completed.")
 
             current_title = self.driver.title
@@ -107,7 +107,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
-    #@pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_new_customer(self):
         self.logger.info("Starting test: Registration via 'New Customer'")
 
@@ -143,7 +143,8 @@ class Test_001_Register(unittest.TestCase):
                 )
                 self.logger.info("Registration page test via 'New Customer' passed.")
             except AssertionError as e:
-                self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "RegistrationNewCustomer_page_error.png"))
+                self.driver.save_screenshot(
+                    os.path.join(os.getcwd(), "Screenshots", "RegistrationNewCustomer_page_error.png"))
                 self.logger.error(
                     "Registration via 'My Account' failed\n"
                     f"Error details: {e} "
@@ -175,7 +176,7 @@ class Test_001_Register(unittest.TestCase):
         self.driver.close()
 
     def test_registration_without_filling_form(self):
-        self.logger.info("Starting test: Registration without filling in the form'")
+        self.logger.info("Starting test: Registration without filling in the form")
 
         self.home_page.bring_me_to_login_page()
         self.logger.info("Navigated to the login page.")
@@ -203,6 +204,40 @@ class Test_001_Register(unittest.TestCase):
                 self.driver.save_screenshot(
                     os.path.join(os.getcwd(), "Screenshots", "RegistrationWithoutFillingForm_page_error.png"))
                 self.logger.error("Registration validation failed: Expected warning messages were missing.")
+                raise
+        else:
+            self.logger.warning("No registration data found in the database.")
+
+        self.driver.close()
+
+    def test_registration_with_different_password(self):
+        self.logger.info("Starting test: Attempting registration with mismatched passwords")
+
+        self.home_page.bring_me_to_register_page()
+        self.logger.info("User navigated to the registration page.")
+
+        self.logger.info("Retrieving user data from the 'Registration' table for test case.")
+        self.cursor.execute("SELECT * FROM Registration WHERE person_id=4")
+        result = self.cursor.fetchall()
+
+        if result:
+            result = result[0]
+            self.register_page.register_with_newsletter(
+                result[1], result[2], self.random_mail, result[4],
+                result[5], result[6], newsletter=False
+            )
+            self.logger.info("Registration process executed successfully.")
+
+            current_title = self.driver.title
+            expected_title = "Register Account"
+            try:
+                assert (current_title == expected_title and self.register_page.check_warning_message_confirm_password()), \
+                    "Registration form validation failed: Expected warning messages were not displayed."
+                self.logger.info("Validation successful: Password mismatch warning message appeared correctly.")
+            except AssertionError as e:
+                self.driver.save_screenshot(
+                    os.path.join(os.getcwd(), "Screenshots", "RegistrationMismatchedPassword.png"))
+                self.logger.error(f"Validation failed: Expected password confirmation warning message was missing.")
                 raise
         else:
             self.logger.warning("No registration data found in the database.")

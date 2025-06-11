@@ -18,3 +18,4 @@ class RegisterPageLocators:
     eMail_warning_message = (By.XPATH, "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
     telephone_warning_message = (By.XPATH, "//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")
     password_warning_message = (By.XPATH, "//div[contains(text(),'Password must be between 4 and 20 characters!')]")
+    confirm_password_warning_message = (By.XPATH, "//div[contains(text(),'Password confirmation does not match password!')]")

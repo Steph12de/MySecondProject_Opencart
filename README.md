@@ -26,16 +26,16 @@ Ziel ist es, die Funktionalität und Stabilität der Anwendung effizient durch a
 
 #  Projektstruktur (Beispiel)
 opencart-tests/
-├── base/ # Basisklassen (z. B. BaseDriver)
-├── Configuration/ # Konfigurationsdateien
-├── Logs/ # Automatisch generierte Log-Dateien
-├── pageObjects/ # Page Object Model-Klassen
-├── Reports/ # Testberichte (z. B. HTML Reports)
-├── Screenshots/ # Screenshots bei Fehlern oder zur Dokumentation
-├── testcases/ # Testskripte (z. B. Login, Checkout, Suche)
-├── Testdata/ # Externe Testdaten (CSV, Excel)
-├── utilites/ # Hilfsfunktionen (z. B. Logger, Leser für Excel/JSON)
-└── README.md # Projektdokumentation
+- ├── base/ # Basisklassen (z. B. BaseDriver)
+- ├── Configuration/ # Konfigurationsdateien
+- ├── Logs/ # Automatisch generierte Log-Dateien
+- ├── pageObjects/ # Page Object Model-Klassen
+- ├── Reports/ # Testberichte (z. B. HTML Reports)
+- ├── Screenshots/ # Screenshots bei Fehlern oder zur Dokumentation
+- ├── testcases/ # Testskripte (z. B. Login, Checkout, Suche)
+- ├── Testdata/ # Externe Testdaten (CSV, Excel)
+- ├── utilites/ # Hilfsfunktionen (z. B. Logger, Leser für Excel/JSON)
+- └── README.md # Projektdokumentation
 
 # Notizen
 Dieses Projekt dient dem Ausbau meiner Kenntnisse im Bereich Testautomatisierung mit Python.

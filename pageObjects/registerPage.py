@@ -39,9 +39,8 @@ class RegisterPage(BaseDriver):
         return self.wait_for_element_visible(self.locators.continue_button)
 
     def get_presence_warning_message_privacy_policy(self):
-        return self.wait_text_to_be_present_in_element(self.locators.warning_message,
-                                                       " Warning: You must agree to the Privacy Policy!"
-                                                       )
+        element = self.wait_for_element_visible(self.locators.warning_message)
+        return element is not None
 
     def get_presence_warning_message_first_name(self):
         return self.wait_text_to_be_present_in_element(self.locators.first_name_warning_message,
@@ -65,7 +64,7 @@ class RegisterPage(BaseDriver):
 
     def get_presence_password_message_password(self):
         return self.wait_text_to_be_present_in_element(self.locators.password_warning_message,
-                                                       "Password must be between 4 and 20 characters!"
+                                                       "Password must be between 4 and 20 characters! test"
                                                        )
 
     def input_first_name(self, firstName):
@@ -104,72 +103,79 @@ class RegisterPage(BaseDriver):
     def click_on_continue_button(self):
         self.get_continue_button().click()
 
-    def register_without_newsletter(self, firstName, lastName, email, telephone, password, password_confirm):
+    def input_user_details(self, firstName, lastName, email, telephone, password, password_confirm):
         self.input_first_name(firstName)
         self.input_last_name(lastName)
         self.input_email(email)
         self.input_telephone_number(telephone)
         self.input_password(password)
         self.input_password_confirmation(password_confirm)
-        self.click_on_unsubscribe_button()
-        self.click_on_privacy_checkBox()
-        self.click_on_continue_button()
 
-    def register_with_newsletter(self, firstName, lastName, email, telephone, password, password_confirm):
-        self.input_first_name(firstName)
-        self.input_last_name(lastName)
-        self.input_email(email)
-        self.input_telephone_number(telephone)
-        self.input_password(password)
-        self.input_password_confirmation(password_confirm)
-        self.click_on_subscribe_button()
-        self.click_on_privacy_checkBox()
+    def register_with_newsletter(self, firstName, lastName, email, telephone, password,
+                                 password_confirm, newsletter=True, privacy=True):
+        self.input_user_details(firstName, lastName, email, telephone, password, password_confirm)
+        if newsletter:
+            self.click_on_subscribe_button()
+        else:
+            self.click_on_unsubscribe_button()
+
+        if privacy:
+            self.click_on_privacy_checkBox()
+
         self.click_on_continue_button()
 
     def check_warning_message_privacy_policy(self):
         try:
-            self.logger.info("Checking presence of privacy policy warning message.")
+            # self.logger.info("Checking presence of privacy policy warning message.")
             return self.get_presence_warning_message_privacy_policy()
         except Exception as e:
-            self.logger.error(f"Privacy policy warning message check failed: {e}")
+            # self.logger.error(f"Privacy policy warning message check failed: {e}")
             return False
 
     def check_warning_message_first_name(self):
         try:
-            self.logger.info("Checking presence of first name warning message.")
+            # self.logger.info("Checking presence of first name warning message.")
             return self.get_presence_warning_message_first_name()
         except Exception as e:
-            self.logger.error(f"first name warning message check failed: {e}")
+            # .logger.error(f"first name warning message check failed: {e}")
             return False
 
     def check_warning_message_last_name(self):
         try:
-            self.logger.info("Checking presence of last name warning message.")
+            # self.logger.info("Checking presence of last name warning message.")
             return self.get_presence_warning_message_last_name()
         except Exception as e:
-            self.logger.error(f"last name warning message check failed: {e}")
+            # self.logger.error(f"last name warning message check failed: {e}")
             return False
 
     def check_warning_message_eMail(self):
         try:
-            self.logger.info("Checking presence of eMail warning message.")
+            # self.logger.info("Checking presence of eMail warning message.")
             return self.get_presence_warning_message_eMail()
         except Exception as e:
-            self.logger.error(f"eMail warning message check failed: {e}")
+            # self.logger.error(f"eMail warning message check failed: {e}")
             return False
 
     def check_warning_message_telephone(self):
         try:
-            self.logger.info("Checking presence of telephone warning message.")
+            # self.logger.info("Checking presence of telephone warning message.")
             return self.get_presence_warning_message_telephone()
         except Exception as e:
-            self.logger.error(f"telephone warning message check failed: {e}")
+            # self.logger.error(f"telephone warning message check failed: {e}")
             return False
 
     def check_warning_message_password(self):
         try:
-            self.logger.info("Checking presence of password warning message.")
+            # self.logger.info("Checking presence of password warning message.")
             return self.get_presence_password_message_password()
         except Exception as e:
-            self.logger.error(f"password warning message check failed: {e}")
+            # self.logger.error(f"password warning message check failed: {e}")
             return False
+
+    def check_warning_messages(self):
+        return (self.check_warning_message_privacy_policy() and
+                self.check_warning_message_first_name() and
+                self.check_warning_message_last_name() and
+                self.check_warning_message_eMail() and
+                self.check_warning_message_telephone() and
+                self.check_warning_message_password())

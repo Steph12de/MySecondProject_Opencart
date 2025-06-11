@@ -2009,3 +2009,2115 @@ OSError: [WinError 6] Das Handle ist ungültig
 2025-06-10 12:02:54,186 :INFO :Starting Registration
 2025-06-10 12:02:54,186 :INFO :Starting Registration
 2025-06-10 12:02:54,186 :INFO :Starting Registration
+2025-06-10 18:24:48,766 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:24:48,766 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:24:48,766 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:24:48,766 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:24:48,766 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:24:54,012 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,012 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,012 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,012 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,012 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,012 :INFO :Checking presence of first name warning message.
+2025-06-10 18:24:54,012 :INFO :Checking presence of first name warning message.
+2025-06-10 18:24:54,012 :INFO :Checking presence of first name warning message.
+2025-06-10 18:24:54,012 :INFO :Checking presence of first name warning message.
+2025-06-10 18:24:54,012 :INFO :Checking presence of first name warning message.
+2025-06-10 18:24:54,052 :INFO :Checking presence of last name warning message.
+2025-06-10 18:24:54,052 :INFO :Checking presence of last name warning message.
+2025-06-10 18:24:54,052 :INFO :Checking presence of last name warning message.
+2025-06-10 18:24:54,052 :INFO :Checking presence of last name warning message.
+2025-06-10 18:24:54,052 :INFO :Checking presence of last name warning message.
+2025-06-10 18:24:54,082 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:24:54,082 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:24:54,082 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:24:54,082 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:24:54,082 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:24:54,104 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,104 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,104 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,104 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,104 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,104 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:24:54,104 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:24:54,104 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:24:54,104 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:24:54,104 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:24:54,134 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,134 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,134 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,134 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,134 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,134 :INFO :Checking presence of password warning message.
+2025-06-10 18:24:54,134 :INFO :Checking presence of password warning message.
+2025-06-10 18:24:54,134 :INFO :Checking presence of password warning message.
+2025-06-10 18:24:54,134 :INFO :Checking presence of password warning message.
+2025-06-10 18:24:54,134 :INFO :Checking presence of password warning message.
+2025-06-10 18:24:54,162 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,162 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,162 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,162 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,162 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:24:54,165 :ERROR :
+2025-06-10 18:24:54,165 :ERROR :
+2025-06-10 18:24:54,165 :ERROR :
+2025-06-10 18:24:54,165 :ERROR :
+2025-06-10 18:24:54,165 :ERROR :
+2025-06-10 18:25:47,314 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:25:47,314 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:25:47,314 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:25:47,314 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:25:47,314 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:25:52,571 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,571 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,571 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,571 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,571 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,572 :INFO :Checking presence of first name warning message.
+2025-06-10 18:25:52,572 :INFO :Checking presence of first name warning message.
+2025-06-10 18:25:52,572 :INFO :Checking presence of first name warning message.
+2025-06-10 18:25:52,572 :INFO :Checking presence of first name warning message.
+2025-06-10 18:25:52,572 :INFO :Checking presence of first name warning message.
+2025-06-10 18:25:52,632 :INFO :Checking presence of last name warning message.
+2025-06-10 18:25:52,632 :INFO :Checking presence of last name warning message.
+2025-06-10 18:25:52,632 :INFO :Checking presence of last name warning message.
+2025-06-10 18:25:52,632 :INFO :Checking presence of last name warning message.
+2025-06-10 18:25:52,632 :INFO :Checking presence of last name warning message.
+2025-06-10 18:25:52,693 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:25:52,693 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:25:52,693 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:25:52,693 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:25:52,693 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:25:52,727 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,727 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,727 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,727 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,727 :ERROR :eMail warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression E-Mail Address does not appear to be valid! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'E-Mail Address does not appear to be valid!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,728 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:25:52,728 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:25:52,728 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:25:52,728 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:25:52,728 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:25:52,758 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,758 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,758 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,758 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,758 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Telephone must be between 3 and 32 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Telephone must be between 3 and 32 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,759 :INFO :Checking presence of password warning message.
+2025-06-10 18:25:52,759 :INFO :Checking presence of password warning message.
+2025-06-10 18:25:52,759 :INFO :Checking presence of password warning message.
+2025-06-10 18:25:52,759 :INFO :Checking presence of password warning message.
+2025-06-10 18:25:52,759 :INFO :Checking presence of password warning message.
+2025-06-10 18:25:52,795 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,795 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,795 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,795 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,795 :ERROR :password warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression Password must be between 4 and 20 characters! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Password must be between 4 and 20 characters!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:25:52,797 :ERROR :
+2025-06-10 18:25:52,797 :ERROR :
+2025-06-10 18:25:52,797 :ERROR :
+2025-06-10 18:25:52,797 :ERROR :
+2025-06-10 18:25:52,797 :ERROR :
+2025-06-10 18:31:04,893 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:31:04,893 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:31:04,893 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:31:04,893 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:31:04,893 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:31:10,204 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,204 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,204 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,204 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,204 :ERROR :Privacy policy warning message check failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef570586]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,205 :INFO :Checking presence of first name warning message.
+2025-06-10 18:31:10,205 :INFO :Checking presence of first name warning message.
+2025-06-10 18:31:10,205 :INFO :Checking presence of first name warning message.
+2025-06-10 18:31:10,205 :INFO :Checking presence of first name warning message.
+2025-06-10 18:31:10,205 :INFO :Checking presence of first name warning message.
+2025-06-10 18:31:10,236 :INFO :Checking presence of last name warning message.
+2025-06-10 18:31:10,236 :INFO :Checking presence of last name warning message.
+2025-06-10 18:31:10,236 :INFO :Checking presence of last name warning message.
+2025-06-10 18:31:10,236 :INFO :Checking presence of last name warning message.
+2025-06-10 18:31:10,236 :INFO :Checking presence of last name warning message.
+2025-06-10 18:31:10,268 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:31:10,268 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:31:10,268 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:31:10,268 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:31:10,268 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:31:10,300 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:31:10,300 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:31:10,300 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:31:10,300 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:31:10,300 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:31:10,327 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Telephone must be between 3 and 32 characters!')]! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Telephone must be between 3 and 32 characters!')]!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,327 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Telephone must be between 3 and 32 characters!')]! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Telephone must be between 3 and 32 characters!')]!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,327 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Telephone must be between 3 and 32 characters!')]! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Telephone must be between 3 and 32 characters!')]!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,327 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Telephone must be between 3 and 32 characters!')]! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Telephone must be between 3 and 32 characters!')]!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,327 :ERROR :telephone warning message check failed: Message: invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Telephone must be between 3 and 32 characters!')]! because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Telephone must be between 3 and 32 characters!')]!' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef75fea5+79173]
+	GetHandleVerifier [0x0x7ff7ef75ff00+79264]
+	(No symbol) [0x0x7ff7ef519e5a]
+	(No symbol) [0x0x7ff7ef52184d]
+	(No symbol) [0x0x7ff7ef52489c]
+	(No symbol) [0x0x7ff7ef52496f]
+	(No symbol) [0x0x7ff7ef56fe37]
+	(No symbol) [0x0x7ff7ef57083c]
+	(No symbol) [0x0x7ff7ef5c4247]
+	(No symbol) [0x0x7ff7ef5989af]
+	(No symbol) [0x0x7ff7ef5c100d]
+	(No symbol) [0x0x7ff7ef598743]
+	(No symbol) [0x0x7ff7ef5614c1]
+	(No symbol) [0x0x7ff7ef562253]
+	GetHandleVerifier [0x0x7ff7efa2a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7efa2472d+2981325]
+	GetHandleVerifier [0x0x7ff7efa43380+3107360]
+	GetHandleVerifier [0x0x7ff7ef77aa2e+188622]
+	GetHandleVerifier [0x0x7ff7ef7822bf+219487]
+	GetHandleVerifier [0x0x7ff7ef768df4+115860]
+	GetHandleVerifier [0x0x7ff7ef768fa9+116297]
+	GetHandleVerifier [0x0x7ff7ef74f558+11256]
+	BaseThreadInitThunk [0x0x7ffcbcd9e8d7+23]
+	RtlUserThreadStart [0x0x7ffcbda7c5dc+44]
+
+2025-06-10 18:31:10,327 :INFO :Checking presence of password warning message.
+2025-06-10 18:31:10,327 :INFO :Checking presence of password warning message.
+2025-06-10 18:31:10,327 :INFO :Checking presence of password warning message.
+2025-06-10 18:31:10,327 :INFO :Checking presence of password warning message.
+2025-06-10 18:31:10,327 :INFO :Checking presence of password warning message.
+2025-06-10 18:31:10,361 :ERROR :
+2025-06-10 18:31:10,361 :ERROR :
+2025-06-10 18:31:10,361 :ERROR :
+2025-06-10 18:31:10,361 :ERROR :
+2025-06-10 18:31:10,361 :ERROR :
+2025-06-10 18:40:48,183 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:40:48,183 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:40:48,183 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:40:48,183 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:40:48,183 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 18:40:53,670 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 18:40:53,670 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 18:40:53,670 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 18:40:53,670 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 18:40:53,670 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 18:40:53,671 :INFO :Checking presence of first name warning message.
+2025-06-10 18:40:53,671 :INFO :Checking presence of first name warning message.
+2025-06-10 18:40:53,671 :INFO :Checking presence of first name warning message.
+2025-06-10 18:40:53,671 :INFO :Checking presence of first name warning message.
+2025-06-10 18:40:53,671 :INFO :Checking presence of first name warning message.
+2025-06-10 18:40:53,712 :INFO :Checking presence of last name warning message.
+2025-06-10 18:40:53,712 :INFO :Checking presence of last name warning message.
+2025-06-10 18:40:53,712 :INFO :Checking presence of last name warning message.
+2025-06-10 18:40:53,712 :INFO :Checking presence of last name warning message.
+2025-06-10 18:40:53,712 :INFO :Checking presence of last name warning message.
+2025-06-10 18:40:53,746 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:40:53,746 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:40:53,746 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:40:53,746 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:40:53,746 :INFO :Checking presence of eMail warning message.
+2025-06-10 18:40:53,771 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:40:53,771 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:40:53,771 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:40:53,771 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:40:53,771 :INFO :Checking presence of telephone warning message.
+2025-06-10 18:40:53,794 :INFO :Checking presence of password warning message.
+2025-06-10 18:40:53,794 :INFO :Checking presence of password warning message.
+2025-06-10 18:40:53,794 :INFO :Checking presence of password warning message.
+2025-06-10 18:40:53,794 :INFO :Checking presence of password warning message.
+2025-06-10 18:40:53,794 :INFO :Checking presence of password warning message.
+2025-06-10 18:40:53,830 :ERROR :
+2025-06-10 18:40:53,830 :ERROR :
+2025-06-10 18:40:53,830 :ERROR :
+2025-06-10 18:40:53,830 :ERROR :
+2025-06-10 18:40:53,830 :ERROR :
+2025-06-10 22:57:28,222 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 22:57:28,222 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 22:57:28,222 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 22:57:28,222 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 22:57:28,222 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 22:57:33,659 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 22:57:33,659 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 22:57:33,659 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 22:57:33,659 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 22:57:33,659 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 22:57:33,659 :INFO :Checking presence of first name warning message.
+2025-06-10 22:57:33,659 :INFO :Checking presence of first name warning message.
+2025-06-10 22:57:33,659 :INFO :Checking presence of first name warning message.
+2025-06-10 22:57:33,659 :INFO :Checking presence of first name warning message.
+2025-06-10 22:57:33,659 :INFO :Checking presence of first name warning message.
+2025-06-10 22:57:33,712 :INFO :Checking presence of last name warning message.
+2025-06-10 22:57:33,712 :INFO :Checking presence of last name warning message.
+2025-06-10 22:57:33,712 :INFO :Checking presence of last name warning message.
+2025-06-10 22:57:33,712 :INFO :Checking presence of last name warning message.
+2025-06-10 22:57:33,712 :INFO :Checking presence of last name warning message.
+2025-06-10 22:57:33,752 :INFO :Checking presence of eMail warning message.
+2025-06-10 22:57:33,752 :INFO :Checking presence of eMail warning message.
+2025-06-10 22:57:33,752 :INFO :Checking presence of eMail warning message.
+2025-06-10 22:57:33,752 :INFO :Checking presence of eMail warning message.
+2025-06-10 22:57:33,752 :INFO :Checking presence of eMail warning message.
+2025-06-10 22:57:33,768 :INFO :Checking presence of telephone warning message.
+2025-06-10 22:57:33,768 :INFO :Checking presence of telephone warning message.
+2025-06-10 22:57:33,768 :INFO :Checking presence of telephone warning message.
+2025-06-10 22:57:33,768 :INFO :Checking presence of telephone warning message.
+2025-06-10 22:57:33,768 :INFO :Checking presence of telephone warning message.
+2025-06-10 22:57:33,806 :INFO :Checking presence of password warning message.
+2025-06-10 22:57:33,806 :INFO :Checking presence of password warning message.
+2025-06-10 22:57:33,806 :INFO :Checking presence of password warning message.
+2025-06-10 22:57:33,806 :INFO :Checking presence of password warning message.
+2025-06-10 22:57:33,806 :INFO :Checking presence of password warning message.
+2025-06-10 22:57:33,831 :ERROR :
+2025-06-10 22:57:33,831 :ERROR :
+2025-06-10 22:57:33,831 :ERROR :
+2025-06-10 22:57:33,831 :ERROR :
+2025-06-10 22:57:33,831 :ERROR :
+2025-06-10 23:07:56,467 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:07:56,467 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:07:56,467 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:07:56,467 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:07:56,467 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:08:01,522 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:08:01,522 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:08:01,522 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:08:01,522 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:08:01,522 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:08:01,522 :ERROR :
+2025-06-10 23:08:01,522 :ERROR :
+2025-06-10 23:08:01,522 :ERROR :
+2025-06-10 23:08:01,522 :ERROR :
+2025-06-10 23:08:01,522 :ERROR :
+2025-06-10 23:09:45,409 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:09:45,409 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:09:45,409 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:09:45,409 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:09:45,409 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:09:50,978 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:09:50,978 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:09:50,978 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:09:50,978 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:09:50,978 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:09:50,984 :ERROR :
+2025-06-10 23:09:50,984 :ERROR :
+2025-06-10 23:09:50,984 :ERROR :
+2025-06-10 23:09:50,984 :ERROR :
+2025-06-10 23:09:50,984 :ERROR :
+2025-06-10 23:16:08,402 :INFO :Checking presence of first name warning message.
+2025-06-10 23:16:08,402 :INFO :Checking presence of first name warning message.
+2025-06-10 23:16:08,402 :INFO :Checking presence of first name warning message.
+2025-06-10 23:16:08,402 :INFO :Checking presence of first name warning message.
+2025-06-10 23:16:08,402 :INFO :Checking presence of first name warning message.
+2025-06-10 23:16:08,440 :INFO :Checking presence of last name warning message.
+2025-06-10 23:16:08,440 :INFO :Checking presence of last name warning message.
+2025-06-10 23:16:08,440 :INFO :Checking presence of last name warning message.
+2025-06-10 23:16:08,440 :INFO :Checking presence of last name warning message.
+2025-06-10 23:16:08,440 :INFO :Checking presence of last name warning message.
+2025-06-10 23:16:08,483 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:16:08,483 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:16:08,483 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:16:08,483 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:16:08,483 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:16:08,507 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:16:08,507 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:16:08,507 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:16:08,507 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:16:08,507 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:16:08,549 :INFO :Checking presence of password warning message.
+2025-06-10 23:16:08,549 :INFO :Checking presence of password warning message.
+2025-06-10 23:16:08,549 :INFO :Checking presence of password warning message.
+2025-06-10 23:16:08,549 :INFO :Checking presence of password warning message.
+2025-06-10 23:16:08,549 :INFO :Checking presence of password warning message.
+2025-06-10 23:16:08,580 :INFO :
+2025-06-10 23:16:08,580 :INFO :
+2025-06-10 23:16:08,580 :INFO :
+2025-06-10 23:16:08,580 :INFO :
+2025-06-10 23:16:08,580 :INFO :
+2025-06-10 23:19:05,420 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:19:05,420 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:19:05,420 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:19:05,420 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:19:05,420 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:19:10,466 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:19:10,466 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:19:10,466 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:19:10,466 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:19:10,466 :ERROR :Privacy policy warning message check failed: Message: 
+
+2025-06-10 23:19:10,466 :ERROR :
+2025-06-10 23:19:10,466 :ERROR :
+2025-06-10 23:19:10,466 :ERROR :
+2025-06-10 23:19:10,466 :ERROR :
+2025-06-10 23:19:10,466 :ERROR :
+2025-06-10 23:20:47,281 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:20:47,281 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:20:47,281 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:20:47,281 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:20:47,281 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:20:47,358 :INFO :Checking presence of first name warning message.
+2025-06-10 23:20:47,358 :INFO :Checking presence of first name warning message.
+2025-06-10 23:20:47,358 :INFO :Checking presence of first name warning message.
+2025-06-10 23:20:47,358 :INFO :Checking presence of first name warning message.
+2025-06-10 23:20:47,358 :INFO :Checking presence of first name warning message.
+2025-06-10 23:20:47,390 :INFO :Checking presence of last name warning message.
+2025-06-10 23:20:47,390 :INFO :Checking presence of last name warning message.
+2025-06-10 23:20:47,390 :INFO :Checking presence of last name warning message.
+2025-06-10 23:20:47,390 :INFO :Checking presence of last name warning message.
+2025-06-10 23:20:47,390 :INFO :Checking presence of last name warning message.
+2025-06-10 23:20:47,429 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:20:47,429 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:20:47,429 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:20:47,429 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:20:47,429 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:20:47,458 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:20:47,458 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:20:47,458 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:20:47,458 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:20:47,458 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:20:47,488 :INFO :Checking presence of password warning message.
+2025-06-10 23:20:47,488 :INFO :Checking presence of password warning message.
+2025-06-10 23:20:47,488 :INFO :Checking presence of password warning message.
+2025-06-10 23:20:47,488 :INFO :Checking presence of password warning message.
+2025-06-10 23:20:47,488 :INFO :Checking presence of password warning message.
+2025-06-10 23:20:47,510 :INFO :
+2025-06-10 23:20:47,510 :INFO :
+2025-06-10 23:20:47,510 :INFO :
+2025-06-10 23:20:47,510 :INFO :
+2025-06-10 23:20:47,510 :INFO :
+2025-06-10 23:28:27,672 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:28:27,672 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:28:27,672 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:28:27,672 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:28:27,672 :INFO :Checking presence of privacy policy warning message.
+2025-06-10 23:28:27,719 :INFO :Checking presence of first name warning message.
+2025-06-10 23:28:27,719 :INFO :Checking presence of first name warning message.
+2025-06-10 23:28:27,719 :INFO :Checking presence of first name warning message.
+2025-06-10 23:28:27,719 :INFO :Checking presence of first name warning message.
+2025-06-10 23:28:27,719 :INFO :Checking presence of first name warning message.
+2025-06-10 23:28:27,782 :INFO :Checking presence of last name warning message.
+2025-06-10 23:28:27,782 :INFO :Checking presence of last name warning message.
+2025-06-10 23:28:27,782 :INFO :Checking presence of last name warning message.
+2025-06-10 23:28:27,782 :INFO :Checking presence of last name warning message.
+2025-06-10 23:28:27,782 :INFO :Checking presence of last name warning message.
+2025-06-10 23:28:27,820 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:28:27,820 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:28:27,820 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:28:27,820 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:28:27,820 :INFO :Checking presence of eMail warning message.
+2025-06-10 23:28:27,855 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:28:27,855 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:28:27,855 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:28:27,855 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:28:27,855 :INFO :Checking presence of telephone warning message.
+2025-06-10 23:28:27,888 :INFO :Checking presence of password warning message.
+2025-06-10 23:28:27,888 :INFO :Checking presence of password warning message.
+2025-06-10 23:28:27,888 :INFO :Checking presence of password warning message.
+2025-06-10 23:28:27,888 :INFO :Checking presence of password warning message.
+2025-06-10 23:28:27,888 :INFO :Checking presence of password warning message.
+2025-06-10 23:28:27,914 :INFO :
+2025-06-10 23:28:27,914 :INFO :
+2025-06-10 23:28:27,914 :INFO :
+2025-06-10 23:28:27,914 :INFO :
+2025-06-10 23:28:27,914 :INFO :
+2025-06-10 23:31:39,329 :INFO :Proceeding with new customer registration.
+2025-06-10 23:31:39,329 :INFO :Proceeding with new customer registration.
+2025-06-10 23:31:39,329 :INFO :Proceeding with new customer registration.
+2025-06-10 23:31:39,329 :INFO :Proceeding with new customer registration.
+2025-06-10 23:31:39,329 :INFO :Proceeding with new customer registration.
+2025-06-10 23:37:20,509 :INFO :Proceeding with new customer registration.
+2025-06-10 23:51:14,435 :INFO :Establishing database connection...
+2025-06-10 23:51:14,548 :INFO :Database connection established successfully.
+2025-06-10 23:51:18,691 :INFO :Starting test: Registration via 'New Customer'
+2025-06-10 23:51:19,569 :INFO :Navigated to the login page.
+2025-06-10 23:51:20,207 :INFO :Proceeding with new customer registration.
+2025-06-10 23:51:20,208 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-10 23:51:20,247 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-10 23:51:22,715 :INFO :Registration process completed successfully.
+2025-06-10 23:51:22,734 :INFO :Registration page test via 'New Customer' passed.
+2025-06-10 23:51:23,227 :INFO :Redirecting to 'My Account' page.
+2025-06-10 23:51:23,719 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-10 23:51:24,011 :INFO :Database connection closed.
+2025-06-11 00:21:15,858 :INFO :Establishing database connection...
+2025-06-11 00:21:16,081 :INFO :Database connection established successfully.
+2025-06-11 00:21:20,436 :INFO :Database connection closed.
+2025-06-11 00:22:13,314 :INFO :Establishing database connection...
+2025-06-11 00:22:13,349 :INFO :Database connection established successfully.
+2025-06-11 00:22:16,925 :INFO :Database connection closed.
+2025-06-11 00:24:08,634 :INFO :Establishing database connection...
+2025-06-11 00:24:08,662 :INFO :Database connection established successfully.
+2025-06-11 00:24:12,158 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 00:24:12,158 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 00:24:12,158 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 00:24:12,158 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 00:24:12,158 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 00:24:12,942 :INFO :Navigated to the login page.
+2025-06-11 00:24:12,942 :INFO :Navigated to the login page.
+2025-06-11 00:24:12,942 :INFO :Navigated to the login page.
+2025-06-11 00:24:12,942 :INFO :Navigated to the login page.
+2025-06-11 00:24:12,942 :INFO :Navigated to the login page.
+2025-06-11 00:24:13,641 :INFO :Proceeding with new customer registration.
+2025-06-11 00:24:13,641 :INFO :Proceeding with new customer registration.
+2025-06-11 00:24:13,641 :INFO :Proceeding with new customer registration.
+2025-06-11 00:24:13,641 :INFO :Proceeding with new customer registration.
+2025-06-11 00:24:13,641 :INFO :Proceeding with new customer registration.
+2025-06-11 00:24:13,642 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 00:24:13,642 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 00:24:13,642 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 00:24:13,642 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 00:24:13,642 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 00:24:13,703 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 00:24:13,703 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 00:24:13,703 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 00:24:13,703 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 00:24:13,703 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 00:24:16,125 :INFO :Registration process completed successfully.
+2025-06-11 00:24:16,125 :INFO :Registration process completed successfully.
+2025-06-11 00:24:16,125 :INFO :Registration process completed successfully.
+2025-06-11 00:24:16,125 :INFO :Registration process completed successfully.
+2025-06-11 00:24:16,125 :INFO :Registration process completed successfully.
+2025-06-11 00:24:16,175 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 00:24:16,175 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 00:24:16,175 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 00:24:16,175 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 00:24:16,175 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 00:24:16,725 :INFO :Redirecting to 'My Account' page.
+2025-06-11 00:24:16,725 :INFO :Redirecting to 'My Account' page.
+2025-06-11 00:24:16,725 :INFO :Redirecting to 'My Account' page.
+2025-06-11 00:24:16,725 :INFO :Redirecting to 'My Account' page.
+2025-06-11 00:24:16,725 :INFO :Redirecting to 'My Account' page.
+2025-06-11 00:24:17,220 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'Account Login'.
+assert 'Account Login' == 'My Account1'
+  
+  - My Account1
+  + Account Login 
+2025-06-11 00:24:17,220 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'Account Login'.
+assert 'Account Login' == 'My Account1'
+  
+  - My Account1
+  + Account Login 
+2025-06-11 00:24:17,220 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'Account Login'.
+assert 'Account Login' == 'My Account1'
+  
+  - My Account1
+  + Account Login 
+2025-06-11 00:24:17,220 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'Account Login'.
+assert 'Account Login' == 'My Account1'
+  
+  - My Account1
+  + Account Login 
+2025-06-11 00:24:17,220 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'Account Login'.
+assert 'Account Login' == 'My Account1'
+  
+  - My Account1
+  + Account Login 
+2025-06-11 00:24:17,392 :INFO :Database connection closed.
+2025-06-11 00:24:17,392 :INFO :Database connection closed.
+2025-06-11 00:24:17,392 :INFO :Database connection closed.
+2025-06-11 00:24:17,392 :INFO :Database connection closed.
+2025-06-11 00:24:17,392 :INFO :Database connection closed.
+2025-06-11 10:07:36,580 :INFO :Establishing database connection...
+2025-06-11 10:07:36,976 :INFO :Database connection established successfully.
+2025-06-11 10:07:42,398 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:07:42,398 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:07:42,398 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:07:42,398 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:07:42,398 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:07:43,549 :INFO :Navigated to the login page.
+2025-06-11 10:07:43,549 :INFO :Navigated to the login page.
+2025-06-11 10:07:43,549 :INFO :Navigated to the login page.
+2025-06-11 10:07:43,549 :INFO :Navigated to the login page.
+2025-06-11 10:07:43,549 :INFO :Navigated to the login page.
+2025-06-11 10:07:44,381 :INFO :Proceeding with new customer registration.
+2025-06-11 10:07:44,381 :INFO :Proceeding with new customer registration.
+2025-06-11 10:07:44,381 :INFO :Proceeding with new customer registration.
+2025-06-11 10:07:44,381 :INFO :Proceeding with new customer registration.
+2025-06-11 10:07:44,381 :INFO :Proceeding with new customer registration.
+2025-06-11 10:07:44,382 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:07:44,382 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:07:44,382 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:07:44,382 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:07:44,382 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:07:44,562 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:07:44,562 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:07:44,562 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:07:44,562 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:07:44,562 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:07:47,066 :INFO :Registration process completed successfully.
+2025-06-11 10:07:47,066 :INFO :Registration process completed successfully.
+2025-06-11 10:07:47,066 :INFO :Registration process completed successfully.
+2025-06-11 10:07:47,066 :INFO :Registration process completed successfully.
+2025-06-11 10:07:47,066 :INFO :Registration process completed successfully.
+2025-06-11 10:07:47,104 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:07:47,104 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:07:47,104 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:07:47,104 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:07:47,104 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:07:47,507 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:07:47,507 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:07:47,507 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:07:47,507 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:07:47,507 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:07:47,981 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:07:47,981 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:07:47,981 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:07:47,981 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:07:47,981 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:07:48,237 :INFO :Database connection closed.
+2025-06-11 10:07:48,237 :INFO :Database connection closed.
+2025-06-11 10:07:48,237 :INFO :Database connection closed.
+2025-06-11 10:07:48,237 :INFO :Database connection closed.
+2025-06-11 10:07:48,237 :INFO :Database connection closed.
+2025-06-11 10:10:20,570 :INFO :Establishing database connection...
+2025-06-11 10:10:20,647 :INFO :Database connection established successfully.
+2025-06-11 10:10:25,114 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:10:25,114 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:10:25,114 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:10:25,114 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:10:25,114 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:10:27,774 :INFO :Navigated to the login page.
+2025-06-11 10:10:27,774 :INFO :Navigated to the login page.
+2025-06-11 10:10:27,774 :INFO :Navigated to the login page.
+2025-06-11 10:10:27,774 :INFO :Navigated to the login page.
+2025-06-11 10:10:27,774 :INFO :Navigated to the login page.
+2025-06-11 10:10:29,089 :INFO :Proceeding with new customer registration.
+2025-06-11 10:10:29,089 :INFO :Proceeding with new customer registration.
+2025-06-11 10:10:29,089 :INFO :Proceeding with new customer registration.
+2025-06-11 10:10:29,089 :INFO :Proceeding with new customer registration.
+2025-06-11 10:10:29,089 :INFO :Proceeding with new customer registration.
+2025-06-11 10:10:29,090 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:10:29,090 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:10:29,090 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:10:29,090 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:10:29,090 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:10:29,097 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:10:29,097 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:10:29,097 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:10:29,097 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:10:29,097 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:10:31,983 :INFO :Registration process completed successfully.
+2025-06-11 10:10:31,983 :INFO :Registration process completed successfully.
+2025-06-11 10:10:31,983 :INFO :Registration process completed successfully.
+2025-06-11 10:10:31,983 :INFO :Registration process completed successfully.
+2025-06-11 10:10:31,983 :INFO :Registration process completed successfully.
+2025-06-11 10:10:32,027 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:10:32,027 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:10:32,027 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:10:32,027 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:10:32,027 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:10:32,460 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:10:32,460 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:10:32,460 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:10:32,460 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:10:32,460 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:10:32,930 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:10:32,930 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:10:32,930 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:10:32,930 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:10:32,930 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:10:33,106 :INFO :Database connection closed.
+2025-06-11 10:10:33,106 :INFO :Database connection closed.
+2025-06-11 10:10:33,106 :INFO :Database connection closed.
+2025-06-11 10:10:33,106 :INFO :Database connection closed.
+2025-06-11 10:10:33,106 :INFO :Database connection closed.
+2025-06-11 10:14:47,729 :INFO :Establishing database connection...
+2025-06-11 10:14:47,760 :INFO :Database connection established successfully.
+2025-06-11 10:14:52,311 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:14:53,530 :INFO :Navigated to the login page.
+2025-06-11 10:14:54,852 :INFO :Proceeding with new customer registration.
+2025-06-11 10:14:54,852 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:14:54,856 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:14:57,187 :INFO :Registration process completed successfully.
+2025-06-11 10:14:57,213 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:14:57,709 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:14:58,169 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:14:58,375 :INFO :Database connection closed.
+2025-06-11 10:33:08,698 :INFO :Establishing database connection...
+2025-06-11 10:33:08,827 :INFO :Database connection established successfully.
+2025-06-11 10:33:12,697 :INFO :Starting test: Register via 'My Account'
+2025-06-11 10:33:13,931 :INFO :Navigated to the registration page.
+2025-06-11 10:33:13,931 :INFO :Fetching data from 'Registration' table.
+2025-06-11 10:33:13,992 :INFO :Retrieved registration data: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2025-06-11 10:33:16,700 :INFO :Registration process completed.
+2025-06-11 10:33:16,718 :INFO :Registration page test via 'My Account' passed.
+2025-06-11 10:33:17,253 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:33:17,283 :INFO :My Account page test passed.
+2025-06-11 10:33:23,008 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:33:23,622 :INFO :Navigated to the login page.
+2025-06-11 10:33:24,485 :INFO :Proceeding with new customer registration.
+2025-06-11 10:33:24,485 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:33:24,498 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:33:26,593 :INFO :Registration process completed successfully.
+2025-06-11 10:33:26,630 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:33:27,068 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:33:27,489 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:33:30,937 :INFO :Starting test: Registration without filling in the form'
+2025-06-11 10:33:31,664 :INFO :Navigated to the login page.
+2025-06-11 10:33:32,627 :INFO :Proceeding with registration under 'Register'.
+2025-06-11 10:33:34,279 :INFO :Registration process completed successfully.
+2025-06-11 10:33:34,538 :INFO :
+2025-06-11 10:33:34,737 :INFO :Database connection closed.
+2025-06-11 10:55:11,020 :INFO :Establishing database connection...
+2025-06-11 10:55:11,214 :INFO :Database connection established successfully.
+2025-06-11 10:55:16,343 :INFO :Starting test: Register via 'My Account'
+2025-06-11 10:55:17,556 :INFO :Navigated to the registration page.
+2025-06-11 10:55:17,557 :INFO :Fetching data from 'Registration' table.
+2025-06-11 10:55:17,637 :INFO :Retrieved registration data: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2025-06-11 10:55:20,367 :INFO :Registration process completed.
+2025-06-11 10:55:20,422 :INFO :Registration page test via 'My Account' passed.
+2025-06-11 10:55:20,933 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:55:20,967 :INFO :My Account page test passed.
+2025-06-11 10:55:26,755 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:55:27,398 :INFO :Navigated to the login page.
+2025-06-11 10:55:28,162 :INFO :Proceeding with new customer registration.
+2025-06-11 10:55:28,162 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:55:28,180 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:55:30,477 :INFO :Registration process completed successfully.
+2025-06-11 10:55:30,572 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:55:30,977 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:55:30,991 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:55:36,037 :INFO :Starting test: Registration without filling in the form'
+2025-06-11 10:55:36,781 :INFO :Navigated to the login page.
+2025-06-11 10:55:38,041 :INFO :Initiating registration via the 'Register' option.
+2025-06-11 10:55:39,875 :INFO :Registration process executed successfully.
+2025-06-11 10:55:40,218 :INFO :Registration validation passed: Warning messages appeared correctly.
+2025-06-11 10:55:40,462 :INFO :Database connection closed.
+2025-06-11 10:58:36,991 :INFO :Establishing database connection...
+2025-06-11 10:58:37,135 :INFO :Database connection established successfully.
+2025-06-11 10:58:41,040 :INFO :Starting test: Register via 'My Account'
+2025-06-11 10:58:43,060 :INFO :Navigated to the registration page.
+2025-06-11 10:58:43,061 :INFO :Fetching data from 'Registration' table.
+2025-06-11 10:58:43,131 :INFO :Retrieved registration data: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2025-06-11 10:58:46,152 :INFO :Registration process completed.
+2025-06-11 10:58:46,192 :INFO :Registration page test via 'My Account' passed.
+2025-06-11 10:58:46,674 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:58:46,699 :INFO :My Account page test passed.
+2025-06-11 10:58:50,669 :INFO :Starting test: Registration via 'New Customer'
+2025-06-11 10:58:51,309 :INFO :Navigated to the login page.
+2025-06-11 10:58:51,995 :INFO :Proceeding with new customer registration.
+2025-06-11 10:58:51,996 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-11 10:58:52,006 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-11 10:58:54,248 :INFO :Registration process completed successfully.
+2025-06-11 10:58:54,295 :INFO :Registration page test via 'New Customer' passed.
+2025-06-11 10:58:54,684 :INFO :Redirecting to 'My Account' page.
+2025-06-11 10:58:54,699 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-11 10:59:00,088 :INFO :Starting test: Registration without filling in the form'
+2025-06-11 10:59:00,832 :INFO :Navigated to the login page.
+2025-06-11 10:59:02,082 :INFO :Initiating registration via the 'Register' option.
+2025-06-11 10:59:03,958 :INFO :Registration process executed successfully.
+2025-06-11 10:59:09,980 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-11 10:59:09,987 :INFO :Database connection closed.

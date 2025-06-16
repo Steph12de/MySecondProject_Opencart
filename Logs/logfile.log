@@ -4147,3 +4147,53 @@ assert 'My Account' == 'My Account1'
 2025-06-11 19:07:45,181 :INFO :Registration process executed successfully.
 2025-06-11 19:07:55,815 :ERROR :Registration validation failed: Expected warning messages were missing.
 2025-06-11 19:07:58,165 :INFO :Database connection closed.
+2025-06-16 10:01:05,161 :INFO :Establishing database connection...
+2025-06-16 10:01:05,276 :INFO :Database connection established successfully.
+2025-06-16 10:01:10,595 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-16 10:01:11,675 :INFO :User navigated to the registration page.
+2025-06-16 10:01:11,675 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 10:01:13,965 :INFO :Registration process executed successfully.
+2025-06-16 10:01:14,039 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-16 10:01:20,220 :INFO :Starting test: Registration without filling in the form
+2025-06-16 10:01:21,110 :INFO :Navigated to the login page.
+2025-06-16 10:01:22,050 :INFO :Initiating registration via the 'Register' option.
+2025-06-16 10:01:25,730 :INFO :Registration process executed successfully.
+2025-06-16 10:01:32,035 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-16 10:01:32,360 :INFO :Database connection closed.
+2025-06-16 10:35:56,694 :INFO :Establishing database connection...
+2025-06-16 10:35:56,964 :INFO :Database connection established successfully.
+2025-06-16 10:36:01,690 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-16 10:36:03,153 :INFO :User navigated to the registration page.
+2025-06-16 10:36:03,154 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 10:36:06,625 :INFO :Registration form submitted with mismatched passwords.
+2025-06-16 10:36:06,804 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-16 10:36:18,585 :INFO :Starting test: Attempting registration without accepting the privacy policy.
+2025-06-16 10:36:19,571 :INFO :Navigated to the registration page.
+2025-06-16 10:36:19,571 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 10:36:21,949 :INFO :Registration form submitted without accepting privacy policy.
+2025-06-16 10:36:22,075 :INFO :Validation successful: Privacy policy warning appeared as expected.
+2025-06-16 10:36:27,386 :INFO :Starting test: Registration without filling in the form
+2025-06-16 10:36:28,293 :INFO :Navigated to the login page.
+2025-06-16 10:36:29,364 :INFO :Initiating registration via the 'Register' option.
+2025-06-16 10:36:30,947 :INFO :Registration form submitted without filling in the form.
+2025-06-16 10:36:37,331 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-16 10:36:37,718 :INFO :Database connection closed.
+2025-06-16 10:48:41,445 :INFO :Establishing database connection...
+2025-06-16 10:48:41,625 :INFO :Database connection established successfully.
+2025-06-16 10:48:45,990 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-16 10:48:48,392 :INFO :User navigated to the registration page.
+2025-06-16 10:48:48,392 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 10:48:51,131 :INFO :Registration form submitted with mismatched passwords.
+2025-06-16 10:48:51,209 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-16 10:48:55,756 :INFO :Starting test: Attempting registration without accepting the privacy policy.
+2025-06-16 10:48:57,057 :INFO :Navigated to the registration page.
+2025-06-16 10:48:57,057 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 10:48:59,287 :INFO :Registration form submitted without accepting privacy policy.
+2025-06-16 10:48:59,766 :ERROR :test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\RegistrationPrivacy.png
+Error details : False is not true : Privacy policy warning message was expected but not displayed.
+2025-06-16 10:49:10,056 :INFO :Starting test: Registration without filling in the form
+2025-06-16 10:49:11,017 :INFO :Navigated to the login page.
+2025-06-16 10:49:11,983 :INFO :Initiating registration via the 'Register' option.
+2025-06-16 10:49:13,919 :INFO :Registration form submitted without filling in the form.
+2025-06-16 10:49:14,621 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-16 10:49:14,637 :INFO :Database connection closed.

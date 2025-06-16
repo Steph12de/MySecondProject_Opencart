@@ -101,6 +101,7 @@ class Test_001_Register(unittest.TestCase):
                     "Account verification page failed\n"
                     f"Error details: {e} "
                 )
+
                 raise
         else:
             self.logger.warning("No registration data found in the database.")
@@ -192,7 +193,7 @@ class Test_001_Register(unittest.TestCase):
                 result[1], result[2], result[3], result[4],
                 result[5], result[6], privacy=False
             )
-            self.logger.info("Registration process executed successfully.")
+            self.logger.info("Registration form submitted without filling in the form.")
 
             current_title = self.driver.title
             expected_title = "Register Account"
@@ -226,18 +227,65 @@ class Test_001_Register(unittest.TestCase):
                 result[1], result[2], self.random_mail, result[4],
                 result[5], result[6], newsletter=False
             )
-            self.logger.info("Registration process executed successfully.")
+            self.logger.info("Registration form submitted with mismatched passwords.")
 
             current_title = self.driver.title
             expected_title = "Register Account"
             try:
-                assert (current_title == expected_title and self.register_page.check_warning_message_confirm_password()), \
+                assert (
+                            current_title == expected_title and self.register_page.check_warning_message_confirm_password()), \
                     "Registration form validation failed: Expected warning messages were not displayed."
                 self.logger.info("Validation successful: Password mismatch warning message appeared correctly.")
             except AssertionError as e:
                 self.driver.save_screenshot(
                     os.path.join(os.getcwd(), "Screenshots", "RegistrationMismatchedPassword.png"))
                 self.logger.error(f"Validation failed: Expected password confirmation warning message was missing.")
+                raise
+        else:
+            self.logger.warning("No registration data found in the database.")
+
+        self.driver.close()
+
+    def test_registration_without_checking_privacy_policy(self):
+        self.logger.info("Starting test: Attempting registration without accepting the privacy policy.")
+
+        self.home_page.bring_me_to_register_page()
+        self.logger.info("Navigated to the registration page.")
+
+        self.logger.info("Retrieving user data from the 'Registration' table for test case.")
+        self.cursor.execute("SELECT * FROM Registration WHERE First_name = 'Alexa' ")
+        result = self.cursor.fetchall()
+
+        if result:
+            result = result[0]
+            self.register_page.register_with_newsletter(
+                result[1], result[2], self.random_mail, result[4],
+                result[5], result[6], newsletter=False, privacy=False
+            )
+            self.logger.info("Registration form submitted without accepting privacy policy.")
+
+            current_title = self.driver.title
+            expected_title = "Register Account"
+            try:
+                self.assertEqual(
+                    current_title,
+                    expected_title,
+                    f"Unexpected page title: expected '{expected_title}', but got '{current_title}'"
+                )
+                warning_displayed = self.register_page.check_warning_message_privacy_policy()
+                self.assertTrue(
+                    warning_displayed,
+                    "Privacy policy warning message was expected but not displayed."
+                )
+                self.logger.info("Validation successful: Privacy policy warning appeared as expected.")
+
+            except AssertionError as e:
+                screenshot_name = "RegistrationPrivacy.png"
+                screenshot_path = os.path.join(os.getcwd(), "Screenshots", screenshot_name)
+                self.driver.save_screenshot(screenshot_path)
+                self.logger.error(f"test failed: Screenshot saved at {screenshot_path}\n"
+                                  f"Error details : {e}"
+                                  )
                 raise
         else:
             self.logger.warning("No registration data found in the database.")

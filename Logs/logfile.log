@@ -4197,3 +4197,325 @@ Error details : False is not true : Privacy policy warning message was expected 
 2025-06-16 10:49:13,919 :INFO :Registration form submitted without filling in the form.
 2025-06-16 10:49:14,621 :ERROR :Registration validation failed: Expected warning messages were missing.
 2025-06-16 10:49:14,637 :INFO :Database connection closed.
+2025-06-16 13:20:43,955 :INFO :Establishing database connection...
+2025-06-16 13:20:44,394 :INFO :Database connection established successfully.
+2025-06-16 13:20:49,234 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-16 13:20:50,968 :INFO :User navigated to the registration page.
+2025-06-16 13:20:50,969 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 13:20:53,440 :INFO :Registration form submitted with mismatched passwords.
+2025-06-16 13:20:53,520 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-16 13:21:00,030 :INFO :Starting test: Attempting registration with an already registered email address.
+2025-06-16 13:21:00,966 :INFO :Navigated to the registration page.
+2025-06-16 13:21:00,967 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 13:21:03,394 :INFO :Submitted registration form using an existing email address.
+2025-06-16 13:21:03,811 :ERROR :Error details : 'Your Account Has Been Created!' != 'Register Account'
+- Your Account Has Been Created!
++ Register Account
+ : Page title mismatch: expected 'Register Account', but got 'Your Account Has Been Created!'test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\registeredEmail.png
+
+2025-06-16 13:21:07,682 :INFO :Starting test: Attempting registration without accepting the privacy policy.
+2025-06-16 13:21:08,768 :INFO :Navigated to the registration page.
+2025-06-16 13:21:08,769 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 13:21:10,990 :INFO :Registration form submitted without accepting privacy policy.
+2025-06-16 13:21:11,044 :INFO :Validation successful: Privacy policy warning appeared as expected.
+2025-06-16 13:21:16,267 :INFO :Starting test: Registration without filling in the form
+2025-06-16 13:21:17,031 :INFO :Navigated to the login page.
+2025-06-16 13:21:17,989 :INFO :Initiating registration via the 'Register' option.
+2025-06-16 13:21:20,400 :INFO :Registration form submitted without filling in the form.
+2025-06-16 13:21:26,070 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-16 13:21:28,205 :INFO :Database connection closed.
+2025-06-16 13:22:28,453 :INFO :Establishing database connection...
+2025-06-16 13:22:28,501 :INFO :Database connection established successfully.
+2025-06-16 13:22:32,316 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-16 13:22:33,233 :INFO :User navigated to the registration page.
+2025-06-16 13:22:33,233 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 13:22:36,309 :INFO :Registration form submitted with mismatched passwords.
+2025-06-16 13:22:36,380 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-16 13:22:42,845 :INFO :Starting test: Attempting registration with an already registered email address.
+2025-06-16 13:22:44,195 :INFO :Navigated to the registration page.
+2025-06-16 13:22:44,195 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 13:22:46,662 :INFO :Submitted registration form using an existing email address.
+2025-06-16 13:22:46,730 :INFO :Validation passed: Duplicate email warning appeared as expected.
+2025-06-16 13:22:53,111 :INFO :Starting test: Attempting registration without accepting the privacy policy.
+2025-06-16 13:22:54,318 :INFO :Navigated to the registration page.
+2025-06-16 13:22:54,318 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-16 13:22:56,720 :INFO :Registration form submitted without accepting privacy policy.
+2025-06-16 13:22:56,782 :INFO :Validation successful: Privacy policy warning appeared as expected.
+2025-06-16 13:23:02,186 :INFO :Starting test: Registration without filling in the form
+2025-06-16 13:23:03,178 :INFO :Navigated to the login page.
+2025-06-16 13:23:04,331 :INFO :Initiating registration via the 'Register' option.
+2025-06-16 13:23:06,419 :INFO :Registration form submitted without filling in the form.
+2025-06-16 13:23:12,465 :ERROR :Registration validation failed: Expected warning messages were missing.
+2025-06-16 13:23:16,892 :INFO :Database connection closed.
+2025-06-17 11:24:18,160 :INFO :Establishing database connection...
+2025-06-17 11:24:18,455 :INFO :Database connection established successfully.
+2025-06-17 11:24:23,517 :INFO :Starting test: Register via 'My Account'
+2025-06-17 11:24:25,168 :INFO :Navigated to the registration page.
+2025-06-17 11:24:25,168 :INFO :Fetching data from 'Registration' table.
+2025-06-17 11:24:25,257 :INFO :Retrieved registration data: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2025-06-17 11:24:28,119 :INFO :Registration process completed.
+2025-06-17 11:24:28,165 :INFO :Registration page test via 'My Account' passed.
+2025-06-17 11:24:28,678 :INFO :Redirecting to 'My Account' page.
+2025-06-17 11:24:28,746 :INFO :My Account page test passed.
+2025-06-17 11:24:33,904 :INFO :Starting test: Registration via 'New Customer'
+2025-06-17 11:24:34,779 :INFO :Navigated to the login page.
+2025-06-17 11:24:35,527 :INFO :Proceeding with new customer registration.
+2025-06-17 11:24:35,529 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-06-17 11:24:35,553 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-06-17 11:24:38,347 :INFO :Registration process completed successfully.
+2025-06-17 11:24:38,403 :INFO :Registration page test via 'New Customer' passed.
+2025-06-17 11:24:38,873 :INFO :Redirecting to 'My Account' page.
+2025-06-17 11:24:38,948 :ERROR :Account verification page failed
+Error details: Title mismatch: Expected 'My Account1', but got 'My Account'.
+assert 'My Account' == 'My Account1'
+  
+  - My Account1
+  ?           -
+  + My Account 
+2025-06-17 11:24:44,978 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-06-17 11:24:45,974 :INFO :User navigated to the registration page.
+2025-06-17 11:24:45,975 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 11:24:49,219 :INFO :Registration form submitted with mismatched passwords.
+2025-06-17 11:24:49,348 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-06-17 11:24:56,074 :INFO :Starting test: Attempting registration with an already registered email address.
+2025-06-17 11:24:57,052 :INFO :Navigated to the registration page.
+2025-06-17 11:24:57,052 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 11:24:59,115 :INFO :Submitted registration form using an existing email address.
+2025-06-17 11:24:59,217 :INFO :Validation passed: Duplicate email warning appeared as expected.
+2025-06-17 11:25:02,798 :INFO :Starting test: Attempting registration without accepting the privacy policy.
+2025-06-17 11:25:04,072 :INFO :Navigated to the registration page.
+2025-06-17 11:25:04,072 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 11:25:06,893 :INFO :Registration form submitted without accepting privacy policy.
+2025-06-17 11:25:06,992 :INFO :Validation successful: Privacy policy warning appeared as expected.
+2025-06-17 11:25:10,720 :INFO :Starting test: Registration without filling in the form
+2025-06-17 11:25:11,689 :INFO :Navigated to the login page.
+2025-06-17 11:25:12,861 :INFO :Initiating registration via the 'Register' option.
+2025-06-17 11:25:15,356 :INFO :Registration form submitted without filling in the form.
+2025-06-17 11:25:15,622 :INFO :Registration validation passed: Warning messages appeared correctly.
+2025-06-17 11:25:15,752 :INFO :Database connection closed.
+2025-06-17 12:58:45,533 :INFO :Establishing database connection...
+2025-06-17 12:58:45,783 :INFO :Database connection established successfully.
+2025-06-17 12:58:51,634 :INFO :Starting test: Attempting registration with an already registered email address.
+2025-06-17 12:58:52,872 :INFO :Navigated to the registration page.
+2025-06-17 12:58:52,872 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 12:58:55,312 :INFO :Submitted registration form using an existing email address.
+2025-06-17 12:58:55,372 :INFO :Validation passed: Duplicate email warning appeared as expected.
+2025-06-17 12:58:55,684 :INFO :Database connection closed.
+2025-06-17 12:59:32,273 :INFO :Establishing database connection...
+2025-06-17 12:59:32,318 :INFO :Database connection established successfully.
+2025-06-17 12:59:36,035 :INFO :Starting test: Attempting registration providing invalid telephone number.
+2025-06-17 12:59:37,041 :INFO :Navigated to the registration page.
+2025-06-17 12:59:37,041 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 12:59:39,698 :INFO :Submitted registration form using an invalid telephone number.
+2025-06-17 12:59:40,255 :ERROR :Error details : None is not true : Expected warning message for invalid telephone number was not displayed.test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-06-17 12:59:40,577 :INFO :Database connection closed.
+2025-06-17 13:01:16,441 :INFO :Establishing database connection...
+2025-06-17 13:01:16,470 :INFO :Database connection established successfully.
+2025-06-17 13:01:20,303 :INFO :Starting test: Attempting registration providing invalid telephone number.
+2025-06-17 13:01:21,553 :INFO :Navigated to the registration page.
+2025-06-17 13:01:21,554 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 13:01:23,981 :INFO :Submitted registration form using an invalid telephone number.
+2025-06-17 13:01:28,673 :ERROR :Error details : None is not true : Expected warning message for invalid telephone number was not displayed.test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-06-17 13:01:28,933 :INFO :Database connection closed.
+2025-06-17 13:07:14,025 :INFO :Establishing database connection...
+2025-06-17 13:07:14,190 :INFO :Database connection established successfully.
+2025-06-17 13:07:19,011 :INFO :Starting test: Attempting registration providing invalid telephone number.
+2025-06-17 13:07:20,503 :INFO :Navigated to the registration page.
+2025-06-17 13:07:20,503 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 13:07:25,094 :INFO :Submitted registration form using an invalid telephone number.
+2025-06-17 13:07:29,727 :ERROR :Error details : 'Your Account Has Been Created!' != 'Register Account'
+- Your Account Has Been Created!
++ Register Account
+ : Page title mismatch: expected 'Register Account', but got 'Your Account Has Been Created!'test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-06-17 13:07:30,087 :INFO :Database connection closed.
+2025-06-17 13:48:33,757 :INFO :Establishing database connection...
+2025-06-17 13:48:33,958 :INFO :Database connection established successfully.
+2025-06-17 13:48:40,554 :INFO :Starting test: Validate behavior when providing an invalid telephone number.
+2025-06-17 13:48:41,750 :INFO :Navigated to the registration page.
+2025-06-17 13:48:41,751 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 13:48:44,796 :INFO :Registration form submitted with an invalid telephone number.
+2025-06-17 13:48:45,268 :ERROR :Error details : 'Your Account Has Been Created!' != 'Register Account'
+- Your Account Has Been Created!
++ Register Account
+ : Page title mismatch: expected 'Register Account', but got 'Your Account Has Been Created!'test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-06-17 13:48:45,614 :INFO :Database connection closed.
+2025-06-17 13:55:20,779 :INFO :Establishing database connection...
+2025-06-17 13:55:20,942 :INFO :Database connection established successfully.
+2025-06-17 13:55:28,041 :INFO :Starting test: Validate behavior when providing an invalid telephone number.
+2025-06-17 13:55:29,408 :INFO :Navigated to the registration page.
+2025-06-17 13:55:29,408 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 13:55:31,997 :INFO :Registration form submitted with an invalid telephone number.
+2025-06-17 13:55:32,412 :ERROR :Registration should have failed: Invalid telephone number was accepted without triggering validation.Error details : 'Your Account Has Been Created!' != 'Register Account'
+- Your Account Has Been Created!
++ Register Account
+ : Page title mismatch: expected 'Register Account', but got 'Your Account Has Been Created!'test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-06-17 13:55:32,645 :INFO :Database connection closed.
+2025-06-17 14:05:35,715 :INFO :Establishing database connection...
+2025-06-17 14:05:35,912 :INFO :Database connection established successfully.
+2025-06-17 14:05:40,420 :INFO :Starting test: Validate behavior when providing an invalid telephone number.
+2025-06-17 14:05:42,191 :INFO :Navigated to the registration page.
+2025-06-17 14:05:42,195 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-06-17 14:05:45,787 :INFO :Registration form submitted with an invalid telephone number.
+2025-06-17 14:05:46,547 :ERROR :Registration should have failed: Invalid telephone number was accepted without triggering validation.Error details : 'Your Account Has Been Created!' != 'Register Account'
+- Your Account Has Been Created!
++ Register Account
+ : Page title mismatch: expected 'Register Account', but got 'Your Account Has Been Created!'test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-06-17 14:05:47,458 :INFO :Database connection closed.
+2025-06-17 14:24:59,350 :INFO :Starting the change password test after login.
+2025-06-17 14:25:01,520 :INFO :Login successful - User redirected to 'My Account'
+2025-06-17 14:25:03,418 :INFO :Password change was successful. User is on 'My Account' page.
+2025-06-17 14:25:03,418 :INFO :Proceeding with logout and re-login verification after password change.
+2025-06-17 14:25:06,430 :INFO :Test passed: Login unsuccessful as expected - User was not redirected to 'My Account'.
+2025-06-17 14:25:11,243 :INFO :Starting negative test for password change after login.
+2025-06-17 14:25:12,565 :INFO :Login successful - User redirected to 'My Account'
+2025-06-17 14:25:14,021 :INFO :Test passed: Password mismatch correctly detected - Error message: 'Password confirmation does not match password!'.
+2025-06-17 14:25:18,598 :INFO :Navigated to login page
+2025-06-17 14:25:18,598 :INFO :Starting the placeholder check test process 
+2025-06-17 14:25:18,698 :INFO :Placeholder text is correctly displayed in both email and password fields.
+2025-06-17 14:25:22,846 :INFO :Starting the Login and Logout test execution
+2025-06-17 14:25:24,223 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-17 14:25:33,061 :INFO :Starting login Test using keyboard keys
+2025-06-17 14:25:34,262 :ERROR :Login test using keyboard keys failed!
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-17 14:25:44,758 :INFO :User logged successfully in by using login at the right-hand-menu
+2025-06-17 14:25:51,912 :INFO :Starting login Test with multiple combination
+2025-06-17 14:25:53,268 :ERROR :Test failed: Login failed!
+  Expected error: False, but got: True
+  Expected title: 'My Account', but got: 'Account Login'
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-06-17 14:26:00,300 :INFO :Starting login Test with multiple combination
+2025-06-17 14:26:01,507 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:26:08,021 :INFO :Starting login Test with multiple combination
+2025-06-17 14:26:09,113 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:26:15,421 :INFO :Starting login Test with multiple combination
+2025-06-17 14:26:16,448 :INFO :Login successful - Email: username@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:26:22,832 :INFO :Starting login Test with multiple combination
+2025-06-17 14:26:23,701 :INFO :Login successful - Email:  , Expected Title: 'Account Login'
+2025-06-17 14:26:29,892 :INFO :Navigated to login page
+2025-06-17 14:26:29,892 :INFO :Starting password visibility check test execution
+2025-06-17 14:26:29,955 :INFO :Password field is correctly masked.
+2025-06-17 14:26:35,047 :INFO :Forgotten password text is displayed correctly.
+2025-06-17 14:30:46,966 :INFO :Starting the change password test after login.
+2025-06-17 14:30:48,142 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-17 14:30:54,142 :INFO :Navigated to login page
+2025-06-17 14:30:54,143 :INFO :Starting the placeholder check test process 
+2025-06-17 14:30:54,251 :INFO :Placeholder text is correctly displayed in both email and password fields.
+2025-06-17 14:30:59,362 :INFO :Starting the Login and Logout test execution
+2025-06-17 14:31:00,986 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-17 14:31:07,871 :INFO :Starting login Test using keyboard keys
+2025-06-17 14:31:09,916 :ERROR :Login test using keyboard keys failed!
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-17 14:31:20,073 :ERROR :Login via right hand menu wasn't successfully: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-06-17 14:31:25,652 :INFO :Starting login Test with multiple combination
+2025-06-17 14:31:26,926 :ERROR :Test failed: Login failed!
+  Expected error: False, but got: True
+  Expected title: 'My Account', but got: 'Account Login'
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-06-17 14:31:32,645 :INFO :Starting login Test with multiple combination
+2025-06-17 14:31:34,369 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:31:45,017 :INFO :Starting login Test with multiple combination
+2025-06-17 14:31:46,408 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:31:54,619 :INFO :Starting login Test with multiple combination
+2025-06-17 14:31:55,907 :INFO :Login successful - Email: username@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:32:02,452 :INFO :Starting login Test with multiple combination
+2025-06-17 14:32:03,620 :INFO :Login successful - Email:  , Expected Title: 'Account Login'
+2025-06-17 14:32:10,648 :INFO :Navigated to login page
+2025-06-17 14:32:10,649 :INFO :Starting password visibility check test execution
+2025-06-17 14:32:10,692 :INFO :Password field is correctly masked.
+2025-06-17 14:32:16,055 :INFO :Forgotten password text is displayed correctly.
+2025-06-17 14:33:21,653 :INFO :Starting the change password test after login.
+2025-06-17 14:33:22,736 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-17 14:33:28,597 :INFO :Navigated to login page
+2025-06-17 14:33:28,597 :INFO :Starting the placeholder check test process 
+2025-06-17 14:33:28,688 :INFO :Placeholder text is correctly displayed in both email and password fields.
+2025-06-17 14:33:35,032 :INFO :Starting the Login and Logout test execution
+2025-06-17 14:33:36,730 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-17 14:33:46,001 :INFO :Starting login Test using keyboard keys
+2025-06-17 14:33:47,540 :ERROR :Login test using keyboard keys failed!
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-17 14:33:57,473 :ERROR :Login via right hand menu wasn't successfully: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-06-17 14:34:02,433 :INFO :Starting login Test with multiple combination
+2025-06-17 14:34:04,154 :ERROR :Test failed: Login failed!
+  Expected error: False, but got: True
+  Expected title: 'My Account', but got: 'Account Login'
+assert ('False' == 'True'
+  
+  - True
+  + False)
+2025-06-17 14:34:13,405 :INFO :Starting login Test with multiple combination
+2025-06-17 14:34:15,249 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:34:23,339 :INFO :Starting login Test with multiple combination
+2025-06-17 14:34:25,124 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:34:32,202 :INFO :Starting login Test with multiple combination
+2025-06-17 14:34:34,067 :INFO :Login successful - Email: username@gmail.de, Expected Title: 'Account Login'
+2025-06-17 14:34:40,839 :INFO :Starting login Test with multiple combination
+2025-06-17 14:34:42,072 :INFO :Login successful - Email:  , Expected Title: 'Account Login'
+2025-06-17 14:34:49,289 :INFO :Navigated to login page
+2025-06-17 14:34:49,290 :INFO :Starting password visibility check test execution
+2025-06-17 14:34:49,361 :INFO :Password field is correctly masked.
+2025-06-17 14:34:55,334 :INFO :Forgotten password text is displayed correctly.

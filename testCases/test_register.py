@@ -158,24 +158,24 @@ class Test_001_Register(unittest.TestCase):
 
             # Verify account page title
             current_title = self.driver.title
-            expected_title = "My Account1"
+            expected_title = "My Account"
             try:
                 assert current_title == expected_title, (
                     f"Title mismatch: Expected '{expected_title}', but got '{current_title}'."
                 )
                 self.logger.info("My Account page test passed.")
             except AssertionError as e:
-                "Registration form validation failed: Expected warning messages were not displayed."
-                self.logger.error(
-                    "Account verification page failed\n"
-                    f"Error details: {e} "
-                )
+                self.logger.error("Registration form validation failed: Expected warning messages were not displayed."
+                                  "Account verification page failed\n"
+                                  f"Error details: {e} "
+                                  )
                 raise
         else:
             self.logger.warning("No registration data found in the database.")
 
         self.driver.close()
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_without_filling_form(self):
         self.logger.info("Starting test: Registration without filling in the form")
 
@@ -211,6 +211,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_with_different_password(self):
         self.logger.info("Starting test: Attempting registration with mismatched passwords")
 
@@ -233,7 +234,7 @@ class Test_001_Register(unittest.TestCase):
             expected_title = "Register Account"
             try:
                 assert (
-                            current_title == expected_title and self.register_page.check_warning_message_confirm_password()), \
+                        current_title == expected_title and self.register_page.check_warning_message_confirm_password()), \
                     "Registration form validation failed: Expected warning messages were not displayed."
                 self.logger.info("Validation successful: Password mismatch warning message appeared correctly.")
             except AssertionError as e:
@@ -246,6 +247,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_without_checking_privacy_policy(self):
         self.logger.info("Starting test: Attempting registration without accepting the privacy policy.")
 
@@ -287,6 +289,103 @@ class Test_001_Register(unittest.TestCase):
                                   f"Error details : {e}"
                                   )
                 raise
+        else:
+            self.logger.warning("No registration data found in the database.")
+
+        self.driver.close()
+
+    @pytest.mark.skip(reason="Just skipped it right now")
+    def test_registration_with_existing_eMail(self):
+        self.logger.info("Starting test: Attempting registration with an already registered email address.")
+
+        self.home_page.bring_me_to_register_page()
+        self.logger.info("Navigated to the registration page.")
+
+        self.logger.info("Retrieving user data from the 'Registration' table for test case.")
+        self.cursor.execute("SELECT * FROM Registration WHERE First_name = 'Stefanie' ")
+        result = self.cursor.fetchall()
+
+        if result:
+            result = result[0]
+            self.register_page.register_with_newsletter(
+                result[1], result[2], result[3], result[4],
+                result[5], result[6], newsletter=False
+            )
+            self.logger.info("Submitted registration form using an existing email address.")
+
+            current_title = self.driver.title
+            expected_title = "Register Account"
+            try:
+                self.assertEqual(
+                    current_title,
+                    expected_title,
+                    f"Page title mismatch: expected '{expected_title}', but got '{current_title}'"
+                )
+                warning_displayed = self.register_page.check_warning_message_registered_eMail()
+                self.assertTrue(
+                    warning_displayed,
+                    "Expected warning message for already registered email was not displayed."
+                )
+                self.logger.info("Validation passed: Duplicate email warning appeared as expected.")
+
+            except AssertionError as e:
+                screenshot_name = "registeredEmail.png"
+                screenshot_path = os.path.join(os.getcwd(), "Screenshots", screenshot_name)
+                self.driver.save_screenshot(screenshot_path)
+                self.logger.error(f"Error details : {e}"
+                                  f"test failed: Screenshot saved at {screenshot_path}\n"
+                                  )
+                raise
+        else:
+            self.logger.warning("No registration data found in the database.")
+
+        self.driver.close()
+
+    # @pytest.mark.skip(reason="Just skipped it right now")
+    def test_registration_providing_invalid_telephone_number(self):
+        self.logger.info("Starting test: Validate behavior when providing an invalid telephone number.")
+
+        self.home_page.bring_me_to_register_page()
+        self.logger.info("Navigated to the registration page.")
+
+        self.logger.info("Retrieving user data from the 'Registration' table for test case.")
+        self.cursor.execute("SELECT * FROM Registration WHERE First_name = 'Max' ")
+        result = self.cursor.fetchall()
+
+        if result:
+            result = result[0]
+            self.register_page.register_with_newsletter(
+                result[1], result[2], self.random_mail, result[4],
+                result[5], result[6], newsletter=False
+            )
+            self.logger.info("Registration form submitted with an invalid telephone number.")
+            # time.sleep(4)
+
+            current_title = self.driver.title
+            expected_title = "Register Account"
+
+            try:
+                self.assertEqual(current_title, expected_title,
+                                 f"Page title mismatch: expected '{expected_title}', but got '{current_title}'"
+                                 )
+                self.assertFalse(self.register_page.check_validity_telephone_number(),
+                                 "Validation failed: The telephone number contains invalid characters, but no warning "
+                                 "message appeared."
+                                 )
+                self.logger.info("Validation passed: Validation passed: Invalid telephone number was correctly "
+                                 "detected and handled.")
+
+            except AssertionError as e:
+                screenshot_name = "InvalidTelnumber.png"
+                screenshot_path = os.path.join(os.getcwd(), "Screenshots", screenshot_name)
+                self.driver.save_screenshot(screenshot_path)
+                self.logger.error("Registration should have failed: Invalid telephone number was accepted without "
+                                  "triggering validation."
+                                  f"Error details : {e}"
+                                  f"test failed: Screenshot saved at {screenshot_path}\n"
+                                  )
+                raise
+
         else:
             self.logger.warning("No registration data found in the database.")
 

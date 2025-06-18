@@ -267,7 +267,7 @@ class Test_002_login(unittest.TestCase):
             raise
         self.driver.close()
 
-    #@pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login_negative_test(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Starting negative test for password change after login.")

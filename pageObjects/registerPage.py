@@ -1,3 +1,5 @@
+import re
+
 from base.base_driver import BaseDriver
 from utilities.locators.registerPageLocators import RegisterPageLocators
 
@@ -42,6 +44,10 @@ class RegisterPage(BaseDriver):
         element = self.wait_for_element_visible(self.locators.warning_message)
         return element is not None
 
+    def get_presence_eMail_registered_warning_message(self):
+        element = self.wait_for_element_visible(self.locators.eMail_registered_warning_message)
+        return element is not None
+
     def get_presence_warning_message_first_name(self):
         return self.wait_text_to_be_present_in_element(self.locators.first_name_warning_message,
                                                        "First Name must be between 1 and 32 characters!"
@@ -64,7 +70,7 @@ class RegisterPage(BaseDriver):
 
     def get_presence_password_message_password(self):
         return self.wait_text_to_be_present_in_element(self.locators.password_warning_message,
-                                                       "Password must be between 4 and 20 characters! test"
+                                                       "Password must be between 4 and 20 characters!"
                                                        )
 
     def get_presence_confirm_password_message(self):
@@ -137,6 +143,14 @@ class RegisterPage(BaseDriver):
             # self.logger.error(f"Privacy policy warning message check failed: {e}")
             return False
 
+    def check_warning_message_registered_eMail(self):
+        try:
+            # self.logger.info("Checking presence of privacy policy warning message.")
+            return self.get_presence_eMail_registered_warning_message()
+        except Exception as e:
+            # self.logger.error(f"Privacy policy warning message check failed: {e}")
+            return False
+
     def check_warning_message_first_name(self):
         try:
             # self.logger.info("Checking presence of first name warning message.")
@@ -190,3 +204,11 @@ class RegisterPage(BaseDriver):
                 self.check_warning_message_eMail() and
                 self.check_warning_message_telephone() and
                 self.check_warning_message_password())
+
+    def check_validity_telephone_number(self):
+        try:
+            actual_input = self.get_telephone_input().get_attribute("value")
+            has_only_digits = bool(re.fullmatch(r"\d+", actual_input))
+            return has_only_digits
+        except:
+            return False

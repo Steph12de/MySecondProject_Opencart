@@ -13,10 +13,27 @@ class ComparisonPage(BaseDriver):
         Trows = len(self.wait_for_element_visible(self.locators.number_of_rows))
         return Trows
 
-    def getAddToCartIpodClassic(self):
-        if self.wait_for_element_visible(self.locators.add_to_cart_ipod_classic).get_attribute("href") == "https://awesomeqa.com/ui/index.php?route=product/compare&remove=40":
-            self.wait_for_element_visible(self.locators.add_to_cart_ipod_classic).click()
-        else:
-            return False
+    def get_add_to_cart_options(self):
+        addToCardButtons = self.wait_for_elements_visible(self.locators.add_to_cart_buttons)
+        for addToCardButton in addToCardButtons:
+            if addToCardButton.get_attribute("href") == "https://awesomeqa.com/ui/index.php?route=product/compare&remove=43":
+                addToCardButton.click()
+                break
+        return False
+        # if (self.wait_for_element_visible(self.locators.add_to_cart_ipod_classic).get_attribute("href") ==
+        #                              "https://awesomeqa.com/ui/index.php?route=product/compare&remove=40"):
+        #     self.wait_for_element_visible(self.locators.add_to_cart_ipod_classic).click()
+        # else:
+        #     return False
+
+    def get_success_message_text(self):
+        success_message = self.wait_for_element_visible(self.locators.success_message_text)
+        return success_message
+
+    def get_shopping_card_link(self):
+        return self.wait_for_element_visible(self.locators.shopping_cart_link)
+
+    def click_on_shopping_card_link(self):
+        self.get_shopping_card_link().click()
 
 

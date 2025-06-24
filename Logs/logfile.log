@@ -4519,3 +4519,125 @@ assert ('False' == 'True'
 2025-06-17 14:34:49,290 :INFO :Starting password visibility check test execution
 2025-06-17 14:34:49,361 :INFO :Password field is correctly masked.
 2025-06-17 14:34:55,334 :INFO :Forgotten password text is displayed correctly.
+2025-06-24 11:08:12,790 :INFO :Starting test: Add product to cart from product display.
+2025-06-24 11:08:15,389 :INFO :Searching for 'iMac'.
+2025-06-24 11:08:20,759 :INFO :Navigating to iMac product detail page.
+2025-06-24 11:08:21,146 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-06-24 11:08:21,899 :INFO :Success message displayed correctly after adding the product.
+2025-06-24 11:08:22,874 :INFO :Navigating to shopping cart to verify product presence.
+2025-06-24 11:08:24,762 :ERROR :Error message Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_product_in_cart_verification.png
+Error details: Product validation failed!
+  Expected 'iMac' in cart, but it was not found.
+assert False is True
+ +  where False = check_product_name('iMac test')
+ +    where check_product_name = <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000025CFE0E6270>.check_product_name
+ +      where <pageObjects.shoppingCartPage.ShoppingCartPage object at 0x0000025CFE0E6270> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_product_display>.cart_page
+2025-06-24 11:08:33,718 :INFO :Starting test: Add product to cart from search results.
+2025-06-24 11:08:34,981 :INFO :Searching for 'iMac'.
+2025-06-24 11:08:37,673 :INFO :Success message displayed correctly after adding the product.
+2025-06-24 11:08:37,674 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-06-24 11:08:37,761 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-06-24 11:08:38,996 :INFO :'iMac' was successfully added to the shopping cart.
+2025-06-24 11:08:40,168 :INFO :Test execution completed - Browser closed.
+2025-06-24 11:08:47,257 :INFO :Starting test: Add product to wish list.
+2025-06-24 11:08:48,271 :INFO :Navigating to Login section.
+2025-06-24 11:08:50,223 :INFO :Logging in to proceed with adding product from wish list.
+2025-06-24 11:08:50,599 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-06-24 11:08:51,212 :INFO :Success message correctly displayed after adding product.
+2025-06-24 11:08:52,012 :INFO :Navigating to shopping cart to verify product presence.
+2025-06-24 11:08:52,101 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-06-24 11:08:52,271 :INFO :Test execution completed - Browser closed.
+2025-06-24 11:09:59,646 :INFO :Starting test: Add product to cart from product display.
+2025-06-24 11:09:59,950 :INFO :Searching for 'iMac'.
+2025-06-24 11:10:01,585 :INFO :Navigating to iMac product detail page.
+2025-06-24 11:10:01,778 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-06-24 11:10:02,351 :INFO :Success message displayed correctly after adding the product.
+2025-06-24 11:10:02,929 :INFO :Navigating to shopping cart to verify product presence.
+2025-06-24 11:10:02,992 :INFO :Product verification successful - 'iMac' is in the shopping cart.
+2025-06-24 11:10:03,231 :INFO :Test execution completed - Browser closed.
+2025-06-24 11:10:08,936 :INFO :Starting test: Add product to cart from search results.
+2025-06-24 11:10:09,225 :INFO :Searching for 'iMac'.
+2025-06-24 11:10:11,550 :INFO :Success message displayed correctly after adding the product.
+2025-06-24 11:10:11,550 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-06-24 11:10:11,578 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-06-24 11:10:13,281 :INFO :'iMac' was successfully added to the shopping cart.
+2025-06-24 11:10:13,544 :INFO :Test execution completed - Browser closed.
+2025-06-24 11:10:18,469 :INFO :Starting test: Add product to wish list.
+2025-06-24 11:10:19,282 :INFO :Navigating to Login section.
+2025-06-24 11:10:20,462 :INFO :Logging in to proceed with adding product from wish list.
+2025-06-24 11:10:20,987 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-06-24 11:10:21,586 :INFO :Success message correctly displayed after adding product.
+2025-06-24 11:10:22,313 :INFO :Navigating to shopping cart to verify product presence.
+2025-06-24 11:10:22,397 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-06-24 11:10:22,573 :INFO :Test execution completed - Browser closed.
+2025-06-24 11:12:09,061 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:15:41,672 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:17:45,223 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:19:45,830 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:22:39,960 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:23:34,256 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:37:43,707 :ERROR :Login test was not successful!The change password after login test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-06-24 11:39:18,129 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:49:09,291 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:51:12,404 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:53:04,136 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 11:55:38,024 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 12:01:36,897 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 12:06:41,816 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 12:09:22,061 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 12:53:53,815 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:04:44,996 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:04:49,570 :ERROR :You haven't choose any products, please enter prodcuts to compare
+Error details: True is not false : Products to compare are available in the comparison page
+2025-06-24 13:10:50,880 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:10:52,893 :ERROR :You haven't choose any products, please enter prodcuts to compare
+Error details: True is not false : Products to compare are not available in the comparison page
+2025-06-24 13:20:34,395 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:22:38,369 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:24:40,436 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:25:14,731 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:25:19,833 :ERROR :You haven't choose any products, please enter prodcuts to compare
+Error details: True is not false : Products to compare are not available in the comparison page
+2025-06-24 13:26:19,354 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:44:58,117 :INFO :Navigating to login page.
+2025-06-24 13:45:01,025 :INFO :Attempting to log in with provided credentials.
+2025-06-24 13:45:05,045 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:45:05,049 :INFO :Navigating to Desktops category.
+2025-06-24 13:45:07,000 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-24 13:45:07,586 :INFO :Clicking on 'Product Compare' link.
+2025-06-24 13:47:35,310 :INFO :Navigating to login page.
+2025-06-24 13:47:37,258 :INFO :Attempting to log in with provided credentials.
+2025-06-24 13:47:41,456 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:47:41,457 :INFO :Navigating to Desktops category.
+2025-06-24 13:47:43,132 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-24 13:47:43,507 :INFO :Clicking on 'Product Compare' link.
+2025-06-24 13:52:39,425 :INFO :Navigating to login page.
+2025-06-24 13:52:40,322 :INFO :Attempting to log in with provided credentials.
+2025-06-24 13:52:42,222 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:52:42,223 :INFO :Navigating to Desktops category.
+2025-06-24 13:52:44,114 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-24 13:52:44,377 :INFO :Clicking on 'Product Compare' link.
+2025-06-24 13:53:37,674 :INFO :Navigating to login page.
+2025-06-24 13:53:38,812 :INFO :Attempting to log in with provided credentials.
+2025-06-24 13:53:42,410 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:53:42,411 :INFO :Navigating to Desktops category.
+2025-06-24 13:53:44,504 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-24 13:53:44,786 :INFO :Clicking on 'Product Compare' link.
+2025-06-24 13:54:40,829 :INFO :Navigating to login page.
+2025-06-24 13:54:41,900 :INFO :Attempting to log in with provided credentials.
+2025-06-24 13:54:44,609 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:54:44,610 :INFO :Navigating to Desktops category.
+2025-06-24 13:54:47,942 :INFO :Clicking on 'Product Compare' link.
+2025-06-24 13:54:49,392 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-06-24 13:55:54,698 :INFO :Navigating to login page.
+2025-06-24 13:55:56,046 :INFO :Attempting to log in with provided credentials.
+2025-06-24 13:55:57,777 :INFO :Login successful - User redirected to 'My Account'
+2025-06-24 13:55:57,777 :INFO :Navigating to Desktops category.
+2025-06-24 13:55:59,039 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-24 13:55:59,264 :INFO :Clicking on 'Product Compare' link.

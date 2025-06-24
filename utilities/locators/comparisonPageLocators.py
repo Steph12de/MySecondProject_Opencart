@@ -8,3 +8,6 @@ class ComparisonPageLocators:
     add_to_cart_buttons = (By.XPATH, "//table[@class='table table-bordered']//tbody[4]//tr//td//input")
     success_message_text = (By.XPATH, "//div[@class='alert alert-success alert-dismissible']")
     shopping_cart_link = (By.LINK_TEXT, "shopping cart")
+    product_table = (By.XPATH, "//div[@id='content']//table[@class='table table-bordered']")
+    product_unavailability_text = (By.XPATH, "//div[@id='content']//p")
+    add_to_cart_apple_cinema = (By.XPATH, "//div[3]//div[1]//div[2]//div[2]//button[3]")

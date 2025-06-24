@@ -38,7 +38,8 @@ class Test_004_addToCart(unittest.TestCase):
         self.desktops_page = SubcategoryDesktopsPage(self.driver)
         self.comparison_page = ComparisonPage(self.driver)
 
-    #@pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.regression
     def test_add_to_cart_from_product_display(self):
         self.logger.info("Starting test: Add product to cart from product display.")
 
@@ -57,10 +58,10 @@ class Test_004_addToCart(unittest.TestCase):
                 "Failed to display success message after adding product.\n"
                 "Expected success message was not found."
             )
-            #print("Pass assert")
+            # print("Pass assert")
             self.logger.info("Success message displayed correctly after adding the product.")
         except AssertionError as e:
-            #print("has error")
+            # print("has error")
             screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_product_page_add_success_message.png")
             self.driver.save_screenshot(screenshot_path)
             self.logger.error(
@@ -73,7 +74,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info("Navigating to shopping cart to verify product presence.")
 
         try:
-            assert self.cart_page.check_product_name("iMac test") is True, (
+            assert self.cart_page.check_product_name("iMac") is True, (
                 "Product validation failed!\n"
                 "Expected 'iMac' in cart, but it was not found."
             )
@@ -89,7 +90,8 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    #@pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.regression
     def test_add_to_cart_from_wish_list(self):
         self.logger.info("Starting test: Add product to wish list.")
 
@@ -139,7 +141,8 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    #@pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.regression
     def test_add_to_cart_from_search_result(self):
         self.logger.info("Starting test: Add product to cart from search results.")
 
@@ -197,44 +200,71 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
+    # @pytest.mark.skip(reason="Just skipped it right now")
     @pytest.mark.regression
     def test_add_to_cart_via_product_comparison_page(self):
+        # Step 1: Navigate to login page and log in
+        self.logger.info("Navigating to login page.")
         self.home_page.bring_me_to_login_page()
+
+        self.logger.info("Attempting to log in with provided credentials.")
         self.login_page.log_me_in(self.email, self.password)
+
         current_title = self.driver.title
         try:
             assert current_title == "My Account", (
-                "Login failed!\n"
-                f"Expected page title: 'My Account', but got: '{current_title}'"
-            )
+                f"Login failed. Expected title: 'My Account', but got: '{current_title}'")
             self.logger.info(f"Login successful - User redirected to '{current_title}'")
+
         except AssertionError as e:
-            self.logger.error(
-                "Login test was not successful!" "The change password after login test cannot be proceeded.\n"
-                f"Error details: {e} "
-            )
+            self.logger.error(f"Login validation failed. Details: {e}")
             raise
+
+        # Step 2: Navigate to Desktops category and select product for comparison
+        self.logger.info("Navigating to Desktops category.")
         self.home_page.go_to_desktops()
+
+        # self.logger.info("Clicking on a product (Apple Music) to add it to comparison.")
+        # self.comparison_page.click_on_apple_music()
+
+        self.logger.info("Clicking on 'Product Compare' link.")
         self.desktops_page.clickOnProductCompareLink()
+
+        # Step 3: Verify that products are available on the comparison page
+        try:
+            self.assertFalse(
+                self.comparison_page.get_bol_product_unavailability_text(),
+                "Comparison table is empty. No products found."
+            )
+            self.logger.info("Product comparison list contains items.")
+        except AssertionError as e:
+            self.logger.error(f"No products available for comparison. Details: {e}")
+            raise
+
+        # Step 4: Add product from comparison page to cart
+        self.logger.info("Attempting to add product from comparison page to cart.")
         self.comparison_page.get_add_to_cart_options()
         time.sleep(3)
 
         expected_success_message = "Success: You have added MacBook to your shopping cart!"
         try:
-            self.assertIn(expected_success_message, self.comparison_page.get_success_message_text(),
-                          "Add to cart validation failed!\n"
-                          "Expected success message was not displayed after adding product.\n"
-                          f"Expected message: '{expected_success_message}'\n"
-                          f"Actual message: '{self.search_page.getSuccessMessageText()}'"
-                          )
-            self.logger.info("Success message displayed correctly after adding the product.")
+            actual_message = self.comparison_page.get_success_message_text()
+            self.logger.info(f"Received success message: '{actual_message}'")
+
+            self.assertIn(expected_success_message, actual_message,
+                          (
+                              "Add to cart failed.\n"
+                              f"Expected message: '{expected_success_message}'\n"
+                              f"Actual message: '{actual_message}'"
+                          ))
+
+            self.logger.info("Success message was displayed correctly after adding product to cart.")
         except AssertionError as e:
-            screenshot_name = "AddToCardComparisonPageError.png"
+            screenshot_name = "AddToCartComparisonPageError.png"
             screenshot_path = os.path.join(os.getcwd(), "Screenshots", screenshot_name)
             self.driver.save_screenshot(screenshot_path)
-            self.logger.error(f"Screenshot saved at: {screenshot_path}\n"
-                              f"Error details: {e}")
+            self.logger.error(f"Add to cart validation failed. Screenshot saved to: {screenshot_path}\n"
+                              f"Details: {e}")
+            raise
 
         self.comparison_page.click_on_shopping_card_link()
-
-

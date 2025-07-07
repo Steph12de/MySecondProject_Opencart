@@ -31,7 +31,7 @@ class ComparisonPage(BaseDriver):
                 addToCardButtons = self.wait_for_elements_visible(self.locators.add_to_cart_buttons)
                 for addToCardButton in addToCardButtons:
                     if addToCardButton.get_attribute(
-                            "href") == "https://awesomeqa.com/ui/index.php?route=product/compare&remove=43":
+                            "onclick") == "cart.add('42', '2');":
                         addToCardButton.click()
                         break
             except Exception as e:

@@ -224,14 +224,16 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info("Navigating to Desktops category.")
         self.home_page.go_to_desktops()
 
-        # self.logger.info("Clicking on a product (Apple Music) to add it to comparison.")
-        # self.comparison_page.click_on_apple_music()
+        self.logger.info("Clicking on a product (Apple Music) to add it to comparison.")
+        self.comparison_page.click_on_apple_music()
 
         self.logger.info("Clicking on 'Product Compare' link.")
         self.desktops_page.clickOnProductCompareLink()
 
         # Step 3: Verify that products are available on the comparison page
         try:
+            result = self.comparison_page.get_bol_product_unavailability_text()
+            print(f"result: {result}")
             self.assertFalse(
                 self.comparison_page.get_bol_product_unavailability_text(),
                 "Comparison table is empty. No products found."

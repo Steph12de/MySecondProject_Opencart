@@ -4641,3 +4641,164 @@ Error details: True is not false : Products to compare are not available in the 
 2025-06-24 13:55:57,777 :INFO :Navigating to Desktops category.
 2025-06-24 13:55:59,039 :INFO :Clicking on a product (Apple Music) to add it to comparison.
 2025-06-24 13:55:59,264 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 10:09:41,721 :INFO :Navigating to login page.
+2025-06-30 10:09:42,775 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:09:44,422 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 10:09:44,422 :INFO :Navigating to Desktops category.
+2025-06-30 10:09:45,615 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 10:09:47,077 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-06-30 10:20:09,306 :INFO :Navigating to login page.
+2025-06-30 10:20:12,953 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:20:14,826 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 10:20:14,826 :INFO :Navigating to Desktops category.
+2025-06-30 10:20:15,767 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 10:20:15,975 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 10:22:27,755 :INFO :Navigating to login page.
+2025-06-30 10:22:28,734 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:22:29,918 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 10:22:29,918 :INFO :Navigating to Desktops category.
+2025-06-30 10:22:31,227 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 10:22:31,363 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 10:23:01,789 :INFO :Navigating to login page.
+2025-06-30 10:23:02,707 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:23:03,859 :ERROR :Login validation failed. Details: Login failed. Expected title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-30 10:23:14,604 :INFO :Navigating to login page.
+2025-06-30 10:23:15,441 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:23:16,678 :ERROR :Login validation failed. Details: Login failed. Expected title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-30 10:24:03,152 :INFO :Navigating to login page.
+2025-06-30 10:24:04,260 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:24:05,532 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 10:24:05,532 :INFO :Navigating to Desktops category.
+2025-06-30 10:31:37,629 :INFO :Navigating to login page.
+2025-06-30 10:31:38,574 :INFO :Attempting to log in with provided credentials.
+2025-06-30 10:31:40,218 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 10:31:40,218 :INFO :Navigating to Desktops category.
+2025-06-30 10:31:41,725 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 10:31:44,086 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-06-30 11:07:19,546 :INFO :Navigating to login page.
+2025-06-30 11:07:20,518 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:07:21,853 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:07:21,854 :INFO :Navigating to Desktops category.
+2025-06-30 11:07:23,012 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:07:23,568 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-06-30 11:13:20,200 :INFO :Navigating to login page.
+2025-06-30 11:13:21,481 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:13:22,769 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:13:22,770 :INFO :Navigating to Desktops category.
+2025-06-30 11:13:23,804 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:13:24,367 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-06-30 11:14:36,376 :INFO :Navigating to login page.
+2025-06-30 11:14:37,681 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:14:39,653 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:14:39,655 :INFO :Navigating to Desktops category.
+2025-06-30 11:14:40,852 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 11:14:41,023 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:19:54,317 :INFO :Navigating to login page.
+2025-06-30 11:19:56,630 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:19:59,537 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:19:59,537 :INFO :Navigating to Desktops category.
+2025-06-30 11:20:15,902 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 11:20:16,052 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:20:27,346 :INFO :Product comparison list contains items.
+2025-06-30 11:20:27,361 :INFO :Attempting to add product from comparison page to cart.
+2025-06-30 11:23:50,720 :INFO :Navigating to login page.
+2025-06-30 11:23:51,484 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:24:42,895 :INFO :Navigating to login page.
+2025-06-30 11:24:43,586 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:24:44,729 :ERROR :Login validation failed. Details: Login failed. Expected title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-30 11:24:56,746 :INFO :Navigating to login page.
+2025-06-30 11:24:57,448 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:24:58,527 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:24:58,527 :INFO :Navigating to Desktops category.
+2025-06-30 11:25:00,815 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 11:25:00,990 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:25:01,637 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-06-30 11:25:21,182 :INFO :Navigating to login page.
+2025-06-30 11:25:21,960 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:25:23,017 :ERROR :Login validation failed. Details: Login failed. Expected title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-06-30 11:25:32,865 :INFO :Navigating to login page.
+2025-06-30 11:25:33,509 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:25:34,756 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:25:34,756 :INFO :Navigating to Desktops category.
+2025-06-30 11:25:35,700 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 11:25:35,892 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:25:46,939 :INFO :Product comparison list contains items.
+2025-06-30 11:25:46,939 :INFO :Attempting to add product from comparison page to cart.
+2025-06-30 11:26:00,668 :INFO :Received success message: 'False'
+2025-06-30 11:30:02,529 :INFO :Navigating to login page.
+2025-06-30 11:30:03,626 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:30:04,848 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:30:04,849 :INFO :Navigating to Desktops category.
+2025-06-30 11:30:20,328 :INFO :Navigating to login page.
+2025-06-30 11:30:21,081 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:30:22,333 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:30:22,335 :INFO :Navigating to Desktops category.
+2025-06-30 11:30:23,301 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 11:30:23,492 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:30:34,736 :INFO :Product comparison list contains items.
+2025-06-30 11:30:34,736 :INFO :Attempting to add product from comparison page to cart.
+2025-06-30 11:36:48,438 :INFO :Navigating to login page.
+2025-06-30 11:36:50,200 :INFO :Attempting to log in with provided credentials.
+2025-06-30 11:36:51,256 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 11:36:51,256 :INFO :Navigating to Desktops category.
+2025-06-30 11:36:52,171 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 11:36:52,342 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 11:37:03,343 :INFO :Product comparison list contains items.
+2025-06-30 11:37:03,343 :INFO :Attempting to add product from comparison page to cart.
+2025-06-30 11:37:16,812 :INFO :Received success message: 'Element not visible'
+2025-06-30 11:37:17,275 :ERROR :Add to cart validation failed. Screenshot saved to: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\AddToCartComparisonPageError.png
+Details: 'Success: You have added MacBook to your shopping cart!' not found in 'Element not visible' : Add to cart failed.
+Expected message: 'Success: You have added MacBook to your shopping cart!'
+Actual message: 'Element not visible'
+2025-06-30 12:16:45,368 :INFO :Navigating to login page.
+2025-06-30 12:16:46,608 :INFO :Attempting to log in with provided credentials.
+2025-06-30 12:16:48,756 :INFO :Login successful - User redirected to 'My Account'
+2025-06-30 12:16:48,756 :INFO :Navigating to Desktops category.
+2025-06-30 12:16:50,458 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-06-30 12:16:50,669 :INFO :Clicking on 'Product Compare' link.
+2025-06-30 12:17:02,819 :INFO :Product comparison list contains items.
+2025-06-30 12:17:02,820 :INFO :Attempting to add product from comparison page to cart.
+2025-06-30 12:17:16,504 :INFO :Received success message: 'Element not visible'
+2025-06-30 12:17:16,877 :ERROR :Add to cart validation failed. Screenshot saved to: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\AddToCartComparisonPageError.png
+Details: 'Success: You have added MacBook to your shopping cart!' not found in 'Element not visible' : Add to cart failed.
+Expected message: 'Success: You have added MacBook to your shopping cart!'
+Actual message: 'Element not visible'
+2025-07-07 09:10:11,980 :INFO :Navigating to login page.
+2025-07-07 09:10:14,137 :INFO :Attempting to log in with provided credentials.
+2025-07-07 09:10:16,412 :INFO :Login successful - User redirected to 'My Account'
+2025-07-07 09:10:16,412 :INFO :Navigating to Desktops category.
+2025-07-07 09:10:17,697 :INFO :Clicking on 'Product Compare' link.
+2025-07-07 09:10:18,777 :ERROR :No products available for comparison. Details: True is not false : Comparison table is empty. No products found.
+2025-07-07 09:31:15,572 :INFO :Navigating to login page.
+2025-07-07 09:31:18,026 :INFO :Attempting to log in with provided credentials.
+2025-07-07 09:31:21,328 :INFO :Login successful - User redirected to 'My Account'
+2025-07-07 09:31:21,329 :INFO :Navigating to Desktops category.
+2025-07-07 09:32:28,757 :INFO :Navigating to login page.
+2025-07-07 09:32:29,555 :INFO :Attempting to log in with provided credentials.
+2025-07-07 09:32:30,914 :INFO :Login successful - User redirected to 'My Account'
+2025-07-07 09:32:30,915 :INFO :Navigating to Desktops category.
+2025-07-07 09:32:32,737 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-07-07 09:32:32,928 :INFO :Clicking on 'Product Compare' link.
+2025-07-07 09:32:44,469 :INFO :Product comparison list contains items.
+2025-07-07 09:32:44,470 :INFO :Attempting to add product from comparison page to cart.
+2025-07-07 09:32:58,137 :INFO :Received success message: 'Element not visible'
+2025-07-07 09:32:58,608 :ERROR :Add to cart validation failed. Screenshot saved to: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\AddToCartComparisonPageError.png
+Details: 'Success: You have added MacBook to your shopping cart!' not found in 'Element not visible' : Add to cart failed.
+Expected message: 'Success: You have added MacBook to your shopping cart!'
+Actual message: 'Element not visible'

@@ -4846,3 +4846,47 @@ Details: 'iMac' != 'iMac123'
 2025-07-14 11:41:13,616 :INFO :Opening iMac product detail page.
 2025-07-14 11:41:15,501 :INFO :check product information's
 2025-07-14 11:41:15,612 :INFO :Product name validation passed.
+2025-07-14 22:39:06,500 :INFO :Test started: validating product name, brand, and code.
+2025-07-14 22:39:06,503 :INFO :Searching for product: 'iMac'
+2025-07-14 22:39:08,258 :INFO :Opening iMac product detail page.
+2025-07-14 22:39:10,133 :INFO :check product information's
+2025-07-14 22:39:10,185 :INFO :Product name validation passed.
+2025-07-14 23:02:54,332 :INFO :Test started: validating product name, brand, and code.
+2025-07-14 23:02:54,334 :INFO :Searching for product: 'iMac'
+2025-07-14 23:02:56,387 :INFO :Opening iMac product detail page.
+2025-07-14 23:02:58,262 :INFO :Validating product name
+2025-07-14 23:02:58,263 :INFO :Product name validation passed.
+2025-07-14 23:02:58,322 :INFO :Validating brand
+2025-07-14 23:02:58,322 :INFO :Brand validation passed
+2025-07-14 23:37:12,192 :INFO :Test started: validating product name, brand, and code.
+2025-07-14 23:37:12,194 :INFO :Searching for product: 'iMac'
+2025-07-14 23:37:13,402 :INFO :Opening iMac product detail page.
+2025-07-14 23:37:14,344 :INFO :Validating product name
+2025-07-14 23:37:14,345 :INFO :Product name validation passed.
+2025-07-14 23:37:14,413 :INFO :Validating brand
+2025-07-14 23:37:14,413 :INFO :Brand validation passed
+2025-07-15 00:02:56,663 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 00:02:56,665 :INFO :Searching for product: 'iMac'
+2025-07-15 00:02:58,829 :INFO :Opening iMac product detail page.
+2025-07-15 00:02:59,958 :INFO :Validating product name
+2025-07-15 00:02:59,959 :INFO :Product name validation passed.
+2025-07-15 00:03:00,017 :INFO :Validating brand
+2025-07-15 00:03:00,017 :INFO :Brand validation passed
+2025-07-15 00:03:00,061 :INFO :Validating product code
+2025-07-15 00:03:00,511 :ERROR :Product code validation
+Screenshot saved at: screenshots\product_code_error
+Details: 'product 14' != 'Product 14'
+- product 14
+? ^
++ Product 14
+? ^
+ : Product code mismatch: expected 'product 14', but got 'Product 14'
+2025-07-15 00:04:03,638 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 00:04:03,640 :INFO :Searching for product: 'iMac'
+2025-07-15 00:04:04,525 :INFO :Opening iMac product detail page.
+2025-07-15 00:04:05,493 :INFO :Validating product name
+2025-07-15 00:04:05,493 :INFO :Product name validation passed.
+2025-07-15 00:04:05,535 :INFO :Validating brand
+2025-07-15 00:04:05,535 :INFO :Brand validation passed
+2025-07-15 00:04:05,572 :INFO :Validating product code
+2025-07-15 00:04:05,573 :INFO :Product code validation passed

@@ -11,4 +11,4 @@ class ProductInfoPageLocators:
     product_name = (By.XPATH, "//div[@class='col-sm-4']//h1")
     # product_list_elements =(By.XPATH, "//div[@class='col-sm-4']//ul[1]//li")
     product_brand = (By.XPATH, "//div[@class='col-sm-4']//ul//li//a")
-    product_code = (By.XPATH, "//ul//li[text()='Product Code: Product 14']")
+    product_code = (By.XPATH, "//ul//li[text()='Product Code: Product 14']") # "//ul//li[contains(text(), 'Product Code:')]"

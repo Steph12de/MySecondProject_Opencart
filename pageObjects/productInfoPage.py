@@ -39,8 +39,14 @@ class ProductInfoPage(BaseDriver):
     def get_product_name_text(self):
         return self.wait_for_element_visible(self.locators.product_name).text
 
-    def get_product_brand(self):
-        return self.wait_for_element_visible(self.locators.product_brand)
+    def get_product_brand_text(self):
+        return self.wait_for_element_visible(self.locators.product_brand).text
+
+    def get_product_code_text(self):
+        return self.wait_for_element_visible(self.locators.product_code).text
+
+    def split_product_code_text(self):
+        return self.get_product_code_text().split(":")[-1].strip()
 
     def click_on_add_to_cart_button(self):
         self.getAddToCartButton().click()
@@ -64,8 +70,3 @@ class ProductInfoPage(BaseDriver):
     def click_on_add_to_cart_display_page_button(self):
         self.get_add_to_cart_display_page_button().click()
 
-    def check_product_brand(self, productBrand):
-        if self.get_product_brand().text == productBrand:
-            return True
-        else:
-            return False

@@ -4802,3 +4802,47 @@ Actual message: 'Element not visible'
 Details: 'Success: You have added MacBook to your shopping cart!' not found in 'Element not visible' : Add to cart failed.
 Expected message: 'Success: You have added MacBook to your shopping cart!'
 Actual message: 'Element not visible'
+2025-07-14 11:00:24,479 :INFO :Starting test: check name, brand and code of a product.
+2025-07-14 11:00:26,020 :INFO :Searching for 'iMac' element
+2025-07-14 11:00:27,462 :INFO :Navigating to iMac product detail page.
+2025-07-14 11:15:54,654 :INFO :Starting test: check name, brand and code of a product.
+2025-07-14 11:15:55,646 :INFO :Searching for 'iMac' element
+2025-07-14 11:15:56,324 :INFO :Navigating to iMac product detail page.
+2025-07-14 11:15:56,324 :INFO :check product information's
+2025-07-14 11:15:56,405 :INFO :Validation passed: Expected product name matches with current product name
+2025-07-14 11:16:58,408 :INFO :Starting test: check name, brand and code of a product.
+2025-07-14 11:17:00,645 :INFO :Searching for 'iMac' element
+2025-07-14 11:17:05,300 :INFO :Navigating to iMac product detail page.
+2025-07-14 11:17:05,301 :INFO :check product information's
+2025-07-14 11:17:05,861 :ERROR :test failed: product names are not similar
+2025-07-14 11:18:19,860 :INFO :Starting test: check name, brand and code of a product.
+2025-07-14 11:18:21,479 :INFO :Searching for 'iMac' element
+2025-07-14 11:18:23,544 :INFO :Navigating to iMac product detail page.
+2025-07-14 11:18:23,545 :INFO :check product information's
+2025-07-14 11:18:25,286 :ERROR :test failed: product names are not similar
+2025-07-14 11:21:07,726 :INFO :Starting test: check name, brand and code of a product.
+2025-07-14 11:21:09,281 :INFO :Searching for 'iMac' element
+2025-07-14 11:21:10,609 :INFO :Navigating to iMac product detail page.
+2025-07-14 11:21:10,610 :INFO :check product information's
+2025-07-14 11:21:11,159 :ERROR :test failed: product names are not similar
+failed details: 'iMac' != 'iMac123'
+- iMac
++ iMac123
+?     +++
+ : expected product name: iMac123 but got: iMac
+2025-07-14 11:39:55,457 :INFO :Test started: validating product name, brand, and code.
+2025-07-14 11:39:55,460 :INFO :Searching for product: 'iMac'
+2025-07-14 11:39:56,769 :INFO :Opening iMac product detail page.
+2025-07-14 11:39:57,652 :INFO :check product information's
+2025-07-14 11:39:58,250 :ERROR :Product name validation failed.
+Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\product_name_error.png
+Details: 'iMac' != 'iMac123'
+- iMac
++ iMac123
+?     +++
+ : Product name mismatch: expected 'iMac123', but got 'iMac'
+2025-07-14 11:41:12,405 :INFO :Test started: validating product name, brand, and code.
+2025-07-14 11:41:12,406 :INFO :Searching for product: 'iMac'
+2025-07-14 11:41:13,616 :INFO :Opening iMac product detail page.
+2025-07-14 11:41:15,501 :INFO :check product information's
+2025-07-14 11:41:15,612 :INFO :Product name validation passed.

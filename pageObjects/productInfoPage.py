@@ -30,6 +30,18 @@ class ProductInfoPage(BaseDriver):
     def getShoppingCartLink(self):
         return self.wait_for_element_visible(self.locators.shopping_cart_link)
 
+    def get_quantity_input_field(self):
+        return self.wait_for_element_visible(self.locators.quantity_input_field)
+
+    def get_add_to_cart_display_page_button(self):
+        return self.wait_for_element_visible(self.locators.add_to_cart_product_page)
+
+    def get_product_name_text(self):
+        return self.wait_for_element_visible(self.locators.product_name).text
+
+    def get_product_brand(self):
+        return self.wait_for_element_visible(self.locators.product_brand)
+
     def click_on_add_to_cart_button(self):
         self.getAddToCartButton().click()
 
@@ -44,3 +56,16 @@ class ProductInfoPage(BaseDriver):
 
     def click_on_shopping_cart_link(self):
         self.getShoppingCartLink().click()
+
+    def input_quantity(self, quantity):
+        self.get_quantity_input_field().clear()
+        self.get_quantity_input_field().send_keys(quantity)
+
+    def click_on_add_to_cart_display_page_button(self):
+        self.get_add_to_cart_display_page_button().click()
+
+    def check_product_brand(self, productBrand):
+        if self.get_product_brand().text == productBrand:
+            return True
+        else:
+            return False

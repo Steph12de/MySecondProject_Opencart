@@ -15,38 +15,38 @@ class HomePage(BaseDriver):
         self.driver = driver
         self.locators = HomePageLocators
 
-    def getMyAccountButtonHomePage(self):
+    def get_my_account_button_homePage(self):
         return self.wait_for_element_visible(self.locators.my_account_button)
 
-    def getLoginButtonHomePage(self):
+    def get_login_button_home_page(self):
         return self.wait_for_element_visible(self.locators.my_account_login)
 
-    def getRegisterButtonHomePage(self):
+    def get_register_button_home_page(self):
         return self.wait_for_element_visible(self.locators.my_account_register)
 
-    def getDesktopsButton(self):
+    def get_desktops_button(self):
         return self.wait_for_element_visible(self.locators.desktop_button)
 
-    def getSearchInputField(self):
+    def get_search_input_field(self):
         return self.wait_for_element_visible(self.locators.search_input_field)
 
-    def getWishListButton(self):
+    def get_wish_list_button(self):
         return self.wait_for_element_visible(self.locators.wish_list_button)
 
-    def getSearchButton(self):
+    def get_search_button(self):
         return self.wait_for_element_visible(self.locators.search_button)
 
-    def getShowAllDesktopsButton(self):
+    def get_show_all_desktops_button(self):
         return self.wait_for_element_visible(self.locators.show_all_desktops_button)
 
     def click_my_account(self):
-        self.getMyAccountButtonHomePage().click()
+        self.get_my_account_button_homePage().click()
 
     def click_my_account_login_HomePage(self):
-        self.getLoginButtonHomePage().click()
+        self.get_login_button_home_page().click()
 
     def click_my_account_register_homePage(self):
-        self.getRegisterButtonHomePage().click()
+        self.get_register_button_home_page().click()
 
     def bring_me_to_login_page(self):
         self.click_my_account()
@@ -58,17 +58,17 @@ class HomePage(BaseDriver):
 
     def go_to_desktops(self):
         action_chain = ActionChains(self.driver)
-        action_chain.move_to_element(self.getDesktopsButton()).perform()
+        action_chain.move_to_element(self.get_desktops_button()).perform()
         # time.sleep(2)
         # print(self.getDesktopsButton().text)
-        self.getShowAllDesktopsButton().click()
+        self.get_show_all_desktops_button().click()
 
     def inputSearchElement(self, element):
-        self.getSearchInputField().clear()
-        self.getSearchInputField().send_keys(element)
+        self.get_search_input_field().clear()
+        self.get_search_input_field().send_keys(element)
 
     def clickOnWishListButton(self):
-        self.getWishListButton().click()
+        self.get_wish_list_button().click()
 
     def clickOnSearchButton(self):
-        self.getSearchButton().click()
+        self.get_search_button().click()

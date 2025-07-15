@@ -4890,3 +4890,70 @@ Details: 'product 14' != 'Product 14'
 2025-07-15 00:04:05,535 :INFO :Brand validation passed
 2025-07-15 00:04:05,572 :INFO :Validating product code
 2025-07-15 00:04:05,573 :INFO :Product code validation passed
+2025-07-15 13:29:37,527 :INFO :Test started: validating default quantity of a product set as 1
+2025-07-15 13:29:42,805 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 13:29:42,807 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:29:43,896 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:33:53,428 :INFO :Test started: validating default quantity of a product set as 1
+2025-07-15 13:33:57,593 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 13:33:57,594 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:33:58,559 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:33:59,743 :INFO :Validating product name
+2025-07-15 13:33:59,744 :INFO :Product name validation passed.
+2025-07-15 13:33:59,816 :INFO :Validating brand
+2025-07-15 13:33:59,816 :INFO :Brand validation passed
+2025-07-15 13:33:59,875 :INFO :Validating product code
+2025-07-15 13:33:59,875 :INFO :Product code validation passed
+2025-07-15 13:46:48,657 :INFO :Test started: validating default quantity of a product set as 1
+2025-07-15 13:46:48,658 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:46:49,894 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:46:54,632 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 13:46:54,632 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:46:55,580 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:46:56,441 :INFO :Validating product name
+2025-07-15 13:46:56,442 :INFO :Product name validation passed.
+2025-07-15 13:46:56,536 :INFO :Validating brand
+2025-07-15 13:46:56,536 :INFO :Brand validation passed
+2025-07-15 13:46:56,598 :INFO :Validating product code
+2025-07-15 13:46:56,599 :INFO :Product code validation passed
+2025-07-15 13:53:57,065 :INFO :Test started: validating default quantity of a product set as 1
+2025-07-15 13:53:57,067 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:53:58,388 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:53:59,856 :ERROR :Product quantity validation failed
+Screenshot saved at: screenshots\default_quantity_error.png
+Details: 1 != '1' : Product quantity mismatch: expected '1', but got '1'
+2025-07-15 13:54:05,983 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 13:54:05,984 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:54:07,171 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:54:08,950 :INFO :Validating product name
+2025-07-15 13:54:08,950 :INFO :Product name validation passed.
+2025-07-15 13:54:09,033 :INFO :Validating brand
+2025-07-15 13:54:09,033 :INFO :Brand validation passed
+2025-07-15 13:54:09,102 :INFO :Validating product code
+2025-07-15 13:54:09,102 :INFO :Product code validation passed
+2025-07-15 13:56:08,756 :INFO :Test started: validating default quantity of a product set as 1
+2025-07-15 13:56:08,764 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:56:10,665 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:56:12,086 :INFO :Product quantity validation passed
+2025-07-15 13:56:17,576 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 13:56:17,576 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:56:18,739 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:56:19,762 :INFO :Validating product name
+2025-07-15 13:56:19,762 :INFO :Product name validation passed.
+2025-07-15 13:56:19,825 :INFO :Validating brand
+2025-07-15 13:56:19,825 :INFO :Brand validation passed
+2025-07-15 13:56:19,891 :INFO :Validating product code
+2025-07-15 13:56:19,891 :INFO :Product code validation passed
+2025-07-15 13:56:58,222 :INFO :Test started: validating default quantity of a product set as 1
+2025-07-15 13:56:58,222 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:56:59,760 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:57:02,516 :INFO :Product quantity validation passed
+2025-07-15 13:57:09,353 :INFO :Test started: validating product name, brand, and code.
+2025-07-15 13:57:09,356 :INFO :Starting product search for: 'iMac'
+2025-07-15 13:57:10,718 :INFO :Navigating to product detail page for 'iMac'
+2025-07-15 13:57:13,217 :INFO :Validating product name
+2025-07-15 13:57:13,217 :INFO :Product name validation passed.
+2025-07-15 13:57:13,298 :INFO :Validating brand
+2025-07-15 13:57:13,298 :INFO :Brand validation passed
+2025-07-15 13:57:13,400 :INFO :Validating product code
+2025-07-15 13:57:13,401 :INFO :Product code validation passed

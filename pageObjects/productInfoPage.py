@@ -30,8 +30,10 @@ class ProductInfoPage(BaseDriver):
     def getShoppingCartLink(self):
         return self.wait_for_element_visible(self.locators.shopping_cart_link)
 
-    def get_quantity_input_field(self):
-        return self.wait_for_element_visible(self.locators.quantity_input_field)
+    def get_quantity_input_field_attribute(self):
+        w_element = self.wait_for_element_visible(self.locators.quantity_input_field)
+        quantity_value = w_element.get_attribute("value")
+        return quantity_value
 
     def get_add_to_cart_display_page_button(self):
         return self.wait_for_element_visible(self.locators.add_to_cart_product_page)

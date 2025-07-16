@@ -72,7 +72,6 @@ class LoginPage(BaseDriver):
         self.input_password(password)
         self.click_login_button()
 
-
     def log_me_in_using_keyboard(self, email, password):
         self.input_eMail(email)
         self.get_email_field().send_keys(Keys.TAB)

@@ -82,8 +82,8 @@ class Test_003_productDisplayPage(unittest.TestCase):
 
         try:
             self.assertEqual(
-                expected_product_code,
                 actual_product_code,
+                expected_product_code,
                 f"Product code mismatch: expected '{expected_product_code}', but got '{actual_product_code}'"
             )
             self.logger.info("Product code validation passed")
@@ -92,21 +92,66 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self._log_failure("product_code_error", "Product code validation failed", e)
 
     def test_validate_product_default_quantity(self):
-        self.logger.info("Test started: validating default quantity of a product set as 1")
+        self.logger.info("Test started: validating that default product quantity is set to 1.")
 
+        # Search and open product detail page
         self.search_and_open_product("iMac")
 
-        # Validate one as default quantity
+        # Validate default quantity is 1
         expected_quantity = 1
         actual_quantity = int(self.product_page.get_quantity_input_field_attribute())
-        # print(actual_quantity)
+
+        self.logger.info(f"Checking default quantity: expected '{expected_quantity}', found '{actual_quantity}'")
+        try:
+            self.assertEqual(
+                actual_quantity,
+                expected_quantity,
+                f"Default quantity mismatch: expected '{expected_quantity}', got '{actual_quantity}'"
+            )
+            self.logger.info("Default quantity validation passed.")
+
+        except AssertionError as e:
+            self._log_failure("default_quantity_error.png", "Default quantity validation failed", e)
+
+        # Increase quantity and add to cart
+        increase_by = 4
+        self.logger.info(f"Increasing quantity by {increase_by} and adding product to cart.")
+        self.product_page.increase_product_quantity(increase_by)
+        self.product_page.click_on_add_to_cart_button()
+
+        # Validate success message after adding product
+        expected_success = "Success: You have added iMac to your shopping cart!\n×"
+        actual_success = self.product_page.get_success_message_text()
+        self.logger.info(f"Validating success message after adding product: '{actual_success}'")
 
         try:
             self.assertEqual(
-                expected_quantity,
-                actual_quantity,
-                f"Product quantity mismatch: expected '{expected_quantity}', but got '{actual_quantity}'")
-            self.logger.info("Product quantity validation passed")
+                actual_success,
+                expected_success,
+                f"success message mismatch: expected '{expected_success}', but got '{actual_success}'"
+            )
+            self.logger.info("Success message validation passed.")
 
         except AssertionError as e:
-            self._log_failure("default_quantity_error.png", "Product quantity validation failed", e)
+            self._log_failure("add_to_cart_error.png",
+                              "Success message validation failed after adding product.",
+                              e)
+
+        # Validate updated quantity shown in cart icon
+        expected_total_quantity = increase_by
+        actual_cart_quantity = int(self.product_page.split_black_item_button_text())
+
+        try:
+            self.assertEqual(
+                actual_cart_quantity,
+                expected_total_quantity,
+                f"Cart quantity mismatch: expected'{expected_total_quantity}', but got '{actual_cart_quantity}'"
+            )
+            self.logger.info("Cart quantity validation passed.")
+
+        except (IndexError, ValueError, AssertionError) as e:
+            self._log_failure("cart_icon_quantity_error.png",
+                              "Cart quantity validation failed – either due to unreadable cart icon format or mismatch.",
+                              e)
+
+        # print(self.product_page.split_black_item_button_text())

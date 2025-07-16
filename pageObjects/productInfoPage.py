@@ -30,13 +30,15 @@ class ProductInfoPage(BaseDriver):
     def getShoppingCartLink(self):
         return self.wait_for_element_visible(self.locators.shopping_cart_link)
 
+    def get_quantity_input_field(self):
+        return self.wait_for_element_visible(self.locators.quantity_input_field)
+
     def get_quantity_input_field_attribute(self):
-        w_element = self.wait_for_element_visible(self.locators.quantity_input_field)
-        quantity_value = w_element.get_attribute("value")
+        quantity_value = self.get_quantity_input_field().get_attribute("value")
         return quantity_value
 
-    def get_add_to_cart_display_page_button(self):
-        return self.wait_for_element_visible(self.locators.add_to_cart_product_page)
+    # def get_add_to_cart_display_page_button(self):
+    #     return self.wait_for_element_visible(self.locators.add_to_cart_product_page)
 
     def get_product_name_text(self):
         return self.wait_for_element_visible(self.locators.product_name).text
@@ -46,6 +48,16 @@ class ProductInfoPage(BaseDriver):
 
     def get_product_code_text(self):
         return self.wait_for_element_visible(self.locators.product_code).text
+
+    def get_success_message_text(self):
+        success_message = self.wait_for_element_visible(self.locators.success_message).text
+        return success_message
+
+    def get_black_item_button_text(self):
+        return self.wait_for_element_visible(self.locators.black_item_button_text).text
+
+    def split_black_item_button_text(self):
+        return self.get_black_item_button_text().split(" ")[0].strip()
 
     def split_product_code_text(self):
         return self.get_product_code_text().split(":")[-1].strip()
@@ -69,6 +81,11 @@ class ProductInfoPage(BaseDriver):
         self.get_quantity_input_field().clear()
         self.get_quantity_input_field().send_keys(quantity)
 
-    def click_on_add_to_cart_display_page_button(self):
-        self.get_add_to_cart_display_page_button().click()
+    # def click_on_add_to_cart_display_page_button(self):
+    #     self.get_add_to_cart_display_page_button().click()
+
+    def increase_product_quantity(self, quantity):
+        self.get_quantity_input_field().clear()
+        self.get_quantity_input_field().send_keys(quantity)
+
 

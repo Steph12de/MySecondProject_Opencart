@@ -18,6 +18,9 @@ class SearchPage(BaseDriver):
         success_message_text = self.wait_for_element_visible(self.locators.success_message).text
         return success_message_text
 
+    def get_apple_cinema_image(self):
+        return self.wait_for_element_visible(self.locators.apple_cinema_image)
+
     def getViewCartButton(self):
         return self.wait_for_element_visible(self.locators.view_cart_button)
 
@@ -42,3 +45,6 @@ class SearchPage(BaseDriver):
 
     def clickOnViewCartButton(self):
         self.getViewCartButton().click()
+
+    def click_on_apple_cinema_image(self):
+        self.get_apple_cinema_image().click()

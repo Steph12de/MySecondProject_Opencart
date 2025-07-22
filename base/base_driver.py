@@ -15,6 +15,7 @@ class BaseDriver():
             return self.my_Wait.until(EC.visibility_of_element_located(locator))
         except Exception as e:
             return "Element not visible"
+            #raise Exception("Element not visible")
 
     def wait_text_to_be_present_in_element(self, locator, text):
         try:

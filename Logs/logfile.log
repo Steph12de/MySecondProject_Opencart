@@ -5113,3 +5113,418 @@ Details: '4' != 4 : quantity item mismatch: expected '4', but got '4'
 2025-07-16 13:19:38,680 :INFO :Brand validation passed
 2025-07-16 13:19:38,761 :INFO :Validating product code
 2025-07-16 13:19:38,762 :INFO :Product code validation passed
+2025-07-16 14:29:00,757 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 14:29:00,758 :INFO :Starting product search for: 'iMac'
+2025-07-16 14:29:01,816 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 14:29:03,030 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 14:29:03,030 :INFO :Default quantity validation passed.
+2025-07-16 14:29:03,030 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 14:29:03,957 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 14:29:03,958 :INFO :Success message validation passed.
+2025-07-16 14:29:03,997 :INFO :Cart quantity validation passed.
+2025-07-16 14:29:08,463 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 14:29:08,465 :INFO :Starting product search for: 'Apple Cinema 30'
+2025-07-16 14:29:09,554 :INFO :Navigating to product detail page for 'Apple Cinema 30'
+2025-07-16 14:29:19,407 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 14:29:19,407 :INFO :Starting product search for: 'iMac'
+2025-07-16 14:29:20,588 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 14:29:21,296 :INFO :Validating product name
+2025-07-16 14:29:21,297 :INFO :Product name validation passed.
+2025-07-16 14:29:21,348 :INFO :Validating brand
+2025-07-16 14:29:21,348 :INFO :Brand validation passed
+2025-07-16 14:29:21,394 :INFO :Validating product code
+2025-07-16 14:29:21,395 :INFO :Product code validation passed
+2025-07-16 14:36:55,909 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 14:36:55,910 :INFO :Starting product search for: 'iMac'
+2025-07-16 14:36:58,053 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 14:37:00,282 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 14:37:00,282 :INFO :Default quantity validation passed.
+2025-07-16 14:37:00,282 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 14:37:01,191 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 14:37:01,191 :INFO :Success message validation passed.
+2025-07-16 14:37:01,231 :INFO :Cart quantity validation passed.
+2025-07-16 14:37:04,926 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 14:37:04,927 :INFO :Starting product search for: 'Apple Cinema 30'
+2025-07-16 14:37:05,952 :INFO :Navigating to product detail page for 'Apple Cinema 30'
+2025-07-16 14:37:21,503 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 14:37:21,503 :INFO :Starting product search for: 'iMac'
+2025-07-16 14:37:22,588 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 14:37:23,694 :INFO :Validating product name
+2025-07-16 14:37:23,696 :INFO :Product name validation passed.
+2025-07-16 14:37:23,839 :INFO :Validating brand
+2025-07-16 14:37:23,840 :INFO :Brand validation passed
+2025-07-16 14:37:23,953 :INFO :Validating product code
+2025-07-16 14:37:23,954 :INFO :Product code validation passed
+2025-07-16 22:25:00,292 :WARNING :There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+2025-07-16 22:25:00,294 :WARNING :Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2025-07-16 22:25:48,661 :WARNING :There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+2025-07-16 22:26:08,608 :WARNING :There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+2025-07-16 22:38:13,762 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:38:13,763 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:38:15,680 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:38:17,163 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 22:38:17,164 :INFO :Default quantity validation passed.
+2025-07-16 22:38:17,164 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 22:38:18,147 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 22:38:18,147 :INFO :Success message validation passed.
+2025-07-16 22:38:18,180 :INFO :Cart quantity validation passed.
+2025-07-16 22:38:26,984 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:38:26,984 :INFO :Starting product search for: 'Apple Cinema 30'
+2025-07-16 22:38:27,894 :INFO :Navigating to product detail page for 'Apple Cinema 30'
+2025-07-16 22:38:37,308 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 22:38:37,308 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:38:38,150 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:38:38,881 :INFO :Validating product name
+2025-07-16 22:38:38,881 :INFO :Product name validation passed.
+2025-07-16 22:38:38,954 :INFO :Validating brand
+2025-07-16 22:38:38,954 :INFO :Brand validation passed
+2025-07-16 22:38:38,990 :INFO :Validating product code
+2025-07-16 22:38:38,990 :INFO :Product code validation passed
+2025-07-16 22:56:21,525 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:56:21,526 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:56:22,492 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:56:23,204 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 22:56:23,204 :INFO :Default quantity validation passed.
+2025-07-16 22:56:23,204 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 22:56:24,128 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 22:56:24,128 :INFO :Success message validation passed.
+2025-07-16 22:56:24,164 :INFO :Cart quantity validation passed.
+2025-07-16 22:56:28,187 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:56:28,188 :INFO :Starting product search for: 'Apple Cinema 30'
+2025-07-16 22:56:35,265 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 22:56:35,267 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:56:36,347 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:56:37,980 :INFO :Validating product name
+2025-07-16 22:56:37,980 :INFO :Product name validation passed.
+2025-07-16 22:56:38,087 :INFO :Validating brand
+2025-07-16 22:56:38,087 :INFO :Brand validation passed
+2025-07-16 22:56:38,144 :INFO :Validating product code
+2025-07-16 22:56:38,144 :INFO :Product code validation passed
+2025-07-16 22:58:12,914 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:58:12,914 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:58:13,599 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:58:14,428 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 22:58:14,429 :INFO :Default quantity validation passed.
+2025-07-16 22:58:14,429 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 22:58:15,380 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 22:58:15,380 :INFO :Success message validation passed.
+2025-07-16 22:58:15,449 :INFO :Cart quantity validation passed.
+2025-07-16 22:58:19,013 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:58:19,013 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-16 22:58:25,820 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 22:58:25,821 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:58:26,660 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:58:27,521 :INFO :Validating product name
+2025-07-16 22:58:27,521 :INFO :Product name validation passed.
+2025-07-16 22:58:27,598 :INFO :Validating brand
+2025-07-16 22:58:27,598 :INFO :Brand validation passed
+2025-07-16 22:58:27,665 :INFO :Validating product code
+2025-07-16 22:58:27,665 :INFO :Product code validation passed
+2025-07-16 22:59:17,309 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:59:17,310 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:59:18,173 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:59:18,827 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 22:59:18,828 :INFO :Default quantity validation passed.
+2025-07-16 22:59:18,828 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 22:59:19,796 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 22:59:19,797 :INFO :Success message validation passed.
+2025-07-16 22:59:19,901 :INFO :Cart quantity validation passed.
+2025-07-16 22:59:23,655 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 22:59:23,655 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-16 22:59:27,240 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-16 22:59:36,068 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 22:59:36,068 :INFO :Starting product search for: 'iMac'
+2025-07-16 22:59:36,921 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 22:59:37,731 :INFO :Validating product name
+2025-07-16 22:59:37,731 :INFO :Product name validation passed.
+2025-07-16 22:59:37,787 :INFO :Validating brand
+2025-07-16 22:59:37,788 :INFO :Brand validation passed
+2025-07-16 22:59:37,853 :INFO :Validating product code
+2025-07-16 22:59:37,854 :INFO :Product code validation passed
+2025-07-16 23:08:08,165 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:08:08,165 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:08:08,897 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:08:09,673 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 23:08:09,673 :INFO :Default quantity validation passed.
+2025-07-16 23:08:09,673 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 23:08:10,610 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 23:08:10,610 :INFO :Success message validation passed.
+2025-07-16 23:08:10,660 :INFO :Cart quantity validation passed.
+2025-07-16 23:08:14,687 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:08:14,688 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-16 23:08:15,820 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-16 23:08:27,476 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 23:08:27,477 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:08:28,478 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:08:29,233 :INFO :Validating product name
+2025-07-16 23:08:29,233 :INFO :Product name validation passed.
+2025-07-16 23:08:29,294 :INFO :Validating brand
+2025-07-16 23:08:29,294 :INFO :Brand validation passed
+2025-07-16 23:08:29,356 :INFO :Validating product code
+2025-07-16 23:08:29,357 :INFO :Product code validation passed
+2025-07-16 23:15:21,135 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:15:21,135 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:15:21,927 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:15:22,586 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 23:15:22,586 :INFO :Default quantity validation passed.
+2025-07-16 23:15:22,586 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 23:15:23,468 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 23:15:23,468 :INFO :Success message validation passed.
+2025-07-16 23:15:23,504 :INFO :Cart quantity validation passed.
+2025-07-16 23:15:32,275 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:15:32,276 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-16 23:15:39,551 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 23:15:39,551 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:15:40,513 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:15:41,297 :INFO :Validating product name
+2025-07-16 23:15:41,298 :INFO :Product name validation passed.
+2025-07-16 23:15:41,337 :INFO :Validating brand
+2025-07-16 23:15:41,338 :INFO :Brand validation passed
+2025-07-16 23:15:41,399 :INFO :Validating product code
+2025-07-16 23:15:41,399 :INFO :Product code validation passed
+2025-07-16 23:17:15,888 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:17:15,889 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:17:16,977 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:17:17,819 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 23:17:17,819 :INFO :Default quantity validation passed.
+2025-07-16 23:17:17,819 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 23:17:18,853 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 23:17:18,854 :INFO :Success message validation passed.
+2025-07-16 23:17:18,908 :INFO :Cart quantity validation passed.
+2025-07-16 23:17:22,832 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:17:22,833 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-16 23:17:27,003 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-16 23:17:30,474 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 23:17:30,475 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:17:31,436 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:17:32,342 :INFO :Validating product name
+2025-07-16 23:17:32,343 :INFO :Product name validation passed.
+2025-07-16 23:17:32,401 :INFO :Validating brand
+2025-07-16 23:17:32,401 :INFO :Brand validation passed
+2025-07-16 23:17:32,450 :INFO :Validating product code
+2025-07-16 23:17:32,450 :INFO :Product code validation passed
+2025-07-16 23:18:34,003 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:18:34,003 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:18:34,920 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:18:35,673 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-16 23:18:35,673 :INFO :Default quantity validation passed.
+2025-07-16 23:18:35,673 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-16 23:18:36,626 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-16 23:18:36,626 :INFO :Success message validation passed.
+2025-07-16 23:18:36,663 :INFO :Cart quantity validation passed.
+2025-07-16 23:18:40,584 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-16 23:18:40,584 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-16 23:18:41,707 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-16 23:18:50,642 :INFO :Test started: validating product name, brand, and code.
+2025-07-16 23:18:50,643 :INFO :Starting product search for: 'iMac'
+2025-07-16 23:18:51,634 :INFO :Navigating to product detail page for 'iMac'
+2025-07-16 23:18:52,475 :INFO :Validating product name
+2025-07-16 23:18:52,475 :INFO :Product name validation passed.
+2025-07-16 23:18:52,539 :INFO :Validating brand
+2025-07-16 23:18:52,539 :INFO :Brand validation passed
+2025-07-16 23:18:52,644 :INFO :Validating product code
+2025-07-16 23:18:52,645 :INFO :Product code validation passed
+2025-07-17 00:00:44,311 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-17 00:00:44,313 :INFO :Starting product search for: 'iMac'
+2025-07-17 00:00:45,389 :INFO :Navigating to product detail page for 'iMac'
+2025-07-17 00:00:46,335 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-17 00:00:46,336 :INFO :Default quantity validation passed.
+2025-07-17 00:00:46,336 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-17 00:00:47,308 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-17 00:00:47,309 :INFO :Success message validation passed.
+2025-07-17 00:00:47,357 :INFO :Cart quantity validation passed.
+2025-07-17 00:00:51,101 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-17 00:00:51,103 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-17 00:00:52,156 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-17 00:00:59,931 :INFO :Test started: validating product name, brand, and code.
+2025-07-17 00:00:59,931 :INFO :Starting product search for: 'iMac'
+2025-07-17 00:01:01,301 :INFO :Navigating to product detail page for 'iMac'
+2025-07-17 00:01:02,304 :INFO :Validating product name
+2025-07-17 00:01:02,306 :INFO :Product name validation passed.
+2025-07-17 00:01:02,378 :INFO :Validating brand
+2025-07-17 00:01:02,378 :INFO :Brand validation passed
+2025-07-17 00:01:02,428 :INFO :Validating product code
+2025-07-17 00:01:02,428 :INFO :Product code validation passed
+2025-07-22 09:37:13,834 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 09:37:13,839 :INFO :Starting product search for: 'iMac'
+2025-07-22 09:37:16,941 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 09:37:18,309 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-22 09:37:18,310 :INFO :Default quantity validation passed.
+2025-07-22 09:37:18,310 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-22 09:37:19,445 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-22 09:37:19,445 :INFO :Success message validation passed.
+2025-07-22 09:37:19,499 :INFO :Cart quantity validation passed.
+2025-07-22 09:37:27,671 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 09:37:27,671 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 09:37:28,617 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 09:37:33,769 :INFO :Test started: validating product name, brand, and code.
+2025-07-22 09:37:33,769 :INFO :Starting product search for: 'iMac'
+2025-07-22 09:37:35,226 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 09:37:37,510 :INFO :Validating product name
+2025-07-22 09:37:37,510 :INFO :Product name validation passed.
+2025-07-22 09:37:37,584 :INFO :Validating brand
+2025-07-22 09:37:37,584 :INFO :Brand validation passed
+2025-07-22 09:37:37,642 :INFO :Validating product code
+2025-07-22 09:37:37,643 :INFO :Product code validation passed
+2025-07-22 09:37:45,190 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-07-22 09:54:11,777 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 09:54:11,779 :INFO :Starting product search for: 'iMac'
+2025-07-22 09:54:14,962 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 09:54:16,567 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-22 09:54:16,568 :INFO :Default quantity validation passed.
+2025-07-22 09:54:16,568 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-22 09:54:17,652 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-22 09:54:17,653 :INFO :Success message validation passed.
+2025-07-22 09:54:17,706 :INFO :Cart quantity validation passed.
+2025-07-22 09:54:24,284 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 09:54:24,286 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 09:54:28,219 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 09:54:38,818 :INFO :Test started: validating product name, brand, and code.
+2025-07-22 09:54:38,818 :INFO :Starting product search for: 'iMac'
+2025-07-22 09:54:40,267 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 09:54:42,047 :INFO :Validating product name
+2025-07-22 09:54:42,047 :INFO :Product name validation passed.
+2025-07-22 09:54:42,140 :INFO :Validating brand
+2025-07-22 09:54:42,141 :INFO :Brand validation passed
+2025-07-22 09:54:42,202 :INFO :Validating product code
+2025-07-22 09:54:42,203 :INFO :Product code validation passed
+2025-07-22 10:13:11,229 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 10:13:11,233 :INFO :Starting product search for: 'iMac'
+2025-07-22 10:13:16,197 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 10:13:19,192 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-22 10:13:19,193 :INFO :Default quantity validation passed.
+2025-07-22 10:13:19,193 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-22 10:13:20,649 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-22 10:13:20,649 :INFO :Success message validation passed.
+2025-07-22 10:13:20,701 :INFO :Cart quantity validation passed.
+2025-07-22 10:13:27,410 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 10:13:27,430 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 10:13:34,270 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 10:13:36,625 :ERROR :Minimum quantity validation failed - either due to mismatch quantity or incorrect minimum quantity text
+Screenshot saved at: screenshots\minimum_quantity_error.png
+Details: '2' != 2 : Minimum quantity mismatch: expected '2' but got '2'
+2025-07-22 10:13:41,873 :INFO :Test started: validating product name, brand, and code.
+2025-07-22 10:13:41,915 :INFO :Starting product search for: 'iMac'
+2025-07-22 10:13:46,885 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 10:13:49,463 :INFO :Validating product name
+2025-07-22 10:13:49,464 :INFO :Product name validation passed.
+2025-07-22 10:13:49,526 :INFO :Validating brand
+2025-07-22 10:13:49,526 :INFO :Brand validation passed
+2025-07-22 10:13:49,600 :INFO :Validating product code
+2025-07-22 10:13:49,601 :INFO :Product code validation passed
+2025-07-22 10:18:41,303 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 10:18:41,305 :INFO :Starting product search for: 'iMac'
+2025-07-22 10:18:42,714 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 10:18:43,563 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-22 10:18:43,564 :INFO :Default quantity validation passed.
+2025-07-22 10:18:43,565 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-22 10:18:44,684 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-22 10:18:44,684 :INFO :Success message validation passed.
+2025-07-22 10:18:44,756 :INFO :Cart quantity validation passed.
+2025-07-22 10:18:53,936 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 10:18:53,937 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 10:18:58,053 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 10:19:00,082 :ERROR :Minimum quantity validation failed - either due to mismatch quantity or incorrect minimum quantity text
+Screenshot saved at: screenshots\minimum_quantity_error.png
+Details: 'This product has a minimum quantity of 2' != ' This product has a minimum quantity of 2'
+- This product has a minimum quantity of 2
++  This product has a minimum quantity of 2
+? +
+ : Minimum quatity text are not same: expected' This product has a minimum quantity of 2' but got 'This product has a minimum quantity of 2'
+2025-07-22 10:19:07,255 :INFO :Test started: validating product name, brand, and code.
+2025-07-22 10:19:07,255 :INFO :Starting product search for: 'iMac'
+2025-07-22 10:19:08,350 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 10:19:09,386 :INFO :Validating product name
+2025-07-22 10:19:09,387 :INFO :Product name validation passed.
+2025-07-22 10:19:09,460 :INFO :Validating brand
+2025-07-22 10:19:09,460 :INFO :Brand validation passed
+2025-07-22 10:19:09,515 :INFO :Validating product code
+2025-07-22 10:19:09,516 :INFO :Product code validation passed
+2025-07-22 10:30:36,907 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 10:30:36,909 :INFO :Starting product search for: 'iMac'
+2025-07-22 10:30:38,528 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 10:30:39,952 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-22 10:30:39,952 :INFO :Default quantity validation passed.
+2025-07-22 10:30:39,952 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-22 10:30:40,977 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-22 10:30:40,978 :INFO :Success message validation passed.
+2025-07-22 10:30:41,022 :INFO :Cart quantity validation passed.
+2025-07-22 10:30:48,459 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 10:30:48,459 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 10:30:53,331 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 10:30:59,390 :INFO :Minimum quantity validation passed
+2025-07-22 10:31:04,319 :INFO :Test started: validating product name, brand, and code.
+2025-07-22 10:31:04,320 :INFO :Starting product search for: 'iMac'
+2025-07-22 10:31:05,497 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 10:31:10,092 :INFO :Validating product name
+2025-07-22 10:31:10,092 :INFO :Product name validation passed.
+2025-07-22 10:31:10,137 :INFO :Validating brand
+2025-07-22 10:31:10,137 :INFO :Brand validation passed
+2025-07-22 10:31:10,185 :INFO :Validating product code
+2025-07-22 10:31:10,186 :INFO :Product code validation passed
+2025-07-22 11:29:06,288 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 11:29:06,297 :INFO :Starting product search for: 'iMac'
+2025-07-22 11:29:09,895 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 11:29:16,513 :INFO :Checking default quantity: expected '1', found '1'
+2025-07-22 11:29:16,513 :INFO :Default quantity validation passed.
+2025-07-22 11:29:16,513 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-07-22 11:29:17,585 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-07-22 11:29:17,585 :INFO :Success message validation passed.
+2025-07-22 11:29:17,634 :INFO :Cart quantity validation passed.
+2025-07-22 11:29:24,210 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 11:29:24,211 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 11:29:27,656 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 11:29:29,946 :INFO :Minimum quantity validation passed
+2025-07-22 11:29:29,946 :INFO :Filling in all the mandatory fields
+2025-07-22 11:29:43,156 :INFO :Test started: validating product name, brand, and code.
+2025-07-22 11:29:43,159 :INFO :Starting product search for: 'iMac'
+2025-07-22 11:29:48,670 :INFO :Navigating to product detail page for 'iMac'
+2025-07-22 11:29:50,344 :INFO :Validating product name
+2025-07-22 11:29:50,344 :INFO :Product name validation passed.
+2025-07-22 11:29:50,536 :INFO :Validating brand
+2025-07-22 11:29:50,537 :INFO :Brand validation passed
+2025-07-22 11:29:50,683 :INFO :Validating product code
+2025-07-22 11:29:50,684 :INFO :Product code validation passed
+2025-07-22 12:44:47,224 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 12:44:47,227 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 12:44:54,118 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 12:44:56,917 :INFO :Minimum quantity validation passed
+2025-07-22 12:44:56,918 :INFO :Filling in all the mandatory fields
+2025-07-22 12:50:12,946 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 12:50:12,950 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 12:50:15,813 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 12:50:18,321 :INFO :Minimum quantity validation passed
+2025-07-22 12:50:18,321 :INFO :Filling in all the mandatory fields
+2025-07-22 13:04:11,353 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 13:04:11,358 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 13:04:12,714 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 13:04:13,823 :INFO :Minimum quantity validation passed
+2025-07-22 13:04:13,823 :INFO :Filling in all the mandatory fields
+2025-07-22 13:16:19,561 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-22 13:16:19,634 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-22 13:16:21,820 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-22 13:16:23,662 :INFO :Minimum quantity validation passed
+2025-07-22 13:16:23,662 :INFO :Filling in all the mandatory fields

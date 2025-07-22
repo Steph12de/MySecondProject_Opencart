@@ -10,3 +10,7 @@ class SearchPageLocators:
     p_elements = (By.XPATH, "//p[@class='text-right']//a//p[@class='text-right']//a")
     view_cart_button = (By.XPATH, "//strong[contains(text(), 'View Cart')]") # "//strong[text()='View Cart']"
     item_card_total = (By.XPATH, "//span[@id='cart-total']")
+    # title = "Apple Cinema 30"
+    # apple_cinema_image = (By.XPATH, f'//img[@title="{title}"]')
+    apple_cinema_image = (By.XPATH, "//div[@class='image']//a")
+

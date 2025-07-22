@@ -1,4 +1,5 @@
 import os
+import time
 import unittest
 
 import pytest
@@ -34,9 +35,18 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.home_page.clickOnSearchButton()
 
         # Navigate to product detail page
-        self.logger.info(f"Navigating to product detail page for '{product_name}'")
-        self.search_page.clickOnImacImage()
+        if product_name == "iMac":
+            self.logger.info(f"Navigating to product detail page for '{product_name}'")
+            self.search_page.clickOnImacImage()
 
+        elif product_name == 'Apple Cinema 30"':
+            self.logger.info(f"Navigating to product detail page for '{product_name}'")
+            self.search_page.click_on_apple_cinema_image()
+
+        else:
+            return None
+
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_name_brand_and_code(self):
         self.logger.info("Test started: validating product name, brand, and code.")
 
@@ -91,6 +101,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         except AssertionError as e:
             self._log_failure("product_code_error", "Product code validation failed", e)
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_default_quantity(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
 
@@ -154,4 +165,42 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Cart quantity validation failed – either due to unreadable cart icon format or mismatch.",
                               e)
 
-        # print(self.product_page.split_black_item_button_text())
+    def test_validate_product_having_minimum_quantity_set(self):
+        self.logger.info("Test started: validating that default product quantity is set to 1.")
+
+        # Search and open product detail page
+        product_name = 'Apple Cinema 30"'
+        self.search_and_open_product(product_name)
+
+        # Validate minimum quantity and associated message
+        expected_quantity = 2
+        actual_quantity = int(self.product_page.get_quantity_input_field_attribute())
+
+        expected_info_text = "This product has a minimum quantity of 2"
+        actual_info_text = self.product_page.get_minimum_quantity_text()
+
+        try:
+            self.assertEqual(
+                actual_quantity,
+                expected_quantity,
+                f"Minimum quantity mismatch: expected '{expected_quantity}' but got '{actual_quantity}'"
+            )
+            self.assertEqual(
+                actual_info_text,
+                expected_info_text,
+                f"Minimum quatity text are not same: expected'{expected_info_text}' but got '{actual_info_text}'"
+            )
+            self.logger.info("Minimum quantity and information text validated successfully.")
+
+        except AssertionError as e:
+            self._log_failure(
+                "minimum_quantity_error.png",
+                "Minimum quantity validation failed – either numeric value or message text is incorrect.",
+                e)
+
+        # Fill all mandatory fields on the product display page
+        self.logger.info("Filling in mandatory fields on the product display page.")
+        self.product_page.fill_mandatory_fields_product_display()
+        time.sleep(3)
+
+

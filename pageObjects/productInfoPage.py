@@ -1,3 +1,5 @@
+from selenium.webdriver.support.select import Select
+
 from base.base_driver import BaseDriver
 from utilities.custom_logger import LogGen
 from utilities.locators.productinfoPageLocators import ProductInfoPageLocators
@@ -56,6 +58,27 @@ class ProductInfoPage(BaseDriver):
     def get_black_item_button_text(self):
         return self.wait_for_element_visible(self.locators.black_item_button_text).text
 
+    def get_minimum_quantity_text(self):
+        return self.wait_for_element_visible(self.locators.minimum_quantity_text_box).text
+
+    def get_radio_button_medium(self):
+        return self.wait_for_element_visible(self.locators.medium_radio)
+
+    def get_checkbox_three(self):
+        return self.wait_for_element_visible(self.locators.checkbox_three)
+
+    def get_text_input_field(self):
+        return self.wait_for_element_visible(self.locators.text_input_field)
+
+    def get_dropdown_button(self):
+        return self.wait_for_element_visible(self.locators.dropdown_button)
+
+    def get_text_input_area(self):
+        return self.wait_for_element_visible(self.locators.text_input_area)
+
+    def get_upload_file_button(self):
+        return self.wait_for_element_visible(self.locators.upload_file_button)
+
     def split_black_item_button_text(self):
         return self.get_black_item_button_text().split(" ")[0].strip()
 
@@ -81,11 +104,39 @@ class ProductInfoPage(BaseDriver):
         self.get_quantity_input_field().clear()
         self.get_quantity_input_field().send_keys(quantity)
 
-    # def click_on_add_to_cart_display_page_button(self):
-    #     self.get_add_to_cart_display_page_button().click()
-
     def increase_product_quantity(self, quantity):
         self.get_quantity_input_field().clear()
         self.get_quantity_input_field().send_keys(quantity)
+
+    def click_on_radio_button_medium(self):
+        self.get_radio_button_medium().click()
+
+    def click_on_checkbox_three(self):
+        self.get_checkbox_three().click()
+
+    def input_text_in_text_field(self):
+        self.get_text_input_field().clear()
+        self.get_text_input_field().send_keys("This is a test")
+
+    def select_checkbox_value_green(self):
+        checkbox_values = Select(self.get_dropdown_button())
+        checkbox_values.select_by_value("1")
+
+    def input_text_in_text_area(self):
+        self.get_text_input_area().clear()
+        self.get_text_input_area().send_keys("You have to enter something in this text area")
+
+    def upload_file_(self):
+        self.get_upload_file_button().send_keys("C:\\Python-Selenium\\Software Testing_QA Atomation\\Manual Software Testing\\OpenCart -FRS.pdf")
+
+    def fill_mandatory_fields_product_display(self):
+        self.click_on_radio_button_medium()
+        self.click_on_checkbox_three()
+        self.input_text_in_text_field()
+        self.select_checkbox_value_green()
+        self.input_text_in_text_area()
+        self.upload_file_()
+
+
 
 

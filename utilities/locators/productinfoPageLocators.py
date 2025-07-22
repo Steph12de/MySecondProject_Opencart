@@ -13,3 +13,10 @@ class ProductInfoPageLocators:
     product_brand = (By.XPATH, "//div[@class='col-sm-4']//ul//li//a")
     product_code = (By.XPATH, "//ul//li[text()='Product Code: Product 14']")  # "//ul//li[contains(text(), 'Product Code:')]"
     black_item_button_text = (By.ID, "cart-total")
+    minimum_quantity_text_box = (By.XPATH, "//div[@class='alert alert-info']")
+    medium_radio = (By.NAME, "option[218]")
+    checkbox_three = (By.NAME, "option[223][]")
+    text_input_field = (By.ID, "input-option208")
+    dropdown_button = (By.ID, "input-option217")
+    text_input_area = (By.XPATH, "//textarea[@id='input-option209']")
+    upload_file_button = (By.CSS_SELECTOR, "input[type='file']")

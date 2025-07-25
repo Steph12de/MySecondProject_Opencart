@@ -17,7 +17,7 @@ class ProductInfoPage(BaseDriver):
         return self.wait_for_element_visible(self.locators.addToCart_button)
 
     def waitUntilItemInCart(self, count):
-        expected_text = f" {str(count)} item(s) - ${(count*122)}.00"
+        expected_text = f" {str(count)} item(s) - ${(count * 122)}.00"
         try:
             self.wait_text_to_be_present_in_element(self.locators.black_item_button, expected_text)
         except:
@@ -79,6 +79,36 @@ class ProductInfoPage(BaseDriver):
     def get_upload_file_button(self):
         return self.wait_for_element_visible(self.locators.upload_file_button)
 
+    def get_date_picker_icon(self):
+        return self.wait_for_element_visible(self.locators.calendar_date_picker_icon)
+
+    def get_month_year_date_button(self):
+        return self.wait_for_element_visible(self.locators.month_year_date_button)
+
+    def get_left_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.left_arrow_button)
+
+    def get_right_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.right_arrow_button)
+
+    def get_calendar_days(self):
+        return self.wait_for_elements_visible(self.locators.calendar_days)
+
+    def get_calendar_time_picker_icon(self):
+        return self.wait_for_element_visible(self.locators.calendar_time_picker_icon)
+
+    def get_calendar_hour_box(self):
+        return self.wait_for_element_visible(self.locators.calendar_hour_box)
+
+    def get_calendar_minutes_box(self):
+        return self.wait_for_element_visible(self.locators.calendar_minutes_box)
+
+    def get_calendar_hour_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.calendar_hour_arrow_button)
+
+    def get_calendar_minutes_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.calendar_minutes_arrow_button)
+
     def split_black_item_button_text(self):
         return self.get_black_item_button_text().split(" ")[0].strip()
 
@@ -127,7 +157,53 @@ class ProductInfoPage(BaseDriver):
         self.get_text_input_area().send_keys("You have to enter something in this text area")
 
     def upload_file_(self):
-        self.get_upload_file_button().send_keys("C:\\Python-Selenium\\Software Testing_QA Atomation\\Manual Software Testing\\OpenCart -FRS.pdf")
+        script = """
+        var input = document.getElementById('input-option222');
+        input.setAttribute('type', 'file');
+        """
+        self.driver.execute_script(script)
+        self.get_upload_file_button().send_keys(
+            "C:\\Python-Selenium\\Software Testing_QA Atomation\\Manual Software Testing\\OpenCart -FRS.pdf")
+
+    def choose_a_date(self):
+        my_selected_day = "20"
+        my_selected_month = "August"
+        my_selected_year = "2010"
+        self.get_date_picker_icon().click()
+        while True:
+            actual_date_year = self.get_month_year_date_button().text.split(" ")[-1].strip()
+            actual_date_month = self.get_month_year_date_button().text.split(" ")[0].strip()
+            if actual_date_month == my_selected_month and actual_date_year == my_selected_year:
+                break
+            else:
+                self.get_right_arrow_button().click()
+            # self.get_left_arrow_button().click()
+
+        available_days = self.get_calendar_days()
+        for day in available_days:
+            if day.text == my_selected_day:
+                day.click()
+                break
+
+    def choose_a_time(self):
+        time_hour = "23"
+        time_minutes = "00"
+        self.get_calendar_time_picker_icon().click()
+        while True:
+            actual_hour = self.get_calendar_hour_box().text
+            # actual_minutes = self.get_calendar_minutes_box().text
+            if actual_hour == time_hour:
+                break
+            else:
+              self.get_calendar_hour_arrow_button().click()
+
+        while True:
+            # actual_hour = self.get_calendar_hour_box().text
+            actual_minutes = self.get_calendar_minutes_box().text
+            if actual_minutes == time_minutes:
+                break
+            else:
+              self.get_calendar_minutes_arrow_button().click()
 
     def fill_mandatory_fields_product_display(self):
         self.click_on_radio_button_medium()
@@ -136,7 +212,5 @@ class ProductInfoPage(BaseDriver):
         self.select_checkbox_value_green()
         self.input_text_in_text_area()
         self.upload_file_()
-
-
-
-
+        self.choose_a_date()
+        self.choose_a_time()

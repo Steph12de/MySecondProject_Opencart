@@ -85,11 +85,11 @@ class ProductInfoPage(BaseDriver):
     def get_month_year_date_button(self):
         return self.wait_for_element_visible(self.locators.month_year_date_button)
 
-    def get_left_arrow_button(self):
-        return self.wait_for_element_visible(self.locators.left_arrow_button)
-
     def get_right_arrow_button(self):
         return self.wait_for_element_visible(self.locators.right_arrow_button)
+
+    def get_left_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.left_arrow_button)
 
     def get_calendar_days(self):
         return self.wait_for_elements_visible(self.locators.calendar_days)
@@ -103,11 +103,32 @@ class ProductInfoPage(BaseDriver):
     def get_calendar_minutes_box(self):
         return self.wait_for_element_visible(self.locators.calendar_minutes_box)
 
-    def get_calendar_hour_arrow_button(self):
-        return self.wait_for_element_visible(self.locators.calendar_hour_arrow_button)
+    def get_calendar_hour_arrow_button_up(self):
+        return self.wait_for_element_visible(self.locators.calendar_hour_arrow_button_up)
 
-    def get_calendar_minutes_arrow_button(self):
-        return self.wait_for_element_visible(self.locators.calendar_minutes_arrow_button)
+    def get_calendar_minutes_arrow_button_up(self):
+        return self.wait_for_element_visible(self.locators.calendar_minutes_arrow_button_up)
+
+    def get_calendar_hour_arrow_button_down(self):
+        return self.wait_for_element_visible(self.locators.calendar_hour_arrow_button_down)
+
+    def get_calendar_minutes_arrow_button_down(self):
+        return self.wait_for_element_visible(self.locators.calendar_minutes_arrow_button_down)
+
+    def get_calendar_date_time_icon(self):
+        return self.wait_for_element_visible(self.locators.calendar_date_time_icon)
+
+    def get_date_time_month_year_button(self):
+        return self.wait_for_element_visible(self.locators.date_time_month_year_button)
+
+    def get_date_time_right_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.date_time_right_arrow_button)
+
+    def get_date_time_left_arrow_button(self):
+        return self.wait_for_element_visible(self.locators.date_time_left_arrow_button)
+
+    def get_date_time_calendar_days(self):
+        return self.wait_for_elements_visible(self.locators.date_time_calendar_days)
 
     def split_black_item_button_text(self):
         return self.get_black_item_button_text().split(" ")[0].strip()
@@ -176,8 +197,8 @@ class ProductInfoPage(BaseDriver):
             if actual_date_month == my_selected_month and actual_date_year == my_selected_year:
                 break
             else:
-                self.get_right_arrow_button().click()
-            # self.get_left_arrow_button().click()
+                self.get_left_arrow_button().click()
+            # self.get_right_arrow_button().click()
 
         available_days = self.get_calendar_days()
         for day in available_days:
@@ -191,19 +212,69 @@ class ProductInfoPage(BaseDriver):
         self.get_calendar_time_picker_icon().click()
         while True:
             actual_hour = self.get_calendar_hour_box().text
-            # actual_minutes = self.get_calendar_minutes_box().text
-            if actual_hour == time_hour:
-                break
+            if actual_hour > time_hour:
+                self.get_calendar_hour_arrow_button_down().click()
+            elif actual_hour < time_hour:
+                self.get_calendar_hour_arrow_button_up().click()
             else:
-              self.get_calendar_hour_arrow_button().click()
+                break
 
         while True:
-            # actual_hour = self.get_calendar_hour_box().text
             actual_minutes = self.get_calendar_minutes_box().text
-            if actual_minutes == time_minutes:
+            if actual_minutes > time_minutes:
+                self.get_calendar_minutes_arrow_button_down().click()
+            elif actual_minutes < time_minutes:
+                self.get_calendar_minutes_arrow_button_up()
+            else:
+              break
+
+        self.get_calendar_time_picker_icon().click()
+
+    def choose_date_and_time(self):
+        my_selected_day = "1"
+        my_selected_month = "February"
+        my_selected_year = "2011"
+        self.get_calendar_date_time_icon().click()
+
+        while True:
+            actual_date_year = self.get_date_time_month_year_button().text.split(" ")[-1].strip()
+            actual_date_month = self.get_date_time_month_year_button().text.split(" ")[0].strip()
+            if actual_date_month == my_selected_month and actual_date_year == my_selected_year:
                 break
             else:
-              self.get_calendar_minutes_arrow_button().click()
+                self.get_date_time_left_arrow_button().click()
+            # self.get_date_time_right_arrow_button().click()
+
+        available_days = self.get_date_time_calendar_days()
+        for day in available_days:
+            if day.text == my_selected_day:
+                print(day.text)
+                day.click()
+                break
+
+        # time_hour = "20"
+        # time_minutes = "59"
+        # self.get_calendar_time_picker_icon().click()
+        #
+        # while True:
+        #     actual_hour = self.get_calendar_hour_box().text
+        #     if actual_hour > time_hour:
+        #         self.get_calendar_hour_arrow_button_down().click()
+        #     elif actual_hour < time_hour:
+        #         self.get_calendar_hour_arrow_button_up().click()
+        #     else:
+        #         break
+        #
+        # while True:
+        #     actual_minutes = self.get_calendar_minutes_box().text
+        #     if actual_minutes > time_minutes:
+        #         self.get_calendar_minutes_arrow_button_down().click()
+        #     elif actual_minutes < time_minutes:
+        #         self.get_calendar_minutes_arrow_button_up()
+        #     else:
+        #         break
+        #
+        # self.get_calendar_time_picker_icon().click()
 
     def fill_mandatory_fields_product_display(self):
         self.click_on_radio_button_medium()
@@ -214,3 +285,4 @@ class ProductInfoPage(BaseDriver):
         self.upload_file_()
         self.choose_a_date()
         self.choose_a_time()
+        self.choose_date_and_time()

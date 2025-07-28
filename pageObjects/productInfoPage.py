@@ -130,6 +130,27 @@ class ProductInfoPage(BaseDriver):
     def get_date_time_calendar_days(self):
         return self.wait_for_elements_visible(self.locators.date_time_calendar_days)
 
+    def get_date_time_hour_button(self):
+        return self.wait_for_element_visible(self.locators.date_time_hour_button)
+
+    def get_date_time_hour_box(self):
+        return self.wait_for_element_visible(self.locators.date_time_hour_box)
+
+    def get_date_time_minutes_box(self):
+        return self.wait_for_element_visible(self.locators.date_time_minutes_box)
+
+    def get_date_time_hour_arrow_button_up(self):
+        return self.wait_for_element_visible(self.locators.date_time_hour_arrow_button_up)
+
+    def get_date_time_minutes_arrow_button_up(self):
+        return self.wait_for_element_visible(self.locators.date_time_minutes_arrow_button_up)
+
+    def get_date_time_hour_arrow_button_down(self):
+        return self.wait_for_element_visible(self.locators.date_time_hour_arrow_button_down)
+
+    def get_date_time_minutes_arrow_button_down(self):
+        return self.wait_for_element_visible(self.locators.date_time_minutes_arrow_button_down)
+
     def split_black_item_button_text(self):
         return self.get_black_item_button_text().split(" ")[0].strip()
 
@@ -184,97 +205,78 @@ class ProductInfoPage(BaseDriver):
         """
         self.driver.execute_script(script)
         self.get_upload_file_button().send_keys(
-            "C:\\Python-Selenium\\Software Testing_QA Atomation\\Manual Software Testing\\OpenCart -FRS.pdf")
+            "C:\\Python-Selenium\\Software Testing_QA Atomation\\Manual Software Testing\\OpenCart -Test Plan.pdf")
 
-    def choose_a_date(self):
-        my_selected_day = "20"
-        my_selected_month = "August"
-        my_selected_year = "2010"
-        self.get_date_picker_icon().click()
+    def choose_calendar_date(self, day, month, year, get_icon, get_date_label, get_arrow_left, get_arrow_right, get_day_elements):
+        get_icon().click()
+
         while True:
-            actual_date_year = self.get_month_year_date_button().text.split(" ")[-1].strip()
-            actual_date_month = self.get_month_year_date_button().text.split(" ")[0].strip()
-            if actual_date_month == my_selected_month and actual_date_year == my_selected_year:
+            current_text = get_date_label().text
+            actual_month, actual_year = current_text.split(" ")[0], current_text.split(" ")[-1]
+            if actual_month == month and actual_year == year:
                 break
             else:
-                self.get_left_arrow_button().click()
-            # self.get_right_arrow_button().click()
+                get_arrow_left().click()
+            # get_arrow_right.click()
 
-        available_days = self.get_calendar_days()
-        for day in available_days:
-            if day.text == my_selected_day:
-                day.click()
+        for element in get_day_elements():
+            if element.text == day:
+                element.click()
                 break
 
-    def choose_a_time(self):
-        time_hour = "23"
-        time_minutes = "00"
-        self.get_calendar_time_picker_icon().click()
+    def choose_time(self, hour, minutes, open_picker, get_hour, get_minute, hour_up, hour_down, minute_up, minute_down, close_picker):
+        open_picker().click()
+
         while True:
-            actual_hour = self.get_calendar_hour_box().text
-            if actual_hour > time_hour:
-                self.get_calendar_hour_arrow_button_down().click()
-            elif actual_hour < time_hour:
-                self.get_calendar_hour_arrow_button_up().click()
+            actual_hour = get_hour().text
+            if actual_hour > hour:
+                hour_down().click()
+            elif actual_hour < hour:
+                hour_up().click()
             else:
                 break
 
         while True:
-            actual_minutes = self.get_calendar_minutes_box().text
-            if actual_minutes > time_minutes:
-                self.get_calendar_minutes_arrow_button_down().click()
-            elif actual_minutes < time_minutes:
-                self.get_calendar_minutes_arrow_button_up()
+            actual_minutes = get_minute().text
+            if actual_minutes > minutes:
+                minute_down().click()
+            elif actual_minutes < minutes:
+                minute_up().click()
             else:
-              break
-
-        self.get_calendar_time_picker_icon().click()
-
-    def choose_date_and_time(self):
-        my_selected_day = "1"
-        my_selected_month = "February"
-        my_selected_year = "2011"
-        self.get_calendar_date_time_icon().click()
-
-        while True:
-            actual_date_year = self.get_date_time_month_year_button().text.split(" ")[-1].strip()
-            actual_date_month = self.get_date_time_month_year_button().text.split(" ")[0].strip()
-            if actual_date_month == my_selected_month and actual_date_year == my_selected_year:
-                break
-            else:
-                self.get_date_time_left_arrow_button().click()
-            # self.get_date_time_right_arrow_button().click()
-
-        available_days = self.get_date_time_calendar_days()
-        for day in available_days:
-            if day.text == my_selected_day:
-                print(day.text)
-                day.click()
                 break
 
-        # time_hour = "20"
-        # time_minutes = "59"
-        # self.get_calendar_time_picker_icon().click()
-        #
-        # while True:
-        #     actual_hour = self.get_calendar_hour_box().text
-        #     if actual_hour > time_hour:
-        #         self.get_calendar_hour_arrow_button_down().click()
-        #     elif actual_hour < time_hour:
-        #         self.get_calendar_hour_arrow_button_up().click()
-        #     else:
-        #         break
-        #
-        # while True:
-        #     actual_minutes = self.get_calendar_minutes_box().text
-        #     if actual_minutes > time_minutes:
-        #         self.get_calendar_minutes_arrow_button_down().click()
-        #     elif actual_minutes < time_minutes:
-        #         self.get_calendar_minutes_arrow_button_up()
-        #     else:
-        #         break
-        #
-        # self.get_calendar_time_picker_icon().click()
+        close_picker().click()
+
+    def choose_date_and_time(self, day, month, year,
+                         date_icon, date_label, date_arrow_left, date_arrow_right, date_days,
+                         hour, minute, time_icon, get_hour, get_minute,
+                         hour_up, hour_down, minute_up, minute_down,
+                         close_time_picker):
+        # Choose date
+        self.choose_calendar_date(
+            day = day,
+            month = month,
+            year = year,
+            get_icon = date_icon,
+            get_date_label=date_label,
+            get_arrow_left = date_arrow_left,
+            get_arrow_right = date_arrow_right,
+            get_day_elements = date_days
+        )
+
+        # Choose time
+        self.choose_time(
+            hour= hour,
+            minutes= minute,
+            open_picker = time_icon,
+            get_hour = get_hour,
+            get_minute = get_minute,
+            hour_up = hour_up,
+            hour_down = hour_down,
+            minute_up = minute_up,
+            minute_down = minute_down,
+            close_picker = close_time_picker
+        )
 
     def fill_mandatory_fields_product_display(self):
         self.click_on_radio_button_medium()
@@ -283,6 +285,44 @@ class ProductInfoPage(BaseDriver):
         self.select_checkbox_value_green()
         self.input_text_in_text_area()
         self.upload_file_()
-        self.choose_a_date()
-        self.choose_a_time()
-        self.choose_date_and_time()
+        self.choose_calendar_date(
+            day = "20",
+            month = "August",
+            year = "2010",
+            get_icon = self.get_date_picker_icon,
+            get_date_label = self.get_month_year_date_button,
+            get_arrow_left = self.get_left_arrow_button,
+            get_arrow_right = self.get_right_arrow_button,
+            get_day_elements = self.get_calendar_days
+        )
+        self.choose_time(
+            hour = "23", minutes = "00",
+            open_picker = self.get_calendar_time_picker_icon,
+            get_hour = self.get_calendar_hour_box,
+            get_minute = self.get_calendar_minutes_box,
+            hour_up = self.get_calendar_hour_arrow_button_up,
+            hour_down = self.get_calendar_hour_arrow_button_down,
+            minute_up = self.get_calendar_minutes_arrow_button_up,
+            minute_down = self.get_calendar_minutes_arrow_button_down,
+            close_picker = self.get_calendar_time_picker_icon
+        )
+        self.choose_date_and_time(
+            day="1", month="February", year="2011",
+            date_icon = self.get_calendar_date_time_icon,
+            date_label = self.get_date_time_month_year_button,
+            date_arrow_left = self.get_date_time_left_arrow_button,
+            date_arrow_right = self.get_date_time_right_arrow_button,
+            date_days = self.get_date_time_calendar_days,
+            time_icon = self.get_date_time_hour_button,
+            hour = "20", minute = "59",
+            get_hour = self.get_date_time_hour_box,
+            get_minute = self.get_date_time_minutes_box,
+            hour_up = self.get_date_time_hour_arrow_button_up,
+            hour_down = self.get_date_time_hour_arrow_button_down,
+            minute_up = self.get_date_time_minutes_arrow_button_up,
+            minute_down = self.get_date_time_minutes_arrow_button_down,
+            close_time_picker = self.get_calendar_date_time_icon
+        )
+        self.input_quantity("1")
+
+

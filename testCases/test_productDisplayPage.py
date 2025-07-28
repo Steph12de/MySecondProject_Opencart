@@ -7,6 +7,7 @@ import pytest
 from pageObjects.homePage import HomePage
 from pageObjects.productInfoPage import ProductInfoPage
 from pageObjects.searchPage import SearchPage
+from pageObjects.shoppingCartPage import ShoppingCartPage
 from utilities.custom_logger import LogGen
 
 
@@ -19,6 +20,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.home_page = HomePage(self.driver)
         self.search_page = SearchPage(self.driver)
         self.product_page = ProductInfoPage(self.driver)
+        self.cart_page = ShoppingCartPage(self.driver)
 
     def _log_failure(self, screenshot_name, message, exception):
         screenshot_path = os.path.join("screenshots", screenshot_name)
@@ -201,6 +203,14 @@ class Test_003_productDisplayPage(unittest.TestCase):
         # Fill all mandatory fields on the product display page
         self.logger.info("Filling in mandatory fields on the product display page.")
         self.product_page.fill_mandatory_fields_product_display()
-        time.sleep(3)
+
+        # Click on add to cart and validate the adding message
+        self.product_page.click_on_add_to_cart_button()
+        self.product_page.click_on_shopping_cart_link()
+
+        expected_warning_message = 'Minimum order amount for Apple Cinema 30" is 2!\n×'
+        actual_warning_message = self.cart_page.get_warning_message()
+        print(actual_warning_message)
+
 
 

@@ -37,4 +37,12 @@ class ProductInfoPageLocators:
     date_time_right_arrow_button = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//div[@class='datepicker-days']//table//thead//tr[1]//th[3]")
     date_time_left_arrow_button = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//div[@class='datepicker-days']//table//thead//tr[1]//th[1]")
     date_time_calendar_days = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//div[@class='datepicker-days']//table//tbody//tr//td[@class='day']")
-     #//div[contains(@class,"usetwentyfour")]
+    date_time_hour_button = (By.XPATH, "//li[@class='picker-switch accordion-toggle']")
+    date_time_hour_box = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[2]//td[1]//span")
+    date_time_minutes_box = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[2]//td[3]//span")
+    date_time_hour_arrow_button_up = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[1]//td[1]//a")
+    date_time_minutes_arrow_button_up = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[1]//td[3]//a")
+    date_time_hour_arrow_button_down = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[3]//td[1]//a")
+    date_time_minutes_arrow_button_down = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[3]//td[3]//a")
+
+    # //div[contains(@class,"usetwentyfour")]

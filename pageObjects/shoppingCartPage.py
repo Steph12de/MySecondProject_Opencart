@@ -18,6 +18,9 @@ class ShoppingCartPage(BaseDriver):
         Trows = len(rows)
         return Trows
 
+    def get_warning_message(self):
+        return self.wait_for_element_visible(self.locators.warning_message)
+
     def check_product_name(self, currentProductName):
         # print(f"getNumberTotalOfRows: {self.getNumberTotalOfRows()}")
         for row in range(1, self.getNumberTotalOfRows() + 1):

@@ -18,8 +18,8 @@ class ShoppingCartPage(BaseDriver):
         Trows = len(rows)
         return Trows
 
-    def get_warning_message(self):
-        return self.wait_for_element_visible(self.locators.warning_message)
+    def get_warning_message_text(self):
+        return self.wait_for_element_visible(self.locators.warning_message).text.split("\n")[0].strip()
 
     def check_product_name(self, currentProductName):
         # print(f"getNumberTotalOfRows: {self.getNumberTotalOfRows()}")
@@ -32,3 +32,6 @@ class ShoppingCartPage(BaseDriver):
                 return True
 
         return False
+
+    def check_presence_of_warning_message(self):
+        return self.wait_for_element_located(self.locators.warning_message)

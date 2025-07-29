@@ -7,7 +7,7 @@ from utilities.custom_logger import LogGen
 class BaseDriver():
     def __init__(self, driver):
         self.driver = driver
-        self.my_Wait = WebDriverWait(self.driver, 5)
+        self.my_Wait = WebDriverWait(self.driver, 10)
         # self.logger = LogGen.loggen()
 
     def wait_for_element_visible(self, locator):
@@ -41,4 +41,12 @@ class BaseDriver():
         except Exception as e:
             return "Element not visible"
 
+    def wait_for_element_to_be_clickable(self, locator):
+        try:
+            return self.my_Wait.until(EC.element_to_be_clickable(locator))
+        except Exception as e:
+            return "Element not visible and clickable"
+
+    def scroll_element_into_view(self, locator):
+        return self.driver.execute_script("arguments[0].scrollIntoView();", locator)
 

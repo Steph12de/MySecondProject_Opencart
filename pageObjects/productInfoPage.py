@@ -32,7 +32,7 @@ class ProductInfoPage(BaseDriver):
         return self.wait_text_to_be_present_in_element(self.locators.success_message, "Success: You have added")
 
     def getShoppingCartLink(self):
-        return self.wait_for_element_visible(self.locators.shopping_cart_link)
+        return self.wait_for_element_to_be_clickable(self.locators.shopping_cart_link)
 
     def get_quantity_input_field(self):
         return self.wait_for_element_visible(self.locators.quantity_input_field)
@@ -152,6 +152,11 @@ class ProductInfoPage(BaseDriver):
 
     def get_date_time_minutes_arrow_button_down(self):
         return self.wait_for_element_visible(self.locators.date_time_minutes_arrow_button_down)
+
+    def scroll_element_into_shopping_link_view(self):
+        print(type(self.locators.shopping_cart_link))
+        self.scroll_element_into_view(self.locators.shopping_cart_link)
+
 
     def split_black_item_button_text(self):
         return self.get_black_item_button_text().split(" ")[0].strip()
@@ -327,7 +332,7 @@ class ProductInfoPage(BaseDriver):
             minute_down = self.get_date_time_minutes_arrow_button_down,
             close_time_picker = self.get_calendar_date_time_icon
         )
-        self.input_quantity("1")
+
 
 
 

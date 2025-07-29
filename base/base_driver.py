@@ -1,5 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as EC, expected_conditions
 
 from utilities.custom_logger import LogGen
 
@@ -34,5 +34,11 @@ class BaseDriver():
             return self.my_Wait.until(EC.visibility_of_all_elements_located(locator))
         except Exception as e:
             return "Elements not visible"
+
+    def wait_for_alert_to_be_present(self):
+        try:
+            return self.my_Wait.until(expected_conditions.alert_is_present())
+        except Exception as e:
+            return "Element not visible"
 
 

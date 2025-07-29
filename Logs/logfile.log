@@ -5858,3 +5858,110 @@ Details: 'This product has a minimum quantity of 2' != ' This product has a mini
 2025-07-28 11:49:12,824 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
 2025-07-28 11:49:14,025 :INFO :Minimum quantity and information text validated successfully.
 2025-07-28 11:49:14,025 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 12:53:14,843 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 12:53:14,846 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 12:53:16,097 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 12:53:17,277 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 12:53:17,277 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:01:57,808 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:01:57,947 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:01:59,219 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:02:01,099 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:02:01,099 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:02:44,691 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:02:44,692 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:02:46,480 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:02:47,657 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:02:47,657 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:03:03,212 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:03:03,214 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:03:04,079 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:03:04,985 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:03:04,986 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:05:17,616 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:05:17,617 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:05:18,489 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:05:19,464 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:05:19,464 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:06:59,774 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:06:59,779 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:07:01,069 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:07:02,356 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:07:02,357 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:28:23,438 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:28:23,440 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:28:25,139 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:28:26,421 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:28:26,421 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:29:53,151 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:29:53,155 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:29:54,110 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:29:55,007 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:29:55,007 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:30:32,146 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:30:32,147 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:30:33,658 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:30:34,993 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:30:34,994 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:31:32,465 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:31:32,466 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:31:33,560 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:31:34,733 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:31:34,733 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:35:42,975 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:35:42,977 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:35:44,542 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:35:46,462 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:35:46,462 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:36:42,009 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:36:42,010 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:36:43,049 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:36:43,990 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:36:43,990 :INFO :Filling in mandatory fields on the product display page.
+2025-07-28 13:37:14,878 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-28 13:37:14,879 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-28 13:37:15,833 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-28 13:37:16,796 :INFO :Minimum quantity and information text validated successfully.
+2025-07-28 13:37:16,797 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:02:18,190 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:02:18,193 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:02:20,697 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:02:22,323 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:02:22,324 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:26:14,059 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:26:14,072 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:26:15,396 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:26:16,734 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:26:16,734 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:30:44,371 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:30:44,372 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:30:45,445 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:30:46,754 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:30:46,754 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:43:13,631 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:43:13,633 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:43:14,869 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:43:15,929 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:43:15,930 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:46:10,592 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:46:10,594 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:46:11,528 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:46:13,043 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:46:13,044 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:46:43,176 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-07-29 09:47:41,182 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:47:41,235 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:47:42,889 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:47:45,030 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:47:45,031 :INFO :Filling in mandatory fields on the product display page.
+2025-07-29 09:49:21,288 :INFO :Test started: validating that default product quantity is set to 1.
+2025-07-29 09:49:21,291 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-07-29 09:49:22,844 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-07-29 09:49:24,571 :INFO :Minimum quantity and information text validated successfully.
+2025-07-29 09:49:24,572 :INFO :Filling in mandatory fields on the product display page.

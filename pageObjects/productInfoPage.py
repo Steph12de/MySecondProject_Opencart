@@ -3,6 +3,8 @@ from selenium.webdriver.support.select import Select
 from base.base_driver import BaseDriver
 from utilities.custom_logger import LogGen
 from utilities.locators.productinfoPageLocators import ProductInfoPageLocators
+from pynput.keyboard import Key, Controller
+import time
 
 
 class ProductInfoPage(BaseDriver):
@@ -77,7 +79,7 @@ class ProductInfoPage(BaseDriver):
         return self.wait_for_element_visible(self.locators.text_input_area)
 
     def get_upload_file_button(self):
-        return self.wait_for_element_visible(self.locators.upload_file_button)
+        return self.wait_for_element_visible(self.locators.button_upload_file)
 
     def get_date_picker_icon(self):
         return self.wait_for_element_visible(self.locators.calendar_date_picker_icon)
@@ -199,13 +201,15 @@ class ProductInfoPage(BaseDriver):
         self.get_text_input_area().send_keys("You have to enter something in this text area")
 
     def upload_file_(self):
-        script = """
-        var input = document.getElementById('input-option222');
-        input.setAttribute('type', 'file');
-        """
-        self.driver.execute_script(script)
-        self.get_upload_file_button().send_keys(
-            "C:\\Python-Selenium\\Software Testing_QA Atomation\\Manual Software Testing\\OpenCart -Test Plan.pdf")
+        self.get_upload_file_button().click()
+        time.sleep(3)
+
+        keyboard = Controller()
+        keyboard.type("C:\\Test\\Test.pdf")
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+        self.wait_for_alert_to_be_present()
+        self.driver.switch_to.alert.accept()
 
     def choose_calendar_date(self, day, month, year, get_icon, get_date_label, get_arrow_left, get_arrow_right, get_day_elements):
         get_icon().click()
@@ -324,5 +328,6 @@ class ProductInfoPage(BaseDriver):
             close_time_picker = self.get_calendar_date_time_icon
         )
         self.input_quantity("1")
+
 
 

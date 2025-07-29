@@ -206,6 +206,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
 
         # Click on add to cart and validate the adding message
         self.product_page.click_on_add_to_cart_button()
+        time.sleep(4)
         self.product_page.click_on_shopping_cart_link()
 
         expected_warning_message = 'Minimum order amount for Apple Cinema 30" is 2!\n×'

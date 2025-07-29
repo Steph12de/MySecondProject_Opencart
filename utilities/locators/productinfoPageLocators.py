@@ -20,6 +20,7 @@ class ProductInfoPageLocators:
     dropdown_button = (By.ID, "input-option217")
     text_input_area = (By.XPATH, "//textarea[@id='input-option209']")
     upload_file_button = (By.ID, "input-option222")
+    button_upload_file = (By.ID, "button-upload222")
     calendar_date_picker_icon = (By.XPATH, "//div[@class='input-group date']//button[@type='button']")
     month_year_date_button = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'picker-open')]//div[@class='datepicker-days']//table//thead//tr[1]//th[2]")
     right_arrow_button = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'picker-open')]//div[@class='datepicker-days']//table//thead//tr[1]//th[3]")

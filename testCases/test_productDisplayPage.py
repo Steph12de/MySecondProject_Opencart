@@ -54,7 +54,6 @@ class Test_003_productDisplayPage(unittest.TestCase):
         # self.product_page.scroll_element_into_shopping_link_view()
         self.product_page.click_on_shopping_cart_link()
 
-
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_name_brand_and_code(self):
         self.logger.info("Test started: validating product name, brand, and code.")
@@ -241,6 +240,3 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self._log_failure("visibility_warning_message_error.png",
                               "Warning appeared despite valid quantity",
                               e)
-
-
-

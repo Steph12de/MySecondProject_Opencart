@@ -52,7 +52,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.product_page.input_quantity(quantity)
         self.product_page.click_on_add_to_cart_button()
         # self.product_page.scroll_element_into_shopping_link_view()
-        time.sleep(3)
+        # time.sleep(3)
         self.product_page.click_on_shopping_cart_link()
 
     @pytest.mark.skip(reason="Just skipped it right now")
@@ -241,7 +241,23 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self._log_failure("visibility_warning_message_error.png",
                               "Warning appeared despite valid quantity",
                               e)
+        # Validate product name and quantity in cart
+        product_name_valid = self.cart_page.check_product_name('Apple Cinema 30"test')
+        product_quantity_valid = self.cart_page.check_product_quantity(str(5))
+        try:
+            self.assertTrue(
+                product_name_valid,
+                "Product name not found in cart"
+            )
+            self.assertTrue(
+                product_quantity_valid,
+                "Product quantity not found or incorrect in cart"
+            )
+            self.logger.info("Product name and quantity successfully verified in cart")
+        except AssertionError as e:
+            self._log_failure("product_name_quantity_error.png",
+                              "Either product name or quantity in cart does not match expected values ",
+                              e)
 
-        print(self.cart_page.check_product_name('Apple Cinema 30"'))
-        print(self.cart_page.check_product_quantity(5))
+
 

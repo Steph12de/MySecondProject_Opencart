@@ -52,6 +52,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.product_page.input_quantity(quantity)
         self.product_page.click_on_add_to_cart_button()
         # self.product_page.scroll_element_into_shopping_link_view()
+        time.sleep(3)
         self.product_page.click_on_shopping_cart_link()
 
     @pytest.mark.skip(reason="Just skipped it right now")
@@ -240,3 +241,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self._log_failure("visibility_warning_message_error.png",
                               "Warning appeared despite valid quantity",
                               e)
+
+        print(self.cart_page.check_product_name('Apple Cinema 30"'))
+        print(self.cart_page.check_product_quantity(5))
+

@@ -33,5 +33,16 @@ class ShoppingCartPage(BaseDriver):
 
         return False
 
+    def check_product_quantity(self, quantity):
+        for row in range(1, self.getNumberTotalOfRows() + 1):
+            product_quantity = self.driver.find_element(By.XPATH,
+                                                        "//div[@class='table-responsive']//table//tbody//tr[" + str(
+                                                            row) + "]//td[4]//input").get_attribute("value")
+            print(product_quantity)
+            if product_quantity == quantity:
+                return True
+
+        return False
+
     def check_presence_of_warning_message(self):
         return self.wait_for_element_located(self.locators.warning_message)

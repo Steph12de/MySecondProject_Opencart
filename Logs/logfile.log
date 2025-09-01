@@ -6171,3 +6171,90 @@ Details: False is not true : Warning message appear. There is a problem
 2025-07-29 13:38:41,645 :INFO :Filling mandatory fields on product display page.
 2025-07-29 13:39:03,308 :INFO :Warning message after adding below-minimum quantity validated
 2025-07-29 13:39:20,334 :INFO :No warning — product added successfully with correct quantity
+2025-08-27 07:25:07,302 :INFO :Starting the change password test after login.
+2025-08-27 07:25:08,503 :INFO :Login successful - User redirected to 'My Account'
+2025-08-27 07:25:11,508 :INFO :Password change was successful. User is on 'My Account' page.
+2025-08-27 07:25:11,508 :INFO :Proceeding with logout and re-login verification after password change.
+2025-08-27 07:25:15,435 :INFO :Test passed: Login unsuccessful as expected - User was not redirected to 'My Account'.
+2025-08-27 07:25:23,269 :INFO :Navigated to login page
+2025-08-27 07:25:23,269 :INFO :Starting the placeholder check test process 
+2025-08-27 07:25:23,359 :INFO :Placeholder text is correctly displayed in both email and password fields.
+2025-08-27 07:25:31,909 :INFO :Starting the Login and Logout test execution
+2025-08-27 07:25:33,773 :ERROR :Login test was not successful!The login/logout test cannot be proceeded.
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login 
+2025-08-27 07:25:43,121 :INFO :Starting login Test using keyboard keys
+2025-08-27 07:25:44,577 :INFO :Login successful - User redirected to 'My Account'
+2025-08-27 07:25:54,198 :ERROR :Login via right hand menu wasn't successfully: Test failed: User wasn't logged in, the title is wrong
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login. Actual Title: Account Login
+2025-08-27 07:26:04,902 :INFO :Starting login Test with multiple combination
+2025-08-27 07:26:16,708 :INFO :Login successful - Email: username@gmail.de, Expected Title: 'My Account'
+2025-08-27 07:26:23,961 :INFO :Starting login Test with multiple combination
+2025-08-27 07:26:24,916 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-08-27 07:26:47,508 :INFO :Starting login Test with multiple combination
+2025-08-27 07:26:48,589 :INFO :Login successful - Email: username123@gmail.de, Expected Title: 'Account Login'
+2025-08-27 07:26:56,854 :INFO :Starting login Test with multiple combination
+2025-08-27 07:26:58,653 :INFO :Login successful - Email: username@gmail.de, Expected Title: 'Account Login'
+2025-08-27 07:27:07,468 :INFO :Starting login Test with multiple combination
+2025-08-27 07:27:08,450 :INFO :Login successful - Email:  , Expected Title: 'Account Login'
+2025-08-27 07:27:20,156 :INFO :Navigated to login page
+2025-08-27 07:27:20,156 :INFO :Starting password visibility check test execution
+2025-08-27 07:27:20,200 :INFO :Password field is correctly masked.
+2025-08-27 07:27:28,522 :INFO :Forgotten password text is displayed correctly.
+2025-08-27 07:31:52,215 :INFO :Test started: validating that default product quantity is set to 1.
+2025-08-27 07:31:52,215 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-08-27 07:31:53,515 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-08-27 07:31:59,102 :INFO :Minimum quantity and information text validated successfully.
+2025-08-27 07:31:59,102 :INFO :Filling mandatory fields on product display page.
+2025-08-27 08:11:41,023 :INFO :Test started: validating that default product quantity is set to 1.
+2025-08-27 08:11:41,025 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-08-27 08:11:42,058 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-08-27 08:11:43,455 :INFO :Minimum quantity and information text validated successfully.
+2025-08-27 08:11:43,456 :INFO :Filling mandatory fields on product display page.
+2025-08-27 08:13:46,960 :INFO :Test started: validating that default product quantity is set to 1.
+2025-08-27 08:13:46,960 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-08-27 08:13:48,259 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-08-27 08:13:49,975 :INFO :Minimum quantity and information text validated successfully.
+2025-08-27 08:13:49,975 :INFO :Filling mandatory fields on product display page.
+2025-08-27 08:14:08,421 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-01 10:45:15,409 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-01 10:45:15,412 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-01 10:45:17,173 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-01 10:45:18,309 :INFO :Minimum quantity and information text validated successfully.
+2025-09-01 10:45:18,310 :INFO :Filling mandatory fields on product display page.
+2025-09-01 10:45:39,828 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-01 10:50:02,080 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-01 10:50:02,081 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-01 10:50:03,305 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-01 10:50:04,617 :INFO :Minimum quantity and information text validated successfully.
+2025-09-01 10:50:04,618 :INFO :Filling mandatory fields on product display page.
+2025-09-01 10:50:27,795 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-01 10:50:46,524 :INFO :No warning — product added successfully with correct quantity
+2025-09-01 11:20:45,605 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-01 11:20:45,611 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-01 11:20:47,662 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-01 11:20:49,141 :INFO :Minimum quantity and information text validated successfully.
+2025-09-01 11:20:49,141 :INFO :Filling mandatory fields on product display page.
+2025-09-01 11:21:12,258 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-01 11:21:31,153 :INFO :No warning — product added successfully with correct quantity
+2025-09-01 11:23:13,735 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-01 11:23:13,737 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-01 11:23:14,666 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-01 11:23:15,548 :INFO :Minimum quantity and information text validated successfully.
+2025-09-01 11:23:15,549 :INFO :Filling mandatory fields on product display page.
+2025-09-01 11:23:39,499 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-01 11:23:58,356 :INFO :No warning — product added successfully with correct quantity
+2025-09-01 11:28:25,756 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-01 11:28:25,757 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-01 11:28:26,609 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-01 11:28:27,483 :INFO :Minimum quantity and information text validated successfully.
+2025-09-01 11:28:27,484 :INFO :Filling mandatory fields on product display page.
+2025-09-01 11:28:48,967 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-01 11:29:09,316 :INFO :No warning — product added successfully with correct quantity

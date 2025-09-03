@@ -45,5 +45,5 @@ class ProductInfoPageLocators:
     date_time_minutes_arrow_button_up = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[1]//td[3]//a")
     date_time_hour_arrow_button_down = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[3]//td[1]//a")
     date_time_minutes_arrow_button_down = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[3]//td[3]//a")
-
     # //div[contains(@class,"usetwentyfour")]
+

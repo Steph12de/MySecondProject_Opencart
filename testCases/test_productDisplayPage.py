@@ -259,5 +259,11 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Either product name or quantity in cart does not match expected values ",
                               e)
 
+    # def test_validate_product_reviews(self):
+    #     self.logger.info("Test started: validating that user can write a reviews for products.")
+    #
+    #     # Search and open product detail page
+    #     product_name = 'iMac'
+    #     self.search_and_open_product(product_name)
 
-
+        # Validate writing review

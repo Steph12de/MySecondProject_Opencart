@@ -31,6 +31,13 @@ class ProductInfoPage(BaseDriver):
     def getSuccessAddedMessage(self):
         return self.wait_text_to_be_present_in_element(self.locators.success_message, "Success: You have added")
 
+    def get_success_message_box(self):
+        element = self.wait_for_element_visible(self.locators.success_message)
+        if element is not str:
+            return True
+        else:
+            return False
+
     def getShoppingCartLink(self):
         return self.wait_for_element_to_be_clickable(self.locators.shopping_cart_link)
 
@@ -153,10 +160,27 @@ class ProductInfoPage(BaseDriver):
     def get_date_time_minutes_arrow_button_down(self):
         return self.wait_for_element_visible(self.locators.date_time_minutes_arrow_button_down)
 
+    def get_reviews_button(self):
+        return self.wait_for_element_visible(self.locators.reviews_button)
+
+    def get_name_input_reviews(self):
+        return self.wait_for_element_visible(self.locators.name_input_reviews)
+
+    def get_review_message_box(self):
+        return self.wait_for_element_visible(self.locators.reviews_message)
+
+    def get_radio_button_reviews(self):
+        return self.wait_for_elements_visible(self.locators.radio_buttons_reviews)
+
+    def get_continue_button_reviews(self):
+        return self.wait_for_element_visible(self.locators.continue_button_reviews)
+
+    def get_success_message_reviews_text(self):
+        return self.wait_for_element_visible(self.locators.success_message_reviews).text
+
     def scroll_element_into_shopping_link_view(self):
         print(type(self.locators.shopping_cart_link))
         self.scroll_element_into_view(self.locators.shopping_cart_link)
-
 
     def split_black_item_button_text(self):
         return self.get_black_item_button_text().split(" ")[0].strip()
@@ -178,6 +202,12 @@ class ProductInfoPage(BaseDriver):
 
     def click_on_shopping_cart_link(self):
         self.getShoppingCartLink().click()
+        # element_result = self.getShoppingCartLink()
+        # while element_result is str:
+        #     element_result = self.getShoppingCartLink()
+        # element_result.click()
+        # print("element_result")
+        # print(element_result)
 
     def input_quantity(self, quantity):
         self.get_quantity_input_field().clear()
@@ -216,7 +246,8 @@ class ProductInfoPage(BaseDriver):
         self.wait_for_alert_to_be_present()
         self.driver.switch_to.alert.accept()
 
-    def choose_calendar_date(self, day, month, year, get_icon, get_date_label, get_arrow_left, get_arrow_right, get_day_elements):
+    def choose_calendar_date(self, day, month, year, get_icon, get_date_label, get_arrow_left, get_arrow_right,
+                             get_day_elements):
         get_icon().click()
 
         while True:
@@ -233,7 +264,8 @@ class ProductInfoPage(BaseDriver):
                 element.click()
                 break
 
-    def choose_time(self, hour, minutes, open_picker, get_hour, get_minute, hour_up, hour_down, minute_up, minute_down, close_picker):
+    def choose_time(self, hour, minutes, open_picker, get_hour, get_minute, hour_up, hour_down, minute_up, minute_down,
+                    close_picker):
         open_picker().click()
 
         while True:
@@ -257,34 +289,34 @@ class ProductInfoPage(BaseDriver):
         close_picker().click()
 
     def choose_date_and_time(self, day, month, year,
-                         date_icon, date_label, date_arrow_left, date_arrow_right, date_days,
-                         hour, minute, time_icon, get_hour, get_minute,
-                         hour_up, hour_down, minute_up, minute_down,
-                         close_time_picker):
+                             date_icon, date_label, date_arrow_left, date_arrow_right, date_days,
+                             hour, minute, time_icon, get_hour, get_minute,
+                             hour_up, hour_down, minute_up, minute_down,
+                             close_time_picker):
         # Choose date
         self.choose_calendar_date(
-            day = day,
-            month = month,
-            year = year,
-            get_icon = date_icon,
+            day=day,
+            month=month,
+            year=year,
+            get_icon=date_icon,
             get_date_label=date_label,
-            get_arrow_left = date_arrow_left,
-            get_arrow_right = date_arrow_right,
-            get_day_elements = date_days
+            get_arrow_left=date_arrow_left,
+            get_arrow_right=date_arrow_right,
+            get_day_elements=date_days
         )
 
         # Choose time
         self.choose_time(
-            hour= hour,
-            minutes= minute,
-            open_picker = time_icon,
-            get_hour = get_hour,
-            get_minute = get_minute,
-            hour_up = hour_up,
-            hour_down = hour_down,
-            minute_up = minute_up,
-            minute_down = minute_down,
-            close_picker = close_time_picker
+            hour=hour,
+            minutes=minute,
+            open_picker=time_icon,
+            get_hour=get_hour,
+            get_minute=get_minute,
+            hour_up=hour_up,
+            hour_down=hour_down,
+            minute_up=minute_up,
+            minute_down=minute_down,
+            close_picker=close_time_picker
         )
 
     def fill_mandatory_fields_product_display(self):
@@ -295,44 +327,58 @@ class ProductInfoPage(BaseDriver):
         self.input_text_in_text_area()
         self.upload_file_()
         self.choose_calendar_date(
-            day = "20",
-            month = "August",
-            year = "2010",
-            get_icon = self.get_date_picker_icon,
-            get_date_label = self.get_month_year_date_button,
-            get_arrow_left = self.get_left_arrow_button,
-            get_arrow_right = self.get_right_arrow_button,
-            get_day_elements = self.get_calendar_days
+            day="20",
+            month="August",
+            year="2010",
+            get_icon=self.get_date_picker_icon,
+            get_date_label=self.get_month_year_date_button,
+            get_arrow_left=self.get_left_arrow_button,
+            get_arrow_right=self.get_right_arrow_button,
+            get_day_elements=self.get_calendar_days
         )
         self.choose_time(
-            hour = "23", minutes = "00",
-            open_picker = self.get_calendar_time_picker_icon,
-            get_hour = self.get_calendar_hour_box,
-            get_minute = self.get_calendar_minutes_box,
-            hour_up = self.get_calendar_hour_arrow_button_up,
-            hour_down = self.get_calendar_hour_arrow_button_down,
-            minute_up = self.get_calendar_minutes_arrow_button_up,
-            minute_down = self.get_calendar_minutes_arrow_button_down,
-            close_picker = self.get_calendar_time_picker_icon
+            hour="23", minutes="00",
+            open_picker=self.get_calendar_time_picker_icon,
+            get_hour=self.get_calendar_hour_box,
+            get_minute=self.get_calendar_minutes_box,
+            hour_up=self.get_calendar_hour_arrow_button_up,
+            hour_down=self.get_calendar_hour_arrow_button_down,
+            minute_up=self.get_calendar_minutes_arrow_button_up,
+            minute_down=self.get_calendar_minutes_arrow_button_down,
+            close_picker=self.get_calendar_time_picker_icon
         )
         self.choose_date_and_time(
             day="1", month="February", year="2011",
-            date_icon = self.get_calendar_date_time_icon,
-            date_label = self.get_date_time_month_year_button,
-            date_arrow_left = self.get_date_time_left_arrow_button,
-            date_arrow_right = self.get_date_time_right_arrow_button,
-            date_days = self.get_date_time_calendar_days,
-            time_icon = self.get_date_time_hour_button,
-            hour = "20", minute = "59",
-            get_hour = self.get_date_time_hour_box,
-            get_minute = self.get_date_time_minutes_box,
-            hour_up = self.get_date_time_hour_arrow_button_up,
-            hour_down = self.get_date_time_hour_arrow_button_down,
-            minute_up = self.get_date_time_minutes_arrow_button_up,
-            minute_down = self.get_date_time_minutes_arrow_button_down,
-            close_time_picker = self.get_calendar_date_time_icon
+            date_icon=self.get_calendar_date_time_icon,
+            date_label=self.get_date_time_month_year_button,
+            date_arrow_left=self.get_date_time_left_arrow_button,
+            date_arrow_right=self.get_date_time_right_arrow_button,
+            date_days=self.get_date_time_calendar_days,
+            time_icon=self.get_date_time_hour_button,
+            hour="20", minute="59",
+            get_hour=self.get_date_time_hour_box,
+            get_minute=self.get_date_time_minutes_box,
+            hour_up=self.get_date_time_hour_arrow_button_up,
+            hour_down=self.get_date_time_hour_arrow_button_down,
+            minute_up=self.get_date_time_minutes_arrow_button_up,
+            minute_down=self.get_date_time_minutes_arrow_button_down,
+            close_time_picker=self.get_calendar_date_time_icon
         )
 
+    def click_reviews_button(self):
+        self.get_reviews_button().click()
 
+    def input_name_reviewer(self, name):
+        self.get_name_input_reviews().send_keys(name)
 
+    def input_review(self, message):
+        self.get_review_message_box().send_keys(message)
 
+    def select_radio_button_rating(self):
+        ratings = self.get_radio_button_reviews()
+        for rating in ratings:
+            if rating.get_attribute("value") == str(4):
+                rating.click()
+
+    def click_continue_button_reviews(self):
+        self.get_continue_button_reviews().click()

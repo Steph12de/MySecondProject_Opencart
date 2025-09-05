@@ -5,7 +5,7 @@ class ProductInfoPageLocators:
     addToCart_button = (By.XPATH, "//button[@id='button-cart']")
     black_item_button = (By.XPATH, "//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']")
     success_message = (By.XPATH, "//div[@class='alert alert-success alert-dismissible']")
-    shopping_cart_link = (By.LINK_TEXT, "shopping cart")
+    shopping_cart_link = (By.XPATH, "//div[@class='alert alert-success alert-dismissible']//a[text()='shopping cart']")
     quantity_input_field = (By.XPATH, "//input[@id='input-quantity']")
     # add_to_cart_product_page = (By.XPATH, "//button[@id='button-cart']")
     product_name = (By.XPATH, "//div[@class='col-sm-4']//h1")
@@ -46,4 +46,10 @@ class ProductInfoPageLocators:
     date_time_hour_arrow_button_down = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[3]//td[1]//a")
     date_time_minutes_arrow_button_down = (By.XPATH, "//div[contains(@class,'bootstrap-datetimepicker-widget') and contains(@class,'usetwentyfour')]//table//tbody//tr[3]//td[3]//a")
     # //div[contains(@class,"usetwentyfour")]
+    reviews_button = (By.XPATH, "//div[@class='col-sm-8']//ul[@class='nav nav-tabs']//li//a[text()='Reviews (0)']")
+    name_input_reviews = (By.XPATH, "//input[@id='input-name']")
+    reviews_message = (By.XPATH, "//textarea[@id='input-review']")
+    radio_buttons_reviews = (By.XPATH, "//div[@class='form-group required']//input[@type='radio']")
+    continue_button_reviews = (By.XPATH, "//button[@id='button-review']")
+    success_message_reviews = (By.XPATH, "//div[@class='alert alert-success alert-dismissible' and contains(text(), 'Thank you for your review.')]")
 

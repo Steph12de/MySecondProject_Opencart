@@ -53,7 +53,11 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.product_page.click_on_add_to_cart_button()
         # self.product_page.scroll_element_into_shopping_link_view()
         # time.sleep(3)
+        element_result = self.product_page.get_success_message_box()
+        if element_result:
+            self.logger.info("The product has been successfully added")
         self.product_page.click_on_shopping_cart_link()
+        # time.sleep(5)
 
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_name_brand_and_code(self):
@@ -174,6 +178,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Cart quantity validation failed – either due to unreadable cart icon format or mismatch.",
                               e)
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_having_minimum_quantity_set(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
 
@@ -242,7 +247,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Warning appeared despite valid quantity",
                               e)
         # Validate product name and quantity in cart
-        product_name_valid = self.cart_page.check_product_name('Apple Cinema 30"test')
+        product_name_valid = self.cart_page.check_product_name('Apple Cinema 30"')
         product_quantity_valid = self.cart_page.check_product_quantity(str(5))
         try:
             self.assertTrue(
@@ -259,11 +264,39 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Either product name or quantity in cart does not match expected values ",
                               e)
 
-    # def test_validate_product_reviews(self):
-    #     self.logger.info("Test started: validating that user can write a reviews for products.")
-    #
-    #     # Search and open product detail page
-    #     product_name = 'iMac'
-    #     self.search_and_open_product(product_name)
+    def test_validate_product_reviews(self):
+        product_name = "iMac"
+        reviewer_name = "Steph"
+        review_text = "Really good product, thanks!"
+        expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
 
-        # Validate writing review
+        self.logger.info(f"Test started: validating product review submission for '{product_name}'")
+
+        # Step 1: Open product detail page
+        self.search_and_open_product(product_name)
+
+        # Step 2: Fill out and submit review
+        self.logger.info("Writing review...")
+        self.product_page.click_reviews_button()
+        self.product_page.input_name_reviewer(reviewer_name)
+        self.product_page.input_review(review_text)
+        self.product_page.select_radio_button_rating()
+        self.product_page.click_continue_button_reviews()
+
+        # Step 3: Validate success message
+        actual_success_message = self.product_page.get_success_message_reviews_text()
+        self.logger.info(f"Received success message: '{actual_success_message}'")
+
+        try:
+            self.assertEqual(
+                actual_success_message,
+                expected_success_message,
+                f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
+            )
+            self.logger.info("Review submitted successfully and confirmation message is correct.")
+        except AssertionError as e:
+            self._log_failure(
+                "review_submission_error.png",
+                "Review submission failed – success message did not match expected text.",
+                e
+            )

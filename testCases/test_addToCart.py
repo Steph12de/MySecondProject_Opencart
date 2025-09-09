@@ -38,7 +38,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.desktops_page = SubcategoryDesktopsPage(self.driver)
         self.comparison_page = ComparisonPage(self.driver)
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_product_display(self):
         self.logger.info("Starting test: Add product to cart from product display.")
@@ -90,7 +90,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_wish_list(self):
         self.logger.info("Starting test: Add product to wish list.")
@@ -141,7 +141,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_search_result(self):
         self.logger.info("Starting test: Add product to cart from search results.")

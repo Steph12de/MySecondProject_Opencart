@@ -50,7 +50,7 @@ class Test_001_Register(unittest.TestCase):
             cls.mydb.close()
             cls.logger.info("Database connection closed.")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_my_account(self):
         self.logger.info("Starting test: Register via 'My Account'")
 
@@ -108,7 +108,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_new_customer(self):
         self.logger.info("Starting test: Registration via 'New Customer'")
 
@@ -175,7 +175,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_without_filling_form(self):
         self.logger.info("Starting test: Registration without filling in the form")
 
@@ -211,7 +211,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_with_different_password(self):
         self.logger.info("Starting test: Attempting registration with mismatched passwords")
 
@@ -247,7 +247,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_without_checking_privacy_policy(self):
         self.logger.info("Starting test: Attempting registration without accepting the privacy policy.")
 
@@ -294,7 +294,7 @@ class Test_001_Register(unittest.TestCase):
 
         self.driver.close()
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_with_existing_eMail(self):
         self.logger.info("Starting test: Attempting registration with an already registered email address.")
 

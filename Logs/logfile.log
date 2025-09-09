@@ -6583,3 +6583,147 @@ Details: False is not true : Product name not found in cart
 2025-09-09 09:35:39,221 :ERROR :Either product name or quantity in cart does not match expected values 
 Screenshot saved at: screenshots\product_name_quantity_error.png
 Details: False is not true : Product name not found in cart
+2025-09-09 09:53:41,534 :INFO :Establishing database connection...
+2025-09-09 09:53:41,996 :INFO :Database connection established successfully.
+2025-09-09 09:53:48,206 :INFO :Starting test: Validate behavior when providing an invalid telephone number.
+2025-09-09 09:53:50,115 :INFO :Navigated to the registration page.
+2025-09-09 09:53:50,115 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-09-09 09:53:54,112 :INFO :Registration form submitted with an invalid telephone number.
+2025-09-09 09:53:54,724 :ERROR :Registration should have failed: Invalid telephone number was accepted without triggering validation.Error details : 'Your Account Has Been Created!' != 'Register Account'
+- Your Account Has Been Created!
++ Register Account
+ : Page title mismatch: expected 'Register Account', but got 'Your Account Has Been Created!'test failed: Screenshot saved at C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\InvalidTelnumber.png
+
+2025-09-09 09:54:02,494 :INFO :Starting test: Register via 'My Account'
+2025-09-09 09:54:04,683 :INFO :Navigated to the registration page.
+2025-09-09 09:54:04,683 :INFO :Fetching data from 'Registration' table.
+2025-09-09 09:54:04,685 :INFO :Retrieved registration data: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2025-09-09 09:54:07,908 :INFO :Registration process completed.
+2025-09-09 09:54:07,930 :INFO :Registration page test via 'My Account' passed.
+2025-09-09 09:54:09,155 :INFO :Redirecting to 'My Account' page.
+2025-09-09 09:54:09,189 :INFO :My Account page test passed.
+2025-09-09 09:54:15,450 :INFO :Starting test: Registration via 'New Customer'
+2025-09-09 09:54:16,393 :INFO :Navigated to the login page.
+2025-09-09 09:54:17,519 :INFO :Proceeding with new customer registration.
+2025-09-09 09:54:17,519 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2025-09-09 09:54:17,531 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2025-09-09 09:54:20,832 :INFO :Registration process completed successfully.
+2025-09-09 09:54:20,846 :INFO :Registration page test via 'New Customer' passed.
+2025-09-09 09:54:21,746 :INFO :Redirecting to 'My Account' page.
+2025-09-09 09:54:21,775 :INFO :My Account page test passed.
+2025-09-09 09:54:27,332 :INFO :Starting test: Attempting registration with mismatched passwords
+2025-09-09 09:54:28,865 :INFO :User navigated to the registration page.
+2025-09-09 09:54:28,865 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-09-09 09:54:31,453 :INFO :Registration form submitted with mismatched passwords.
+2025-09-09 09:54:31,549 :INFO :Validation successful: Password mismatch warning message appeared correctly.
+2025-09-09 09:54:37,821 :INFO :Starting test: Attempting registration with an already registered email address.
+2025-09-09 09:54:39,642 :INFO :Navigated to the registration page.
+2025-09-09 09:54:39,642 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-09-09 09:54:42,174 :INFO :Submitted registration form using an existing email address.
+2025-09-09 09:54:42,233 :INFO :Validation passed: Duplicate email warning appeared as expected.
+2025-09-09 09:54:56,960 :INFO :Starting test: Attempting registration without accepting the privacy policy.
+2025-09-09 09:54:58,415 :INFO :Navigated to the registration page.
+2025-09-09 09:54:58,415 :INFO :Retrieving user data from the 'Registration' table for test case.
+2025-09-09 09:55:00,667 :INFO :Registration form submitted without accepting privacy policy.
+2025-09-09 09:55:00,721 :INFO :Validation successful: Privacy policy warning appeared as expected.
+2025-09-09 09:55:08,326 :INFO :Starting test: Registration without filling in the form
+2025-09-09 09:55:09,514 :INFO :Navigated to the login page.
+2025-09-09 09:55:10,843 :INFO :Initiating registration via the 'Register' option.
+2025-09-09 09:55:13,002 :INFO :Registration form submitted without filling in the form.
+2025-09-09 09:55:13,247 :INFO :Registration validation passed: Warning messages appeared correctly.
+2025-09-09 09:55:13,542 :INFO :Database connection closed.
+2025-09-09 10:03:22,330 :INFO :Starting test: Add product to cart from product display.
+2025-09-09 10:03:23,084 :INFO :Searching for 'iMac'.
+2025-09-09 10:03:27,148 :INFO :Navigating to iMac product detail page.
+2025-09-09 10:03:27,324 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-09-09 10:03:27,887 :INFO :Success message displayed correctly after adding the product.
+2025-09-09 10:03:28,493 :INFO :Navigating to shopping cart to verify product presence.
+2025-09-09 10:03:28,599 :INFO :Product verification successful - 'iMac' is in the shopping cart.
+2025-09-09 10:03:28,972 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:03:35,508 :INFO :Starting test: Add product to cart from search results.
+2025-09-09 10:03:35,833 :INFO :Searching for 'iMac'.
+2025-09-09 10:03:38,320 :INFO :Success message displayed correctly after adding the product.
+2025-09-09 10:03:38,320 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-09-09 10:03:38,400 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-09-09 10:03:39,976 :INFO :'iMac' was successfully added to the shopping cart.
+2025-09-09 10:03:41,584 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:03:47,639 :INFO :Starting test: Add product to wish list.
+2025-09-09 10:03:48,949 :INFO :Navigating to Login section.
+2025-09-09 10:03:49,946 :INFO :Logging in to proceed with adding product from wish list.
+2025-09-09 10:04:10,316 :INFO :Navigating to login page.
+2025-09-09 10:04:11,652 :INFO :Attempting to log in with provided credentials.
+2025-09-09 10:04:12,834 :ERROR :Login validation failed. Details: Login failed. Expected title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-09-09 10:05:54,896 :INFO :Starting test: Add product to cart from product display.
+2025-09-09 10:05:55,227 :INFO :Searching for 'iMac'.
+2025-09-09 10:05:57,771 :INFO :Navigating to iMac product detail page.
+2025-09-09 10:05:57,950 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-09-09 10:05:58,596 :INFO :Success message displayed correctly after adding the product.
+2025-09-09 10:05:59,472 :INFO :Navigating to shopping cart to verify product presence.
+2025-09-09 10:05:59,535 :INFO :Product verification successful - 'iMac' is in the shopping cart.
+2025-09-09 10:05:59,785 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:06:05,218 :INFO :Starting test: Add product to cart from search results.
+2025-09-09 10:06:05,727 :INFO :Searching for 'iMac'.
+2025-09-09 10:06:09,342 :INFO :Success message displayed correctly after adding the product.
+2025-09-09 10:06:09,343 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-09-09 10:06:09,389 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-09-09 10:06:11,050 :INFO :'iMac' was successfully added to the shopping cart.
+2025-09-09 10:06:12,861 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:06:18,030 :INFO :Starting test: Add product to wish list.
+2025-09-09 10:06:19,127 :INFO :Navigating to Login section.
+2025-09-09 10:06:19,898 :INFO :Logging in to proceed with adding product from wish list.
+2025-09-09 10:06:21,952 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-09-09 10:06:32,693 :ERROR :Error: Success message was not shown after adding product from wish list.
+Screenshot saved at: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\failed_wishlist_add_to_cart_success_message.png
+Error details: Success message validation failed!
+  Expected success message was not displayed after adding product to cart.
+assert False is True
+ +  where False = check_success_message()
+ +    where check_success_message = <pageObjects.productInfoPage.ProductInfoPage object at 0x000001EC755E5760>.check_success_message
+ +      where <pageObjects.productInfoPage.ProductInfoPage object at 0x000001EC755E5760> = <testCases.test_addToCart.Test_004_addToCart testMethod=test_add_to_cart_from_wish_list>.product_page
+2025-09-09 10:06:43,928 :INFO :Navigating to login page.
+2025-09-09 10:06:44,917 :INFO :Attempting to log in with provided credentials.
+2025-09-09 10:06:46,764 :ERROR :Login validation failed. Details: Login failed. Expected title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-09-09 10:13:30,374 :INFO :Starting test: Add product to cart from product display.
+2025-09-09 10:13:30,719 :INFO :Searching for 'iMac'.
+2025-09-09 10:13:33,468 :INFO :Navigating to iMac product detail page.
+2025-09-09 10:13:33,640 :INFO :Attempting to add 'iMac' to shopping cart.
+2025-09-09 10:13:34,207 :INFO :Success message displayed correctly after adding the product.
+2025-09-09 10:13:34,849 :INFO :Navigating to shopping cart to verify product presence.
+2025-09-09 10:13:34,961 :INFO :Product verification successful - 'iMac' is in the shopping cart.
+2025-09-09 10:13:35,334 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:13:43,865 :INFO :Starting test: Add product to cart from search results.
+2025-09-09 10:13:44,196 :INFO :Searching for 'iMac'.
+2025-09-09 10:13:46,249 :INFO :Success message displayed correctly after adding the product.
+2025-09-09 10:13:46,249 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-09-09 10:13:46,291 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-09-09 10:13:47,310 :INFO :'iMac' was successfully added to the shopping cart.
+2025-09-09 10:13:47,678 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:13:54,972 :INFO :Starting test: Add product to wish list.
+2025-09-09 10:13:57,325 :INFO :Navigating to Login section.
+2025-09-09 10:13:59,838 :INFO :Logging in to proceed with adding product from wish list.
+2025-09-09 10:14:00,128 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.
+2025-09-09 10:14:00,725 :INFO :Success message correctly displayed after adding product.
+2025-09-09 10:14:01,363 :INFO :Navigating to shopping cart to verify product presence.
+2025-09-09 10:14:01,433 :INFO :'Samsung SyncMaster 941BW' was successfully added to the shopping cart.
+2025-09-09 10:14:01,625 :INFO :Test execution completed - Browser closed.
+2025-09-09 10:14:10,001 :INFO :Navigating to login page.
+2025-09-09 10:14:11,065 :INFO :Attempting to log in with provided credentials.
+2025-09-09 10:14:12,790 :INFO :Login successful - User redirected to 'My Account'
+2025-09-09 10:14:12,791 :INFO :Navigating to Desktops category.
+2025-09-09 10:14:14,709 :INFO :Clicking on a product (Apple Music) to add it to comparison.
+2025-09-09 10:14:14,849 :INFO :Clicking on 'Product Compare' link.
+2025-09-09 10:14:35,885 :INFO :Product comparison list contains items.
+2025-09-09 10:14:35,885 :INFO :Attempting to add product from comparison page to cart.
+2025-09-09 10:14:59,561 :INFO :Received success message: 'Element not visible'
+2025-09-09 10:14:59,972 :ERROR :Add to cart validation failed. Screenshot saved to: C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\Screenshots\AddToCartComparisonPageError.png
+Details: 'Success: You have added MacBook to your shopping cart!' not found in 'Element not visible' : Add to cart failed.
+Expected message: 'Success: You have added MacBook to your shopping cart!'
+Actual message: 'Element not visible'

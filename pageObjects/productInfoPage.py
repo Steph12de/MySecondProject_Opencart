@@ -201,13 +201,12 @@ class ProductInfoPage(BaseDriver):
             return False
 
     def click_on_shopping_cart_link(self):
+        scroll_position = self.scroll_at_the_top()
+        while scroll_position != 0:
+            # print(f"scroll position: {scroll_position}")
+            scroll_position = self.scroll_at_the_top()
+
         self.getShoppingCartLink().click()
-        # element_result = self.getShoppingCartLink()
-        # while element_result is str:
-        #     element_result = self.getShoppingCartLink()
-        # element_result.click()
-        # print("element_result")
-        # print(element_result)
 
     def input_quantity(self, quantity):
         self.get_quantity_input_field().clear()

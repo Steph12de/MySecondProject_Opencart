@@ -52,12 +52,10 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.product_page.input_quantity(quantity)
         self.product_page.click_on_add_to_cart_button()
         # self.product_page.scroll_element_into_shopping_link_view()
-        # time.sleep(3)
         element_result = self.product_page.get_success_message_box()
         if element_result:
             self.logger.info("The product has been successfully added")
         self.product_page.click_on_shopping_cart_link()
-        # time.sleep(5)
 
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_name_brand_and_code(self):
@@ -178,7 +176,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Cart quantity validation failed – either due to unreadable cart icon format or mismatch.",
                               e)
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_having_minimum_quantity_set(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
 
@@ -264,6 +262,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Either product name or quantity in cart does not match expected values ",
                               e)
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_validate_product_reviews(self):
         product_name = "iMac"
         reviewer_name = "Steph"

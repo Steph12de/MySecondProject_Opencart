@@ -6501,3 +6501,85 @@ Details: False is not true : Product name not found in cart
 2025-09-05 11:52:35,356 :INFO :Writing review...
 2025-09-05 11:52:36,969 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
 2025-09-05 11:52:36,970 :INFO :Review submitted successfully and confirmation message is correct.
+2025-09-08 22:45:17,181 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 22:45:17,183 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 22:45:18,547 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 22:45:20,984 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 22:45:20,985 :INFO :Filling mandatory fields on product display page.
+2025-09-08 22:45:38,704 :INFO :The product has been successfully added
+2025-09-08 22:59:35,341 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 22:59:35,343 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 22:59:37,140 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 22:59:39,942 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 22:59:39,942 :INFO :Filling mandatory fields on product display page.
+2025-09-08 22:59:58,011 :INFO :The product has been successfully added
+2025-09-08 23:00:40,224 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 23:00:40,225 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 23:00:41,729 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 23:00:44,794 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 23:00:44,794 :INFO :Filling mandatory fields on product display page.
+2025-09-08 23:01:02,991 :INFO :The product has been successfully added
+2025-09-08 23:01:05,054 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-08 23:01:10,380 :INFO :The product has been successfully added
+2025-09-08 23:01:57,010 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 23:01:57,012 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 23:01:58,618 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 23:02:02,270 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 23:02:02,270 :INFO :Filling mandatory fields on product display page.
+2025-09-08 23:02:20,172 :INFO :The product has been successfully added
+2025-09-08 23:02:22,270 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-08 23:02:27,813 :INFO :The product has been successfully added
+2025-09-08 23:02:39,176 :INFO :No warning — product added successfully with correct quantity
+2025-09-08 23:02:39,433 :INFO :Product name and quantity successfully verified in cart
+2025-09-08 23:02:53,273 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 23:02:53,273 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 23:02:55,057 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 23:02:57,771 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 23:02:57,772 :INFO :Filling mandatory fields on product display page.
+2025-09-08 23:03:15,144 :INFO :The product has been successfully added
+2025-09-08 23:03:16,774 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-08 23:03:22,163 :INFO :The product has been successfully added
+2025-09-08 23:03:33,452 :INFO :No warning — product added successfully with correct quantity
+2025-09-08 23:03:33,713 :INFO :Product name and quantity successfully verified in cart
+2025-09-08 23:03:52,808 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 23:03:52,809 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 23:03:54,372 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 23:03:56,854 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 23:03:56,854 :INFO :Filling mandatory fields on product display page.
+2025-09-08 23:04:14,254 :INFO :The product has been successfully added
+2025-09-08 23:04:16,557 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-08 23:04:21,936 :INFO :The product has been successfully added
+2025-09-08 23:04:33,343 :INFO :No warning — product added successfully with correct quantity
+2025-09-08 23:04:33,525 :INFO :Product name and quantity successfully verified in cart
+2025-09-08 23:06:40,132 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-08 23:06:40,133 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-08 23:06:41,428 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-08 23:06:44,366 :INFO :Minimum quantity and information text validated successfully.
+2025-09-08 23:06:44,366 :INFO :Filling mandatory fields on product display page.
+2025-09-08 23:07:04,154 :INFO :The product has been successfully added
+2025-09-08 23:07:05,420 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-08 23:07:10,829 :INFO :The product has been successfully added
+2025-09-08 23:07:22,278 :INFO :No warning — product added successfully with correct quantity
+2025-09-08 23:07:22,532 :INFO :Product name and quantity successfully verified in cart
+2025-09-09 09:31:00,095 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-09 09:31:00,097 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-09 09:31:01,497 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-09 09:31:03,554 :INFO :Minimum quantity and information text validated successfully.
+2025-09-09 09:31:03,554 :INFO :Filling mandatory fields on product display page.
+2025-09-09 09:31:23,298 :INFO :The product has been successfully added
+2025-09-09 09:31:25,154 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-09 09:31:30,536 :INFO :The product has been successfully added
+2025-09-09 09:31:42,444 :INFO :No warning — product added successfully with correct quantity
+2025-09-09 09:31:42,817 :INFO :Product name and quantity successfully verified in cart
+2025-09-09 09:34:57,430 :INFO :Test started: validating that default product quantity is set to 1.
+2025-09-09 09:34:57,432 :INFO :Starting product search for: 'Apple Cinema 30"'
+2025-09-09 09:34:59,379 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-09-09 09:35:01,341 :INFO :Minimum quantity and information text validated successfully.
+2025-09-09 09:35:01,341 :INFO :Filling mandatory fields on product display page.
+2025-09-09 09:35:20,387 :INFO :The product has been successfully added
+2025-09-09 09:35:21,533 :INFO :Warning message after adding below-minimum quantity validated
+2025-09-09 09:35:27,517 :INFO :The product has been successfully added
+2025-09-09 09:35:38,709 :INFO :No warning — product added successfully with correct quantity
+2025-09-09 09:35:39,221 :ERROR :Either product name or quantity in cart does not match expected values 
+Screenshot saved at: screenshots\product_name_quantity_error.png
+Details: False is not true : Product name not found in cart

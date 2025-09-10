@@ -178,6 +178,9 @@ class ProductInfoPage(BaseDriver):
     def get_success_message_reviews_text(self):
         return self.wait_for_element_visible(self.locators.success_message_reviews).text
 
+    def get_warning_review_message(self):
+        return self.wait_for_element_visible(self.locators.warning_review_message).text
+
     def scroll_element_into_shopping_link_view(self):
         print(type(self.locators.shopping_cart_link))
         self.scroll_element_into_view(self.locators.shopping_cart_link)

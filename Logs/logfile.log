@@ -6727,3 +6727,114 @@ assert 'Account Login' == 'My Account'
 Details: 'Success: You have added MacBook to your shopping cart!' not found in 'Element not visible' : Add to cart failed.
 Expected message: 'Success: You have added MacBook to your shopping cart!'
 Actual message: 'Element not visible'
+2025-09-10 10:44:24,043 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 10:44:24,045 :INFO :Starting product search for: 'iMac'
+2025-09-10 10:44:25,589 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 10:44:26,935 :INFO :Writing review...
+2025-09-10 10:44:28,588 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-09-10 10:44:28,919 :ERROR :Review submission failed – success message did not match expected text.
+Screenshot saved at: screenshots\review_submission_error.png
+Details: 'Thank you for your review. It has been su[34 chars]val.' != ' Thank you for your review. It has been s[35 chars]val.'
+- Thank you for your review. It has been submitted to the webmaster for approval.
++  Thank you for your review. It has been submitted to the webmaster for approval.
+? +
+ : Review success message mismatch:
+Expected: ' Thank you for your review. It has been submitted to the webmaster for approval.'
+Got: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-09-10 10:46:26,990 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 10:46:26,992 :INFO :Starting product search for: 'iMac'
+2025-09-10 10:46:28,447 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 10:46:32,457 :INFO :Writing review...
+2025-09-10 10:46:33,896 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-09-10 10:46:33,897 :INFO :Review submitted successfully and confirmation message is correct.
+2025-09-10 10:46:38,361 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-10 12:11:53,486 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:11:53,487 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:11:56,154 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:11:57,809 :INFO :Writing review...
+2025-09-10 12:11:59,820 :INFO :Received warning message: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-10 12:11:59,821 :INFO :Review was rejected and correct warning message appeared.
+2025-09-10 12:13:03,774 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:13:03,774 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:13:05,590 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:13:07,971 :INFO :Writing review...
+2025-09-10 12:13:09,591 :INFO :Received warning message: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-10 12:13:09,591 :INFO :Review was rejected and correct warning message appeared.
+2025-09-10 12:13:18,809 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:13:18,810 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:13:20,386 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:13:22,544 :INFO :Writing review...
+2025-09-10 12:13:24,103 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-09-10 12:13:24,103 :INFO :Review submitted successfully and confirmation message is correct.
+2025-09-10 12:13:24,103 :WARNING :Review text length is invalid, but no error was expected in this test.
+2025-09-10 12:13:28,498 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-10 12:16:50,254 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:16:50,255 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:16:52,011 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:16:53,874 :INFO :Writing review...
+2025-09-10 12:16:54,772 :WARNING :Review text length is valid, but this test expected an error.
+2025-09-10 12:17:02,590 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:17:02,590 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:17:03,907 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:17:05,935 :INFO :Writing review...
+2025-09-10 12:17:07,458 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-09-10 12:17:07,462 :INFO :Review submitted successfully and confirmation message is correct.
+2025-09-10 12:17:11,774 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-10 12:20:30,564 :INFO :Test: Submit invalid review and verify system rejection
+2025-09-10 12:20:30,566 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:20:30,567 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:20:32,419 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:20:42,867 :INFO :Writing review...
+2025-09-10 12:20:43,999 :WARNING :Review text length is valid, but this test expected an error.
+2025-09-10 12:20:55,215 :INFO :Test: Submit valid review and verify system response
+2025-09-10 12:20:55,216 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:20:55,217 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:20:58,234 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:21:03,098 :INFO :Writing review...
+2025-09-10 12:21:05,863 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-09-10 12:21:05,864 :INFO :Review submitted successfully and confirmation message is correct.
+2025-09-10 12:21:10,303 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-10 12:42:26,674 :INFO :Test: Submit invalid review and verify system rejection
+2025-09-10 12:42:26,676 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:42:26,676 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:42:28,486 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:42:32,543 :INFO :Writing review...
+2025-09-10 12:42:33,938 :INFO :Received warning message: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-10 12:42:33,938 :INFO :Review was rejected and correct warning message appeared.
+2025-09-10 12:42:53,847 :INFO :Test: Submit valid review and verify system response
+2025-09-10 12:42:53,847 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-10 12:42:53,847 :INFO :Starting product search for: 'iMac'
+2025-09-10 12:42:55,993 :INFO :Navigating to product detail page for 'iMac'
+2025-09-10 12:43:00,719 :INFO :Writing review...
+2025-09-10 12:43:01,704 :WARNING :Review text length is invalid, but no error was expected in this test.
+2025-09-10 12:43:06,064 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig

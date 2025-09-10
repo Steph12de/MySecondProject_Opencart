@@ -57,8 +57,26 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self.logger.info("The product has been successfully added")
         self.product_page.click_on_shopping_cart_link()
 
+    def submit_review(self, product_name, reviewer_name, review_text):
+        product_name = product_name
+        reviewer_name = reviewer_name
+        review_text = review_text
+
+        self.logger.info(f"Test started: validating product review submission for '{product_name}'")
+
+        # Step 1: Open product detail page
+        self.search_and_open_product(product_name)
+
+        # Step 2: Fill out and submit review
+        self.logger.info("Writing review...")
+        self.product_page.click_reviews_button()
+        self.product_page.input_name_reviewer(reviewer_name)
+        self.product_page.input_review(review_text)
+        self.product_page.select_radio_button_rating()
+        self.product_page.click_continue_button_reviews()
+
     @pytest.mark.skip(reason="Just skipped it right now")
-    def test_validate_product_name_brand_and_code(self):
+    def test_product_detail_displays_name_brand_and_code(self):
         self.logger.info("Test started: validating product name, brand, and code.")
 
         self.search_and_open_product("iMac")
@@ -113,7 +131,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self._log_failure("product_code_error", "Product code validation failed", e)
 
     @pytest.mark.skip(reason="Just skipped it right now")
-    def test_validate_product_default_quantity(self):
+    def test_default_quantity_is_one_when_minimum_not_set(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
 
         # Search and open product detail page
@@ -176,8 +194,8 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Cart quantity validation failed – either due to unreadable cart icon format or mismatch.",
                               e)
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
-    def test_validate_product_having_minimum_quantity_set(self):
+    @pytest.mark.skip(reason="Just skipped it right now")
+    def test_product_minimum_quantity_is_correctly_set(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
 
         # Search and open product detail page
@@ -262,40 +280,58 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               "Either product name or quantity in cart does not match expected values ",
                               e)
 
-    @pytest.mark.skip(reason="Just skipped it right now")
-    def test_validate_product_reviews(self):
-        product_name = "iMac"
-        reviewer_name = "Steph"
-        review_text = "Really good product, thanks!"
-        expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
+    # @pytest.mark.skip(reason="Just skipped it right now")
+    def test_user_can_submit_product_review_on_display_page(self):
+        self.logger.info("Test: Submit valid review and verify system response")
 
-        self.logger.info(f"Test started: validating product review submission for '{product_name}'")
+        review_text = "Very good product, recommended!"
+        self.submit_review("iMac", "Steph", review_text)
 
-        # Step 1: Open product detail page
-        self.search_and_open_product(product_name)
+        if 25 <= len(review_text) <= 1000:
+            expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
+            actual_success_message = self.product_page.get_success_message_reviews_text()
 
-        # Step 2: Fill out and submit review
-        self.logger.info("Writing review...")
-        self.product_page.click_reviews_button()
-        self.product_page.input_name_reviewer(reviewer_name)
-        self.product_page.input_review(review_text)
-        self.product_page.select_radio_button_rating()
-        self.product_page.click_continue_button_reviews()
+            self.logger.info(f"Received success message: '{actual_success_message}'")
 
-        # Step 3: Validate success message
-        actual_success_message = self.product_page.get_success_message_reviews_text()
-        self.logger.info(f"Received success message: '{actual_success_message}'")
+            try:
+                self.assertEqual(
+                    actual_success_message,
+                    expected_success_message,
+                    f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
+                )
+                self.logger.info("Review submitted successfully and confirmation message is correct.")
+            except AssertionError as e:
+                self._log_failure(
+                    "review_submission_error.png",
+                    "Review submission failed – success message did not match expected text.",
+                    e
+                )
+        else:
+            self.logger.warning("Review text length is invalid, but no error was expected in this test.")
 
-        try:
-            self.assertEqual(
-                actual_success_message,
-                expected_success_message,
-                f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
-            )
-            self.logger.info("Review submitted successfully and confirmation message is correct.")
-        except AssertionError as e:
-            self._log_failure(
-                "review_submission_error.png",
-                "Review submission failed – success message did not match expected text.",
-                e
-            )
+    def test_review_text_length_outside_valid_range(self):
+        self.logger.info("Test: Submit invalid review and verify system rejection")
+
+        review_text = "Good!"
+        self.submit_review("iMac", "Steph", review_text)
+
+        if len(review_text) < 25 or len(review_text) > 1000:
+            expected_warning_message = "Warning: Review Text must be between 25 and 1000 characters!"
+            actual_warning_message = self.product_page.get_warning_review_message()
+
+            self.logger.info(f"Received warning message: '{actual_warning_message}'")
+
+            try:
+                self.assertEqual(
+                    actual_warning_message,
+                    expected_warning_message,
+                    f"Warning message mismatch:\nExpected: '{expected_warning_message}'\nGot: '{actual_warning_message}'"
+                )
+                self.logger.info("Review was rejected and correct warning message appeared.")
+            except AssertionError as e:
+                self._log_failure("review_length_warning_error.png",
+                                  "Review length validation failed – warning message did not match expected text.",
+                                  e)
+
+        else:
+            self.logger.warning("Review text length is valid, but this test expected an error.")

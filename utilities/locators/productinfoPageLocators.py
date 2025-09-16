@@ -52,5 +52,5 @@ class ProductInfoPageLocators:
     radio_buttons_reviews = (By.XPATH, "//div[@class='form-group required']//input[@type='radio']")
     continue_button_reviews = (By.XPATH, "//button[@id='button-review']")
     success_message_reviews = (By.XPATH, "//div[@class='alert alert-success alert-dismissible' and contains(text(), 'Thank you for your review.')]")
-    warning_review_message = (By.XPATH, "//div[contains(@class, 'alert-danger') and contains(text(), 'Warning') and contains(text(), 'must be between')]")
-
+    warning_review_text_message = (By.XPATH, "//div[contains(@class, 'alert-danger') and contains(text(), 'Warning') and contains(text(), 'Review Text')]")
+    warning_review_name_message = (By.XPATH, "//div[contains(@class, 'alert-danger') and contains(text(), 'Warning') and contains(text(), 'Review Name')]")

@@ -6935,3 +6935,134 @@ OSError: [WinError 6] Das Handle ist ungültig
 2025-09-16 12:16:22,371 :INFO :Writing review...
 2025-09-16 12:16:23,929 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
 2025-09-16 12:16:23,930 :INFO :Review submitted successfully and confirmation message is correct.
+2025-09-17 09:47:32,761 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 09:47:32,764 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 09:47:32,764 :INFO :Starting product search for: 'iMac'
+2025-09-17 09:47:33,980 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 09:47:34,926 :INFO :Writing review...
+2025-09-17 09:47:36,422 :INFO : Received name warning: 'Warning: Review Name must be between 3 and 25 characters!'
+2025-09-17 09:47:38,975 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-17 09:48:47,778 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 09:48:47,779 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 09:48:47,779 :INFO :Starting product search for: 'iMac'
+2025-09-17 09:48:48,792 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 09:48:49,751 :INFO :Writing review...
+2025-09-17 09:48:51,216 :INFO : Received name warning: 'Warning: Review Name must be between 3 and 25 characters!'
+2025-09-17 09:48:51,511 :ERROR :Reviewer name length validation failed.
+Screenshot saved at: screenshots\review_name_warning_error.png
+Details: 'Warning: Review Name must be between 3 and 25 characters!' != 'Warning: Review Name must be between 3 and 25 characters! test'
+- Warning: Review Name must be between 3 and 25 characters!
++ Warning: Review Name must be between 3 and 25 characters! test
+?                                                          +++++
+ : Name warning mismatch:
+Expected: 'Warning: Review Name must be between 3 and 25 characters! test'
+Got: 'Warning: Review Name must be between 3 and 25 characters!'
+2025-09-17 09:50:57,174 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 09:50:57,175 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 09:50:57,175 :INFO :Starting product search for: 'iMac'
+2025-09-17 09:50:58,288 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 09:50:59,782 :INFO :Writing review...
+2025-09-17 09:51:01,635 :INFO :Received text warning: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-17 09:51:01,636 :INFO :Correct warning message for review text length.
+2025-09-17 09:51:05,465 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-17 09:51:54,610 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 09:51:54,610 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 09:51:54,611 :INFO :Starting product search for: 'iMac'
+2025-09-17 09:51:55,639 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 09:51:56,580 :INFO :Writing review...
+2025-09-17 09:51:57,994 :INFO :Received text warning: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-17 09:51:57,995 :INFO :Correct warning message for review text length.
+2025-09-17 09:52:00,173 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-17 09:52:30,920 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 09:52:30,921 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 09:52:30,921 :INFO :Starting product search for: 'iMac'
+2025-09-17 09:52:31,881 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 09:52:32,598 :INFO :Writing review...
+2025-09-17 09:52:33,954 :INFO :Received text warning: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-17 09:52:34,283 :ERROR :Review text length validation failed.
+Screenshot saved at: screenshots\review_text_warning_error.png
+Details: 'Warning: Review Text must be between 25 and 1000 characters!' != 'Warning: Review Text must be between 25 and 1000 characters!test'
+- Warning: Review Text must be between 25 and 1000 characters!
++ Warning: Review Text must be between 25 and 1000 characters!test
+?                                                             ++++
+ : Text warning mismatch:
+Expected: 'Warning: Review Text must be between 25 and 1000 characters!test'
+Got: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-17 09:53:20,349 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 09:53:20,349 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 09:53:20,349 :INFO :Starting product search for: 'iMac'
+2025-09-17 09:53:21,333 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 09:53:22,109 :INFO :Writing review...
+2025-09-17 09:53:23,021 :WARNING :Review text length is valid, no warning expected.
+2025-09-17 09:53:25,247 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-17 10:15:09,586 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 10:15:09,677 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 10:15:09,678 :INFO :Starting product search for: 'iMac'
+2025-09-17 10:15:10,849 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 10:15:11,812 :INFO :Writing review...
+2025-09-17 10:15:13,214 :INFO :Received text warning: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-17 10:15:13,215 :INFO :Correct warning message for review text length.
+2025-09-17 10:16:01,062 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 10:16:01,064 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 10:16:01,064 :INFO :Starting product search for: 'iMac'
+2025-09-17 10:16:02,707 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 10:16:04,582 :INFO :Writing review...
+2025-09-17 10:16:06,136 :INFO :Received text warning: 'Warning: Review Text must be between 25 and 1000 characters!'
+2025-09-17 10:16:06,350 :INFO :Correct warning message for review text length.
+2025-09-17 10:16:08,774 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-17 10:16:42,809 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 10:16:42,811 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 10:16:42,811 :INFO :Starting product search for: 'iMac'
+2025-09-17 10:16:44,260 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 10:16:45,181 :INFO :Writing review...
+2025-09-17 10:16:46,745 :INFO : Received name warning: 'Warning: Review Name must be between 3 and 25 characters!'
+2025-09-17 10:16:49,049 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-09-17 10:17:11,631 :INFO :Test: Submit invalid review and verify warning messages
+2025-09-17 10:17:11,633 :INFO :Test started: validating product review submission for 'iMac'
+2025-09-17 10:17:11,634 :INFO :Starting product search for: 'iMac'
+2025-09-17 10:17:12,704 :INFO :Navigating to product detail page for 'iMac'
+2025-09-17 10:17:13,667 :INFO :Writing review...
+2025-09-17 10:17:14,629 :WARNING :Reviewer name and review text length are valid — no warning expected.
+2025-09-17 10:17:16,924 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig

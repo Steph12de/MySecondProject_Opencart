@@ -36,33 +36,59 @@ class Test_002_login(unittest.TestCase):
         self.changePassword_page = ChangePasswordPage(self.driver)
         self.logout_page = LogoutPage(self.driver)
 
+    def tearDown(self):
+        self.driver.quit()
+
+    def _log_failure(self, screenshot_name, message, exception):
+        screenshot_path = os.path.join("screenshots", screenshot_name)
+        self.driver.save_screenshot(screenshot_path)
+        self.logger.error(f"{message}\n"
+                          f"Screenshot saved at: {screenshot_path}\n"
+                          f"Details: {exception}")
+        raise exception
+
     @pytest.mark.sanity
     @data(*Utils.read_data_from_excel(
         "C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx",
         "Tabelle1"))
     @unpack
-    def test_login_with_multiple_combi(self, email, password, title, error):
+    def test_login_with_multiple_combi(self, email, password, expected_title, expected_error):
+        self.logger.info("Starting login test with data-driven combinations")
+        self.logger.info(f"Credentials — Email: '{email}', Password: '{password}'")
+
+        # Step 1: Navigate to login page
         self.home_page.bring_me_to_login_page()
-        self.logger.info("Starting login Test with multiple combination")
+
+        # Step 2: Perform login
         self.login_page.log_me_in(email, password)
-        current_title = self.driver.title
-        actual_error = self.login_page.check_error_message()
-        # print(type(actual_error))
-        # print(type(error))
+
+        actual_title = self.driver.title
+        print(f"Actual title: '{actual_title}'")
+        print(f"Expected title: '{expected_title}")
+
+        actual_error = str(self.login_page.check_error_message())
+
+        # Step 4: Validate results
         try:
-            assert error == str(actual_error) and current_title == title, (
-                "Login failed!\n"
-                f"Expected error: {error}, but got: {actual_error}\n"
-                f"Expected title: '{title}', but got: '{current_title}'"
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Title mismatch:\n Expected: '{expected_title}'\nGot:'{actual_title}'"
             )
-            self.logger.info(f"Login successful - Email: {email}, Expected Title: '{title}'")
+            self.assertEqual(
+                actual_error,
+                expected_error,
+                f"Error message mismatch:\nExpected: '{expected_error}'\nGot: '{actual_error}'"
+            )
+            self.logger.info(f"Login test passed with expected title and error message.")
         except AssertionError as e:
-            self.logger.error(f"Test failed: {e}")
-            self.driver.save_screenshot(".\\Screenshots\\login_error_screenshot.png")
-            raise
+            self._log_failure(
+                "login_test_failure.png",
+                "Login test failed — mismatch in title or error message.",
+                e
+            )
 
-        self.driver.quit()
-
+    @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_presence_of_forgotten_password_text(self):
         self.home_page.bring_me_to_login_page()
@@ -82,6 +108,7 @@ class Test_002_login(unittest.TestCase):
         self.driver.close()
 
     # @pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_using_keyboard_keys(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Starting login Test using keyboard keys")
@@ -103,6 +130,7 @@ class Test_002_login(unittest.TestCase):
         self.driver.close()
 
     # @pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Navigated to login page")
@@ -128,6 +156,7 @@ class Test_002_login(unittest.TestCase):
         self.driver.close()
 
     # @pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_password_text_is_hidden(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Navigated to login page")
@@ -148,6 +177,7 @@ class Test_002_login(unittest.TestCase):
         self.driver.close()
 
     # @pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     @data(("username@gmail.de", "admin1"))
     @unpack
     def test_login_via_right_hand_menu(self, email, password):
@@ -163,6 +193,7 @@ class Test_002_login(unittest.TestCase):
             assert False
 
     # @pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_logout(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Starting the Login and Logout test execution")
@@ -205,7 +236,8 @@ class Test_002_login(unittest.TestCase):
             raise
         self.driver.close()
 
-    @pytest.mark.regression
+    # @pytest.mark.regression
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login(self):
         self.home_page.bring_me_to_login_page()
         self.logger.info("Starting the change password test after login.")

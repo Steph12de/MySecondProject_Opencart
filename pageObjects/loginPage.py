@@ -26,14 +26,11 @@ class LoginPage(BaseDriver):
         return self.wait_for_element_visible(self.my_locators.loginButtonRightHandMenu)
 
     def get_error_message_box(self):
-            return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message, "Warning")
+        return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message,
+                                                       "Warning")
 
-    # def getErrorMessage(self):
-    #     try:
-    #         error_message = self.wait_for_element_visible(self.my_locators.login_error_message).text
-    #         return error_message
-    #     except:
-    #         return None
+    # def get_error_text(self):
+    #     return self.wait_for_element_visible(self.my_locators.login_error_message).text
 
     def get_forgotten_password_text(self):
         return self.wait_for_element_visible(self.my_locators.forgotten_password_text)
@@ -59,10 +56,7 @@ class LoginPage(BaseDriver):
         self.get_continue_button().click()
 
     def check_error_message(self):
-        try:
-            return self.get_error_message_box()
-        except:
-            return False
+        return self.get_error_message_box()
 
     def click_on_forgotten_password_text(self):
         self.get_forgotten_password_text().click()

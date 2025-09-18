@@ -8,11 +8,11 @@ class ForgottenPasswordPage(BaseDriver):
         self.driver = driver
         self.locators = ForgottenPasswordPageLocators
 
-    def getForgottenPasswordText(self):
-        return self.wait_text_to_be_present_in_element(self.locators.forgotten_password_text, "Forgot Your Password?")
+    def get_forgotten_password_heading(self):
+        return self.wait_for_element_visible(self.locators.forgotten_password_text)
 
-    def check_presence_of_forgot_password_text(self):
-        try:
-            return self.getForgottenPasswordText()
-        except:
-            return False
+    # def check_forgotten_password_heading(self):
+    #     return self.get_forgotten_password_heading()
+
+    def get_forgotten_password_heading_text(self):
+        return self.get_forgotten_password_heading().text

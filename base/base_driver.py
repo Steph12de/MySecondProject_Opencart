@@ -53,3 +53,9 @@ class BaseDriver():
     def scroll_at_the_top(self):
         return self.driver.execute_script("return window.pageYOffset;")
 
+    def wait_for_title_to_be_visible(self, title):
+        try:
+            return self.my_Wait.until(EC.title_is(title))
+        except:
+            return False
+

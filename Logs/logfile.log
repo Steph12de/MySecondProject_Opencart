@@ -7508,3 +7508,104 @@ Got: 'False'
 2025-09-17 13:23:28,159 :INFO :Starting login test with data-driven combinations
 2025-09-17 13:23:28,159 :INFO :Credentials — Email: ' ', Password: ' '
 2025-09-17 13:23:29,909 :INFO :Login test passed with expected title and error message.
+2025-09-18 11:46:01,762 :INFO :Starting login test with data-driven combinations
+2025-09-18 11:46:01,767 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-09-18 11:46:14,090 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Title mismatch:
+ Expected: 'My Account'
+Got:'Account Login'
+2025-09-18 11:46:20,640 :INFO :Starting login test with data-driven combinations
+2025-09-18 11:46:20,640 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-09-18 11:46:22,505 :INFO :Login test passed with expected title and error message.
+2025-09-18 11:46:28,622 :INFO :Starting login test with data-driven combinations
+2025-09-18 11:46:28,622 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-09-18 11:46:41,077 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-09-18 11:46:54,248 :INFO :Starting login test with data-driven combinations
+2025-09-18 11:46:54,249 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-09-18 11:46:56,375 :INFO :Login test passed with expected title and error message.
+2025-09-18 11:47:03,051 :INFO :Starting login test with data-driven combinations
+2025-09-18 11:47:03,052 :INFO :Credentials — Email: ' ', Password: ' '
+2025-09-18 11:47:04,844 :INFO :Login test passed with expected title and error message.
+2025-09-18 12:07:05,357 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:07:05,359 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-09-18 12:07:18,671 :INFO :Login test passed with expected title and error message.
+2025-09-18 12:07:24,980 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:07:24,981 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-09-18 12:07:37,724 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-09-18 12:07:46,525 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:07:46,525 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-09-18 12:07:59,499 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-09-18 12:08:05,896 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:08:05,896 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-09-18 12:08:07,930 :INFO :Login test passed with expected title and error message.
+2025-09-18 12:08:15,171 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:08:15,172 :INFO :Credentials — Email: ' ', Password: ' '
+2025-09-18 12:08:27,360 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-09-18 12:10:11,004 :WARNING :There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)); using driver found in the cache
+2025-09-18 12:10:17,326 :WARNING :There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)); using driver found in the cache
+2025-09-18 12:10:25,682 :WARNING :There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)); using driver found in the cache
+2025-09-18 12:10:29,984 :WARNING :There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)); using driver found in the cache
+2025-09-18 12:10:34,426 :WARNING :There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)); using driver found in the cache
+2025-09-18 12:11:44,649 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:11:44,651 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-09-18 12:11:57,081 :INFO :Login test passed with expected title and error message.
+2025-09-18 12:12:11,265 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:12:11,266 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-09-18 12:12:23,588 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-09-18 12:12:41,626 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:12:41,626 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-09-18 12:12:54,015 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-09-18 12:13:12,158 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:13:12,158 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-09-18 12:13:13,932 :INFO :Login test passed with expected title and error message.
+2025-09-18 12:13:28,301 :INFO :Starting login test with data-driven combinations
+2025-09-18 12:13:28,301 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-09-18 13:28:33,262 :INFO :Test: Verify presence of 'Forgotten Password' text
+2025-09-18 13:28:35,676 :INFO :Retrieved heading text: 'Forgot Your Password?'
+2025-09-18 13:28:35,677 :INFO :'Forgotten Password' heading is displayed correctly.

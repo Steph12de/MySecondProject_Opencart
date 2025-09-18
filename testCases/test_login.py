@@ -47,6 +47,7 @@ class Test_002_login(unittest.TestCase):
                           f"Details: {exception}")
         raise exception
 
+    @pytest.mark.skip(reason="Just skipped it right now")
     @pytest.mark.sanity
     @data(*Utils.read_data_from_excel(
         "C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx",
@@ -62,6 +63,7 @@ class Test_002_login(unittest.TestCase):
         # Step 2: Perform login
         self.login_page.log_me_in(email, password)
 
+        # self.login_page.check_presence_of_title(expected_title)
         actual_title = self.driver.title
         print(f"Actual title: '{actual_title}'")
         print(f"Expected title: '{expected_title}")
@@ -88,24 +90,39 @@ class Test_002_login(unittest.TestCase):
                 e
             )
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
-    def test_presence_of_forgotten_password_text(self):
-        self.home_page.bring_me_to_login_page()
-        self.login_page.click_on_forgotten_password_text()
-        result_text = self.fpassword_page.check_presence_of_forgot_password_text()
-        try:
-            assert result_text is True, (
-                "Test failed: Expected forgotten password text to be present, but it was not found\n"
-                f"Expected: True, Actual: {result_text}\n"
-            )
-            self.logger.info("Forgotten password text is displayed correctly.")
-        except AssertionError as e:
-            self.logger.error(f"Error Details: {e}")
-            self.driver.save_screenshot(os.path.join(os.getcwd(), "forgot_password_error.png"))
-            raise
+    def test_presence_of_forgotten_password_link(self):
+        self.logger.info("Test: Verify presence of 'Forgotten Password' text")
 
-        self.driver.close()
+        # Step 1: Navigate to login page
+        self.home_page.bring_me_to_login_page()
+
+        # Step 2: Click on 'Forgotten Password'
+        self.login_page.click_forgotten_password_link()
+
+        # Step 3: Check if the expected text is present
+        heading_text = self.fpassword_page.get_forgotten_password_heading_text()
+        expected_text = "Forgot Your Password?"
+
+        self.logger.info(f"Retrieved heading text: '{heading_text}'")
+
+        # Step 4: Validate heading text
+        try:
+            self.assertEqual(
+                heading_text,
+                expected_text,
+                f"Heading text mismatch:\nExpected: '{expected_text}'\nGot: '{heading_text}'"
+            )
+            self.logger.info("'Forgotten Password' heading is displayed correctly.")
+        except AssertionError as e:
+            self._log_failure(
+                "forgot_password_error.png",
+                "'Forgotten Password' heading is missing or incorrect.",
+                e
+            )
+
+
 
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")

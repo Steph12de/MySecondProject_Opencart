@@ -32,7 +32,7 @@ class LoginPage(BaseDriver):
     # def get_error_text(self):
     #     return self.wait_for_element_visible(self.my_locators.login_error_message).text
 
-    def get_forgotten_password_text(self):
+    def get_forgotten_password_link(self):
         return self.wait_for_element_visible(self.my_locators.forgotten_password_text)
 
     def get_continue_button(self):
@@ -58,8 +58,8 @@ class LoginPage(BaseDriver):
     def check_error_message(self):
         return self.get_error_message_box()
 
-    def click_on_forgotten_password_text(self):
-        self.get_forgotten_password_text().click()
+    def click_forgotten_password_link(self):
+        self.get_forgotten_password_link().click()
 
     def log_me_in(self, email, password):
         self.input_eMail(email)
@@ -99,3 +99,6 @@ class LoginPage(BaseDriver):
                 element.click()
                 break
         return False
+
+    def check_presence_of_title(self, title):
+        return self.wait_for_title_to_be_visible(title)

@@ -48,7 +48,7 @@ class HomePage(BaseDriver):
     def click_my_account_register_homePage(self):
         self.get_register_button_home_page().click()
 
-    def bring_me_to_login_page(self):
+    def open_login_page(self):
         self.click_my_account()
         self.click_my_account_login_HomePage()
 

@@ -7625,3 +7625,7 @@ assert 'Account Login' == 'My Account'
 2025-09-19 10:46:27,186 :INFO :Test: Login using keyboard navigation
 2025-09-19 10:46:32,368 :INFO :Verifying page title after login: 'My Account'
 2025-09-19 10:46:32,368 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-09-19 11:19:41,310 :INFO :Test: Verify placeholder text in email and password fields
+2025-09-19 11:19:45,801 :INFO :Email placeholder present: True
+2025-09-19 11:19:45,802 :INFO :Password placeholder present: True
+2025-09-19 11:19:45,803 :INFO :Placeholder text is correctly displayed in both fields.

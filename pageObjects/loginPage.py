@@ -81,13 +81,13 @@ class LoginPage(BaseDriver):
         self.get_password_field().send_keys(Keys.TAB)
         self.get_login_button().send_keys(Keys.ENTER)
 
-    def check_placeholder_text_in_email_field(self):
+    def field_has_email_placeholder(self):
         if self.get_email_field().get_attribute("placeholder") == "E-Mail Address":
             return True
         else:
             return False
 
-    def check_placeholder_text_in_password_field(self):
+    def field_has_password_placeholder(self):
         if self.get_password_field().get_attribute("placeholder") == "Password":
             return True
         else:

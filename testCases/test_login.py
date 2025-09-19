@@ -58,15 +58,15 @@ class Test_002_login(unittest.TestCase):
         self.logger.info(f"Credentials — Email: '{email}', Password: '{password}'")
 
         # Step 1: Navigate to login page
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
 
         # Step 2: Perform login
         self.login_page.log_me_in(email, password)
-
         self.login_page.check_presence_of_title(expected_title)
         actual_title = self.driver.title
-        print(f"Actual title: '{actual_title}'")
-        print(f"Expected title: '{expected_title}")
+
+        self.logger.info(f"Actual title: '{actual_title}'")
+        self.logger.info(f"Expected title: '{expected_title}")
 
         actual_error = str(self.login_page.check_error_message())
 
@@ -96,7 +96,7 @@ class Test_002_login(unittest.TestCase):
         self.logger.info("Test: Verify presence of 'Forgotten Password' text")
 
         # Step 1: Navigate to login page
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
 
         # Step 2: Click on 'Forgotten Password'
         self.login_page.click_forgotten_password_link()
@@ -124,12 +124,12 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_using_keyboard_keys(self):
         self.logger.info("Test: Login using keyboard navigation")
 
         # Step 1: Navigate to login page
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
 
         # Step 2: Perform login using keyboard keys
         email = "username@gmail.de"
@@ -158,35 +158,42 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_existing_of_placeholder_text_in_email_password_field(self):
-        self.home_page.bring_me_to_login_page()
-        self.logger.info("Navigated to login page")
-        self.logger.info("Starting the placeholder check test process ")
-        placeholder_text_emailB = self.login_page.check_placeholder_text_in_email_field()
-        placeholder_text_passwordB = self.login_page.check_placeholder_text_in_password_field()
-        try:
-            assert placeholder_text_emailB == True and placeholder_text_passwordB == True, (
-                "Test failed: Placeholder text is missing in one or both fields.\n"
-                "Expected placeholders to be present in both fields.\n"
-                f"Expected: Email field Boolean value (True), but got: {placeholder_text_emailB}\n"
-                f"Expected: Password field Boolean value (True), but got: {placeholder_text_passwordB}"
-            )
-            self.logger.info("Placeholder text is correctly displayed in both email and password fields.")
-        except AssertionError as e:
-            self.logger.error(
-                "Placeholder text validation failed!\n"
-                f"Error details: {e}\n"
-            )
-            self.driver.save_screenshot(".\\Screenshots\\placeholderText.png")
-            raise
+        self.logger.info("Test: Verify placeholder text in email and password fields")
 
-        self.driver.close()
+        # Step 1: Navigate to login page
+        self.home_page.open_login_page()
+
+        # Step 2: Check placeholder presence
+        email_has_placeholder = self.login_page.field_has_email_placeholder()
+        password_has_placeholder = self.login_page.field_has_password_placeholder()
+
+        self.logger.info(f"Email placeholder present: {email_has_placeholder}")
+        self.logger.info(f"Password placeholder present: {password_has_placeholder}")
+
+        # Step 3: Validate presence of placeholders in both fields
+        try:
+            self.assertTrue(
+                email_has_placeholder,
+                f"Email field placeholder is either missing or does not match the expected display."
+            )
+            self.assertTrue(
+                password_has_placeholder,
+                f"Password field placeholder is either missing or does not match the expected display."
+            )
+            self.logger.info("Placeholder text is correctly displayed in both fields.")
+        except AssertionError as e:
+            self._log_failure(
+                "placeholder_text_failure.png",
+                f"Placeholder text validation failed in login fields.",
+                e
+            )
 
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_password_text_is_hidden(self):
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.logger.info("Navigated to login page")
         self.logger.info("Starting password visibility check test execution")
         password_visibility = self.login_page.check_visibility_of_password_text()
@@ -209,7 +216,7 @@ class Test_002_login(unittest.TestCase):
     @data(("username@gmail.de", "admin1"))
     @unpack
     def test_login_via_right_hand_menu(self, email, password):
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.login_page.click_login_button_right_hand_menu()
         self.login_page.log_me_in(email, password)
         current_title = self.driver.title
@@ -223,7 +230,7 @@ class Test_002_login(unittest.TestCase):
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_logout(self):
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.logger.info("Starting the Login and Logout test execution")
         self.login_page.click_login_button_right_hand_menu()
         self.login_page.log_me_in(self.email, self.password)
@@ -267,7 +274,7 @@ class Test_002_login(unittest.TestCase):
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login(self):
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.logger.info("Starting the change password test after login.")
         self.login_page.log_me_in(self.email, self.password)
         current_title = self.driver.title
@@ -329,7 +336,7 @@ class Test_002_login(unittest.TestCase):
 
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login_negative_test(self):
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.logger.info("Starting negative test for password change after login.")
 
         self.login_page.log_me_in(self.email, self.new_password)

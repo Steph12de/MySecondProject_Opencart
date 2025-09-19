@@ -38,6 +38,9 @@ class LoginPage(BaseDriver):
     def get_continue_button(self):
         return self.wait_for_element_visible(self.my_locators.continue_button)
 
+    def get_body_locator(self):
+        return self.wait_for_element_located(self.my_locators.body)
+
     def input_eMail(self, email):
         self.get_email_field().clear()
         self.get_email_field().send_keys(email)
@@ -61,12 +64,17 @@ class LoginPage(BaseDriver):
     def click_forgotten_password_link(self):
         self.get_forgotten_password_link().click()
 
+    def press_tab_multiple_times(self, count):
+        for i in range(count):
+            self.get_body_locator().send_keys(Keys.TAB)
+
     def log_me_in(self, email, password):
         self.input_eMail(email)
         self.input_password(password)
         self.click_login_button()
 
     def log_me_in_using_keyboard(self, email, password):
+        self.press_tab_multiple_times(23)
         self.input_eMail(email)
         self.get_email_field().send_keys(Keys.TAB)
         self.input_password(password)

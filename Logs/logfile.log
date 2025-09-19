@@ -7609,3 +7609,19 @@ Got: 'False'
 2025-09-18 13:28:33,262 :INFO :Test: Verify presence of 'Forgotten Password' text
 2025-09-18 13:28:35,676 :INFO :Retrieved heading text: 'Forgot Your Password?'
 2025-09-18 13:28:35,677 :INFO :'Forgotten Password' heading is displayed correctly.
+2025-09-19 10:22:38,363 :INFO :Starting login Test using keyboard keys
+2025-09-19 10:27:51,087 :INFO :Starting login Test using keyboard keys
+2025-09-19 10:27:54,818 :INFO :Login successful - User redirected to 'My Account'
+2025-09-19 10:29:22,736 :INFO :Starting login Test using keyboard keys
+2025-09-19 10:29:25,298 :ERROR :Login test using keyboard keys failed!
+Error details: Login failed!
+  Expected page title: 'My Account', but got: 'Account Login'
+assert 'Account Login' == 'My Account'
+  
+  - My Account
+  + Account Login
+2025-09-19 10:30:33,399 :INFO :Starting login Test using keyboard keys
+2025-09-19 10:30:37,075 :INFO :Login successful - User redirected to 'My Account'
+2025-09-19 10:46:27,186 :INFO :Test: Login using keyboard navigation
+2025-09-19 10:46:32,368 :INFO :Verifying page title after login: 'My Account'
+2025-09-19 10:46:32,368 :INFO :Login using keyboard successful — user redirected to 'My Account'

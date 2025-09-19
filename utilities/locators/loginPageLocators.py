@@ -12,5 +12,6 @@ class LoginPageLocators:
     loginButtonRightHandMenu = (By.XPATH, "//div[@class='list-group']//a[1]")
     continue_button = (By.LINK_TEXT, "Continue")
     right_hand_menu_elements = (By.XPATH, "//div[@class='list-group']//a")
+    body = (By.XPATH, "//body")
 
 

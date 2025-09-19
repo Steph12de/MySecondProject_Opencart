@@ -63,7 +63,7 @@ class Test_002_login(unittest.TestCase):
         # Step 2: Perform login
         self.login_page.log_me_in(email, password)
 
-        # self.login_page.check_presence_of_title(expected_title)
+        self.login_page.check_presence_of_title(expected_title)
         actual_title = self.driver.title
         print(f"Actual title: '{actual_title}'")
         print(f"Expected title: '{expected_title}")
@@ -90,7 +90,7 @@ class Test_002_login(unittest.TestCase):
                 e
             )
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_presence_of_forgotten_password_link(self):
         self.logger.info("Test: Verify presence of 'Forgotten Password' text")
@@ -114,37 +114,48 @@ class Test_002_login(unittest.TestCase):
                 expected_text,
                 f"Heading text mismatch:\nExpected: '{expected_text}'\nGot: '{heading_text}'"
             )
-            self.logger.info("'Forgotten Password' heading is displayed correctly.")
+            self.logger.info("Navigation via 'Forgotten Password' link successful — heading text verified.")
         except AssertionError as e:
             self._log_failure(
                 "forgot_password_error.png",
-                "'Forgotten Password' heading is missing or incorrect.",
+                "'Forgotten Password' link failed — either navigation was incorrect or heading text is "
+                "missing/mismatched.",
                 e
             )
 
-
-
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_using_keyboard_keys(self):
+        self.logger.info("Test: Login using keyboard navigation")
+
+        # Step 1: Navigate to login page
         self.home_page.bring_me_to_login_page()
-        self.logger.info("Starting login Test using keyboard keys")
-        self.login_page.log_me_in_using_keyboard("username@gmail.de", "admin")
-        current_title = self.driver.title
+
+        # Step 2: Perform login using keyboard keys
+        email = "username@gmail.de"
+        password = "admin"
+        self.login_page.log_me_in_using_keyboard(email, password)
+
+        # Step 3: Verify page title after login
+        expected_title = "My Account"
+        self.login_page.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+
+        self.logger.info(f"Verifying page title after login: '{actual_title}'")
+
         try:
-            assert current_title == "My Account", (
-                "Login failed!\n"
-                f"Expected page title: 'My Account', but got: '{current_title}'"
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Login using keyboard failed\nExpected title: '{expected_title}'\nGot: '{actual_title}'"
             )
-            self.logger.info(f"Login successful - User redirected to '{current_title}'")
-        except AssertionError as e:
-            self.logger.error(
-                "Login test using keyboard keys failed!\n"
-                f"Error details: {e}"
+            self.logger.info(f"Login using keyboard successful — user redirected to '{actual_title}'")
+        except AssertionError as error:
+            self._log_failure(
+                "login_using_keyboard_failure.png",
+                "Login test using keyboard keys failed — title mismatch.",
+                error
             )
-            self.driver.save_screenshot(os.path.join(os.getcwd(), "login_error.png"))
-            raise
-        self.driver.close()
 
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")
@@ -351,9 +362,10 @@ class Test_002_login(unittest.TestCase):
             assert current_title == expected_title and expected_error_message in actual_error_message, (
                 "Mismatch was not handled correctly.\n"
                 f"Expected page title: '{expected_title}', but got: '{current_title}'.\n"
-                #f"Expected error message: '{expected_error_message}', but received: '{actual_error_message}'."
+                # f"Expected error message: '{expected_error_message}', but received: '{actual_error_message}'."
             )
-            self.logger.info(f"Test passed: Password mismatch correctly detected - Error message: '{actual_error_message}'.")
+            self.logger.info(
+                f"Test passed: Password mismatch correctly detected - Error message: '{actual_error_message}'.")
         except AssertionError as e:
             self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "wrongpassword.png"))
             self.logger.error(

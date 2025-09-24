@@ -7629,3 +7629,29 @@ assert 'Account Login' == 'My Account'
 2025-09-19 11:19:45,801 :INFO :Email placeholder present: True
 2025-09-19 11:19:45,802 :INFO :Password placeholder present: True
 2025-09-19 11:19:45,803 :INFO :Placeholder text is correctly displayed in both fields.
+2025-09-24 12:16:48,183 :INFO :Test: Verify that password input is masked
+2025-09-24 12:16:50,481 :INFO :Navigated to login page
+2025-09-24 12:16:51,006 :INFO :password field masked: True
+2025-09-24 12:16:51,007 :INFO :Password field is correctly masked.
+2025-09-24 12:20:06,762 :INFO :Test: Verify that password input is masked
+2025-09-24 12:20:07,826 :INFO :Navigated to login page
+2025-09-24 12:20:07,912 :INFO :password field masked: False
+2025-09-24 12:20:08,346 :ERROR :Password masking validation failed — field appears visible or incorrectly configured.
+Screenshot saved at: screenshots\paasword_visibility_error
+Details: False is not true : Password field is either visible or not properly masked (expected type='password').
+2025-09-24 12:22:56,814 :INFO :Test: Verify that password input is masked
+2025-09-24 12:22:57,698 :INFO :Navigated to login page
+2025-09-24 12:22:57,760 :INFO :password field masked: False
+2025-09-24 12:22:58,249 :ERROR :Password masking validation failed — field appears visible or incorrectly configured.
+Screenshot saved at: screenshots\paasword_visibility_error
+Details: False is not true : Password field is either visible or not properly masked (expected type='password').
+2025-09-24 12:38:24,601 :INFO :Test: Verify that password input is masked
+2025-09-24 12:38:25,358 :INFO :Navigated to login page
+2025-09-24 12:38:25,424 :INFO :password field masked: True
+2025-09-24 12:38:25,424 :INFO :Password field is correctly masked.
+2025-09-24 12:38:54,339 :INFO :Test: Verify that password input is masked
+2025-09-24 12:38:54,907 :INFO :Navigated to login page
+2025-09-24 12:38:54,987 :INFO :password field masked: False
+2025-09-24 12:38:55,360 :ERROR :Password masking validation failed — field appears visible or incorrectly configured.
+Screenshot saved at: screenshots\paasword_visibility_error
+Details: False is not true : Password field is either visible or not properly masked (expected type='password').

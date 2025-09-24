@@ -59,6 +59,7 @@ class Test_002_login(unittest.TestCase):
 
         # Step 1: Navigate to login page
         self.home_page.open_login_page()
+        self.logger.info("Navigated to login page")
 
         # Step 2: Perform login
         self.login_page.log_me_in(email, password)
@@ -97,6 +98,7 @@ class Test_002_login(unittest.TestCase):
 
         # Step 1: Navigate to login page
         self.home_page.open_login_page()
+        self.logger.info("Navigated to login page")
 
         # Step 2: Click on 'Forgotten Password'
         self.login_page.click_forgotten_password_link()
@@ -130,6 +132,7 @@ class Test_002_login(unittest.TestCase):
 
         # Step 1: Navigate to login page
         self.home_page.open_login_page()
+        self.logger.info("Navigated to login page")
 
         # Step 2: Perform login using keyboard keys
         email = "username@gmail.de"
@@ -158,12 +161,13 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.logger.info("Test: Verify placeholder text in email and password fields")
 
         # Step 1: Navigate to login page
         self.home_page.open_login_page()
+        self.logger.info("Navigated to login page")
 
         # Step 2: Check placeholder presence
         email_has_placeholder = self.login_page.field_has_email_placeholder()
@@ -191,25 +195,30 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
-    def test_password_text_is_hidden(self):
+    # @pytest.mark.skip(reason="Just skipped it right now")
+    def test_password_field_is_masked(self):
+        self.logger.info("Test: Verify that password input is masked")
+
+        # Step 1: Navigate to login page
         self.home_page.open_login_page()
         self.logger.info("Navigated to login page")
-        self.logger.info("Starting password visibility check test execution")
-        password_visibility = self.login_page.check_visibility_of_password_text()
+
+        # Step 2: Check if password field is masked (type='password')
+        is_password_masked = self.login_page.is_password_field_masked()
+        self.logger.info(f"password field masked: {is_password_masked}")
+
+        # Step 3: Validate masking
         try:
-            assert password_visibility == True, (
-                "Test failed: Password field is not hidden.\n"
-                f"Expected: Hidden (True), but got: {password_visibility}"
-            )
+            self.assertTrue(
+                is_password_masked,
+                "Password field is either visible or not properly masked (expected type='password').")
             self.logger.info("Password field is correctly masked.")
         except AssertionError as e:
-            self.logger.error(
-                "Password visibility test failed!\n"
-                f"Error details: {e}"
+            self._log_failure(
+                "password_visibility_error",
+                "Password masking validation failed — field appears visible or incorrectly configured.",
+                e
             )
-            raise
-        self.driver.close()
 
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")

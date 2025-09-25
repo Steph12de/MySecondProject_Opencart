@@ -268,14 +268,16 @@ class Test_002_login(unittest.TestCase):
         self.login_page.log_me_in(self.email, self.password)
 
         # Step 3: Verify login success
-        expected_title = "My Account"
-        self.my_account.check_presence_of_title(expected_title)
-        actual_title = self.driver.title
+        expected_login_title = "My Account"
+        self.my_account.check_presence_of_title(expected_login_title)
+        actual_login_title = self.driver.title
+        self.logger.info(f"Login page title: '{actual_login_title}'")
+
         try:
             self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Login failed — expected title: '{expected_title}', but got: '{actual_title}'")
+                actual_login_title,
+                expected_login_title,
+                f"Login failed — expected title: '{expected_login_title}', but got: '{actual_login_title}'")
             self.logger.info("Login successful ")
         except AssertionError as error:
             self._log_failure(
@@ -283,39 +285,47 @@ class Test_002_login(unittest.TestCase):
                 "Login failed — page title mismatch.",
                 error)
 
+        # Step 4: Perform logout
         self.my_account.click_logout_button()
-        expected_title = "Account Logout"
-        self.logout_page.check_presence_of_title(expected_title)
-        actual_title = self.driver.title
+
+        # Step 5: Verify logout success
+        expected_logout_title = "Account Logout"
+        self.logout_page.check_presence_of_title(expected_logout_title)
+        actual_logout_title = self.driver.title
+        self.logger.info(f"Logout page title: '{actual_logout_title}'")
+
         try:
             self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Logout failed — expected title: '{expected_title}', but got: '{actual_title}'")
+                actual_logout_title,
+                expected_logout_title,
+                f"Logout failed — expected title: '{expected_logout_title}', but got: '{actual_logout_title}'")
             self.logger.info("Logout successful ")
         except AssertionError as error:
             self._log_failure(
                 "logout_error.png",
                 "Logout failed — page title mismatch.",
                 error)
-        time.sleep(3)
+
+        # Step 6: Attempt to access protected page after logout
         self.driver.back()
-        time.sleep(3)
         self.my_account.click_wishList_button()
-        expected_title = "Account Login"
-        self.login_page.check_presence_of_title(expected_title)
-        actual_title = self.driver.title
+
+        # Step 7: Verify redirection to login page
+        expected_redirect_title = "Account Login"
+        self.login_page.check_presence_of_title(expected_redirect_title)
+        actual_redirect_title = self.driver.title
+        self.logger.info(f"Redirect page title after logout: '{actual_redirect_title}'")
 
         try:
             self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Logout_login failed — expected title: '{expected_title}', but got: '{actual_title}'")
-            self.logger.info("Logout successful ")
+                actual_redirect_title,
+                expected_redirect_title,
+                f"Access restriction failed — expected redirect to '{expected_redirect_title}', but got: '{actual_redirect_title}'")
+            self.logger.info("Access restriction after logout verified successfully ")
         except AssertionError as error:
             self._log_failure(
-                "logout_error.png",
-                "Logout failed — page title mismatch.",
+                "access_restriction_error.png",
+                "Access restriction after logout failed — user was not redirected to login page.",
                 error)
 
     # @pytest.mark.regression

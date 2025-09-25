@@ -7685,3 +7685,19 @@ Details: 'Account Login' != 'My Account'
 2025-09-25 09:49:54,289 :INFO :Login successful 
 2025-09-25 09:49:55,501 :INFO :Logout successful 
 2025-09-25 09:50:02,927 :INFO :Logout successful 
+2025-09-25 10:31:44,695 :INFO :Test: Full login/logout flow with access restriction check
+2025-09-25 10:31:46,068 :INFO :Navigated to login page
+2025-09-25 10:31:48,387 :INFO :Login page title: 'My Account'
+2025-09-25 10:31:48,387 :INFO :Login successful 
+2025-09-25 10:31:49,569 :INFO :Logout page title: 'Account Logout'
+2025-09-25 10:31:49,569 :INFO :Logout successful 
+2025-09-25 10:31:50,471 :INFO :Redirect page title after logout: 'Account Login'
+2025-09-25 10:31:50,471 :INFO :Access restriction after logout verified successfully 
+2025-09-25 10:37:19,757 :INFO :Test: Full login/logout flow with access restriction check
+2025-09-25 10:37:20,571 :INFO :Navigated to login page
+2025-09-25 10:37:23,775 :INFO :Login page title: 'My Account'
+2025-09-25 10:37:23,775 :INFO :Login successful 
+2025-09-25 10:37:24,938 :INFO :Logout page title: 'Account Logout'
+2025-09-25 10:37:24,938 :INFO :Logout successful 
+2025-09-25 10:37:25,968 :INFO :Redirect page title after logout: 'Account Login'
+2025-09-25 10:37:25,969 :INFO :Access restriction after logout verified successfully 

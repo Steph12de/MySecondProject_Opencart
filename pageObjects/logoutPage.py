@@ -17,3 +17,6 @@ class LogoutPage(BaseDriver):
 
     def clickOnLoginButton(self):
         self.getLoginButton().click()
+
+    def check_presence_of_title(self, title):
+        return self.wait_for_title_to_be_visible(title)

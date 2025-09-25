@@ -8,43 +8,46 @@ class MyAccountPage(BaseDriver):
         self.driver = driver
         self.locators = MyAccountPageLocators
 
-    def getSearchInputField(self):
+    def get_search_input_field(self):
         return self.wait_for_element_visible(self.locators.search_input_field)
 
-    def getSearchButton(self):
+    def get_search_button(self):
         return self.wait_for_element_visible(self.locators.search_button)
 
-    def getWishListButton(self):
+    def get_wishList_button(self):
         return self.wait_for_element_visible(self.locators.wish_list_button)
 
-    def getPasswordButton(self):
+    def get_password_button(self):
         return self.wait_for_element_visible(self.locators.password_button)
 
-    def getSuccessMessagePasswordUpdate(self):
+    def get_success_message_password_update(self):
         success_message = self.wait_for_element_visible(self.locators.success_message_password_update).text
         return success_message
 
-    def getLogoutRightHandMenu(self):
+    def get_logout_right_hand_menu(self):
         list_elements = self.wait_for_elements_visible(self.locators.right_side_elements_MA)
         for list_element in list_elements:
             if list_element.text == "Logout":
                 return list_element
 
     def inputSearchElement(self, element):
-        self.getSearchInputField().clear()
-        self.getSearchInputField().send_keys(element)
+        self.get_search_input_field().clear()
+        self.get_search_input_field().send_keys(element)
 
     def clickOnSearchButton(self):
-        self.getSearchButton().click()
+        self.get_search_button().click()
 
-    def clickOnWishListButton(self):
-        self.getWishListButton().click()
+    def click_wishList_button(self):
+        self.get_wishList_button().click()
 
     def clickOnPasswordButton(self):
-        self.getPasswordButton().click()
+        self.get_password_button().click()
 
-    def clickOnLogoutButton(self):
-        self.getLogoutRightHandMenu().click()
+    def click_logout_button(self):
+        self.get_logout_right_hand_menu().click()
+
+    def check_presence_of_title(self, title):
+        return self.wait_for_title_to_be_visible(title)
 
 
 

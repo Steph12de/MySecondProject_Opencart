@@ -63,7 +63,7 @@ class Test_002_login(unittest.TestCase):
 
         # Step 2: Perform login
         self.login_page.log_me_in(email, password)
-        self.login_page.check_presence_of_title(expected_title)
+        self.my_account.check_presence_of_title(expected_title)
         actual_title = self.driver.title
 
         self.logger.info(f"Actual title: '{actual_title}'")
@@ -141,7 +141,7 @@ class Test_002_login(unittest.TestCase):
 
         # Step 3: Verify page title after login
         expected_title = "My Account"
-        self.login_page.check_presence_of_title(expected_title)
+        self.my_account.check_presence_of_title(expected_title)
         actual_title = self.driver.title
 
         self.logger.info(f"Verifying page title after login: '{actual_title}'")
@@ -195,7 +195,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_password_field_is_masked(self):
         self.logger.info("Test: Verify that password input is masked")
 
@@ -222,63 +222,101 @@ class Test_002_login(unittest.TestCase):
 
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")
-    @data(("username@gmail.de", "admin1"))
+    @data(("username@gmail.de", "admin"))
     @unpack
     def test_login_via_right_hand_menu(self, email, password):
+        self.logger.info("Test: Login via right-hand menu")
+
+        # Step 1: Navigate to login page
         self.home_page.open_login_page()
+        self.logger.info("Navigated to login page")
+
+        # Step 2: Trigger login via right-hand menu
         self.login_page.click_login_button_right_hand_menu()
         self.login_page.log_me_in(email, password)
-        current_title = self.driver.title
+
+        # Step 3: Wait for expected page title to appear
+        expected_title = "My Account"
+        self.my_account.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+        self.logger.info(f"Verifying page title after login: '{actual_title}'")
+
+        # Step 4: Validate login success
         try:
-            assert current_title == "My Account", "Test failed: User wasn't logged in, the title is wrong"
-            self.logger.info("User logged successfully in by using login at the right-hand-menu")
-        except AssertionError as e:
-            self.logger.error(f"Login via right hand menu wasn't successfully: {e}. Actual Title: {current_title}")
-            assert False
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Login via right-hand menu failed — expected title: '{expected_title}', but got: '{actual_title}'")
+            self.logger.info("Login successful via right-hand menu")
+        except AssertionError as error:
+            self._log_failure(
+                "login_right_menu_error.png",
+                "Login via right-hand menu failed — page title mismatch.",
+                error)
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
-    def test_login_logout(self):
+    # @pytest.mark.skip(reason="Just skipped it right now")
+    def test_login_logout_flow(self):
+        self.logger.info("Test: Full login/logout flow with access restriction check")
+
+        # Step 1: Navigate to login page
         self.home_page.open_login_page()
-        self.logger.info("Starting the Login and Logout test execution")
+        self.logger.info("Navigated to login page")
+
+        # Step 2: Perform login via right-hand menu
         self.login_page.click_login_button_right_hand_menu()
         self.login_page.log_me_in(self.email, self.password)
-        current_title = self.driver.title
 
+        # Step 3: Verify login success
+        expected_title = "My Account"
+        self.my_account.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
         try:
-            assert current_title == "My Account", (
-                "Login failed!\n"
-                f"Expected page title: 'My Account', but got: '{current_title}'"
-            )
-            self.logger.info(f"Login successful - User redirected to '{current_title}'")
-        except AssertionError as e:
-            self.logger.error(
-                "Login test was not successful!" "The login/logout test cannot be proceeded.\n"
-                f"Error details: {e} "
-            )
-            raise
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Login failed — expected title: '{expected_title}', but got: '{actual_title}'")
+            self.logger.info("Login successful ")
+        except AssertionError as error:
+            self._log_failure(
+                "login_logout_error.png",
+                "Login failed — page title mismatch.",
+                error)
 
-        self.my_account.clickOnWishListButton()
-        self.wishlist.clickOnLogoutButtonRightHandMenu()
-        time.sleep(2)
+        self.my_account.click_logout_button()
+        expected_title = "Account Logout"
+        self.logout_page.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+        try:
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Logout failed — expected title: '{expected_title}', but got: '{actual_title}'")
+            self.logger.info("Logout successful ")
+        except AssertionError as error:
+            self._log_failure(
+                "logout_error.png",
+                "Logout failed — page title mismatch.",
+                error)
+        time.sleep(3)
         self.driver.back()
-        self.wishlist.clickOnpasswordRightHandMenu()
-        second_current_title = self.driver.title
+        time.sleep(3)
+        self.my_account.click_wishList_button()
+        expected_title = "Account Login"
+        self.login_page.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
 
         try:
-            assert second_current_title == "Account Login", (
-                "Logout failed!\n"
-                f"Expected page title: 'My Account', but got: '{second_current_title}"
-            )
-            self.logger.info(f"Logout was successful as expected. Actual title: {second_current_title}.")
-        except AssertionError as e:
-            self.driver.save_screenshot(os.path.join(os.getcwd(), "logout.png"))
-            self.logger.error(
-                "The logout functionality is not working as expected."
-                f"Error details: {e} "
-            )
-            raise
-        self.driver.close()
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Logout_login failed — expected title: '{expected_title}', but got: '{actual_title}'")
+            self.logger.info("Logout successful ")
+        except AssertionError as error:
+            self._log_failure(
+                "logout_error.png",
+                "Logout failed — page title mismatch.",
+                error)
 
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")

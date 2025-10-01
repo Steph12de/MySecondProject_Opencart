@@ -20,7 +20,7 @@ class MyAccountPage(BaseDriver):
     def get_password_button(self):
         return self.wait_for_element_visible(self.locators.password_button)
 
-    def get_success_message_password_update(self):
+    def get_success_message_password_text(self):
         success_message = self.wait_for_element_visible(self.locators.success_message_password_update).text
         return success_message
 
@@ -30,17 +30,17 @@ class MyAccountPage(BaseDriver):
             if list_element.text == "Logout":
                 return list_element
 
-    def inputSearchElement(self, element):
+    def input_search_element(self, element):
         self.get_search_input_field().clear()
         self.get_search_input_field().send_keys(element)
 
-    def clickOnSearchButton(self):
+    def click_search_button(self):
         self.get_search_button().click()
 
     def click_wishList_button(self):
         self.get_wishList_button().click()
 
-    def clickOnPasswordButton(self):
+    def click_password_button(self):
         self.get_password_button().click()
 
     def click_logout_button(self):

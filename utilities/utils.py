@@ -34,3 +34,4 @@ class Utils:
         return f"{''.join(letter_list)}@{random.choice(domains)}"
 
         # return f"emailtest{random.randint(1, 1000)}@{random.choice(domains)}"
+

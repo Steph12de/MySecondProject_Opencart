@@ -205,7 +205,7 @@ class Test_004_addToCart(unittest.TestCase):
     def test_add_to_cart_via_product_comparison_page(self):
         # Step 1: Navigate to login page and log in
         self.logger.info("Navigating to login page.")
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
 
         self.logger.info("Attempting to log in with provided credentials.")
         self.login_page.log_me_in(self.email, self.password)

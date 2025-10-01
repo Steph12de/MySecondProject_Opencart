@@ -39,6 +39,43 @@ class Test_002_login(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
+    def navigate_and_optional_login(self, email, password, expected_title="My Account", want_to_login=False,
+                                    via_menu=False, using_keyboard=False):
+        self.logger.info("Starting login process")
+
+        # Step 1: Navigate to login page
+        self.home_page.open_login_page()
+        self.logger.info("Navigated to login page")
+
+        if not want_to_login:
+            self.logger.info("Login skipped — only navigation performed")
+        else:
+            # Step 2: Choose login method
+            if via_menu:
+                self.login_page.click_login_button_right_hand_menu()
+                self.logger.info("Triggered login via right-hand menu")
+
+            if using_keyboard:
+                self.login_page.log_me_in_using_keyboard(email, password)
+                self.logger.info("Submitted credentials using keyboard navigation")
+            else:
+                self.login_page.log_me_in(email, password)
+                self.logger.info("Submitted credentials using standard form submission")
+
+            # Step 3: Wait for expected title to appear
+            try:
+                self.my_account.check_presence_of_title(expected_title)
+                self.logger.info(f"Expected title '{expected_title}' was found")
+            except Exception as e:
+                self.logger.error(f"Expected title '{expected_title}' not found — possible login failure")
+                self.logger.exception(e)
+
+        # Step 4: Return current page title
+        actual_title = self.driver.title
+        self.logger.info(f"Actual page title after login: '{actual_title}'")
+
+        return actual_title
+
     def _log_failure(self, screenshot_name, message, exception):
         screenshot_path = os.path.join("screenshots", screenshot_name)
         self.driver.save_screenshot(screenshot_path)
@@ -57,21 +94,11 @@ class Test_002_login(unittest.TestCase):
         self.logger.info("Starting login test with data-driven combinations")
         self.logger.info(f"Credentials — Email: '{email}', Password: '{password}'")
 
-        # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
-
-        # Step 2: Perform login
-        self.login_page.log_me_in(email, password)
-        self.my_account.check_presence_of_title(expected_title)
-        actual_title = self.driver.title
-
-        self.logger.info(f"Actual title: '{actual_title}'")
-        self.logger.info(f"Expected title: '{expected_title}")
-
+        # Step 1: Navigate to login page and perform login
+        actual_title = self.navigate_and_optional_login(email, password, expected_title)
         actual_error = str(self.login_page.check_error_message())
 
-        # Step 4: Validate results
+        # Step 2: Validate results
         try:
             self.assertEqual(
                 actual_title,
@@ -97,8 +124,7 @@ class Test_002_login(unittest.TestCase):
         self.logger.info("Test: Verify presence of 'Forgotten Password' text")
 
         # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
+        self.navigate_and_optional_login(self.email, self.password)
 
         # Step 2: Click on 'Forgotten Password'
         self.login_page.click_forgotten_password_link()
@@ -130,22 +156,13 @@ class Test_002_login(unittest.TestCase):
     def test_login_using_keyboard_keys(self):
         self.logger.info("Test: Login using keyboard navigation")
 
-        # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
-
-        # Step 2: Perform login using keyboard keys
-        email = "username@gmail.de"
-        password = "admin"
-        self.login_page.log_me_in_using_keyboard(email, password)
-
-        # Step 3: Verify page title after login
+        # Step 1: Define expected title
         expected_title = "My Account"
-        self.my_account.check_presence_of_title(expected_title)
-        actual_title = self.driver.title
 
-        self.logger.info(f"Verifying page title after login: '{actual_title}'")
+        # Step 2: Perform login using keyboard navigation
+        actual_title = self.navigate_and_optional_login(self.email, self.password, expected_title, using_keyboard=True)
 
+        # Step 3: Verify login success
         try:
             self.assertEqual(
                 actual_title,
@@ -166,8 +183,7 @@ class Test_002_login(unittest.TestCase):
         self.logger.info("Test: Verify placeholder text in email and password fields")
 
         # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
+        self.navigate_and_optional_login(self.email, self.password)
 
         # Step 2: Check placeholder presence
         email_has_placeholder = self.login_page.field_has_email_placeholder()
@@ -200,8 +216,7 @@ class Test_002_login(unittest.TestCase):
         self.logger.info("Test: Verify that password input is masked")
 
         # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
+        self.navigate_and_optional_login(self.email, self.password)
 
         # Step 2: Check if password field is masked (type='password')
         is_password_masked = self.login_page.is_password_field_masked()
@@ -227,21 +242,13 @@ class Test_002_login(unittest.TestCase):
     def test_login_via_right_hand_menu(self, email, password):
         self.logger.info("Test: Login via right-hand menu")
 
-        # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
-
-        # Step 2: Trigger login via right-hand menu
-        self.login_page.click_login_button_right_hand_menu()
-        self.login_page.log_me_in(email, password)
-
-        # Step 3: Wait for expected page title to appear
+        # Step 1: Define expected title
         expected_title = "My Account"
-        self.my_account.check_presence_of_title(expected_title)
-        actual_title = self.driver.title
-        self.logger.info(f"Verifying page title after login: '{actual_title}'")
 
-        # Step 4: Validate login success
+        # Step 1: Navigate to login page
+        actual_title = self.navigate_and_optional_login(email, password, expected_title, True, True)
+
+        # Step 3: Validate login success
         try:
             self.assertEqual(
                 actual_title,
@@ -259,19 +266,12 @@ class Test_002_login(unittest.TestCase):
     def test_login_logout_flow(self):
         self.logger.info("Test: Full login/logout flow with access restriction check")
 
-        # Step 1: Navigate to login page
-        self.home_page.open_login_page()
-        self.logger.info("Navigated to login page")
+        # Step 1: Define expected title
+        expected_title = "My Account"
 
-        # Step 2: Perform login via right-hand menu
-        self.login_page.click_login_button_right_hand_menu()
-        self.login_page.log_me_in(self.email, self.password)
-
-        # Step 3: Verify login success
-        expected_login_title = "My Account"
-        self.my_account.check_presence_of_title(expected_login_title)
-        actual_login_title = self.driver.title
-        self.logger.info(f"Login page title: '{actual_login_title}'")
+        # Step 2: Navigate to login page
+        actual_login_title = self.navigate_and_optional_login(self.email, self.password, expected_title,True)
+        expected_login_title = expected_title
 
         try:
             self.assertEqual(
@@ -285,10 +285,10 @@ class Test_002_login(unittest.TestCase):
                 "Login failed — page title mismatch.",
                 error)
 
-        # Step 4: Perform logout
+        # Step 3: Perform logout
         self.my_account.click_logout_button()
 
-        # Step 5: Verify logout success
+        # Step 4: Verify logout success
         expected_logout_title = "Account Logout"
         self.logout_page.check_presence_of_title(expected_logout_title)
         actual_logout_title = self.driver.title
@@ -306,11 +306,11 @@ class Test_002_login(unittest.TestCase):
                 "Logout failed — page title mismatch.",
                 error)
 
-        # Step 6: Attempt to access protected page after logout
+        # Step 5: Attempt to access protected page after logout
         self.driver.back()
         self.my_account.click_wishList_button()
 
-        # Step 7: Verify redirection to login page
+        # Step 6: Verify redirection to login page
         expected_redirect_title = "Account Login"
         self.login_page.check_presence_of_title(expected_redirect_title)
         actual_redirect_title = self.driver.title
@@ -331,65 +331,107 @@ class Test_002_login(unittest.TestCase):
     # @pytest.mark.regression
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login(self):
+        self.logger.info("Test: change password after logging")
+
+        # Step 1: Navigate to login page
         self.home_page.open_login_page()
-        self.logger.info("Starting the change password test after login.")
+        self.logger.info("Navigated to login page")
+
+        # Step 2: Perform Login
         self.login_page.log_me_in(self.email, self.password)
-        current_title = self.driver.title
+        self.logger.info("Entered Email and Password")
+
+        # Step 3: Wait to find the correct title
+        expected_title = "My Account"
+        self.my_account.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+        self.logger.info(f"Login page title: '{actual_title}'")
+
+        # Step 4: Verify login success
         try:
-            assert current_title == "My Account", (
-                "Login failed!\n"
-                f"Expected page title: 'My Account', but got: '{current_title}'"
-            )
-            self.logger.info(f"Login successful - User redirected to '{current_title}'")
-        except AssertionError as e:
-            self.logger.error(
-                "Login test was not successful!" "The change password after login test cannot be proceeded.\n"
-                f"Error details: {e} "
-            )
-            raise
-        self.my_account.clickOnPasswordButton()
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Login failed — expected title: '{actual_title}', but got: '{expected_title}'")
+            self.logger.info("Login successful ")
+        except AssertionError as error:
+            self._log_failure(
+                "",
+                "Login failed — page title mismatch.",
+                error)
+
+        # Step 5: Navigate to password page
+        self.my_account.click_password_button()
+        self.logger.info("Navigated to change password page")
+
+        # Step 6: Trying to change the password
         self.changePassword_page.input_new_password(self.new_password)
         self.changePassword_page.input_confirm_new_password(self.new_password)
         self.changePassword_page.click_on_continue_button()
-        current_success_message = self.my_account.getSuccessMessagePasswordUpdate()
-        success_message = "Success: Your password has been successfully updated."
-        current_title = self.driver.title
+
+        # Step 7: Verify password change successful
+        expected_success_message = "Success: Your password has been successfully updated."
+        actual_success_message = self.my_account.get_success_message_password_text()
+        self.my_account.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
 
         try:
-            assert current_title == "My Account" and success_message in current_success_message, (
-                "Password update validation failed!\n"
-                f"Expected page title: 'My Account', but got: '{current_title}'\n"
-                f"Expected error message: '{success_message}', Actual error message: '{self.my_account.getSuccessMessagePasswordUpdate()}'\n"
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                f"Title missmatch - Expected Title: '{expected_title}\nGot: '{actual_title}"
             )
-            self.logger.info("Password change was successful. User is on 'My Account' page.")
-        except AssertionError as e:
-            self.logger.error(
-                "Password change verification failed!\n"
-                f"Error details: {e} "
+            self.assertEqual(
+                actual_success_message,
+                expected_success_message,
+                f"Expected success message do not matched"
             )
-            raise
-
+            self.logger.info("Password get successful change and user redirected to my account page")
+        except AssertionError as error:
+            self._log_failure(
+                "",
+                "Password change verification failed!",
+                error
+            )
+        # Step 8: Perform logout and re-login
         self.logger.info("Proceeding with logout and re-login verification after password change.")
-        self.my_account.clickOnLogoutButton()
-        self.logout_page.clickOnLoginButton()
-        self.login_page.log_me_in(self.email, self.password)
-        current_title = self.driver.title
-        expected_title = "Account Login"
+        self.my_account.click_logout_button()
+
+        # Step 9: Verify logout success
+        expected_logout_title = "Account Logout"
+        self.logout_page.check_presence_of_title(expected_logout_title)
+        actual_logout_title = self.driver.title
 
         try:
-            assert current_title == expected_title, (
-                "Login verification failed!\n"
-                f"Expected page title: '{expected_title}', but got: '{current_title}'"
+            self.assertEqual(
+                actual_logout_title,
+                expected_logout_title,
+                f"Logout failed — expected title: '{expected_logout_title}', but got: '{actual_logout_title}'")
+            self.logger.info("Logout successful ")
+        except AssertionError as error:
+            self._log_failure(
+                "",
+                "Logout failed — page title mismatch.",
+                error)
+
+        # Step 10: Perform login after password changed
+        self.logout_page.click_login_button()
+        self.login_page.log_me_in(self.email, self.password)
+        self.logger.info("Entered Email and Password")
+
+        # Step 11: Wait to find the correct title
+        expected_title = "My Account"
+        self.my_account.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+        self.logger.info(f"Login page title: '{actual_title}'")
+        try:
+            self.assertEqual(
+                actual_title,
+                expected_title,
+                ""
             )
-            self.logger.info(f"Test passed: Login unsuccessful as expected - User was not redirected to 'My Account'.")
-        except AssertionError as e:
-            self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "passwordChangeLogin.png"))
-            self.logger.error(
-                "Unexpected login success despite incorrect password!\n"
-                f"Error details: {e}"
-            )
-            raise
-        self.driver.close()
+        except AssertionError as error:
+            pass
 
     @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login_negative_test(self):

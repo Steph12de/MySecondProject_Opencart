@@ -7701,3 +7701,54 @@ Details: 'Account Login' != 'My Account'
 2025-09-25 10:37:24,938 :INFO :Logout successful 
 2025-09-25 10:37:25,968 :INFO :Redirect page title after logout: 'Account Login'
 2025-09-25 10:37:25,969 :INFO :Access restriction after logout verified successfully 
+2025-10-01 10:34:59,238 :INFO :Test: Login using keyboard navigation
+2025-10-01 10:34:59,240 :INFO :Starting login process
+2025-10-01 10:35:00,960 :INFO :Navigated to login page
+2025-10-01 10:35:04,649 :INFO :Submitted credentials using keyboard navigation
+2025-10-01 10:35:15,012 :INFO :Expected title 'My Account' was found
+2025-10-01 10:35:15,020 :INFO :Actual page title after login: 'Account Login'
+2025-10-01 10:35:15,483 :ERROR :Login test using keyboard keys failed — title mismatch.
+Screenshot saved at: screenshots\login_using_keyboard_failure.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Login using keyboard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-10-01 10:37:21,971 :INFO :Test: Login using keyboard navigation
+2025-10-01 10:37:21,973 :INFO :Starting login process
+2025-10-01 10:37:23,398 :INFO :Navigated to login page
+2025-10-01 10:37:31,048 :INFO :Submitted credentials using keyboard navigation
+2025-10-01 10:37:31,062 :INFO :Expected title 'My Account' was found
+2025-10-01 10:37:31,076 :INFO :Actual page title after login: 'My Account'
+2025-10-01 10:37:31,076 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-10-01 10:52:33,974 :INFO :Test: Verify presence of 'Forgotten Password' text
+2025-10-01 10:52:33,976 :INFO :Starting login process
+2025-10-01 10:52:35,278 :INFO :Navigated to login page
+2025-10-01 10:52:35,278 :INFO :Login skipped — only navigation performed
+2025-10-01 10:52:35,302 :INFO :Actual page title after login: 'Account Login'
+2025-10-01 10:52:36,056 :INFO :Retrieved heading text: 'Forgot Your Password?'
+2025-10-01 10:52:36,056 :INFO :Navigation via 'Forgotten Password' link successful — heading text verified.
+2025-10-01 11:01:37,015 :INFO :Test: Verify placeholder text in email and password fields
+2025-10-01 11:01:37,017 :INFO :Starting login process
+2025-10-01 11:01:38,359 :INFO :Navigated to login page
+2025-10-01 11:01:38,360 :INFO :Login skipped — only navigation performed
+2025-10-01 11:01:38,490 :INFO :Actual page title after login: 'Account Login'
+2025-10-01 11:01:38,634 :INFO :Email placeholder present: True
+2025-10-01 11:01:38,634 :INFO :Password placeholder present: True
+2025-10-01 11:01:38,634 :INFO :Placeholder text is correctly displayed in both fields.
+2025-10-01 11:05:16,061 :INFO :Test: Verify that password input is masked
+2025-10-01 11:05:16,070 :INFO :Starting login process
+2025-10-01 11:05:17,869 :INFO :Navigated to login page
+2025-10-01 11:05:17,870 :INFO :Login skipped — only navigation performed
+2025-10-01 11:05:17,895 :INFO :Actual page title after login: 'Account Login'
+2025-10-01 11:05:17,946 :INFO :password field masked: True
+2025-10-01 11:05:17,946 :INFO :Password field is correctly masked.
+2025-10-01 11:12:35,926 :INFO :Test: Login via right-hand menu
+2025-10-01 11:12:35,929 :INFO :Starting login process
+2025-10-01 11:12:37,489 :INFO :Navigated to login page
+2025-10-01 11:12:38,128 :INFO :Triggered login via right-hand menu
+2025-10-01 11:12:39,705 :INFO :Submitted credentials using standard form submission
+2025-10-01 11:12:39,728 :INFO :Expected title 'My Account' was found
+2025-10-01 11:12:39,736 :INFO :Actual page title after login: 'My Account'
+2025-10-01 11:12:39,736 :INFO :Login successful via right-hand menu

@@ -7752,3 +7752,45 @@ Got: 'Account Login'
 2025-10-01 11:12:39,728 :INFO :Expected title 'My Account' was found
 2025-10-01 11:12:39,736 :INFO :Actual page title after login: 'My Account'
 2025-10-01 11:12:39,736 :INFO :Login successful via right-hand menu
+2025-10-02 10:26:43,139 :INFO :Test: Full login/logout flow with access restriction check
+2025-10-02 10:26:43,142 :INFO :Starting login process
+2025-10-02 10:26:44,996 :INFO :Navigated to login page
+2025-10-02 10:26:48,096 :INFO :Submitted credentials using standard form submission
+2025-10-02 10:26:48,311 :INFO :Expected title 'My Account' was found
+2025-10-02 10:26:48,328 :INFO :Actual page title after login: 'My Account'
+2025-10-02 10:26:48,328 :INFO :Login successful 
+2025-10-02 10:26:49,426 :INFO :Logout page title: 'Account Logout'
+2025-10-02 10:26:49,426 :INFO :Logout successful 
+2025-10-02 10:26:50,394 :INFO :Redirect page title after logout: 'Account Login'
+2025-10-02 10:26:50,465 :INFO :Access restriction after logout verified successfully 
+2025-10-02 10:35:06,093 :INFO :Test: change password after logging
+2025-10-02 10:35:06,096 :INFO :Starting login process
+2025-10-02 10:35:07,984 :INFO :Navigated to login page
+2025-10-02 10:35:09,709 :INFO :Submitted credentials using standard form submission
+2025-10-02 10:35:09,730 :INFO :Expected title 'My Account' was found
+2025-10-02 10:35:09,739 :INFO :Actual page title after login: 'My Account'
+2025-10-02 10:35:09,739 :INFO :Login successful 
+2025-10-02 10:35:10,182 :INFO :Navigated to change password page
+2025-10-02 10:35:11,199 :INFO :Password get successful change and user redirected to my account page
+2025-10-02 10:35:11,199 :INFO :Proceeding with logout and re-login verification after password change.
+2025-10-02 10:35:12,113 :INFO :Logout successful 
+2025-10-02 10:35:15,376 :INFO :Entered Email and Password
+2025-10-02 10:35:25,686 :INFO :Login page title: 'Account Login'
+2025-10-02 11:23:58,550 :INFO :Test: change password after logging
+2025-10-02 11:23:58,553 :INFO :Starting login process
+2025-10-02 11:24:00,243 :INFO :Navigated to login page
+2025-10-02 11:24:02,755 :INFO :Submitted credentials using standard form submission
+2025-10-02 11:24:02,771 :INFO :Expected title 'My Account' was found
+2025-10-02 11:24:02,786 :INFO :Actual page title after login: 'My Account'
+2025-10-02 11:24:02,786 :INFO :Login successful — user landed on 'My Account'
+2025-10-02 11:24:03,386 :INFO :Navigated to change password page
+2025-10-02 11:24:04,440 :INFO :Submitted new password and confirmation
+2025-10-02 11:24:04,636 :INFO :Password successfully changed — user redirected to 'My Account'
+2025-10-02 11:24:04,666 :INFO :Logging out after password change
+2025-10-02 11:24:05,713 :INFO :Logout successful — user landed on 'Account Logout'
+2025-10-02 11:24:06,320 :INFO :Starting login process
+2025-10-02 11:24:06,942 :INFO :Navigated to login page
+2025-10-02 11:24:07,605 :INFO :Submitted credentials using standard form submission
+2025-10-02 11:24:18,098 :INFO :Expected title 'My Account' was found
+2025-10-02 11:24:18,122 :INFO :Actual page title after login: 'Account Login'
+2025-10-02 11:24:18,123 :INFO :Access denied as expected — old password no longer valid after change

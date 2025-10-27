@@ -7794,3 +7794,207 @@ Got: 'Account Login'
 2025-10-02 11:24:18,098 :INFO :Expected title 'My Account' was found
 2025-10-02 11:24:18,122 :INFO :Actual page title after login: 'Account Login'
 2025-10-02 11:24:18,123 :INFO :Access denied as expected — old password no longer valid after change
+2025-10-09 16:06:44,669 :INFO :Test: change password after logging
+2025-10-09 16:06:44,671 :INFO :Starting Re/login process
+2025-10-09 16:06:46,728 :INFO :Navigated to login page
+2025-10-09 16:06:47,816 :INFO :Submitted credentials using standard form submission
+2025-10-09 16:06:47,991 :INFO :Expected title 'My Account' was found
+2025-10-09 16:06:48,001 :INFO :Actual page title after login: 'My Account'
+2025-10-09 16:06:48,001 :INFO :Login successful — user landed on 'My Account'
+2025-10-09 16:06:48,488 :INFO :Navigated to change password page
+2025-10-09 16:06:49,329 :INFO :Submitted new password and confirmation
+2025-10-09 16:06:49,496 :INFO :Password successfully changed — user redirected to 'My Account'
+2025-10-09 16:06:49,496 :INFO :Logging out after password change
+2025-10-09 16:06:50,355 :INFO :Logout successful — user landed on 'Account Logout'
+2025-10-09 16:06:50,876 :INFO :Starting Re/login process
+2025-10-09 16:06:51,425 :INFO :Navigated to login page
+2025-10-09 16:06:52,091 :INFO :Submitted credentials using standard form submission
+2025-10-09 16:06:52,506 :INFO :Expected title 'Account Login' was found
+2025-10-09 16:06:52,531 :INFO :Actual page title after login: 'Account Login'
+2025-10-09 16:06:52,532 :INFO :Access denied as expected — old password no longer valid after change
+2025-10-27 09:28:14,713 :INFO :Negative Test: Attempt to change password with mismatched confirmation
+2025-10-27 09:28:14,716 :INFO :Starting Re/login process
+2025-10-27 09:28:15,917 :INFO :Navigated to login page
+2025-10-27 09:28:17,405 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:28:17,412 :INFO :Expected title 'My Account' was found
+2025-10-27 09:28:17,434 :INFO :Actual page title after login: 'My Account'
+2025-10-27 09:28:17,434 :INFO :Login successful — user landed on 'My Account'
+2025-10-27 09:28:18,172 :INFO :Navigated to change password page
+2025-10-27 09:28:18,594 :INFO :Submitted mismatched password and confirmation
+2025-10-27 09:28:19,195 :INFO :Password change rejected as expected — error message displayed correctly
+2025-10-27 09:29:55,742 :INFO :Negative Test: Attempt to change password with mismatched confirmation
+2025-10-27 09:29:55,743 :INFO :Starting Re/login process
+2025-10-27 09:29:56,407 :INFO :Navigated to login page
+2025-10-27 09:29:56,950 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:29:57,544 :INFO :Expected title 'My Account' was found
+2025-10-27 09:29:57,554 :INFO :Actual page title after login: 'My Account'
+2025-10-27 09:29:57,555 :INFO :Login successful — user landed on 'My Account'
+2025-10-27 09:29:58,063 :INFO :Navigated to change password page
+2025-10-27 09:29:58,463 :INFO :Submitted mismatched password and confirmation
+2025-10-27 09:29:59,275 :ERROR :Negative password change test failed — mismatch not handled correctly
+Screenshot saved at: screenshots\password_mismatch_error.png
+Details: 'Password confirmation does not match password!' != 'Password confirmation does not match password!Test'
+- Password confirmation does not match password!
++ Password confirmation does not match password!Test
+?                                               ++++
+ : Error message mismatch — expected: 'Password confirmation does not match password!Test', got: 'Password confirmation does not match password!'
+2025-10-27 09:48:45,244 :INFO :Test: change password after logging
+2025-10-27 09:48:45,244 :INFO :Starting Re/login process
+2025-10-27 09:48:45,930 :INFO :Navigated to login page
+2025-10-27 09:48:47,986 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:48:48,009 :INFO :Expected title 'My Account' was found
+2025-10-27 09:48:48,021 :INFO :Actual page title after login: 'My Account'
+2025-10-27 09:48:48,021 :INFO :Login successful — user landed on 'My Account'
+2025-10-27 09:48:48,590 :INFO :Navigated to change password page
+2025-10-27 09:48:49,382 :INFO :Submitted password change — matching passwords
+2025-10-27 09:48:49,603 :INFO :Password successfully changed — user redirected to 'My Account'
+2025-10-27 09:48:49,603 :INFO :Logging out after password change
+2025-10-27 09:48:50,480 :INFO :Logout successful — user landed on 'Account Logout'
+2025-10-27 09:48:51,094 :INFO :Starting Re/login process
+2025-10-27 09:48:51,580 :INFO :Navigated to login page
+2025-10-27 09:48:52,405 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:48:52,597 :INFO :Expected title 'Account Login' was found
+2025-10-27 09:48:52,607 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:48:52,607 :INFO :Access denied as expected — old password no longer valid after change
+2025-10-27 09:49:00,669 :INFO :Negative Test: Attempt to change password with mismatched confirmation
+2025-10-27 09:49:00,669 :INFO :Starting Re/login process
+2025-10-27 09:49:01,528 :INFO :Navigated to login page
+2025-10-27 09:49:02,141 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:49:12,382 :INFO :Expected title 'My Account' was found
+2025-10-27 09:49:12,391 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:49:12,683 :ERROR :Login failed — page title mismatch.
+Screenshot saved at: screenshots\login_title_mismatch_2.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Login failed — expected title: 'My Account', but got: 'Account Login'
+2025-10-27 09:49:19,499 :INFO :Test: Verify placeholder text in email and password fields
+2025-10-27 09:49:19,500 :INFO :Starting Re/login process
+2025-10-27 09:49:20,244 :INFO :Navigated to login page
+2025-10-27 09:49:20,244 :INFO :Login skipped — only navigation performed
+2025-10-27 09:49:20,273 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:49:20,367 :INFO :Email placeholder present: True
+2025-10-27 09:49:20,367 :INFO :Password placeholder present: True
+2025-10-27 09:49:20,367 :INFO :Placeholder text is correctly displayed in both fields.
+2025-10-27 09:49:27,121 :INFO :Test: Full login/logout flow with access restriction check
+2025-10-27 09:49:27,121 :INFO :Starting Re/login process
+2025-10-27 09:49:27,895 :INFO :Navigated to login page
+2025-10-27 09:49:28,835 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:49:39,185 :INFO :Expected title 'My Account' was found
+2025-10-27 09:49:39,185 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:49:39,476 :ERROR :Login failed — page title mismatch.
+Screenshot saved at: screenshots\login_logout_error.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Login failed — expected title: 'My Account', but got: 'Account Login'
+2025-10-27 09:49:57,979 :INFO :Test: Login using keyboard navigation
+2025-10-27 09:49:57,980 :INFO :Starting Re/login process
+2025-10-27 09:49:58,763 :INFO :Navigated to login page
+2025-10-27 09:49:58,764 :INFO :Login skipped — only navigation performed
+2025-10-27 09:49:58,793 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:49:59,285 :ERROR :Login test using keyboard keys failed — title mismatch.
+Screenshot saved at: screenshots\login_using_keyboard_failure.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Login using keyboard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-10-27 09:50:10,702 :INFO :Test: Login via right-hand menu
+2025-10-27 09:50:10,704 :INFO :Starting Re/login process
+2025-10-27 09:50:11,352 :INFO :Navigated to login page
+2025-10-27 09:50:11,834 :INFO :Triggered login via right-hand menu
+2025-10-27 09:50:12,399 :INFO :Submitted credentials using standard form submission
+2025-10-27 09:50:22,691 :INFO :Expected title 'My Account' was found
+2025-10-27 09:50:22,705 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:50:23,029 :ERROR :Login via right-hand menu failed — page title mismatch.
+Screenshot saved at: screenshots\login_right_menu_error.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Login via right-hand menu failed — expected title: 'My Account', but got: 'Account Login'
+2025-10-27 09:50:29,913 :INFO :Starting login test with data-driven combinations
+2025-10-27 09:50:29,913 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-27 09:50:29,913 :INFO :Starting Re/login process
+2025-10-27 09:50:31,082 :INFO :Navigated to login page
+2025-10-27 09:50:31,083 :INFO :Login skipped — only navigation performed
+2025-10-27 09:50:31,111 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:50:41,493 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'Account Login' != 'My Account'
+- Account Login
++ My Account
+ : Title mismatch:
+ Expected: 'My Account'
+Got:'Account Login'
+2025-10-27 09:50:48,624 :INFO :Starting login test with data-driven combinations
+2025-10-27 09:50:48,625 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-27 09:50:48,625 :INFO :Starting Re/login process
+2025-10-27 09:50:49,270 :INFO :Navigated to login page
+2025-10-27 09:50:49,271 :INFO :Login skipped — only navigation performed
+2025-10-27 09:50:49,283 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:50:59,684 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-27 09:51:06,953 :INFO :Starting login test with data-driven combinations
+2025-10-27 09:51:06,953 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-27 09:51:06,953 :INFO :Starting Re/login process
+2025-10-27 09:51:07,859 :INFO :Navigated to login page
+2025-10-27 09:51:07,859 :INFO :Login skipped — only navigation performed
+2025-10-27 09:51:07,887 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:51:18,252 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-27 09:51:25,851 :INFO :Starting login test with data-driven combinations
+2025-10-27 09:51:25,852 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-10-27 09:51:25,852 :INFO :Starting Re/login process
+2025-10-27 09:51:26,545 :INFO :Navigated to login page
+2025-10-27 09:51:26,546 :INFO :Login skipped — only navigation performed
+2025-10-27 09:51:26,574 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:51:36,986 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-27 09:51:43,056 :INFO :Starting login test with data-driven combinations
+2025-10-27 09:51:43,056 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-27 09:51:43,056 :INFO :Starting Re/login process
+2025-10-27 09:51:43,661 :INFO :Navigated to login page
+2025-10-27 09:51:43,661 :INFO :Login skipped — only navigation performed
+2025-10-27 09:51:43,695 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:51:54,175 :ERROR :Login test failed — mismatch in title or error message.
+Screenshot saved at: screenshots\login_test_failure.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-27 09:52:00,436 :INFO :Test: Verify that password input is masked
+2025-10-27 09:52:00,437 :INFO :Starting Re/login process
+2025-10-27 09:52:01,074 :INFO :Navigated to login page
+2025-10-27 09:52:01,075 :INFO :Login skipped — only navigation performed
+2025-10-27 09:52:01,102 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:52:01,161 :INFO :password field masked: True
+2025-10-27 09:52:01,161 :INFO :Password field is correctly masked.
+2025-10-27 09:52:07,267 :INFO :Test: Verify presence of 'Forgotten Password' text
+2025-10-27 09:52:07,267 :INFO :Starting Re/login process
+2025-10-27 09:52:07,868 :INFO :Navigated to login page
+2025-10-27 09:52:07,869 :INFO :Login skipped — only navigation performed
+2025-10-27 09:52:07,889 :INFO :Actual page title after login: 'Account Login'
+2025-10-27 09:52:08,494 :INFO :Retrieved heading text: 'Forgot Your Password?'
+2025-10-27 09:52:08,494 :INFO :Navigation via 'Forgotten Password' link successful — heading text verified.

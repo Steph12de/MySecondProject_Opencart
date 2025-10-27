@@ -113,7 +113,7 @@ class Test_001_Register(unittest.TestCase):
         self.logger.info("Starting test: Registration via 'New Customer'")
 
         # Navigate to the login page
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.logger.info("Navigated to the login page.")
 
         # Click on the 'Continue' button for new customer registration
@@ -179,7 +179,7 @@ class Test_001_Register(unittest.TestCase):
     def test_registration_without_filling_form(self):
         self.logger.info("Starting test: Registration without filling in the form")
 
-        self.home_page.bring_me_to_login_page()
+        self.home_page.open_login_page()
         self.logger.info("Navigated to the login page.")
 
         self.login_page.select_option_right_hand_menu()
@@ -376,7 +376,7 @@ class Test_001_Register(unittest.TestCase):
                                  "detected and handled.")
 
             except AssertionError as e:
-                screenshot_name = "InvalidTelnumber.png"
+                screenshot_name = "Invalid_number.png"
                 screenshot_path = os.path.join(os.getcwd(), "Screenshots", screenshot_name)
                 self.driver.save_screenshot(screenshot_path)
                 self.logger.error("Registration should have failed: Invalid telephone number was accepted without "

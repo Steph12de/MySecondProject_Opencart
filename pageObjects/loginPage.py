@@ -96,7 +96,6 @@ class LoginPage(BaseDriver):
     def is_password_field_masked(self):
         return self.get_password_field().get_attribute("type") == "password"
 
-
     def select_option_right_hand_menu(self):
         elements = self.wait_for_elements_visible(self.my_locators.right_hand_menu_elements)
         for element in elements:

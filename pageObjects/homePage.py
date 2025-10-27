@@ -63,12 +63,12 @@ class HomePage(BaseDriver):
         # print(self.getDesktopsButton().text)
         self.get_show_all_desktops_button().click()
 
-    def inputSearchElement(self, element):
+    def input_search_element(self, element):
         self.get_search_input_field().clear()
         self.get_search_input_field().send_keys(element)
 
-    def clickOnWishListButton(self):
+    def click_wishlist_button(self):
         self.get_wish_list_button().click()
 
-    def clickOnSearchButton(self):
+    def click_Search_button(self):
         self.get_search_button().click()

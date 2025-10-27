@@ -7998,3 +7998,10 @@ Got: 'False'
 2025-10-27 09:52:07,889 :INFO :Actual page title after login: 'Account Login'
 2025-10-27 09:52:08,494 :INFO :Retrieved heading text: 'Forgot Your Password?'
 2025-10-27 09:52:08,494 :INFO :Navigation via 'Forgotten Password' link successful — heading text verified.
+2025-10-27 10:58:34,774 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-27 10:58:36,158 :INFO :Searching for 'iMac'
+2025-10-27 10:58:37,741 :INFO :Navigated to 'iMac' product detail page
+2025-10-27 10:58:37,875 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-27 10:58:39,711 :INFO :Navigating to shopping cart for verification
+2025-10-27 10:58:39,814 :INFO :Product verification successful — 'iMac' is in the shopping cart
+2025-10-27 10:58:40,030 :INFO :Test execution completed - Browser closed.

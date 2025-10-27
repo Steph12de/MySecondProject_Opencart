@@ -67,8 +67,8 @@ class HomePage(BaseDriver):
         self.get_search_input_field().clear()
         self.get_search_input_field().send_keys(element)
 
-    def click_wishlist_button(self):
+    def click_wishlist_icon(self):
         self.get_wish_list_button().click()
 
-    def click_Search_button(self):
+    def click_Search_icon(self):
         self.get_search_button().click()

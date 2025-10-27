@@ -46,6 +46,34 @@ class Test_004_addToCart(unittest.TestCase):
                           f"Details: {exception}")
         raise exception
 
+    def verify_success_message_contains_product(self, expected_start, product_name):
+        success_message = self.product_page.get_success_message_text()
+
+        # Check if success message starts with expected text
+        self.assertTrue(
+            success_message.startswith(expected_start),
+            f"Success message does not start with expected text: '{expected_start}'"
+        )
+        self.logger.info("Success message starts with expected text")
+
+        # Check if product name is included
+        self.assertIn(
+            product_name,
+            success_message,
+            f"Success message does not contain product name '{product_name}'"
+        )
+        self.logger.info(f"Success message contains correct product name: '{product_name}'")
+
+    def verify_product_in_cart(self, product_name, source="wishlist"):
+        self.wishList_page.click_shopping_cart_header_icon()
+        self.logger.info("Navigated to shopping cart for verification")
+
+        self.assertTrue(
+            self.cart_page.check_product_name(product_name),
+            f"Product '{product_name}' not found in cart after adding from {source}"
+        )
+        self.logger.info(f"Product '{product_name}' successfully verified in shopping cart")
+
     # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_product_display(self):
@@ -54,7 +82,7 @@ class Test_004_addToCart(unittest.TestCase):
 
         # Step 1: Search and navigate to product
         self.home_page.input_search_element(product_name)
-        self.home_page.click_Search_button()
+        self.home_page.click_Search_icon()
         self.logger.info(f"Searching for '{product_name}'")
 
         self.search_page.click_product_image()
@@ -65,28 +93,19 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Attempting to add '{product_name}' to shopping cart")
 
         try:
-            self.assertTrue(
-                self.product_page.check_success_message(),
-                "Failed to display success message after adding product"
-            )
-            self.logger.info("Success message displayed correctly after adding the product")
+            self.verify_success_message_contains_product("Success: You have added",
+                                                         product_name)
+
         except AssertionError as error:
             self._log_failure(
-                "add_to_cart_missing_success.png.png",
-                "Success message missing after adding product to cart",
+                "wishlist_add_to_cart_success_validation_failed.png",
+                f"Validation failed for success message after adding '{product_name}' from product display page",
                 error
             )
 
         # Step 3: Verify product in cart
-        self.product_page.click_on_shopping_cart_link()
-        self.logger.info("Navigating to shopping cart for verification")
-
         try:
-            self.assertTrue(
-                self.cart_page.check_product_name(product_name),
-                f"Product '{product_name}' not found in cart"
-            )
-            self.logger.info(f"Product verification successful — '{product_name}' is in the shopping cart")
+            self.verify_product_in_cart(product_name, "product display")
         except AssertionError as error:
             self._log_failure(
                 "cart_page_product_verification_failed.png",
@@ -96,53 +115,42 @@ class Test_004_addToCart(unittest.TestCase):
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_wish_list(self):
-        self.logger.info("Starting test: Add product to wish list.")
+        product_name = "Samsung SyncMaster 941BW"
+        self.logger.info(f"Test: Add '{product_name}' to cart from wishlist")
 
-        self.home_page.clickOnWishListButton()
-        self.logger.info("Navigating to Login section.")
+        # Step 1: Navigate to wishlist and login
+        self.home_page.click_wishlist_icon()
+        self.logger.info("Navigated to wishlist login section")
 
         self.login_page.log_me_in(self.email, self.password)
-        self.logger.info("Logging in to proceed with adding product from wish list.")
+        self.logger.info("Logged in successfully")
 
-        self.wishList_page.clickOnAddToCartIcon("Samsung SyncMaster 941BW")
-        self.logger.info("Attempting to add 'Samsung SyncMaster 941BW' to shopping cart from wish list.")
-
-        try:
-            assert self.product_page.check_success_message() is True, (
-                "Success message validation failed!\n"
-                "Expected success message was not displayed after adding product to cart."
-            )
-            self.logger.info("Success message correctly displayed after adding product.")
-        except AssertionError as e:
-            screenshot_path = os.path.join(os.getcwd(), "Screenshots",
-                                           "failed_wishlist_add_to_cart_success_message.png")
-            self.driver.save_screenshot(screenshot_path)
-            self.logger.error(
-                "Error: Success message was not shown after adding product from wish list.\n"
-                f"Screenshot saved at: {screenshot_path}\n"
-                f"Error details: {e}"
-            )
-            raise
-
-        self.wishList_page.clickOnShoppingCartHeaderIcon()
-        self.logger.info("Navigating to shopping cart to verify product presence.")
+        # Step 2: Add product from wishlist to cart
+        self.wishList_page.click_add_to_cart_icon(product_name)
+        self.logger.info(f"Attempting to add '{product_name}' to cart from wishlist")
 
         try:
-            assert self.cart_page.check_product_name("Samsung SyncMaster 941BW") is True, (
-                "Error: 'Samsung SyncMaster 941BW' not found in shopping cart after adding from wish list.\n"
+            self.verify_success_message_contains_product("Success: You have added", product_name)
+
+        except AssertionError as error:
+            self._log_failure(
+                "wishlist_success_message_validation_failed.png",
+                f"Validation failed for success message after adding '{product_name}' from wishlist",
+                error
             )
-            self.logger.info("'Samsung SyncMaster 941BW' was successfully added to the shopping cart.")
-        except AssertionError as e:
-            screenshot_path = os.path.join(os.getcwd(), "Screenshots", "failed_wishlist_product_cart_verification.png")
-            self.driver.save_screenshot(screenshot_path)
-            self.logger.error(
-                f"Screenshot saved at: {screenshot_path}\n"
-                f"Error details: {e}"
+
+        # Step 3: Verify product in cart
+        try:
+            self.verify_product_in_cart(product_name, "wish list")
+        except AssertionError as error:
+            self._log_failure(
+                "wishlist_cart_product_verification_failed.png",
+                f"Product '{product_name}' missing in cart after wishlist add",
+                error
             )
-            raise
 
         self.driver.close()
         self.logger.info("Test execution completed - Browser closed.")

@@ -10,35 +10,35 @@ class WishListPage(BaseDriver):
         self.driver = driver
         self.locators = WishListPageLocators
 
-    def getNumberTotalOfRows(self):
+    def get_total_rows_number(self):
         rows = self.wait_for_elements_visible(self.locators.numbers_of_rows)
         Trows = len(rows)
         return Trows
 
-    def clickOnAddToCartIcon(self, currentProductName):
-        for row in range(1, self.getNumberTotalOfRows() + 1):
-            productName = self.driver.find_element(By.XPATH,
+    def click_add_to_cart_icon(self, current_product_name):
+        for row in range(1, self.get_total_rows_number() + 1):
+            product_name = self.driver.find_element(By.XPATH,
                                                    "//div[@class='table-responsive']//table//tbody//tr[" + str(
                                                        row) + "]//td[2]//a").text
-            if productName == currentProductName:
+            if product_name == current_product_name:
                 self.wait_for_element_visible(self.locators.add_to_cart_icon).click()
 
         return False
 
-    def getShoppingCartHeaderIcon(self):
+    def get_shopping_cart_header_icon(self):
         return self.wait_for_element_visible(self.locators.shopping_cart_header_icon)
 
-    def getLogoutButtonRightHandMenu(self):
+    def get_logout_button_right_hand_menu(self):
         return self.wait_for_element_visible(self.locators.logout_right_hand_menu)
 
-    def getpasswordButtonRightHandMenu(self):
+    def get_password_button_right_hand_menu(self):
         return self.wait_for_element_visible(self.locators.password_right_hand_menu)
 
-    def clickOnShoppingCartHeaderIcon(self):
-        self.getShoppingCartHeaderIcon().click()
+    def click_shopping_cart_header_icon(self):
+        self.get_shopping_cart_header_icon().click()
 
-    def clickOnLogoutButtonRightHandMenu(self):
-        self.getLogoutButtonRightHandMenu().click()
+    def click_logout_button_right_hand_menu(self):
+        self.get_logout_button_right_hand_menu().click()
 
-    def clickOnpasswordRightHandMenu(self):
-        self.getpasswordButtonRightHandMenu().click()
+    def click_password_right_hand_menu(self):
+        self.get_password_button_right_hand_menu().click()

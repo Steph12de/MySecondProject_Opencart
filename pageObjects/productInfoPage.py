@@ -31,6 +31,9 @@ class ProductInfoPage(BaseDriver):
     def getSuccessAddedMessage(self):
         return self.wait_text_to_be_present_in_element(self.locators.success_message, "Success: You have added")
 
+    def get_success_message_text(self):
+        return self.wait_for_element_visible(self.locators.success_message).text
+
     def get_success_message_box(self):
         element = self.wait_for_element_visible(self.locators.success_message)
         if element is not str:

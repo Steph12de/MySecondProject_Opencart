@@ -15,6 +15,7 @@ from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from ddt import ddt, data, unpack
 import unittest
+from utilities.helpers.helpers import Helper, Helpers
 
 from utilities.readProperties import ReadConfig
 
@@ -37,14 +38,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.cart_page = ShoppingCartPage(self.driver)
         self.desktops_page = SubcategoryDesktopsPage(self.driver)
         self.comparison_page = ComparisonPage(self.driver)
-
-    def _log_failure(self, screenshot_name, message, exception):
-        screenshot_path = os.path.join("screenshots", screenshot_name)
-        self.driver.save_screenshot(screenshot_path)
-        self.logger.error(f"{message}\n"
-                          f"Screenshot saved at: {screenshot_path}\n"
-                          f"Details: {exception}")
-        raise exception
+        self.helper = Helpers(self.driver, self.logger, self.home_page, self.login_page, self.myAccount_page)
 
     def verify_success_message_contains_product(self, expected_start, product_name):
         success_message = self.product_page.get_success_message_text()
@@ -97,8 +91,8 @@ class Test_004_addToCart(unittest.TestCase):
                                                          product_name)
 
         except AssertionError as error:
-            self._log_failure(
-                "wishlist_add_to_cart_success_validation_failed.png",
+            self.helper.log_failure(
+                "product_display_success_validation_failed.png",
                 f"Validation failed for success message after adding '{product_name}' from product display page",
                 error
             )
@@ -107,13 +101,11 @@ class Test_004_addToCart(unittest.TestCase):
         try:
             self.verify_product_in_cart(product_name, "product display")
         except AssertionError as error:
-            self._log_failure(
+            self.helper.log_failure(
                 "cart_page_product_verification_failed.png",
                 f"Product '{product_name}' missing in cart",
                 error
             )
-        self.driver.close()
-        self.logger.info("Test execution completed - Browser closed.")
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
@@ -136,7 +128,7 @@ class Test_004_addToCart(unittest.TestCase):
             self.verify_success_message_contains_product("Success: You have added", product_name)
 
         except AssertionError as error:
-            self._log_failure(
+            self.helper.log_failure(
                 "wishlist_success_message_validation_failed.png",
                 f"Validation failed for success message after adding '{product_name}' from wishlist",
                 error
@@ -146,14 +138,11 @@ class Test_004_addToCart(unittest.TestCase):
         try:
             self.verify_product_in_cart(product_name, "wish list")
         except AssertionError as error:
-            self._log_failure(
+            self.helper.log_failure(
                 "wishlist_cart_product_verification_failed.png",
                 f"Product '{product_name}' missing in cart after wishlist add",
                 error
             )
-
-        self.driver.close()
-        self.logger.info("Test execution completed - Browser closed.")
 
     @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression

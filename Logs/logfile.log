@@ -8054,3 +8054,39 @@ Got: 'False'
 2025-10-27 13:34:04,298 :INFO :Navigated to wishlist login section
 2025-10-27 13:34:04,873 :INFO :Logged in successfully
 2025-10-27 13:34:06,089 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-10-28 09:47:37,341 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-28 09:47:38,448 :INFO :Searching for 'iMac'
+2025-10-28 09:47:39,522 :INFO :Navigated to 'iMac' product detail page
+2025-10-28 09:47:39,644 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-28 09:47:40,216 :INFO :Success message starts with expected text
+2025-10-28 09:47:40,216 :INFO :Success message contains correct product name: 'iMac'
+2025-10-28 09:47:40,905 :INFO :Navigated to shopping cart for verification
+2025-10-28 09:47:40,969 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-10-28 09:47:41,116 :INFO :Test execution completed - Browser closed.
+2025-10-28 09:51:27,614 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-28 09:51:28,729 :INFO :Searching for 'iMac'
+2025-10-28 09:51:29,776 :INFO :Navigated to 'iMac' product detail page
+2025-10-28 09:51:29,925 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-28 09:51:30,569 :INFO :Success message starts with expected text
+2025-10-28 09:51:30,569 :INFO :Success message contains correct product name: 'iMac'
+2025-10-28 09:51:31,118 :INFO :Navigated to shopping cart for verification
+2025-10-28 09:51:31,179 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-10-28 09:51:31,398 :INFO :Test execution completed - Browser closed.
+2025-10-28 09:52:27,628 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-28 09:52:28,704 :INFO :Searching for 'iMac'
+2025-10-28 09:52:30,752 :INFO :Navigated to 'iMac' product detail page
+2025-10-28 09:52:30,888 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-28 09:52:31,905 :ERROR :Validation failed for success message after adding 'iMac' from product display page
+Screenshot saved at: screenshots\wishlist_add_to_cart_success_validation_failed.png
+Details: False is not true : Success message does not start with expected text: 'Success: You have added Test'
+2025-10-28 10:18:24,642 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-28 10:18:26,491 :INFO :Searching for 'iMac'
+2025-10-28 10:18:28,867 :INFO :Navigated to 'iMac' product detail page
+2025-10-28 10:18:29,001 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-28 10:18:29,991 :ERROR :Validation failed for success message after adding 'iMac' from product display page
+Screenshot saved at: screenshots\product_display_success_validation_failed.png
+Details: False is not true : Success message does not start with expected text: 'Success: You have added Test'
+2025-10-28 10:18:35,093 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-10-28 10:18:35,748 :INFO :Navigated to wishlist login section
+2025-10-28 10:18:36,858 :INFO :Logged in successfully
+2025-10-28 10:18:37,204 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist

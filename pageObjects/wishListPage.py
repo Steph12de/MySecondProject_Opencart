@@ -18,8 +18,8 @@ class WishListPage(BaseDriver):
     def click_add_to_cart_icon(self, current_product_name):
         for row in range(1, self.get_total_rows_number() + 1):
             product_name = self.driver.find_element(By.XPATH,
-                                                   "//div[@class='table-responsive']//table//tbody//tr[" + str(
-                                                       row) + "]//td[2]//a").text
+                                                    "//div[@class='table-responsive']//table//tbody//tr[" + str(
+                                                        row) + "]//td[2]//a").text
             if product_name == current_product_name:
                 self.wait_for_element_visible(self.locators.add_to_cart_icon).click()
 
@@ -42,3 +42,14 @@ class WishListPage(BaseDriver):
 
     def click_password_right_hand_menu(self):
         self.get_password_button_right_hand_menu().click()
+
+    def is_product_in_wishlist(self, product_name):
+        row_total_number = len(self.wait_for_elements_visible(self.locators.numbers_of_rows))
+        for row in range(1, row_total_number + 1):
+            actual_product_name = self.driver.find_element(By.XPATH,
+                                                           "//div[@class='table-responsive']//table//tbody//tr[" + str(
+                                                               row) + "]//td[2]//a").text
+            if actual_product_name == product_name:
+                return True
+
+        return False

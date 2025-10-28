@@ -7,3 +7,4 @@ class WishListPageLocators:
     numbers_of_rows = (By.XPATH, "//div[@class='table-responsive']//table//tbody//tr")
     logout_right_hand_menu = (By.XPATH, "//div[@class='list-group']//a[13]")
     password_right_hand_menu = (By.XPATH, "//div[@class='list-group']//a[3]")
+    product_names_fields = (By.XPATH, "//div[@class='table-responsive']//table//tbody//tr//td[2]//a")

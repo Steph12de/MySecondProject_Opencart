@@ -15,7 +15,7 @@ from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from ddt import ddt, data, unpack
 import unittest
-from utilities.helpers.helpers import Helper, Helpers
+from utilities.helpers.helpers import Helpers
 
 from utilities.readProperties import ReadConfig
 
@@ -109,7 +109,7 @@ class Test_004_addToCart(unittest.TestCase):
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
-    def test_add_to_cart_from_wish_list(self):
+    def test_add_wishlist_product_to_cart(self):
         product_name = "Samsung SyncMaster 941BW"
         self.logger.info(f"Test: Add '{product_name}' to cart from wishlist")
 
@@ -118,12 +118,27 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info("Navigated to wishlist login section")
 
         self.login_page.log_me_in(self.email, self.password)
-        self.logger.info("Logged in successfully")
 
-        # Step 2: Add product from wishlist to cart
+        # Step 2: Verify product presence in wishlist
+        try:
+            self.assertTrue(
+                self.wishList_page.is_product_in_wishlist(product_name),
+                f"Product '{product_name}' not found in wishlist. Please add it first"
+            )
+            self.logger.info(f"Product '{product_name}' is available in the wishlist")
+
+        except AssertionError as error:
+            self.helper.log_failure(
+                "wishlist_product_missing.png",
+                f"Product '{product_name}' not found in wishlist",
+                error
+            )
+
+        # Step 3: Add product to cart
         self.wishList_page.click_add_to_cart_icon(product_name)
         self.logger.info(f"Attempting to add '{product_name}' to cart from wishlist")
 
+        # Step 4: Verify success message
         try:
             self.verify_success_message_contains_product("Success: You have added", product_name)
 
@@ -134,7 +149,7 @@ class Test_004_addToCart(unittest.TestCase):
                 error
             )
 
-        # Step 3: Verify product in cart
+        # Step 5: Verify product in cart
         try:
             self.verify_product_in_cart(product_name, "wish list")
         except AssertionError as error:
@@ -149,21 +164,21 @@ class Test_004_addToCart(unittest.TestCase):
     def test_add_to_cart_from_search_result(self):
         self.logger.info("Starting test: Add product to cart from search results.")
 
-        self.home_page.inputSearchElement("iMac")
+        self.home_page.input_search_element("iMac")
         self.logger.info("Searching for 'iMac'.")
 
-        self.home_page.clickOnSearchButton()
-        text_before = self.search_page.getCardTotalText()
-        self.search_page.clickOnAddToCartButton()
+        self.home_page.click_Search_icon()
+        text_before = self.search_page.get_card_total_text()
+        self.search_page.click_add_to_cart_button()
 
         expected_success_message = "Success: You have added iMac to your shopping cart!"
 
         try:
-            assert expected_success_message in self.search_page.getSuccessMessageText(), (
+            assert expected_success_message in self.search_page.get_success_message_text(), (
                 "Add to cart validation failed!\n"
                 "Expected success message was not displayed after adding product.\n"
                 f"Expected message: '{expected_success_message}'\n"
-                f"Actual message: '{self.search_page.getSuccessMessageText()}'"
+                f"Actual message: '{self.search_page.get_success_message_text()}'"
             )
             self.logger.info("Success message displayed correctly after adding the product.")
         except AssertionError as e:
@@ -178,12 +193,12 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Waiting for shopping cart count to change from '{text_before}' to a new updated value.")
         text_after = text_before
         while text_after == text_before:
-            text_after = self.search_page.getCardTotalText()
+            text_after = self.search_page.get_card_total_text()
 
         self.logger.info(f"Cart item count updated. Previous: '{text_before}', New: '{text_after}'")
 
-        self.search_page.clickOnBlackCardButton()
-        self.search_page.clickOnViewCartButton()
+        self.search_page.click_black_card_button()
+        self.search_page.click_view_cart_button()
 
         try:
             assert self.cart_page.check_product_name("iMac") is True, (

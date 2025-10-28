@@ -1,4 +1,5 @@
 import os
+from unittest import TestCase
 
 
 class Helpers:
@@ -55,3 +56,9 @@ class Helpers:
         self.logger.info(f"Actual page title after login: '{actual_title}'")
 
         return actual_title
+
+    def verify_login_successful(self, actual_title, expected_title, method="standard"):
+        assert actual_title == expected_title, (
+            f"Login using {method} failed\nExpected title: '{expected_title}'\nGot: '{actual_title}'"
+        )
+        self.logger.info(f"Login using {method} successful — user redirected to '{actual_title}'")

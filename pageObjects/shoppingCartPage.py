@@ -21,14 +21,14 @@ class ShoppingCartPage(BaseDriver):
     def get_warning_message_text(self):
         return self.wait_for_element_visible(self.locators.warning_message).text.split("\n")[0].strip()
 
-    def check_product_name(self, currentProductName):
+    def check_product_name(self, current_product_name):
         # print(f"getNumberTotalOfRows: {self.getNumberTotalOfRows()}")
         for row in range(1, self.getNumberTotalOfRows() + 1):
-            productName = self.driver.find_element(By.XPATH,
+            product_name = self.driver.find_element(By.XPATH,
                                                    "//div[@class='table-responsive']//table//tbody//tr[" + str(
                                                        row) + "]//td[2]//a").text
             # print(f"expected name: {currentProductName} , actual name: {productName}")
-            if productName == currentProductName:
+            if product_name == current_product_name:
                 return True
 
         return False

@@ -3,12 +3,16 @@ from unittest import TestCase
 
 
 class Helpers:
-    def __init__(self, driver, logger, home_page, login_page, my_account):
+    def __init__(self, driver, logger, home_page, login_page, my_account, wish_list, search_page, product_page, cart_page):
         self.driver = driver
         self.logger = logger
         self.home_page = home_page
         self.login_page = login_page
         self.my_account = my_account
+        self.wish_list = wish_list
+        self.search_page = search_page
+        self.product_page = product_page
+        self.cart_page = cart_page
 
     def log_failure(self, screenshot_name, message, exception):
         screenshot_path = os.path.join("screenshots", screenshot_name)
@@ -62,3 +66,64 @@ class Helpers:
             f"Login using {method} failed\nExpected title: '{expected_title}'\nGot: '{actual_title}'"
         )
         self.logger.info(f"Login using {method} successful — user redirected to '{actual_title}'")
+
+    def search_for_product(self, product_name):
+        self.logger.info(f"Initiating search for product: '{product_name}'")
+        self.home_page.input_search_element(product_name)
+        self.home_page.click_Search_icon()
+        self.logger.info(f"Search triggered for '{product_name}'")
+
+    def verify_product_in_cart(self, product_name, source="wishlist"):
+        self.logger.info(f"Verifying product '{product_name}' in cart (source: {source})")
+
+        # Step 1: Navigate to cart based on source
+        if source.lower() == "wishlist":
+            self.wish_list.click_shopping_cart_header_icon()
+            self.logger.info("Navigated to cart via wishlist header icon")
+
+        elif source.lower() == "search_results":
+            self.search_page.click_black_cart_icon()
+            self.search_page.click_view_cart_button()
+            self.logger.info("Navigated to cart via search results")
+
+        elif source.lower() == "product_display":
+            self.product_page.click_on_shopping_cart_link()
+            self.logger.info("Navigated to cart via product display page")
+
+        else:
+            self.logger.warning(f"Unknown source '{source}' — defaulting to product page cart link")
+            self.product_page.click_on_shopping_cart_link()
+
+        # Step 2: Verify product presence in cart
+        assert self.cart_page.check_product_name(product_name), (
+            f"Product '{product_name}' not found in cart after adding from '{source}'"
+        )
+        self.logger.info(f"Product '{product_name}' successfully verified in shopping cart")
+
+    def verify_success_message_contains_product(self, expected_start, product_name, source="product_display"):
+        self.logger.info(f"Verifying success message after adding '{product_name}' to cart (source: {source})")
+
+        # Step 1: Get success message based on source
+        if source.lower() == "wishlist":
+            success_message = self.wish_list.get_success_message_text()
+            self.logger.info("Retrieved success message from wishlist flow")
+
+        elif source.lower() == "search_results":
+            success_message = self.search_page.get_success_message_text()
+            self.logger.info("Retrieved success message from search results flow")
+
+        elif source.lower() == "product_display":
+            success_message = self.product_page.get_success_message_text()
+            self.logger.info("Retrieved success message from product display flow")
+
+        else:
+            self.logger.warning(f"Unknown source '{source}' — defaulting to product page")
+            success_message = self.product_page.get_success_message_text()
+
+        # Check if success message starts with expected text
+        assert success_message.startswith(expected_start), "Success message does not start with expected text"
+        self.logger.info(f"Success message starts with expected text: '{expected_start}'")
+
+        # Check if product name is included
+        assert product_name in success_message, f"Success message does not contain product name '{product_name}'"
+        self.logger.info(f"Success message contains correct product name: '{product_name}'")

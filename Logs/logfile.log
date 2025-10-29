@@ -8207,3 +8207,132 @@ Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wis
 2025-10-28 12:53:37,460 :INFO :Success message contains correct product name: 'Samsung SyncMaster 941BW'
 2025-10-28 12:53:38,035 :INFO :Navigated to shopping cart for verification
 2025-10-28 12:53:38,109 :INFO :Product 'Samsung SyncMaster 941BW' successfully verified in shopping cart
+2025-10-29 09:39:31,850 :INFO :Starting test: Add product to cart from search results.
+2025-10-29 09:39:32,273 :INFO :Searching for 'iMac'.
+2025-10-29 09:39:34,175 :INFO :Success message displayed correctly after adding the product.
+2025-10-29 09:39:34,175 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-10-29 09:39:34,218 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-10-29 09:39:35,248 :INFO :'iMac' was successfully added to the shopping cart.
+2025-10-29 09:39:35,377 :INFO :Test execution completed - Browser closed.
+2025-10-29 09:39:37,737 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-10-29 09:41:04,645 :INFO :Starting test: Add product to cart from search results.
+2025-10-29 09:41:04,965 :INFO :Searching for 'iMac'.
+2025-10-29 09:41:07,514 :INFO :Success message displayed correctly after adding the product.
+2025-10-29 09:41:07,514 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-10-29 09:41:07,581 :INFO :Cart item count updated. Previous: '0 item(s) - $0.00', New: '1 item(s) - $122.00'
+2025-10-29 09:41:08,902 :INFO :'iMac' was successfully added to the shopping cart.
+2025-10-29 09:41:09,137 :INFO :Test execution completed - Browser closed.
+2025-10-29 09:41:11,411 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-10-29 09:42:07,820 :INFO :Starting test: Add product to cart from search results.
+2025-10-29 09:42:08,196 :INFO :Searching for 'iMac'.
+2025-10-29 09:42:09,910 :INFO :Success message displayed correctly after adding the product.
+2025-10-29 09:42:09,910 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-10-29 09:42:10,870 :INFO :'iMac' was successfully added to the shopping cart.
+2025-10-29 09:42:11,199 :INFO :Test execution completed - Browser closed.
+2025-10-29 09:42:13,433 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-10-29 10:23:51,961 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-29 10:23:51,963 :INFO :Initiating search for product: 'iMac'
+2025-10-29 10:23:53,225 :INFO :Search triggered for 'iMac'
+2025-10-29 10:23:54,313 :INFO :Navigated to 'iMac' product detail page
+2025-10-29 10:23:54,493 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-29 10:23:55,183 :INFO :Success message starts with expected text
+2025-10-29 10:23:55,184 :INFO :Success message contains correct product name: 'iMac'
+2025-10-29 10:23:56,077 :INFO :Navigated to shopping cart for verification
+2025-10-29 10:23:56,160 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-10-29 10:24:06,490 :INFO :Test: Add 'iMac' to cart from search results
+2025-10-29 10:24:06,491 :INFO :Initiating search for product: 'iMac'
+2025-10-29 10:24:07,887 :INFO :Search triggered for 'iMac'
+2025-10-29 10:24:07,984 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-10-29 10:24:08,142 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-10-29 10:24:08,710 :INFO :Success message displayed correctly after adding the product.
+2025-10-29 10:24:08,710 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-10-29 10:24:08,774 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-10-29 10:24:09,584 :INFO :Navigated to shopping cart
+2025-10-29 10:24:09,678 :INFO :'iMac' was successfully added to the shopping cart.
+2025-10-29 10:34:03,111 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-29 10:34:03,112 :INFO :Initiating search for product: 'iMac'
+2025-10-29 10:34:04,463 :INFO :Search triggered for 'iMac'
+2025-10-29 10:34:06,613 :INFO :Navigated to 'iMac' product detail page
+2025-10-29 10:34:06,741 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-29 10:34:07,433 :INFO :Success message starts with expected text
+2025-10-29 10:34:07,435 :INFO :Success message contains correct product name: 'iMac'
+2025-10-29 10:34:07,991 :INFO :Navigated to shopping cart
+2025-10-29 10:34:08,080 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-10-29 11:51:16,605 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-29 11:51:16,606 :INFO :Initiating search for product: 'iMac'
+2025-10-29 11:51:19,105 :INFO :Search triggered for 'iMac'
+2025-10-29 11:51:20,960 :INFO :Navigated to 'iMac' product detail page
+2025-10-29 11:51:21,212 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-29 11:51:21,213 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-10-29 11:51:21,928 :INFO :Retrieved success message from product display flow
+2025-10-29 11:51:21,930 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-10-29 11:51:31,874 :INFO :Test: Add 'iMac' to cart from search results
+2025-10-29 11:51:31,874 :INFO :Initiating search for product: 'iMac'
+2025-10-29 11:51:32,685 :INFO :Search triggered for 'iMac'
+2025-10-29 11:51:32,735 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-10-29 11:51:32,884 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-10-29 11:51:32,885 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-10-29 11:51:33,452 :INFO :Retrieved success message from search results flow
+2025-10-29 11:51:33,453 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-10-29 11:51:37,386 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-10-29 11:51:38,209 :INFO :Navigated to wishlist login section
+2025-10-29 11:51:39,913 :INFO :Product 'Samsung SyncMaster 941BW' is available in the wishlist
+2025-10-29 11:51:40,207 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-10-29 11:51:40,207 :INFO :Verifying success message after adding 'Samsung SyncMaster 941BW' to cart (source: wishlist)
+2025-10-29 11:51:40,777 :INFO :Retrieved success message from wishlist flow
+2025-10-29 11:51:40,777 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-10-29 12:01:31,571 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-10-29 12:01:31,574 :INFO :Initiating search for product: 'iMac'
+2025-10-29 12:01:32,835 :INFO :Search triggered for 'iMac'
+2025-10-29 12:01:33,688 :INFO :Navigated to 'iMac' product detail page
+2025-10-29 12:01:33,840 :INFO :Attempting to add 'iMac' to shopping cart
+2025-10-29 12:01:33,840 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-10-29 12:01:34,413 :INFO :Retrieved success message from product display flow
+2025-10-29 12:01:34,414 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-10-29 12:01:34,414 :INFO :Success message contains correct product name: 'iMac'
+2025-10-29 12:01:34,414 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-10-29 12:01:34,918 :INFO :Navigated to cart via product display page
+2025-10-29 12:01:34,991 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-10-29 12:01:45,861 :INFO :Test: Add 'iMac' to cart from search results
+2025-10-29 12:01:45,861 :INFO :Initiating search for product: 'iMac'
+2025-10-29 12:01:46,923 :INFO :Search triggered for 'iMac'
+2025-10-29 12:01:46,988 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-10-29 12:01:47,150 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-10-29 12:01:47,151 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-10-29 12:01:47,761 :INFO :Retrieved success message from search results flow
+2025-10-29 12:01:47,763 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-10-29 12:01:47,763 :INFO :Success message contains correct product name: 'iMac'
+2025-10-29 12:01:47,763 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-10-29 12:01:47,823 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-10-29 12:01:47,823 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-10-29 12:01:48,744 :INFO :Navigated to cart via search results
+2025-10-29 12:01:48,836 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-10-29 12:01:54,219 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-10-29 12:01:54,947 :INFO :Navigated to wishlist login section
+2025-10-29 12:01:56,521 :INFO :Product 'Samsung SyncMaster 941BW' is available in the wishlist
+2025-10-29 12:01:56,871 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-10-29 12:01:56,871 :INFO :Verifying success message after adding 'Samsung SyncMaster 941BW' to cart (source: wishlist)
+2025-10-29 12:01:57,432 :INFO :Retrieved success message from wishlist flow
+2025-10-29 12:01:57,433 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-10-29 12:01:57,433 :INFO :Success message contains correct product name: 'Samsung SyncMaster 941BW'
+2025-10-29 12:01:57,434 :INFO :Verifying product 'Samsung SyncMaster 941BW' in cart (source: wishlist)
+2025-10-29 12:01:58,395 :INFO :Navigated to cart via wishlist header icon
+2025-10-29 12:01:58,457 :INFO :Product 'Samsung SyncMaster 941BW' successfully verified in shopping cart

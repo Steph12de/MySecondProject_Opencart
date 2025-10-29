@@ -34,6 +34,9 @@ class WishListPage(BaseDriver):
     def get_password_button_right_hand_menu(self):
         return self.wait_for_element_visible(self.locators.password_right_hand_menu)
 
+    def get_success_message_text(self):
+        return self.wait_for_element_visible(self.locators.success_message_field).text
+
     def click_shopping_cart_header_icon(self):
         self.get_shopping_cart_header_icon().click()
 

@@ -24,10 +24,10 @@ class SearchPage(BaseDriver):
     def get_view_cart_button(self):
         return self.wait_for_element_visible(self.locators.view_cart_button)
 
-    def get_black_cart_button(self):
+    def get_black_cart_icon(self):
         return self.wait_for_element_visible(self.locators.black_card_button)
 
-    def get_card_total_text(self):
+    def get_cart_total_text(self):
         try:
             element = self.wait_for_element_visible(self.locators.item_card_total)
             return element.text
@@ -40,8 +40,8 @@ class SearchPage(BaseDriver):
     def click_add_to_cart_button(self):
         self.get_add_to_cart_button().click()
 
-    def click_black_card_button(self):
-        self.get_black_cart_button().click()
+    def click_black_cart_icon(self):
+        self.get_black_cart_icon().click()
 
     def click_view_cart_button(self):
         self.get_view_cart_button().click()

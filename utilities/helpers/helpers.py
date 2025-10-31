@@ -3,7 +3,7 @@ from unittest import TestCase
 
 
 class Helpers:
-    def __init__(self, driver, logger, home_page, login_page, my_account, wish_list, search_page, product_page, cart_page):
+    def __init__(self, driver, logger, home_page, login_page, my_account, wish_list, search_page, product_page, cart_page, logout_page):
         self.driver = driver
         self.logger = logger
         self.home_page = home_page
@@ -13,6 +13,7 @@ class Helpers:
         self.search_page = search_page
         self.product_page = product_page
         self.cart_page = cart_page
+        self.logout_page = logout_page
 
     def log_failure(self, screenshot_name, message, exception):
         screenshot_path = os.path.join("screenshots", screenshot_name)
@@ -66,6 +67,24 @@ class Helpers:
             f"Login using {method} failed\nExpected title: '{expected_title}'\nGot: '{actual_title}'"
         )
         self.logger.info(f"Login using {method} successful — user redirected to '{actual_title}'")
+
+    def verify_logout_successful(self, expected_title):
+        self.logout_page.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+        self.logger.info(f"Logout page title: '{actual_title}'")
+        assert actual_title == expected_title, (
+            f"Logout failed — expected title: '{expected_title}', but got: '{actual_title}'"
+        )
+        self.logger.info("Logout successful")
+
+    def verify_access_restriction_redirect(self, expected_title):
+        self.login_page.check_presence_of_title(expected_title)
+        actual_title = self.driver.title
+        self.logger.info(f"Redirect page title after logout: '{actual_title}'")
+        assert actual_title == expected_title, (
+            f"Access restriction failed — expected redirect to '{expected_title}', but got: '{actual_title}'"
+        )
+        self.logger.info("Access restriction after logout verified successfully")
 
     def search_for_product(self, product_name):
         self.logger.info(f"Initiating search for product: '{product_name}'")

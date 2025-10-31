@@ -6,6 +6,7 @@ import pytest
 from pageObjects.comparisonPage import ComparisonPage
 from pageObjects.homePage import HomePage
 from pageObjects.loginPage import LoginPage
+from pageObjects.logoutPage import LogoutPage
 from pageObjects.myAccountPage import MyAccountPage
 from pageObjects.productInfoPage import ProductInfoPage
 from pageObjects.searchPage import SearchPage
@@ -38,9 +39,10 @@ class Test_004_addToCart(unittest.TestCase):
         self.cart_page = ShoppingCartPage(self.driver)
         self.desktops_page = SubcategoryDesktopsPage(self.driver)
         self.comparison_page = ComparisonPage(self.driver)
+        self.logout_page = LogoutPage(self.driver)
         self.helper = Helpers(self.driver, self.logger, self.home_page, self.login_page, self.myAccount_page,
                               self.wishList_page,
-                              self.search_page, self.product_page, self.cart_page)
+                              self.search_page, self.product_page, self.cart_page, self.logout_page)
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression

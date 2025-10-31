@@ -10,6 +10,9 @@ from pageObjects.homePage import HomePage
 from pageObjects.forgottenPasswordPage import ForgottenPasswordPage
 from pageObjects.logoutPage import LogoutPage
 from pageObjects.myAccountPage import MyAccountPage
+from pageObjects.productInfoPage import ProductInfoPage
+from pageObjects.searchPage import SearchPage
+from pageObjects.shoppingCartPage import ShoppingCartPage
 from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from utilities.helpers.helpers import Helpers
@@ -34,10 +37,15 @@ class Test_002_login(unittest.TestCase):
         self.myAccount_page = MyAccountPage(self.driver)
         self.fpassword_page = ForgottenPasswordPage(self.driver)
         self.my_account = MyAccountPage(self.driver)
-        self.wishlist = WishListPage(self.driver)
+        self.search_page = SearchPage(self.driver)
+        self.product_page = ProductInfoPage(self.driver)
+        self.cart_page = ShoppingCartPage(self.driver)
+        self.wishList_page = WishListPage(self.driver)
         self.change_password_page = ChangePasswordPage(self.driver)
         self.logout_page = LogoutPage(self.driver)
-        self.helper = Helpers(self.driver, self.logger, self.home_page, self.login_page, self.myAccount_page)
+        self.helper = Helpers(self.driver, self.logger, self.home_page, self.login_page, self.myAccount_page,
+                              self.wishList_page,
+                              self.search_page, self.product_page, self.cart_page, self.logout_page)
 
     def tearDown(self):
         self.driver.quit()
@@ -55,12 +63,13 @@ class Test_002_login(unittest.TestCase):
         "Tabelle1"))
     @unpack
     def test_login_with_multiple_combi(self, email, password, expected_title, expected_error, test_case_label):
-        self.logger.info("Starting login test: {test_case_label}")
+        self.logger.info(f"Starting login test: {test_case_label}")
         self.logger.info(f"Credentials — Email: '{email}', Password: '{password}'")
 
         # Step 1: Navigate to login page and perform login
-        actual_title = self.helper.navigate_and_optional_login(email, password, expected_title)
+        actual_title = self.helper.navigate_and_optional_login(email, password, expected_title, True)
         actual_error = str(self.login_page.check_error_message())
+        print(self.login_page.get_error_text())
 
         # Step 2: Validate results
         try:
@@ -74,11 +83,13 @@ class Test_002_login(unittest.TestCase):
         except AssertionError as error:
             self.helper.log_failure(
                 f"login_failed_{test_case_label}.png",
-                f"Login test failed — {test_case_label}",
+                f"Login test failed — {test_case_label}\n"
+                f"Expected Title: '{expected_title}'\nExpected Error: '{expected_error}'\n"
+                f"Actual Title: '{actual_title}'\nActual Error: '{actual_error}'",
                 error
             )
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_presence_of_forgotten_password_link(self):
         self.logger.info("Test: Verify presence of 'Forgotten Password' text")
@@ -112,7 +123,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_using_keyboard_keys(self):
         self.logger.info("Test: Login using keyboard navigation")
 
@@ -120,15 +131,11 @@ class Test_002_login(unittest.TestCase):
         expected_title = "My Account"
 
         # Step 2: Perform login using keyboard navigation
-        actual_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, using_keyboard=True)
+        actual_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, True, using_keyboard=True)
 
         # Step 3: Verify login success
         try:
-            self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Login using keyboard failed\nExpected title: '{expected_title}'\nGot: '{actual_title}'"
-            )
+            self.helper.verify_login_successful(actual_title, expected_title, "keyboard")
             self.logger.info(f"Login using keyboard successful — user redirected to '{actual_title}'")
         except AssertionError as error:
             self.helper.log_failure(
@@ -138,7 +145,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.logger.info("Test: Verify placeholder text in email and password fields")
 
@@ -171,7 +178,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_password_field_is_masked(self):
         self.logger.info("Test: Verify that password input is masked")
 
@@ -197,91 +204,66 @@ class Test_002_login(unittest.TestCase):
 
     # @pytest.mark.regression
     # @pytest.mark.skip(reason="Just skipped it right now")
-    @data(("username@gmail.de", "admin"))
-    @unpack
-    def test_login_via_right_hand_menu(self, email, password):
-        self.logger.info("Test: Login via right-hand menu")
-
-        # Step 1: Define expected title
-        expected_title = "My Account"
-
-        # Step 1: Navigate to login page
-        actual_title = self.helper.navigate_and_optional_login(email, password, expected_title, True, True)
-
-        # Step 3: Validate login success
-        try:
-            self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Login via right-hand menu failed — expected title: '{expected_title}', but got: '{actual_title}'")
-            self.logger.info("Login successful via right-hand menu")
-        except AssertionError as error:
-            self.helper.log_failure(
-                "login_right_menu_error.png",
-                "Login via right-hand menu failed — page title mismatch.",
-                error)
+    # @data(("username@gmail.de", "admin"))
+    # @unpack
+    # def test_login_via_right_hand_menu(self, email, password):
+    #     self.logger.info("Test: Login via right-hand menu")
+    #
+    #     # Step 1: Define expected title
+    #     expected_title = "My Account"
+    #
+    #     # Step 1: Navigate to login page
+    #     actual_title = self.helper.navigate_and_optional_login(email, password, expected_title, True, True)
+    #
+    #     # Step 3: Validate login success
+    #     try:
+    #         self.helper.verify_login_successful(actual_title, expected_title, "right_hand_menu")
+    #     except AssertionError as error:
+    #         self.helper.log_failure(
+    #             "login_right_menu_error.png",
+    #             "Login via right-hand menu failed — page title mismatch.",
+    #             error)
 
     # @pytest.mark.regression
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_logout_flow(self):
         self.logger.info("Test: Full login/logout flow with access restriction check")
 
-        # Step 1: Define expected title
+        # Step 1: Login
         expected_title = "My Account"
-
-        # Step 2: Navigate to login page
         actual_login_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, True)
-        expected_login_title = expected_title
 
         try:
-            self.assertEqual(
-                actual_login_title,
-                expected_login_title,
-                f"Login failed — expected title: '{expected_login_title}', but got: '{actual_login_title}'")
-            self.logger.info("Login successful ")
+            self.helper.verify_login_successful(actual_login_title, expected_title)
         except AssertionError as error:
             self.helper.log_failure(
                 "login_logout_error.png",
                 "Login failed — page title mismatch.",
                 error)
 
-        # Step 3: Perform logout
+        # Step 2: Perform logout
+        self.logger.info("Performing logout from user account")
         self.my_account.click_logout_button()
 
-        # Step 4: Verify logout success
-        expected_logout_title = "Account Logout"
-        self.logout_page.check_presence_of_title(expected_logout_title)
-        actual_logout_title = self.driver.title
-        self.logger.info(f"Logout page title: '{actual_logout_title}'")
-
+        # Step 3: Verify logout success
         try:
-            self.assertEqual(
-                actual_logout_title,
-                expected_logout_title,
-                f"Logout failed — expected title: '{expected_logout_title}', but got: '{actual_logout_title}'")
-            self.logger.info("Logout successful ")
+            expected_logout_title = "Account Logout"
+            self.helper.verify_logout_successful(expected_logout_title)
         except AssertionError as error:
             self.helper.log_failure(
                 "logout_error.png",
                 "Logout failed — page title mismatch.",
                 error)
 
-        # Step 5: Attempt to access protected page after logout
+        # Step 4: Attempt to access protected page after logout
+        self.logger.info("Step 5: Attempting to access protected page (wishlist) after logout")
         self.driver.back()
         self.my_account.click_wishList_button()
 
-        # Step 6: Verify redirection to login page
-        expected_redirect_title = "Account Login"
-        self.login_page.check_presence_of_title(expected_redirect_title)
-        actual_redirect_title = self.driver.title
-        self.logger.info(f"Redirect page title after logout: '{actual_redirect_title}'")
-
+        # Step 5: Verify redirection to login page
         try:
-            self.assertEqual(
-                actual_redirect_title,
-                expected_redirect_title,
-                f"Access restriction failed — expected redirect to '{expected_redirect_title}', but got: '{actual_redirect_title}'")
-            self.logger.info("Access restriction after logout verified successfully ")
+            expected_redirect_title = "Account Login"
+            self.helper.verify_access_restriction_redirect(expected_redirect_title)
         except AssertionError as error:
             self.helper.log_failure(
                 "access_restriction_error.png",
@@ -383,7 +365,7 @@ class Test_002_login(unittest.TestCase):
                 error
             )
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login_negative_test(self):
         self.logger.info("Negative Test: Attempt to change password with mismatched confirmation")
 

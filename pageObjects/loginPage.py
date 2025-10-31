@@ -27,10 +27,10 @@ class LoginPage(BaseDriver):
 
     def get_error_message_box(self):
         return self.wait_text_to_be_present_in_element(self.my_locators.login_error_message,
-                                                       "Warning")
+                                                       "Warning: No match for")
 
-    # def get_error_text(self):
-    #     return self.wait_for_element_visible(self.my_locators.login_error_message).text
+    def get_error_text(self):
+        return self.wait_for_element_visible(self.my_locators.login_error_message).text
 
     def get_forgotten_password_link(self):
         return self.wait_for_element_visible(self.my_locators.forgotten_password_text)

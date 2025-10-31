@@ -8336,3 +8336,514 @@ OSError: [WinError 6] Das Handle ist ungültig
 2025-10-29 12:01:57,434 :INFO :Verifying product 'Samsung SyncMaster 941BW' in cart (source: wishlist)
 2025-10-29 12:01:58,395 :INFO :Navigated to cart via wishlist header icon
 2025-10-29 12:01:58,457 :INFO :Product 'Samsung SyncMaster 941BW' successfully verified in shopping cart
+2025-10-31 12:47:56,097 :INFO :Test: Login using keyboard navigation
+2025-10-31 12:47:56,101 :INFO :Starting Re/login process
+2025-10-31 12:47:57,825 :INFO :Navigated to login page
+2025-10-31 12:47:57,826 :INFO :Login skipped — only navigation performed
+2025-10-31 12:47:57,840 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 12:47:58,428 :ERROR :Login test using keyboard keys failed — title mismatch.
+Screenshot saved at: screenshots\login_using_keyboard_failure.png
+Details: Login using keyboard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-10-31 12:53:03,149 :INFO :Test: Login using keyboard navigation
+2025-10-31 12:53:03,151 :INFO :Starting Re/login process
+2025-10-31 12:53:04,694 :INFO :Navigated to login page
+2025-10-31 12:53:08,690 :INFO :Submitted credentials using keyboard navigation
+2025-10-31 12:53:08,723 :INFO :Expected title 'My Account' was found
+2025-10-31 12:53:08,748 :INFO :Actual page title after login: 'My Account'
+2025-10-31 12:53:08,750 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-10-31 12:53:08,750 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-10-31 13:30:19,024 :INFO :Test: Full login/logout flow with access restriction check
+2025-10-31 13:30:19,027 :INFO :Starting Re/login process
+2025-10-31 13:30:20,402 :INFO :Navigated to login page
+2025-10-31 13:30:22,269 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:30:22,282 :INFO :Expected title 'My Account' was found
+2025-10-31 13:30:22,289 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:30:22,289 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 13:30:23,339 :INFO :Logout page title: 'Account Logout'
+2025-10-31 13:30:23,339 :INFO :Logout successful
+2025-10-31 13:30:25,641 :INFO :Access restriction after logout verified successfully
+2025-10-31 13:37:58,948 :INFO :Test: Full login/logout flow with access restriction check
+2025-10-31 13:37:58,950 :INFO :Starting Re/login process
+2025-10-31 13:38:00,163 :INFO :Navigated to login page
+2025-10-31 13:38:02,277 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:38:02,289 :INFO :Expected title 'My Account' was found
+2025-10-31 13:38:02,300 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:38:02,301 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 13:38:02,301 :INFO :Performing logout from user account
+2025-10-31 13:38:03,247 :INFO :Logout page title: 'Account Logout'
+2025-10-31 13:38:03,248 :INFO :Logout successful
+2025-10-31 13:38:03,248 :INFO :Step 5: Attempting to access protected page (wishlist) after logout
+2025-10-31 13:38:03,894 :INFO :Redirect page title after logout: 'Account Login'
+2025-10-31 13:38:03,894 :INFO :Access restriction after logout verified successfully
+2025-10-31 13:39:30,997 :INFO :Test: Full login/logout flow with access restriction check
+2025-10-31 13:39:30,998 :INFO :Starting Re/login process
+2025-10-31 13:39:31,652 :INFO :Navigated to login page
+2025-10-31 13:39:32,745 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:39:32,981 :INFO :Expected title 'My Account' was found
+2025-10-31 13:39:33,006 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:39:33,006 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 13:39:33,006 :INFO :Performing logout from user account
+2025-10-31 13:39:33,981 :INFO :Logout page title: 'Account Logout'
+2025-10-31 13:39:33,982 :INFO :Logout successful
+2025-10-31 13:39:33,982 :INFO :Step 5: Attempting to access protected page (wishlist) after logout
+2025-10-31 13:39:44,860 :INFO :Redirect page title after logout: 'Account Login'
+2025-10-31 13:39:45,222 :ERROR :Access restriction after logout failed — user was not redirected to login page.
+Screenshot saved at: screenshots\access_restriction_error.png
+Details: Access restriction failed — expected redirect to 'Account Login_Test', but got: 'Account Login'
+2025-10-31 13:41:11,207 :INFO :Test: Verify placeholder text in email and password fields
+2025-10-31 13:41:11,208 :INFO :Starting Re/login process
+2025-10-31 13:41:12,503 :INFO :Navigated to login page
+2025-10-31 13:41:12,503 :INFO :Login skipped — only navigation performed
+2025-10-31 13:41:12,517 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:41:12,660 :INFO :Email placeholder present: True
+2025-10-31 13:41:12,661 :INFO :Password placeholder present: True
+2025-10-31 13:41:12,661 :INFO :Placeholder text is correctly displayed in both fields.
+2025-10-31 13:41:22,671 :INFO :Test: Full login/logout flow with access restriction check
+2025-10-31 13:41:22,672 :INFO :Starting Re/login process
+2025-10-31 13:41:27,335 :INFO :Navigated to login page
+2025-10-31 13:41:28,002 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:41:28,631 :INFO :Expected title 'My Account' was found
+2025-10-31 13:41:28,674 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:41:28,674 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 13:41:28,674 :INFO :Performing logout from user account
+2025-10-31 13:41:30,311 :INFO :Logout page title: 'Account Logout'
+2025-10-31 13:41:30,311 :INFO :Logout successful
+2025-10-31 13:41:30,312 :INFO :Step 5: Attempting to access protected page (wishlist) after logout
+2025-10-31 13:41:31,186 :INFO :Redirect page title after logout: 'Account Login'
+2025-10-31 13:41:31,187 :INFO :Access restriction after logout verified successfully
+2025-10-31 13:41:37,023 :INFO :Test: Login using keyboard navigation
+2025-10-31 13:41:37,023 :INFO :Starting Re/login process
+2025-10-31 13:41:37,563 :INFO :Navigated to login page
+2025-10-31 13:41:40,134 :INFO :Submitted credentials using keyboard navigation
+2025-10-31 13:41:41,708 :INFO :Expected title 'My Account' was found
+2025-10-31 13:41:41,708 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:41:41,708 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-10-31 13:41:41,708 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-10-31 13:41:47,373 :INFO :Test: Login via right-hand menu
+2025-10-31 13:41:47,373 :INFO :Starting Re/login process
+2025-10-31 13:41:47,745 :INFO :Navigated to login page
+2025-10-31 13:42:09,477 :INFO :Test: Verify that password input is masked
+2025-10-31 13:42:09,477 :INFO :Starting Re/login process
+2025-10-31 13:42:10,811 :INFO :Navigated to login page
+2025-10-31 13:42:10,812 :INFO :Login skipped — only navigation performed
+2025-10-31 13:42:10,825 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:42:10,894 :INFO :password field masked: True
+2025-10-31 13:42:10,894 :INFO :Password field is correctly masked.
+2025-10-31 13:42:16,843 :INFO :Test: Verify presence of 'Forgotten Password' text
+2025-10-31 13:42:16,843 :INFO :Starting Re/login process
+2025-10-31 13:42:17,564 :INFO :Navigated to login page
+2025-10-31 13:42:17,565 :INFO :Login skipped — only navigation performed
+2025-10-31 13:42:17,576 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:42:18,237 :INFO :Retrieved heading text: 'Forgot Your Password?'
+2025-10-31 13:42:18,237 :INFO :Navigation via 'Forgotten Password' link successful — heading text verified.
+2025-10-31 13:46:33,738 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:46:33,740 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 13:46:33,741 :INFO :Starting Re/login process
+2025-10-31 13:46:34,873 :INFO :Navigated to login page
+2025-10-31 13:46:34,873 :INFO :Login skipped — only navigation performed
+2025-10-31 13:46:34,889 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:46:45,696 :ERROR :Login test failed — valid_email_valid_password
+Expected Title: 'My Account'
+Expected Error: 'False'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_valid_email_valid_password.png
+Details: Login using standard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-10-31 13:46:52,889 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:46:52,889 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 13:46:52,889 :INFO :Starting Re/login process
+2025-10-31 13:46:53,809 :INFO :Navigated to login page
+2025-10-31 13:46:53,810 :INFO :Login skipped — only navigation performed
+2025-10-31 13:46:53,829 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:47:03,990 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:47:04,575 :ERROR :Login test failed — invalid_email_invalid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_invalid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:47:28,290 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:47:28,290 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 13:47:28,291 :INFO :Starting Re/login process
+2025-10-31 13:47:29,013 :INFO :Navigated to login page
+2025-10-31 13:47:29,013 :INFO :Login skipped — only navigation performed
+2025-10-31 13:47:29,032 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:47:37,538 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:49:12,319 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:49:12,323 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 13:49:12,324 :INFO :Starting Re/login process
+2025-10-31 13:49:13,485 :INFO :Navigated to login page
+2025-10-31 13:49:13,486 :INFO :Login skipped — only navigation performed
+2025-10-31 13:49:13,510 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:49:23,902 :ERROR :Login test failed — valid_email_valid_password
+Expected Title: 'My Account'
+Expected Error: 'False'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_valid_email_valid_password.png
+Details: Login using standard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-10-31 13:49:31,648 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:49:31,650 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 13:49:31,650 :INFO :Starting Re/login process
+2025-10-31 13:49:32,435 :INFO :Navigated to login page
+2025-10-31 13:49:32,436 :INFO :Login skipped — only navigation performed
+2025-10-31 13:49:32,459 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:49:42,958 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:49:43,431 :ERROR :Login test failed — invalid_email_invalid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_invalid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:49:50,983 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:49:50,984 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 13:49:50,984 :INFO :Starting Re/login process
+2025-10-31 13:49:51,879 :INFO :Navigated to login page
+2025-10-31 13:49:51,880 :INFO :Login skipped — only navigation performed
+2025-10-31 13:49:51,906 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:50:02,032 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:50:02,474 :ERROR :Login test failed — invalid_email_valid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_valid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:50:14,746 :INFO :Starting login test: {test_case_label}
+2025-10-31 13:50:14,747 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 13:50:14,747 :INFO :Starting Re/login process
+2025-10-31 13:50:15,416 :INFO :Navigated to login page
+2025-10-31 13:50:15,417 :INFO :Login skipped — only navigation performed
+2025-10-31 13:50:15,434 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:50:25,950 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:50:26,290 :ERROR :Login test failed — empty_email_empty_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_empty_email_empty_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:52:18,687 :INFO :Starting login test: valid_email_valid_password
+2025-10-31 13:52:18,689 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 13:52:18,690 :INFO :Starting Re/login process
+2025-10-31 13:52:19,380 :INFO :Navigated to login page
+2025-10-31 13:52:20,798 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:52:20,804 :INFO :Expected title 'My Account' was found
+2025-10-31 13:52:20,826 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:52:31,349 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 13:52:31,365 :INFO :Login test passed: valid_email_valid_password
+2025-10-31 13:52:37,515 :INFO :Starting login test: invalid_email_invalid_password
+2025-10-31 13:52:37,515 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 13:52:37,515 :INFO :Starting Re/login process
+2025-10-31 13:52:38,436 :INFO :Navigated to login page
+2025-10-31 13:52:39,377 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:52:39,423 :INFO :Expected title 'Account Login' was found
+2025-10-31 13:52:39,432 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:52:39,495 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:52:39,495 :INFO :Login test passed: invalid_email_invalid_password
+2025-10-31 13:52:46,219 :INFO :Starting login test: invalid_email_valid_password
+2025-10-31 13:52:46,219 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 13:52:46,220 :INFO :Starting Re/login process
+2025-10-31 13:52:46,841 :INFO :Navigated to login page
+2025-10-31 13:52:48,038 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:52:48,091 :INFO :Expected title 'Account Login' was found
+2025-10-31 13:52:48,097 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:52:58,474 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:52:58,831 :ERROR :Login test failed — invalid_email_valid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_valid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:53:09,451 :INFO :Starting login test: valid_email_invalid_password
+2025-10-31 13:53:09,451 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-10-31 13:53:09,452 :INFO :Starting Re/login process
+2025-10-31 13:53:10,160 :INFO :Navigated to login page
+2025-10-31 13:53:11,352 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:53:11,394 :INFO :Expected title 'Account Login' was found
+2025-10-31 13:53:11,403 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:53:11,474 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:53:11,474 :INFO :Login test passed: valid_email_invalid_password
+2025-10-31 13:53:17,926 :INFO :Starting login test: empty_email_empty_password
+2025-10-31 13:53:17,927 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 13:53:17,927 :INFO :Starting Re/login process
+2025-10-31 13:53:18,659 :INFO :Navigated to login page
+2025-10-31 13:58:46,217 :INFO :Starting login test: valid_email_valid_password
+2025-10-31 13:58:46,218 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 13:58:46,219 :INFO :Starting Re/login process
+2025-10-31 13:58:47,124 :INFO :Navigated to login page
+2025-10-31 13:58:48,191 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:58:48,379 :INFO :Expected title 'My Account' was found
+2025-10-31 13:58:48,389 :INFO :Actual page title after login: 'My Account'
+2025-10-31 13:58:58,754 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 13:58:58,754 :INFO :Login test passed: valid_email_valid_password
+2025-10-31 13:59:05,122 :INFO :Starting login test: invalid_email_invalid_password
+2025-10-31 13:59:05,123 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 13:59:05,123 :INFO :Starting Re/login process
+2025-10-31 13:59:09,999 :INFO :Navigated to login page
+2025-10-31 13:59:10,891 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:59:11,103 :INFO :Expected title 'Account Login' was found
+2025-10-31 13:59:11,114 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:59:21,178 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:59:21,494 :ERROR :Login test failed — invalid_email_invalid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_invalid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:59:28,084 :INFO :Starting login test: invalid_email_valid_password
+2025-10-31 13:59:28,084 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 13:59:28,084 :INFO :Starting Re/login process
+2025-10-31 13:59:28,844 :INFO :Navigated to login page
+2025-10-31 13:59:30,092 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:59:30,195 :INFO :Expected title 'Account Login' was found
+2025-10-31 13:59:30,239 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:59:40,317 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:59:40,732 :ERROR :Login test failed — invalid_email_valid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_valid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 13:59:48,548 :INFO :Starting login test: valid_email_invalid_password
+2025-10-31 13:59:48,548 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-10-31 13:59:48,548 :INFO :Starting Re/login process
+2025-10-31 13:59:49,238 :INFO :Navigated to login page
+2025-10-31 13:59:50,306 :INFO :Submitted credentials using standard form submission
+2025-10-31 13:59:50,362 :INFO :Expected title 'Account Login' was found
+2025-10-31 13:59:50,376 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 13:59:50,438 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 13:59:50,438 :INFO :Login test passed: valid_email_invalid_password
+2025-10-31 13:59:56,492 :INFO :Starting login test: empty_email_empty_password
+2025-10-31 13:59:56,492 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 13:59:56,492 :INFO :Starting Re/login process
+2025-10-31 13:59:57,243 :INFO :Navigated to login page
+2025-10-31 14:21:55,847 :INFO :Starting login test: valid_email_valid_password
+2025-10-31 14:21:55,856 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 14:21:55,857 :INFO :Starting Re/login process
+2025-10-31 14:21:57,805 :INFO :Navigated to login page
+2025-10-31 14:22:00,507 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:22:00,522 :INFO :Expected title 'My Account' was found
+2025-10-31 14:22:00,534 :INFO :Actual page title after login: 'My Account'
+2025-10-31 14:22:10,584 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 14:22:10,586 :INFO :Login test passed: valid_email_valid_password
+2025-10-31 14:22:16,936 :INFO :Starting login test: invalid_email_invalid_password
+2025-10-31 14:22:16,937 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 14:22:16,937 :INFO :Starting Re/login process
+2025-10-31 14:22:21,747 :INFO :Navigated to login page
+2025-10-31 14:22:23,077 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:22:23,230 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:22:23,244 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:22:33,352 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:22:33,677 :ERROR :Login test failed — invalid_email_invalid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_invalid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 14:22:41,681 :INFO :Starting login test: invalid_email_valid_password
+2025-10-31 14:22:41,681 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 14:22:41,681 :INFO :Starting Re/login process
+2025-10-31 14:22:42,301 :INFO :Navigated to login page
+2025-10-31 14:22:42,926 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:22:43,326 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:22:43,339 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:22:53,460 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:22:53,832 :ERROR :Login test failed — invalid_email_valid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_valid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 14:22:59,517 :INFO :Starting login test: valid_email_invalid_password
+2025-10-31 14:22:59,517 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-10-31 14:22:59,517 :INFO :Starting Re/login process
+2025-10-31 14:23:00,169 :INFO :Navigated to login page
+2025-10-31 14:23:01,041 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:23:01,186 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:23:01,255 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:23:01,322 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:23:01,323 :INFO :Login test passed: valid_email_invalid_password
+2025-10-31 14:23:08,080 :INFO :Starting login test: empty_email_empty_password
+2025-10-31 14:23:08,081 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 14:23:08,081 :INFO :Starting Re/login process
+2025-10-31 14:23:09,146 :INFO :Navigated to login page
+2025-10-31 14:27:52,803 :INFO :Starting login test: valid_email_valid_password
+2025-10-31 14:27:52,829 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 14:27:52,829 :INFO :Starting Re/login process
+2025-10-31 14:27:53,668 :INFO :Navigated to login page
+2025-10-31 14:27:54,880 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:27:55,086 :INFO :Expected title 'My Account' was found
+2025-10-31 14:27:55,108 :INFO :Actual page title after login: 'My Account'
+2025-10-31 14:28:05,551 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-10-31 14:28:05,551 :INFO :Login test passed: valid_email_valid_password
+2025-10-31 14:28:12,599 :INFO :Starting login test: invalid_email_invalid_password
+2025-10-31 14:28:12,600 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 14:28:12,600 :INFO :Starting Re/login process
+2025-10-31 14:28:13,358 :INFO :Navigated to login page
+2025-10-31 14:28:14,230 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:28:14,398 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:28:14,409 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:28:24,412 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:28:24,743 :ERROR :Login test failed — invalid_email_invalid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_invalid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 14:28:32,110 :INFO :Starting login test: invalid_email_valid_password
+2025-10-31 14:28:32,110 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 14:28:32,110 :INFO :Starting Re/login process
+2025-10-31 14:28:32,867 :INFO :Navigated to login page
+2025-10-31 14:28:33,770 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:28:34,006 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:28:34,018 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:28:44,053 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:28:44,392 :ERROR :Login test failed — invalid_email_valid_password
+Expected Title: 'Account Login'
+Expected Error: 'True'
+Actual Title: 'Account Login'
+Actual Error: 'False'
+Screenshot saved at: screenshots\login_failed_invalid_email_valid_password.png
+Details: 'False' != 'True'
+- False
++ True
+ : Error message mismatch:
+Expected: 'True'
+Got: 'False'
+2025-10-31 14:28:51,072 :INFO :Starting login test: valid_email_invalid_password
+2025-10-31 14:28:51,073 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-10-31 14:28:51,073 :INFO :Starting Re/login process
+2025-10-31 14:28:51,808 :INFO :Navigated to login page
+2025-10-31 14:28:52,678 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:28:52,802 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:28:52,821 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:28:52,863 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:28:52,864 :INFO :Login test passed: valid_email_invalid_password
+2025-10-31 14:28:58,759 :INFO :Starting login test: empty_email_empty_password
+2025-10-31 14:28:58,760 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 14:28:58,760 :INFO :Starting Re/login process
+2025-10-31 14:28:59,446 :INFO :Navigated to login page
+2025-10-31 14:37:14,404 :INFO :Starting login test: valid_email_valid_password
+2025-10-31 14:37:14,406 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 14:37:14,408 :INFO :Starting Re/login process
+2025-10-31 14:37:15,802 :INFO :Navigated to login page
+2025-10-31 14:37:17,864 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:37:17,883 :INFO :Expected title 'My Account' was found
+2025-10-31 14:37:17,900 :INFO :Actual page title after login: 'My Account'
+2025-10-31 14:37:46,447 :INFO :Starting login test: invalid_email_invalid_password
+2025-10-31 14:37:46,447 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 14:37:46,447 :INFO :Starting Re/login process
+2025-10-31 14:37:47,200 :INFO :Navigated to login page
+2025-10-31 14:37:47,809 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:37:48,311 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:37:48,413 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:38:16,048 :INFO :Starting login test: invalid_email_valid_password
+2025-10-31 14:38:16,048 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 14:38:16,048 :INFO :Starting Re/login process
+2025-10-31 14:38:16,884 :INFO :Navigated to login page
+2025-10-31 14:38:17,753 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:38:17,908 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:38:17,925 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:38:45,368 :INFO :Starting login test: valid_email_invalid_password
+2025-10-31 14:38:45,369 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin123'
+2025-10-31 14:38:45,369 :INFO :Starting Re/login process
+2025-10-31 14:38:46,316 :INFO :Navigated to login page
+2025-10-31 14:38:47,385 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:38:47,503 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:38:47,523 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:38:47,596 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-10-31 14:38:47,596 :INFO :Login test passed: valid_email_invalid_password
+2025-10-31 14:38:54,871 :INFO :Starting login test: empty_email_empty_password
+2025-10-31 14:38:54,871 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 14:38:54,871 :INFO :Starting Re/login process
+2025-10-31 14:38:55,635 :INFO :Navigated to login page
+2025-10-31 14:46:40,372 :INFO :Starting login test: valid_email_valid_password
+2025-10-31 14:46:40,375 :INFO :Credentials — Email: 'username@gmail.de', Password: 'admin'
+2025-10-31 14:46:40,375 :INFO :Starting Re/login process
+2025-10-31 14:46:41,335 :INFO :Navigated to login page
+2025-10-31 14:46:42,630 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:46:42,831 :INFO :Expected title 'My Account' was found
+2025-10-31 14:46:42,841 :INFO :Actual page title after login: 'My Account'
+2025-10-31 14:47:09,571 :INFO :Starting login test: invalid_email_invalid_password
+2025-10-31 14:47:09,572 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin123'
+2025-10-31 14:47:09,572 :INFO :Starting Re/login process
+2025-10-31 14:47:10,212 :INFO :Navigated to login page
+2025-10-31 14:47:10,845 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:47:11,213 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:47:11,223 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:47:37,486 :INFO :Starting login test: invalid_email_valid_password
+2025-10-31 14:47:37,486 :INFO :Credentials — Email: 'username123@gmail.de', Password: 'admin'
+2025-10-31 14:47:37,486 :INFO :Starting Re/login process
+2025-10-31 14:47:38,382 :INFO :Navigated to login page
+2025-10-31 14:47:39,347 :INFO :Submitted credentials using standard form submission
+2025-10-31 14:47:39,418 :INFO :Expected title 'Account Login' was found
+2025-10-31 14:47:39,427 :INFO :Actual page title after login: 'Account Login'
+2025-10-31 14:47:50,309 :INFO :Starting login test: empty_email_empty_password
+2025-10-31 14:47:50,311 :INFO :Credentials — Email: 'None', Password: 'None'
+2025-10-31 14:47:50,311 :INFO :Starting Re/login process
+2025-10-31 14:47:51,044 :INFO :Navigated to login page

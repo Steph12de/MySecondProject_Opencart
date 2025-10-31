@@ -35,7 +35,7 @@ class Test_002_login(unittest.TestCase):
         self.fpassword_page = ForgottenPasswordPage(self.driver)
         self.my_account = MyAccountPage(self.driver)
         self.wishlist = WishListPage(self.driver)
-        self.changePassword_page = ChangePasswordPage(self.driver)
+        self.change_password_page = ChangePasswordPage(self.driver)
         self.logout_page = LogoutPage(self.driver)
         self.helper = Helpers(self.driver, self.logger, self.home_page, self.login_page, self.myAccount_page)
 
@@ -43,9 +43,9 @@ class Test_002_login(unittest.TestCase):
         self.driver.quit()
 
     def submit_password_change(self, new_password, confirm_password, context=""):
-        self.changePassword_page.input_new_password(new_password)
-        self.changePassword_page.input_confirm_new_password(confirm_password)
-        self.changePassword_page.click_on_continue_button()
+        self.change_password_page.input_new_password(new_password)
+        self.change_password_page.input_confirm_new_password(confirm_password)
+        self.change_password_page.click_on_continue_button()
         self.logger.info(f"Submitted password change — {context}")
 
     # @pytest.mark.skip(reason="Just skipped it right now")
@@ -54,8 +54,8 @@ class Test_002_login(unittest.TestCase):
         "C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx",
         "Tabelle1"))
     @unpack
-    def test_login_with_multiple_combi(self, email, password, expected_title, expected_error):
-        self.logger.info("Starting login test with data-driven combinations")
+    def test_login_with_multiple_combi(self, email, password, expected_title, expected_error, test_case_label):
+        self.logger.info("Starting login test: {test_case_label}")
         self.logger.info(f"Credentials — Email: '{email}', Password: '{password}'")
 
         # Step 1: Navigate to login page and perform login
@@ -64,22 +64,18 @@ class Test_002_login(unittest.TestCase):
 
         # Step 2: Validate results
         try:
-            self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Title mismatch:\n Expected: '{expected_title}'\nGot:'{actual_title}'"
-            )
+            self.helper.verify_login_successful(actual_title, expected_title)
             self.assertEqual(
                 actual_error,
                 expected_error,
                 f"Error message mismatch:\nExpected: '{expected_error}'\nGot: '{actual_error}'"
             )
-            self.logger.info(f"Login test passed with expected title and error message.")
-        except AssertionError as e:
-            self.helper.navigate_and_optional_login(
-                "login_test_failure.png",
-                "Login test failed — mismatch in title or error message.",
-                e
+            self.logger.info(f"Login test passed: {test_case_label}")
+        except AssertionError as error:
+            self.helper.log_failure(
+                f"login_failed_{test_case_label}.png",
+                f"Login test failed — {test_case_label}",
+                error
             )
 
     # @pytest.mark.skip(reason="Just skipped it right now")
@@ -419,7 +415,7 @@ class Test_002_login(unittest.TestCase):
 
         # Verify password change was rejected
         expected_error_message = "Password confirmation does not match password!Test"
-        actual_error_message = self.changePassword_page.getErrorMessage()
+        actual_error_message = self.change_password_page.getErrorMessage()
 
         expected_title_after_failure = "Change Password"
         self.my_account.check_presence_of_title(expected_title_after_failure)

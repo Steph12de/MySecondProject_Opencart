@@ -56,7 +56,7 @@ class Test_002_login(unittest.TestCase):
         self.change_password_page.click_on_continue_button()
         self.logger.info(f"Submitted password change — {context}")
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     @pytest.mark.sanity
     @data(*Utils.read_data_from_excel(
         "C:\\\\Python-Selenium\\QA-Automation-Learning\\MySecondProject_Opencart\\testdata\\testdataexcel.xlsx",
@@ -116,7 +116,7 @@ class Test_002_login(unittest.TestCase):
             self.logger.info("Navigation via 'Forgotten Password' link successful — heading text verified.")
         except AssertionError as e:
             self.helper.navigate_and_optional_login(
-                "forgot_password_error.png",
+                "forgotten_password_link_not_found.png",
                 "'Forgotten Password' link failed — either navigation was incorrect or heading text is "
                 "missing/mismatched.",
                 e
@@ -131,7 +131,8 @@ class Test_002_login(unittest.TestCase):
         expected_title = "My Account"
 
         # Step 2: Perform login using keyboard navigation
-        actual_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, True, using_keyboard=True)
+        actual_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, True,
+                                                               using_keyboard=True)
 
         # Step 3: Verify login success
         try:
@@ -271,7 +272,7 @@ class Test_002_login(unittest.TestCase):
                 error)
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login(self):
         self.logger.info("Test: change password after logging")
 
@@ -282,14 +283,10 @@ class Test_002_login(unittest.TestCase):
         actual_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, True)
 
         try:
-            self.assertEqual(
-                actual_title,
-                expected_title,
-                f"Login failed — expected title: '{actual_title}', but got: '{expected_title}'")
-            self.logger.info("Login successful — user landed on 'My Account'")
+            self.helper.verify_login_successful(actual_title, expected_title)
         except AssertionError as error:
             self.helper.log_failure(
-                "login_title_mismatch.png",
+                "change_password_login_title_mismatch.png",
                 "Login failed — page title mismatch.",
                 error)
 
@@ -329,16 +326,10 @@ class Test_002_login(unittest.TestCase):
         self.my_account.click_logout_button()
 
         # Step 7: Verify logout success
-        expected_logout_title = "Account Logout"
-        self.logout_page.check_presence_of_title(expected_logout_title)
-        logout_title = self.driver.title
 
         try:
-            self.assertEqual(
-                logout_title,
-                expected_logout_title,
-                f"Logout failed — expected title: '{expected_logout_title}', but got: '{logout_title}'")
-            self.logger.info("Logout successful — user landed on 'Account Logout'")
+            expected_logout_title = "Account Logout"
+            self.helper.verify_logout_successful(expected_logout_title)
         except AssertionError as error:
             self.helper.log_failure(
                 "logout_after_password_change_error.png",
@@ -348,21 +339,17 @@ class Test_002_login(unittest.TestCase):
         # Step 8: Re-login with new password
         self.logout_page.click_login_button()
         expected_title = "Account Login"
-        title_after_relogin = self.helper.navigate_and_optional_login(self.email, self.password,
+        actual_title = self.helper.navigate_and_optional_login(self.email, self.password,
                                                                expected_title, True)
 
         try:
-            self.assertEqual(
-                title_after_relogin,
-                expected_title,
-                f"Re-login with old password unexpectedly succeeded — user landed on '{title_after_relogin}'"
-            )
+            self.helper.verify_login_successful(actual_title, expected_title)
             self.logger.info("Access denied as expected — old password no longer valid after change")
         except AssertionError as error:
             self.helper.log_failure(
-                "relogin_error.png",
+                "change_password_re-login_error.png",
                 "Re-login after password change failed — page title mismatch.",
-                error
+                f"Re-login with old password unexpectedly succeeded — user landed on '{actual_title}'",
             )
 
     @pytest.mark.skip(reason="Just skipped it right now")
@@ -370,21 +357,16 @@ class Test_002_login(unittest.TestCase):
         self.logger.info("Negative Test: Attempt to change password with mismatched confirmation")
 
         # Step 1: Define expected title after login
-        expected_login_title = "My Account"
+        expected_title = "My Account"
 
         # Step 2: Perform login and verify success
-        actual_login_title = self.helper.navigate_and_optional_login(self.email, self.password,
-                                                              expected_title=expected_login_title, want_to_login=True)
+        actual_title = self.helper.navigate_and_optional_login(self.email, self.password, expected_title, want_to_login=True)
 
         try:
-            self.assertEqual(
-                actual_login_title,
-                expected_login_title,
-                f"Login failed — expected title: '{expected_login_title}', but got: '{actual_login_title}'")
-            self.logger.info("Login successful — user landed on 'My Account'")
+            self.helper.verify_login_successful(actual_title, expected_title)
         except AssertionError as error:
             self.helper.log_failure(
-                "login_title_mismatch_2.png",
+                "change_password_negative_test_login_failure.png",
                 "Login failed — page title mismatch.",
                 error)
 

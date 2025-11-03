@@ -8847,3 +8847,23 @@ Got: 'False'
 2025-10-31 14:47:50,311 :INFO :Credentials — Email: 'None', Password: 'None'
 2025-10-31 14:47:50,311 :INFO :Starting Re/login process
 2025-10-31 14:47:51,044 :INFO :Navigated to login page
+2025-11-03 13:53:55,820 :INFO :Test: change password after logging
+2025-11-03 13:53:55,823 :INFO :Starting Re/login process
+2025-11-03 13:53:56,521 :INFO :Navigated to login page
+2025-11-03 13:53:57,491 :INFO :Submitted credentials using standard form submission
+2025-11-03 13:53:57,713 :INFO :Expected title 'My Account' was found
+2025-11-03 13:53:57,723 :INFO :Actual page title after login: 'My Account'
+2025-11-03 13:53:57,724 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-03 13:53:58,374 :INFO :Navigated to change password page
+2025-11-03 13:53:59,195 :INFO :Submitted password change — matching passwords
+2025-11-03 13:53:59,393 :INFO :Password successfully changed — user redirected to 'My Account'
+2025-11-03 13:53:59,393 :INFO :Logging out after password change
+2025-11-03 13:54:00,496 :INFO :Logout page title: 'Account Logout'
+2025-11-03 13:54:00,496 :INFO :Logout successful
+2025-11-03 13:54:01,029 :INFO :Starting Re/login process
+2025-11-03 13:54:01,572 :INFO :Navigated to login page
+2025-11-03 13:54:02,270 :INFO :Submitted credentials using standard form submission
+2025-11-03 13:54:02,706 :INFO :Expected title 'Account Login' was found
+2025-11-03 13:54:02,707 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 13:54:02,718 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-11-03 13:54:02,718 :INFO :Access denied as expected — old password no longer valid after change

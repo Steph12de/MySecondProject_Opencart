@@ -77,6 +77,9 @@ class Helpers:
         )
         self.logger.info("Logout successful")
 
+    def verify_password_change_successful(self):
+        pass
+
     def verify_access_restriction_redirect(self, expected_title):
         self.login_page.check_presence_of_title(expected_title)
         actual_title = self.driver.title

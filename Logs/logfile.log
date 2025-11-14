@@ -8867,3 +8867,266 @@ Got: 'False'
 2025-11-03 13:54:02,707 :INFO :Actual page title after login: 'Account Login'
 2025-11-03 13:54:02,718 :INFO :Login using standard successful — user redirected to 'Account Login'
 2025-11-03 13:54:02,718 :INFO :Access denied as expected — old password no longer valid after change
+2025-11-03 16:31:57,326 :INFO :Test: Login via right-hand menu
+2025-11-03 16:31:57,328 :INFO :Starting Re/login process
+2025-11-03 16:31:58,230 :INFO :Navigated to login page
+2025-11-03 16:31:58,716 :INFO :Triggered login via right-hand menu
+2025-11-03 16:31:59,417 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:32:09,690 :INFO :Expected title 'My Account' was found
+2025-11-03 16:32:09,720 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:32:10,104 :ERROR :Login via right-hand menu failed — page title mismatch.
+Screenshot saved at: screenshots\login_right_menu_error.png
+Details: Login using right_hand_menu failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:35:12,303 :INFO :Test: Login via right-hand menu
+2025-11-03 16:35:12,304 :INFO :Starting Re/login process
+2025-11-03 16:35:12,960 :INFO :Navigated to login page
+2025-11-03 16:35:13,469 :INFO :Triggered login via right-hand menu
+2025-11-03 16:35:14,018 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:35:24,157 :INFO :Expected title 'My Account' was found
+2025-11-03 16:35:24,173 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:35:24,493 :ERROR :Login via right-hand menu failed — page title mismatch.
+Screenshot saved at: screenshots\login_right_menu_error.png
+Details: Login using right_hand_menu failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:36:32,588 :INFO :Test: Login via right-hand menu
+2025-11-03 16:36:32,589 :INFO :Starting Re/login process
+2025-11-03 16:36:33,337 :INFO :Navigated to login page
+2025-11-03 16:36:33,879 :INFO :Triggered login via right-hand menu
+2025-11-03 16:36:34,832 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:36:45,199 :INFO :Expected title 'My Account' was found
+2025-11-03 16:36:45,218 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:36:45,475 :ERROR :Login via right-hand menu failed — page title mismatch.
+Screenshot saved at: screenshots\login_right_menu_error.png
+Details: Login using right_hand_menu failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:37:15,275 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-03 16:37:15,286 :INFO :Starting Re/login process
+2025-11-03 16:37:16,721 :INFO :Navigated to login page
+2025-11-03 16:37:17,275 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:37:27,603 :INFO :Expected title 'My Account' was found
+2025-11-03 16:37:27,619 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:37:27,951 :ERROR :Login failed — page title mismatch.
+Screenshot saved at: screenshots\login_logout_error.png
+Details: Login using standard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:37:34,204 :INFO :Test: Login via right-hand menu
+2025-11-03 16:37:34,204 :INFO :Starting Re/login process
+2025-11-03 16:37:34,924 :INFO :Navigated to login page
+2025-11-03 16:37:35,353 :INFO :Triggered login via right-hand menu
+2025-11-03 16:37:36,142 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:37:46,633 :INFO :Expected title 'My Account' was found
+2025-11-03 16:37:46,650 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:37:47,013 :ERROR :Login via right-hand menu failed — page title mismatch.
+Screenshot saved at: screenshots\login_right_menu_error.png
+Details: Login using right_hand_menu failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:38:11,316 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-03 16:38:11,317 :INFO :Starting Re/login process
+2025-11-03 16:38:12,291 :INFO :Navigated to login page
+2025-11-03 16:38:13,357 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:38:23,367 :INFO :Expected title 'My Account' was found
+2025-11-03 16:38:23,383 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:38:23,719 :ERROR :Login failed — page title mismatch.
+Screenshot saved at: screenshots\login_logout_error.png
+Details: Login using standard failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:38:32,079 :INFO :Test: Login via right-hand menu
+2025-11-03 16:38:32,079 :INFO :Starting Re/login process
+2025-11-03 16:38:32,970 :INFO :Navigated to login page
+2025-11-03 16:38:33,435 :INFO :Triggered login via right-hand menu
+2025-11-03 16:38:34,295 :INFO :Submitted credentials using standard form submission
+2025-11-03 16:38:44,724 :INFO :Expected title 'My Account' was found
+2025-11-03 16:38:44,742 :INFO :Actual page title after login: 'Account Login'
+2025-11-03 16:38:45,079 :ERROR :Login via right-hand menu failed — page title mismatch.
+Screenshot saved at: screenshots\login_right_menu_error.png
+Details: Login using right_hand_menu failed
+Expected title: 'My Account'
+Got: 'Account Login'
+2025-11-03 16:40:31,278 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-03 16:40:31,279 :INFO :Starting Re/login process
+2025-11-03 16:40:46,484 :INFO :Test: Login via right-hand menu
+2025-11-03 16:40:46,485 :INFO :Starting Re/login process
+2025-11-04 13:51:56,532 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-04 13:51:56,533 :INFO :Starting Re/login process
+2025-11-04 13:52:13,327 :INFO :Test: Login via right-hand menu
+2025-11-04 13:52:13,328 :INFO :Starting Re/login process
+2025-11-04 23:21:55,380 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-04 23:21:55,390 :INFO :Starting Re/login process
+2025-11-04 23:22:12,864 :INFO :Test: Login via right-hand menu
+2025-11-04 23:22:12,865 :INFO :Starting Re/login process
+2025-11-14 09:42:05,852 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-14 09:42:05,855 :INFO :Starting Re/login process
+2025-11-14 09:42:06,827 :INFO :Navigated to login page
+2025-11-14 09:42:08,019 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:42:08,164 :INFO :Expected title 'My Account' was found
+2025-11-14 09:42:08,172 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:42:08,172 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-14 09:42:08,172 :INFO :Performing logout from user account
+2025-11-14 09:42:09,247 :INFO :Logout page title: 'Account Logout'
+2025-11-14 09:42:09,248 :INFO :Logout successful
+2025-11-14 09:42:09,248 :INFO :Step 5: Attempting to access protected page (wishlist) after logout
+2025-11-14 09:42:10,029 :INFO :Redirect page title after logout: 'Account Login'
+2025-11-14 09:42:10,029 :INFO :Access restriction after logout verified successfully
+2025-11-14 09:42:18,946 :INFO :Test: Login using keyboard navigation
+2025-11-14 09:42:18,947 :INFO :Starting Re/login process
+2025-11-14 09:42:20,102 :INFO :Navigated to login page
+2025-11-14 09:42:23,001 :INFO :Submitted credentials using keyboard navigation
+2025-11-14 09:42:24,429 :INFO :Expected title 'My Account' was found
+2025-11-14 09:42:24,454 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:42:24,456 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-11-14 09:42:24,457 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-11-14 09:44:51,365 :INFO :Negative Test: Attempt to change password with mismatched confirmation
+2025-11-14 09:44:51,365 :INFO :Starting Re/login process
+2025-11-14 09:44:52,243 :INFO :Navigated to login page
+2025-11-14 09:44:53,530 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:44:53,626 :INFO :Expected title 'My Account' was found
+2025-11-14 09:44:53,640 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:44:53,641 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-14 09:44:54,225 :INFO :Navigated to change password page
+2025-11-14 09:44:55,102 :INFO :Submitted password change — mismatched confirmation
+2025-11-14 09:44:55,642 :ERROR :Negative password change test failed — mismatch not handled correctly
+Screenshot saved at: screenshots\password_mismatch_error.png
+Details: 'Password confirmation does not match password!' != 'Password confirmation does not match password!Test'
+- Password confirmation does not match password!
++ Password confirmation does not match password!Test
+?                                               ++++
+ : Error message mismatch — expected: 'Password confirmation does not match password!Test', got: 'Password confirmation does not match password!'
+2025-11-14 09:45:05,695 :INFO :Test: Verify placeholder text in email and password fields
+2025-11-14 09:45:05,696 :INFO :Starting Re/login process
+2025-11-14 09:45:07,582 :INFO :Navigated to login page
+2025-11-14 09:45:07,582 :INFO :Login skipped — only navigation performed
+2025-11-14 09:45:07,594 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:45:07,686 :INFO :Email placeholder present: True
+2025-11-14 09:45:07,686 :INFO :Password placeholder present: True
+2025-11-14 09:45:07,688 :INFO :Placeholder text is correctly displayed in both fields.
+2025-11-14 09:45:14,641 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-14 09:45:14,642 :INFO :Starting Re/login process
+2025-11-14 09:45:15,440 :INFO :Navigated to login page
+2025-11-14 09:45:16,008 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:45:16,828 :INFO :Expected title 'My Account' was found
+2025-11-14 09:45:16,856 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:45:16,857 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-14 09:45:16,857 :INFO :Performing logout from user account
+2025-11-14 09:45:18,073 :INFO :Logout page title: 'Account Logout'
+2025-11-14 09:45:18,073 :INFO :Logout successful
+2025-11-14 09:45:18,073 :INFO :Step 5: Attempting to access protected page (wishlist) after logout
+2025-11-14 09:45:18,860 :INFO :Redirect page title after logout: 'Account Login'
+2025-11-14 09:45:18,860 :INFO :Access restriction after logout verified successfully
+2025-11-14 09:45:27,120 :INFO :Test: Login using keyboard navigation
+2025-11-14 09:45:27,120 :INFO :Starting Re/login process
+2025-11-14 09:45:27,854 :INFO :Navigated to login page
+2025-11-14 09:45:30,322 :INFO :Submitted credentials using keyboard navigation
+2025-11-14 09:45:31,022 :INFO :Expected title 'My Account' was found
+2025-11-14 09:45:31,032 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:45:31,032 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-11-14 09:45:31,032 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-11-14 09:45:37,976 :INFO :Test: Login via right-hand menu
+2025-11-14 09:45:37,977 :INFO :Starting Re/login process
+2025-11-14 09:45:38,650 :INFO :Navigated to login page
+2025-11-14 09:45:39,202 :INFO :Triggered login via right-hand menu
+2025-11-14 09:45:40,839 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:45:40,851 :INFO :Expected title 'My Account' was found
+2025-11-14 09:45:40,877 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:45:40,878 :INFO :Login using right_hand_menu successful — user redirected to 'My Account'
+2025-11-14 09:46:04,444 :INFO :Test: Verify that password input is masked
+2025-11-14 09:46:04,445 :INFO :Starting Re/login process
+2025-11-14 09:46:05,295 :INFO :Navigated to login page
+2025-11-14 09:46:05,296 :INFO :Login skipped — only navigation performed
+2025-11-14 09:46:05,325 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:46:05,385 :INFO :password field masked: True
+2025-11-14 09:46:05,385 :INFO :Password field is correctly masked.
+2025-11-14 09:46:14,071 :INFO :Test: Verify presence of 'Forgotten Password' text
+2025-11-14 09:46:14,071 :INFO :Starting Re/login process
+2025-11-14 09:46:14,990 :INFO :Navigated to login page
+2025-11-14 09:46:14,991 :INFO :Login skipped — only navigation performed
+2025-11-14 09:46:15,000 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:46:15,665 :INFO :Retrieved heading text: 'Forgot Your Password?'
+2025-11-14 09:46:15,665 :INFO :Navigation via 'Forgotten Password' link successful — heading text verified.
+2025-11-14 09:51:19,818 :INFO :Negative Test: Attempt to change password with mismatched confirmation
+2025-11-14 09:51:19,819 :INFO :Starting Re/login process
+2025-11-14 09:51:20,598 :INFO :Navigated to login page
+2025-11-14 09:51:21,218 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:51:22,139 :INFO :Expected title 'My Account' was found
+2025-11-14 09:51:22,151 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:51:22,256 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-14 09:51:23,214 :INFO :Navigated to change password page
+2025-11-14 09:51:23,908 :INFO :Submitted password change — mismatched confirmation
+2025-11-14 09:51:24,068 :INFO :Password change rejected as expected — error message displayed correctly
+2025-11-14 09:51:32,666 :INFO :Test: Verify placeholder text in email and password fields
+2025-11-14 09:51:32,667 :INFO :Starting Re/login process
+2025-11-14 09:51:33,513 :INFO :Navigated to login page
+2025-11-14 09:51:33,513 :INFO :Login skipped — only navigation performed
+2025-11-14 09:51:33,525 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:51:33,617 :INFO :Email placeholder present: True
+2025-11-14 09:51:33,618 :INFO :Password placeholder present: True
+2025-11-14 09:51:33,618 :INFO :Placeholder text is correctly displayed in both fields.
+2025-11-14 09:51:41,978 :INFO :Test: Full login/logout flow with access restriction check
+2025-11-14 09:51:41,978 :INFO :Starting Re/login process
+2025-11-14 09:51:42,731 :INFO :Navigated to login page
+2025-11-14 09:51:43,320 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:51:43,948 :INFO :Expected title 'My Account' was found
+2025-11-14 09:51:43,978 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:51:43,978 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-14 09:51:43,978 :INFO :Performing logout from user account
+2025-11-14 09:51:49,045 :INFO :Logout page title: 'Account Logout'
+2025-11-14 09:51:49,045 :INFO :Logout successful
+2025-11-14 09:51:49,045 :INFO :Step 5: Attempting to access protected page (wishlist) after logout
+2025-11-14 09:51:49,865 :INFO :Redirect page title after logout: 'Account Login'
+2025-11-14 09:51:49,865 :INFO :Access restriction after logout verified successfully
+2025-11-14 09:51:58,210 :INFO :Test: Login using keyboard navigation
+2025-11-14 09:51:58,210 :INFO :Starting Re/login process
+2025-11-14 09:51:59,573 :INFO :Navigated to login page
+2025-11-14 09:52:01,965 :INFO :Submitted credentials using keyboard navigation
+2025-11-14 09:52:03,213 :INFO :Expected title 'My Account' was found
+2025-11-14 09:52:03,235 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:52:03,236 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-11-14 09:52:03,236 :INFO :Login using keyboard successful — user redirected to 'My Account'
+2025-11-14 09:52:12,973 :INFO :Test: Login via right-hand menu
+2025-11-14 09:52:12,973 :INFO :Starting Re/login process
+2025-11-14 09:52:13,753 :INFO :Navigated to login page
+2025-11-14 09:52:14,245 :INFO :Triggered login via right-hand menu
+2025-11-14 09:52:14,838 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:52:15,519 :INFO :Expected title 'My Account' was found
+2025-11-14 09:52:15,546 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:52:15,548 :INFO :Login using right_hand_menu successful — user redirected to 'My Account'
+2025-11-14 09:52:30,255 :INFO :Test: Verify that password input is masked
+2025-11-14 09:52:30,256 :INFO :Starting Re/login process
+2025-11-14 09:52:31,321 :INFO :Navigated to login page
+2025-11-14 09:52:31,321 :INFO :Login skipped — only navigation performed
+2025-11-14 09:52:31,354 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:52:31,442 :INFO :password field masked: True
+2025-11-14 09:52:31,442 :INFO :Password field is correctly masked.
+2025-11-14 09:52:38,778 :INFO :Test: Verify presence of 'Forgotten Password' text
+2025-11-14 09:52:38,778 :INFO :Starting Re/login process
+2025-11-14 09:52:39,765 :INFO :Navigated to login page
+2025-11-14 09:52:39,765 :INFO :Login skipped — only navigation performed
+2025-11-14 09:52:39,803 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:52:40,474 :INFO :Retrieved heading text: 'Forgot Your Password?'
+2025-11-14 09:52:40,474 :INFO :Navigation via 'Forgotten Password' link successful — heading text verified.
+2025-11-14 09:57:05,262 :INFO :Test: change password after logging
+2025-11-14 09:57:05,282 :INFO :Starting Re/login process
+2025-11-14 09:57:06,050 :INFO :Navigated to login page
+2025-11-14 09:57:06,757 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:57:07,490 :INFO :Expected title 'My Account' was found
+2025-11-14 09:57:07,502 :INFO :Actual page title after login: 'My Account'
+2025-11-14 09:57:07,502 :INFO :Login using standard successful — user redirected to 'My Account'
+2025-11-14 09:57:08,135 :INFO :Navigated to change password page
+2025-11-14 09:57:09,406 :INFO :Submitted password change — matching passwords
+2025-11-14 09:57:09,499 :INFO :Password successfully changed — user redirected to 'My Account'
+2025-11-14 09:57:09,499 :INFO :Logging out after password change
+2025-11-14 09:57:11,038 :INFO :Logout page title: 'Account Logout'
+2025-11-14 09:57:11,039 :INFO :Logout successful
+2025-11-14 09:57:11,772 :INFO :Starting Re/login process
+2025-11-14 09:57:12,346 :INFO :Navigated to login page
+2025-11-14 09:57:12,939 :INFO :Submitted credentials using standard form submission
+2025-11-14 09:57:13,882 :INFO :Expected title 'Account Login' was found
+2025-11-14 09:57:13,894 :INFO :Actual page title after login: 'Account Login'
+2025-11-14 09:57:13,894 :INFO :Login using standard successful — user redirected to 'Account Login'
+2025-11-14 09:57:13,894 :INFO :Access denied as expected — old password no longer valid after change

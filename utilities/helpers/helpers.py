@@ -77,7 +77,7 @@ class Helpers:
         )
         self.logger.info("Logout successful")
 
-    def verify_password_change_successful(self):
+    def verify_password_change_successful(self, expected_success_message, ):
         pass
 
     def verify_access_restriction_redirect(self, expected_title):

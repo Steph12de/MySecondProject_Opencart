@@ -89,7 +89,7 @@ class Test_002_login(unittest.TestCase):
                 error
             )
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_presence_of_forgotten_password_link(self):
         self.logger.info("Test: Verify presence of 'Forgotten Password' text")
@@ -123,7 +123,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_using_keyboard_keys(self):
         self.logger.info("Test: Login using keyboard navigation")
 
@@ -146,7 +146,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_existing_of_placeholder_text_in_email_password_field(self):
         self.logger.info("Test: Verify placeholder text in email and password fields")
 
@@ -179,7 +179,7 @@ class Test_002_login(unittest.TestCase):
             )
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_password_field_is_masked(self):
         self.logger.info("Test: Verify that password input is masked")
 
@@ -203,30 +203,30 @@ class Test_002_login(unittest.TestCase):
                 e
             )
 
-    # @pytest.mark.regression
+    @pytest.mark.regression
     # @pytest.mark.skip(reason="Just skipped it right now")
-    # @data(("username@gmail.de", "admin"))
-    # @unpack
-    # def test_login_via_right_hand_menu(self, email, password):
-    #     self.logger.info("Test: Login via right-hand menu")
-    #
-    #     # Step 1: Define expected title
-    #     expected_title = "My Account"
-    #
-    #     # Step 1: Navigate to login page
-    #     actual_title = self.helper.navigate_and_optional_login(email, password, expected_title, True, True)
-    #
-    #     # Step 3: Validate login success
-    #     try:
-    #         self.helper.verify_login_successful(actual_title, expected_title, "right_hand_menu")
-    #     except AssertionError as error:
-    #         self.helper.log_failure(
-    #             "login_right_menu_error.png",
-    #             "Login via right-hand menu failed — page title mismatch.",
-    #             error)
+    @data(("testmueller@gmail.de", "admin"))
+    @unpack
+    def test_login_via_right_hand_menu(self, email, password):
+        self.logger.info("Test: Login via right-hand menu")
+
+        # Step 1: Define expected title
+        expected_title = "My Account"
+
+        # Step 1: Navigate to login page
+        actual_title = self.helper.navigate_and_optional_login(email, password, expected_title, True, True)
+
+        # Step 3: Validate login success
+        try:
+            self.helper.verify_login_successful(actual_title, expected_title, "right_hand_menu")
+        except AssertionError as error:
+            self.helper.log_failure(
+                "login_right_menu_error.png",
+                "Login via right-hand menu failed — page title mismatch.",
+                error)
 
     # @pytest.mark.regression
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_login_logout_flow(self):
         self.logger.info("Test: Full login/logout flow with access restriction check")
 
@@ -352,7 +352,7 @@ class Test_002_login(unittest.TestCase):
                 f"Re-login with old password unexpectedly succeeded — user landed on '{actual_title}'",
             )
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_change_password_after_login_negative_test(self):
         self.logger.info("Negative Test: Attempt to change password with mismatched confirmation")
 
@@ -378,7 +378,7 @@ class Test_002_login(unittest.TestCase):
         self.submit_password_change(self.new_password, self.wrong_password, "mismatched confirmation")
 
         # Verify password change was rejected
-        expected_error_message = "Password confirmation does not match password!Test"
+        expected_error_message = "Password confirmation does not match password!"
         actual_error_message = self.change_password_page.getErrorMessage()
 
         expected_title_after_failure = "Change Password"

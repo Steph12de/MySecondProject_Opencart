@@ -15,6 +15,7 @@ def setUp(browser):
         driver = webdriver.Edge()
 
     driver.get("https://awesomeqa.com/ui")
+    # driver.get("https://demo.opencart.com/")
     driver.maximize_window()
     return driver
 

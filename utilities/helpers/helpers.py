@@ -95,6 +95,20 @@ class Helpers:
         self.home_page.click_Search_icon()
         self.logger.info(f"Search triggered for '{product_name}'")
 
+    def open_product_detail(self, product_name):
+        self.logger.info("Opens the product detail page based on product name")
+        if product_name == "iMac":
+            self.logger.info(f"Navigating to product detail page for '{product_name}'")
+            self.search_page.click_product_image()
+
+        elif product_name == 'Apple Cinema 30"':
+            self.logger.info(f"Navigating to product detail page for '{product_name}'")
+            self.search_page.click_on_apple_cinema_image()
+
+        else:
+            self.logger.warning(f"No click action defined for product: '{product_name}'")
+            return None
+
     def verify_product_in_cart(self, product_name, source="wishlist"):
         self.logger.info(f"Verifying product '{product_name}' in cart (source: {source})")
 
@@ -149,3 +163,36 @@ class Helpers:
         # Check if product name is included
         assert product_name in success_message, f"Success message does not contain product name '{product_name}'"
         self.logger.info(f"Success message contains correct product name: '{product_name}'")
+
+    def add_to_cart_and_check(self, quantity):
+        self.product_page.input_quantity(quantity)
+        self.product_page.click_on_add_to_cart_button()
+
+        try:
+            element_result = self.product_page.get_success_message_box()
+            if element_result is not None:
+                self.logger.info("The product has been successfully added")
+            else:
+                self.logger.warning("No success message box found after adding to cart")
+        except Exception as e:
+            self.logger.error(f"Failed to locate success message box: {e}")
+
+        self.product_page.click_on_shopping_cart_link()
+
+    def submit_review(self, product_name, reviewer_name, review_text):
+        product_name = product_name
+        reviewer_name = reviewer_name
+        review_text = review_text
+
+        self.logger.info(f"Test started: validating product review submission for '{product_name}'")
+
+        # Step 1: Open product detail page
+        self.search_for_product(product_name)
+
+        # Step 2: Fill out and submit review
+        self.logger.info("Writing review...")
+        self.product_page.click_reviews_button()
+        self.product_page.input_name_reviewer(reviewer_name)
+        self.product_page.input_review(review_text)
+        self.product_page.select_radio_button_rating()
+        self.product_page.click_continue_button_reviews()

@@ -9189,3 +9189,108 @@ Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wis
 2025-11-14 10:44:51,242 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
 Screenshot saved at: screenshots\wishlist_product_missing.png
 Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-11-14 12:01:41,958 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-11-14 12:01:43,235 :INFO :Navigated to wishlist login section
+2025-11-14 12:01:45,157 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-11-14 12:02:23,608 :INFO :Test started: validating product name, brand, and code.
+2025-11-14 12:02:23,608 :INFO :Initiating search for product: 'iMac'
+2025-11-14 12:02:25,211 :INFO :Search triggered for 'iMac'
+2025-11-14 12:02:25,211 :INFO :Opens the product detail page based on product name
+2025-11-14 12:02:25,211 :INFO :Navigating to product detail page for 'iMac'
+2025-11-14 12:02:30,268 :INFO :Validating product name
+2025-11-14 12:02:30,268 :INFO :Product name validation passed.
+2025-11-14 12:02:30,314 :INFO :Validating brand
+2025-11-14 12:02:30,314 :INFO :Brand validation passed.
+2025-11-14 12:02:30,362 :INFO :Validating product code
+2025-11-14 12:02:30,362 :INFO :Product code validation passed.
+2025-11-14 12:03:15,505 :INFO :Test started: validating product name, brand, and code.
+2025-11-14 12:03:15,505 :INFO :Initiating search for product: 'iMac'
+2025-11-14 12:03:16,623 :INFO :Search triggered for 'iMac'
+2025-11-14 12:03:16,624 :INFO :Opens the product detail page based on product name
+2025-11-14 12:03:16,624 :INFO :Navigating to product detail page for 'iMac'
+2025-11-14 12:03:18,126 :INFO :Validating product name
+2025-11-14 12:03:18,126 :INFO :Product name validation passed.
+2025-11-14 12:03:18,179 :INFO :Validating brand
+2025-11-14 12:03:18,496 :ERROR :Brand validation failed
+Screenshot saved at: screenshots\brand_error.png
+Details: 'Apple' != 'Apple_Test'
+- Apple
++ Apple_Test
+ : Brand mismatch: expected 'Apple_Test', but got 'Apple'
+2025-11-14 12:34:50,480 :INFO :Test started: validating product name, brand, and code.
+2025-11-14 12:34:50,482 :INFO :Initiating search for product: 'iMac'
+2025-11-14 12:34:51,665 :INFO :Search triggered for 'iMac'
+2025-11-14 12:34:51,667 :INFO :Opens the product detail page based on product name
+2025-11-14 12:34:51,667 :INFO :Navigating to product detail page for 'iMac'
+2025-11-14 12:34:52,452 :INFO :Validating product name
+2025-11-14 12:34:52,452 :INFO :Product name validation passed.
+2025-11-14 12:34:52,514 :INFO :Validating brand
+2025-11-14 12:34:52,514 :INFO :Brand validation passed.
+2025-11-14 12:34:52,556 :INFO :Validating product code
+2025-11-14 12:34:52,556 :INFO :Product code validation passed.
+2025-11-14 12:34:54,915 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-11-14 12:39:41,665 :INFO :Test started: validating product name, brand, and code.
+2025-11-14 12:39:41,665 :INFO :Initiating search for product: 'iMac'
+2025-11-14 12:39:42,773 :INFO :Search triggered for 'iMac'
+2025-11-14 12:39:42,775 :INFO :Opens the product detail page based on product name
+2025-11-14 12:39:42,775 :INFO :Navigating to product detail page for 'iMac'
+2025-11-14 12:39:59,553 :INFO :Validating product name
+2025-11-14 12:39:59,569 :INFO :Product name validation passed.
+2025-11-14 12:39:59,617 :INFO :Validating brand
+2025-11-14 12:39:59,619 :INFO :Brand validation passed.
+2025-11-14 12:39:59,655 :INFO :Validating product code
+2025-11-14 12:39:59,655 :INFO :Product code validation passed.
+2025-11-14 12:40:01,894 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2025-11-14 12:40:27,090 :INFO :Test started: validating that default product quantity is set to 1.
+2025-11-14 12:40:27,091 :INFO :Initiating search for product: 'iMac'
+2025-11-14 12:40:28,090 :INFO :Search triggered for 'iMac'
+2025-11-14 12:40:28,090 :INFO :Search completed for product: iMac
+2025-11-14 12:40:28,090 :INFO :Opens the product detail page based on product name
+2025-11-14 12:40:28,090 :INFO :Navigating to product detail page for 'iMac'
+2025-11-14 12:40:29,883 :INFO :Opened product detail page for: iMac
+2025-11-14 12:40:29,914 :INFO :Checking default quantity: expected '1', found '1'
+2025-11-14 12:40:29,914 :INFO :Default quantity validation passed.
+2025-11-14 12:40:29,914 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-11-14 12:40:30,848 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-11-14 12:40:30,848 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-11-14 12:40:30,880 :INFO :Retrieved success message from product display flow
+2025-11-14 12:40:30,880 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-11-14 12:40:30,880 :INFO :Success message contains correct product name: 'iMac'
+2025-11-14 12:40:31,271 :ERROR :Cart icon quantity validation failed
+Screenshot saved at: screenshots\cart_icon_quantity_error.png
+Details: 4 != 6 : Cart icon quantity mismatch: expected '6', but got '4'
+2025-11-14 12:40:31,569 :ERROR :Cart quantity validation failed – either due to unreadable cart icon format or mismatch.
+Screenshot saved at: screenshots\cart_icon_quantity_error.png
+Details: 4 != 6 : Cart icon quantity mismatch: expected '6', but got '4'
+2025-11-14 12:43:39,339 :INFO :Test started: validating that default product quantity is set to 1.
+2025-11-14 12:43:39,339 :INFO :Initiating search for product: 'iMac'
+2025-11-14 12:43:40,412 :INFO :Search triggered for 'iMac'
+2025-11-14 12:43:40,412 :INFO :Search completed for product: iMac
+2025-11-14 12:43:40,412 :INFO :Opens the product detail page based on product name
+2025-11-14 12:43:40,412 :INFO :Navigating to product detail page for 'iMac'
+2025-11-14 12:43:41,806 :INFO :Opened product detail page for: iMac
+2025-11-14 12:43:41,851 :INFO :Checking default quantity: expected '1', found '1'
+2025-11-14 12:43:41,851 :INFO :Default quantity validation passed.
+2025-11-14 12:43:41,851 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-11-14 12:43:42,794 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-11-14 12:43:42,794 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-11-14 12:43:42,826 :INFO :Retrieved success message from product display flow
+2025-11-14 12:43:42,826 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-11-14 12:43:42,826 :INFO :Success message contains correct product name: 'iMac'
+2025-11-14 12:43:42,862 :INFO :Cart icon quantity validation passed.

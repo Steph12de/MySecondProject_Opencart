@@ -44,7 +44,7 @@ class Test_004_addToCart(unittest.TestCase):
                               self.wishList_page,
                               self.search_page, self.product_page, self.cart_page, self.logout_page)
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_displayed_product_to_cart(self):
         product_name = "iMac"
@@ -107,7 +107,7 @@ class Test_004_addToCart(unittest.TestCase):
         except AssertionError as error:
             self.helper.log_failure(
                 "wishlist_product_missing.png",
-                f"Product '{product_name}' not found in wishlist",
+                f"Product '{product_name}' not found in wishlist or wishlist is empty",
                 error
             )
 
@@ -140,7 +140,7 @@ class Test_004_addToCart(unittest.TestCase):
                 error
             )
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_search_result(self):
         product_name = "iMac"

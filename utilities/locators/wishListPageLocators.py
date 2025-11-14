@@ -9,3 +9,4 @@ class WishListPageLocators:
     password_right_hand_menu = (By.XPATH, "//div[@class='list-group']//a[3]")
     product_names_fields = (By.XPATH, "//div[@class='table-responsive']//table//tbody//tr//td[2]//a")
     success_message_field = (By.XPATH, "//div[@class='alert alert-success alert-dismissible']")
+    wishlist_empty_message = (By.XPATH, "//div[@id='content']//p")

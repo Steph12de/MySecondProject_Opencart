@@ -15,6 +15,9 @@ class WishListPage(BaseDriver):
         Trows = len(rows)
         return Trows
 
+    def get_wishlist_empty_message(self):
+        return self.wait_for_element_visible(self.locators.wishlist_empty_message)
+
     def click_add_to_cart_icon(self, current_product_name):
         for row in range(1, self.get_total_rows_number() + 1):
             product_name = self.driver.find_element(By.XPATH,
@@ -47,12 +50,22 @@ class WishListPage(BaseDriver):
         self.get_password_button_right_hand_menu().click()
 
     def is_product_in_wishlist(self, product_name):
-        row_total_number = len(self.wait_for_elements_visible(self.locators.numbers_of_rows))
-        for row in range(1, row_total_number + 1):
-            actual_product_name = self.driver.find_element(By.XPATH,
-                                                           "//div[@class='table-responsive']//table//tbody//tr[" + str(
-                                                               row) + "]//td[2]//a").text
-            if actual_product_name == product_name:
-                return True
+        # Check if the wishlist empty message is displayed
+        if self.get_wishlist_empty_message() is not None:
+            return False
 
-        return False
+        # Iterate through all rows in the wishlist table
+        else:
+            row_total_number = len(self.wait_for_elements_visible(self.locators.numbers_of_rows))
+            for row in range(1, row_total_number + 1):
+                # Extract the product name from the current row
+                actual_product_name = self.driver.find_element(By.XPATH,
+                                                               "//div[@class='table-responsive']//table//tbody//tr[" + str(
+                                                                   row) + "]//td[2]//a").text
+                # Compare the actual product name with the expected one
+                if actual_product_name == product_name:
+                    return True
+
+            # If no match was found, return False
+            return False
+

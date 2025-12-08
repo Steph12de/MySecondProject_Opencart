@@ -171,7 +171,7 @@ class Helpers:
         try:
             element_result = self.product_page.get_success_message_box()
             if element_result is not None:
-                self.logger.info("The product has been successfully added")
+                self.logger.info("Success box has been successfully displayed")
             else:
                 self.logger.warning("No success message box found after adding to cart")
         except Exception as e:

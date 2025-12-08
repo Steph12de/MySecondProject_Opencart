@@ -9345,3 +9345,26 @@ Details: 4 != 6 : Cart icon quantity mismatch: expected '6', but got '4'
 2025-12-08 09:39:18,879 :INFO :Success message starts with expected text: 'Success: You have added'
 2025-12-08 09:39:18,879 :INFO :Success message contains correct product name: 'iMac'
 2025-12-08 09:39:18,915 :INFO :Cart icon quantity validation passed.
+2025-12-08 11:06:59,094 :INFO :Test started: validating that minimum product quantity is correctly set.
+2025-12-08 11:06:59,104 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-08 11:07:00,809 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-08 11:07:00,809 :INFO :Opens the product detail page based on product name
+2025-12-08 11:07:00,809 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-08 11:07:02,833 :INFO :Minimum quantity validation passed.
+2025-12-08 11:07:02,833 :INFO :Minimum quantity info text validation passed.
+2025-12-08 11:07:02,833 :INFO :Filling mandatory fields on product display page.
+2025-12-08 11:07:21,283 :INFO :Success box has been successfully displayed
+2025-12-08 11:07:22,229 :INFO :Minimum quantity warning validation passed.
+2025-12-08 11:07:27,673 :INFO :Success box has been successfully displayed
+2025-12-08 11:07:38,779 :INFO :No warning — product added successfully with correct quantity
+2025-12-08 11:07:39,007 :INFO :Product name and quantity successfully verified in cart
+2025-12-08 11:07:39,008 :INFO :Product name and quantity successfully verified in cart
+2025-12-08 11:22:59,709 :INFO :Test started: validating that minimum product quantity is correctly set.
+2025-12-08 11:22:59,711 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-08 11:23:02,717 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-08 11:23:02,718 :INFO :Opens the product detail page based on product name
+2025-12-08 11:23:02,718 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-08 11:23:05,309 :INFO :Validating minimum quantity value and minimum quantity message
+2025-12-08 11:23:05,822 :ERROR :Minimum quantity validation failed
+Screenshot saved at: screenshots\minimum_quantity_error.png
+Details: 2 != 1 : Minimum quantity mismatch: expected '1', but got '2'

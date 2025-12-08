@@ -38,7 +38,7 @@ class ShoppingCartPage(BaseDriver):
             product_quantity = self.driver.find_element(By.XPATH,
                                                         "//div[@class='table-responsive']//table//tbody//tr[" + str(
                                                             row) + "]//td[4]//input").get_attribute("value")
-            print(product_quantity)
+            # print(product_quantity)
             if product_quantity == quantity:
                 return True
 

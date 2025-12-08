@@ -140,90 +140,66 @@ class Test_003_productDisplayPage(unittest.TestCase):
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     def test_product_minimum_quantity_is_correctly_set(self):
-        self.logger.info("Test started: validating that default product quantity is set to 1.")
-
-        # Search and open product detail page
+        self.logger.info("Test started: validating that minimum product quantity is correctly set.")
         product_name = 'Apple Cinema 30"'
-        self.search_and_open_product(product_name)
 
-        # Validate minimum quantity and associated message
-        expected_quantity = 2
-        actual_quantity = int(self.product_page.get_quantity_input_field_attribute())
+        # Step 1: Search and open product detail page
+        self.helper.search_for_product(product_name)
+        self.helper.open_product_detail(product_name)
 
-        expected_info_text = "This product has a minimum quantity of 2"
-        actual_info_text = self.product_page.get_minimum_quantity_text()
+        # Step 2: Validate minimum quantity and associated message
+        expected_minimum_quantity_value = 2
+        actual_minimum_quantity_value = int(self.product_page.get_quantity_input_field_attribute())
 
-        try:
-            self.assertEqual(
-                actual_quantity,
-                expected_quantity,
-                f"Minimum quantity mismatch: expected '{expected_quantity}' but got '{actual_quantity}'"
-            )
-            self.assertEqual(
-                actual_info_text,
-                expected_info_text,
-                f"Minimum quatity text are not same: expected'{expected_info_text}' but got '{actual_info_text}'"
-            )
-            self.logger.info("Minimum quantity and information text validated successfully.")
+        expected_minimum_quantity_message = "This product has a minimum quantity of 2"
+        actual_minimum_quantity_message = self.product_page.get_minimum_quantity_text()
 
-        except AssertionError as e:
-            self._log_failure(
-                "minimum_quantity_error.png",
-                "Minimum quantity validation failed – either numeric value or message text is incorrect.",
-                e)
+        self.logger.info("Validating minimum quantity value and minimum quantity message")
+        self.validate_field(expected_minimum_quantity_value, actual_minimum_quantity_value, "Minimum quantity",
+                            "minimum_quantity_error.png")
+        self.validate_field(expected_minimum_quantity_message, actual_minimum_quantity_message, "Minimum quantity info text",
+                            "minimum_quantity_text_error.png")
 
-        # Fill mandatory fields
+        # Step 3: Fill mandatory fields
         self.logger.info("Filling mandatory fields on product display page.")
         self.product_page.fill_mandatory_fields_product_display()
 
-        # Try adding below minimum quantity
-        self.add_to_cart_and_check(1)
+        # Step 4: Try adding below minimum quantity
+        invalid_quantity = 1
+        self.helper.add_to_cart_and_check(invalid_quantity)
 
-        expected_warning = 'Minimum order amount for Apple Cinema 30" is 2!'
-        actual_warning = self.cart_page.get_warning_message_text()
-        try:
-            self.assertEqual(actual_warning,
-                             expected_warning,
-                             f"warning message mismatch expected:'{expected_warning}' but got:'{actual_warning}'")
-            self.logger.info("Warning message after adding below-minimum quantity validated")
+        expected_warning_message = f'Minimum order amount for {product_name} is {expected_minimum_quantity_value}!'
+        actual_warning_message = self.cart_page.get_warning_message_text()
+        self.validate_field(expected_warning_message, actual_warning_message, "Minimum quantity warning",
+                            "warning_message_error.png")
 
-        except AssertionError as e:
-            self._log_failure("waning_message_error.png",
-                              "Warning message validation failed",
-                              e)
-
-        # Upload file and increase valid quantity
+        # Step 5: Upload file and increase valid quantity
+        valid_quantity = 5
         self.driver.back()
         self.product_page.upload_file_()
-        self.add_to_cart_and_check(5)
+        self.helper.add_to_cart_and_check(valid_quantity)
 
-        warning_present = self.cart_page.check_presence_of_warning_message()
+        warning_still_visible = self.cart_page.check_presence_of_warning_message()
         try:
-            self.assertFalse(warning_present,
+            self.assertFalse(warning_still_visible,
                              "Warning message still present after adding valid quantity")
             self.logger.info("No warning — product added successfully with correct quantity")
         except AssertionError as e:
-            self._log_failure("visibility_warning_message_error.png",
-                              "Warning appeared despite valid quantity",
-                              e)
-        # Validate product name and quantity in cart
-        product_name_valid = self.cart_page.check_product_name('Apple Cinema 30"')
-        product_quantity_valid = self.cart_page.check_product_quantity(str(5))
+            self.helper.log_failure("visibility_warning_message_error.png",
+                                    "Warning appeared despite valid quantity", e)
+
+        # Step 6: Validate product name and quantity in cart
+        product_name_in_cart = self.cart_page.check_product_name(product_name)
+        product_quantity_in_cart = self.cart_page.check_product_quantity(str(valid_quantity))
         try:
-            self.assertTrue(
-                product_name_valid,
-                "Product name not found in cart"
-            )
-            self.assertTrue(
-                product_quantity_valid,
-                "Product quantity not found or incorrect in cart"
-            )
+            self.assertTrue(product_name_in_cart, "Product name not found in cart")
+            self.assertTrue(product_quantity_in_cart, "Product quantity not found or incorrect in cart")
             self.logger.info("Product name and quantity successfully verified in cart")
         except AssertionError as e:
-            self._log_failure("product_name_quantity_error.png",
-                              "Either product name or quantity in cart does not match expected values ",
-                              e)
-    #
+            self.helper.log_failure("product_name_quantity_error.png",
+                                    "Either product name or quantity in cart does not match expected values ",e)
+
+
     # @pytest.mark.skip(reason="Just skipped it right now")
     # def test_user_can_submit_product_review_on_display_page(self):
     #     self.logger.info("Test: Submit valid review and verify system response")

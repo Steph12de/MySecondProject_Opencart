@@ -382,10 +382,10 @@ class ProductInfoPage(BaseDriver):
     def input_review(self, message):
         self.get_review_message_box().send_keys(message)
 
-    def select_radio_button_rating(self):
+    def select_radio_button_rating(self, rating_value):
         ratings = self.get_radio_button_reviews()
         for rating in ratings:
-            if rating.get_attribute("value") == str(4):
+            if rating.get_attribute("value") == str(rating_value):
                 rating.click()
 
     def click_continue_button_reviews(self):

@@ -9368,3 +9368,26 @@ Details: 4 != 6 : Cart icon quantity mismatch: expected '6', but got '4'
 2025-12-08 11:23:05,822 :ERROR :Minimum quantity validation failed
 Screenshot saved at: screenshots\minimum_quantity_error.png
 Details: 2 != 1 : Minimum quantity mismatch: expected '1', but got '2'
+2025-12-09 13:45:41,169 :INFO :Test: validating product review submission and system response.
+2025-12-09 13:45:41,173 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-09 13:45:41,173 :INFO :Initiating search for product: 'iMac'
+2025-12-09 13:45:43,410 :INFO :Search triggered for 'iMac'
+2025-12-09 13:45:43,410 :INFO :Writing review...
+2025-12-09 13:49:19,592 :INFO :Test: validating product review submission and system response.
+2025-12-09 13:49:19,594 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-09 13:49:19,594 :INFO :Initiating search for product: 'iMac'
+2025-12-09 13:49:20,480 :INFO :Search triggered for 'iMac'
+2025-12-09 13:49:20,480 :INFO :Opens the product detail page based on product name
+2025-12-09 13:49:20,481 :INFO :Navigating to product detail page for 'iMac'
+2025-12-09 13:49:21,634 :INFO :Writing review...
+2025-12-09 13:49:23,869 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-12-09 13:49:23,869 :INFO :Review submitted successfully and confirmation message is correct.
+2025-12-09 13:49:42,274 :INFO :Test: validating product review submission and system response.
+2025-12-09 13:49:42,275 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-09 13:49:42,275 :INFO :Initiating search for product: 'iMac'
+2025-12-09 13:49:43,698 :INFO :Search triggered for 'iMac'
+2025-12-09 13:49:43,698 :INFO :Opens the product detail page based on product name
+2025-12-09 13:49:43,699 :INFO :Navigating to product detail page for 'iMac'
+2025-12-09 13:49:44,571 :INFO :Writing review...
+2025-12-09 13:49:46,175 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-12-09 13:49:46,175 :INFO :Review submitted successfully and confirmation message is correct.

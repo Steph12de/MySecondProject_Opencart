@@ -157,7 +157,8 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.logger.info("Validating minimum quantity value and minimum quantity message")
         self.validate_field(expected_minimum_quantity_value, actual_minimum_quantity_value, "Minimum quantity",
                             "minimum_quantity_error.png")
-        self.validate_field(expected_minimum_quantity_message, actual_minimum_quantity_message, "Minimum quantity info text",
+        self.validate_field(expected_minimum_quantity_message, actual_minimum_quantity_message,
+                            "Minimum quantity info text",
                             "minimum_quantity_text_error.png")
 
         # Step 3: Fill mandatory fields
@@ -197,38 +198,45 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self.logger.info("Product name and quantity successfully verified in cart")
         except AssertionError as e:
             self.helper.log_failure("product_name_quantity_error.png",
-                                    "Either product name or quantity in cart does not match expected values ",e)
+                                    "Either product name or quantity in cart does not match expected values ", e)
 
-
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_user_can_submit_product_review_on_display_page(self):
-        self.logger.info("Test: Submit valid review and verify system response")
+        """
+            Test case: User can submit a valid review for a product.
+            Fields: Your name, Your review, Rating
+            Techniques: Equivalence classes, Boundary value analysis, Positive test
+        """
 
-        reviewer_name = "Steph"
-        review_text = "Very good product, recommended!"
-        self.submit_review("iMac", reviewer_name, review_text)
+        self.logger.info("Test: validating product review submission and system response.")
 
-        if 3 <= len(reviewer_name) <= 25 <= len(review_text) <= 1000:
-            expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
-            actual_success_message = self.product_page.get_success_message_reviews_text()
+        # Step 1: Define test data for the review submission.
+        product_name = "iMac"
+        reviewer_name = "Steph"  # valid: 5 characters
+        review_text = "Very good product, recommended!"  # valid: >25 characters
+        rating_value = 4  # valid: between 1 and 5
 
-            self.logger.info(f"Received success message: '{actual_success_message}'")
+        # Step 2: Navigate to product display page and submit the review.
+        self.helper.submit_review(product_name, reviewer_name, review_text, rating_value)
 
-            try:
-                self.assertEqual(
-                    actual_success_message,
-                    expected_success_message,
-                    f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
-                )
-                self.logger.info("Review submitted successfully and confirmation message is correct.")
-            except AssertionError as e:
-                self._log_failure(
-                    "review_submission_error.png",
-                    "Review submission failed – success message did not match expected text.",
-                    e
-                )
-        else:
-            self.logger.warning("Input validation failed: reviewer name or review text length is out of bounds.")
+        # Step 3: Validate review submission
+        expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
+        actual_success_message = self.product_page.get_success_message_reviews_text()
+        self.logger.info(f"Received success message: '{actual_success_message}'")
+
+        try:
+            self.assertEqual(
+                actual_success_message,
+                expected_success_message,
+                f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
+            )
+            self.logger.info("Review submitted successfully and confirmation message is correct.")
+        except AssertionError as e:
+            self.helper.log_failure(
+                "review_submission_error.png",
+                "Review submission failed – success message did not match expected text.",
+                e
+            )
 
     # def test_review_text_length_outside_valid_range(self):
     #     self.logger.info("Test: Submit invalid review and verify warning messages")

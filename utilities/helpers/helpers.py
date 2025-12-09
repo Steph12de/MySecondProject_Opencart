@@ -179,20 +179,21 @@ class Helpers:
 
         self.product_page.click_on_shopping_cart_link()
 
-    def submit_review(self, product_name, reviewer_name, review_text):
-        product_name = product_name
-        reviewer_name = reviewer_name
-        review_text = review_text
+    def submit_review(self, product_name, reviewer_name, review_text, rating_value):
+        # product_name = product_name
+        # reviewer_name = reviewer_name
+        # review_text = review_text
 
         self.logger.info(f"Test started: validating product review submission for '{product_name}'")
 
         # Step 1: Open product detail page
         self.search_for_product(product_name)
+        self.open_product_detail(product_name)
 
         # Step 2: Fill out and submit review
         self.logger.info("Writing review...")
         self.product_page.click_reviews_button()
         self.product_page.input_name_reviewer(reviewer_name)
         self.product_page.input_review(review_text)
-        self.product_page.select_radio_button_rating()
+        self.product_page.select_radio_button_rating(rating_value)
         self.product_page.click_continue_button_reviews()

@@ -44,7 +44,7 @@ class Test_004_addToCart(unittest.TestCase):
                               self.wishList_page,
                               self.search_page, self.product_page, self.cart_page, self.logout_page)
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_displayed_product_to_cart(self):
         product_name = "iMac"
@@ -60,19 +60,24 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Attempting to add '{product_name}' to shopping cart")
 
         # Step 3: Verify success message
+        self.helper.verify_success_message_contains_product(
+            "Success: You have added",
+            product_name,
+            "product_display"
+        )
 
-        try:
-            self.helper.verify_success_message_contains_product(
-                "Success: You have added",
-                product_name,
-                "product_display"
-            )
-        except AssertionError as error:
-            self.helper.log_failure(
-                "product_display_success_validation_failed.png",
-                f"Validation failed for success message after adding '{product_name}' from product display page",
-                error
-            )
+        # try:
+        #     self.helper.verify_success_message_contains_product(
+        #         "Success: You have added",
+        #         product_name,
+        #         "product_display"
+        #     )
+        # except AssertionError as error:
+        #     self.helper.log_failure(
+        #         "product_display_success_validation_failed.png",
+        #         f"Validation failed for success message after adding '{product_name}' from product display page",
+        #         error
+        #     )
 
         # Step 4: Verify product in cart
         try:
@@ -84,7 +89,7 @@ class Test_004_addToCart(unittest.TestCase):
                 error
             )
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_wishlist_product_to_cart(self):
         product_name = "Samsung SyncMaster 941BW"

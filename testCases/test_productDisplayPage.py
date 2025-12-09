@@ -224,19 +224,9 @@ class Test_003_productDisplayPage(unittest.TestCase):
         actual_success_message = self.product_page.get_success_message_reviews_text()
         self.logger.info(f"Received success message: '{actual_success_message}'")
 
-        try:
-            self.assertEqual(
-                actual_success_message,
-                expected_success_message,
-                f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
-            )
-            self.logger.info("Review submitted successfully and confirmation message is correct.")
-        except AssertionError as e:
-            self.helper.log_failure(
-                "review_submission_error.png",
-                "Review submission failed – success message did not match expected text.",
-                e
-            )
+        self.validate_field(expected_success_message, actual_success_message, "Review success message",
+                            "review_submission_error.png")
+
 
     # def test_review_text_length_outside_valid_range(self):
     #     self.logger.info("Test: Submit invalid review and verify warning messages")

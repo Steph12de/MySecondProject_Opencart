@@ -9391,3 +9391,12 @@ Details: 2 != 1 : Minimum quantity mismatch: expected '1', but got '2'
 2025-12-09 13:49:44,571 :INFO :Writing review...
 2025-12-09 13:49:46,175 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
 2025-12-09 13:49:46,175 :INFO :Review submitted successfully and confirmation message is correct.
+2025-12-09 17:02:04,640 :INFO :Test: validating product review submission and system response.
+2025-12-09 17:02:04,643 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-09 17:02:04,643 :INFO :Initiating search for product: 'iMac'
+2025-12-09 17:02:06,573 :INFO :Search triggered for 'iMac'
+2025-12-09 17:02:06,575 :INFO :Opens the product detail page based on product name
+2025-12-09 17:02:06,576 :INFO :Navigating to product detail page for 'iMac'
+2025-12-09 17:02:09,135 :INFO :Writing review...
+2025-12-09 17:02:10,910 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-12-09 17:02:10,911 :INFO :Review success message validation passed.

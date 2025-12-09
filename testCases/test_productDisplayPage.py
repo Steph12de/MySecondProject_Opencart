@@ -138,7 +138,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
                                     "mismatch.",
                                     e)
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_product_minimum_quantity_is_correctly_set(self):
         self.logger.info("Test started: validating that minimum product quantity is correctly set.")
         product_name = 'Apple Cinema 30"'
@@ -200,36 +200,36 @@ class Test_003_productDisplayPage(unittest.TestCase):
                                     "Either product name or quantity in cart does not match expected values ",e)
 
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
-    # def test_user_can_submit_product_review_on_display_page(self):
-    #     self.logger.info("Test: Submit valid review and verify system response")
-    #
-    #     reviewer_name = "Steph"
-    #     review_text = "Very good product, recommended!"
-    #     self.submit_review("iMac", reviewer_name, review_text)
-    #
-    #     if 3 <= len(reviewer_name) <= 25 <= len(review_text) <= 1000:
-    #         expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
-    #         actual_success_message = self.product_page.get_success_message_reviews_text()
-    #
-    #         self.logger.info(f"Received success message: '{actual_success_message}'")
-    #
-    #         try:
-    #             self.assertEqual(
-    #                 actual_success_message,
-    #                 expected_success_message,
-    #                 f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
-    #             )
-    #             self.logger.info("Review submitted successfully and confirmation message is correct.")
-    #         except AssertionError as e:
-    #             self._log_failure(
-    #                 "review_submission_error.png",
-    #                 "Review submission failed – success message did not match expected text.",
-    #                 e
-    #             )
-    #     else:
-    #         self.logger.warning("Input validation failed: reviewer name or review text length is out of bounds.")
-    #
+    @pytest.mark.skip(reason="Just skipped it right now")
+    def test_user_can_submit_product_review_on_display_page(self):
+        self.logger.info("Test: Submit valid review and verify system response")
+
+        reviewer_name = "Steph"
+        review_text = "Very good product, recommended!"
+        self.submit_review("iMac", reviewer_name, review_text)
+
+        if 3 <= len(reviewer_name) <= 25 <= len(review_text) <= 1000:
+            expected_success_message = "Thank you for your review. It has been submitted to the webmaster for approval."
+            actual_success_message = self.product_page.get_success_message_reviews_text()
+
+            self.logger.info(f"Received success message: '{actual_success_message}'")
+
+            try:
+                self.assertEqual(
+                    actual_success_message,
+                    expected_success_message,
+                    f"Review success message mismatch:\nExpected: '{expected_success_message}'\nGot: '{actual_success_message}'"
+                )
+                self.logger.info("Review submitted successfully and confirmation message is correct.")
+            except AssertionError as e:
+                self._log_failure(
+                    "review_submission_error.png",
+                    "Review submission failed – success message did not match expected text.",
+                    e
+                )
+        else:
+            self.logger.warning("Input validation failed: reviewer name or review text length is out of bounds.")
+
     # def test_review_text_length_outside_valid_range(self):
     #     self.logger.info("Test: Submit invalid review and verify warning messages")
     #

@@ -63,16 +63,9 @@ class Test_004_addToCart(unittest.TestCase):
         self.helper.verify_success_message_contains_product("Success: You have added",product_name,"product_display")
 
         # Step 4: Verify product in cart
-        try:
-            self.helper.verify_product_in_cart(product_name, "product_display")
-        except AssertionError as error:
-            self.helper.log_failure(
-                "product_display_cart_verification_failed.png",
-                f"Product '{product_name}' missing in cart",
-                error
-            )
+        self.helper.verify_product_in_cart("iMac", "product_display")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_wishlist_product_to_cart(self):
         product_name = "Samsung SyncMaster 941BW"
@@ -104,31 +97,12 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Attempting to add '{product_name}' to cart from wishlist")
 
         # Step 4: Verify success message
-        try:
-            self.helper.verify_success_message_contains_product(
-                "Success: You have added",
-                product_name,
-                "wishlist"
-            )
-
-        except AssertionError as error:
-            self.helper.log_failure(
-                "wishlist_success_message_validation_failed.png",
-                f"Validation failed for success message after adding '{product_name}' from wishlist",
-                error
-            )
+        self.helper.verify_success_message_contains_product("Success: You have added", product_name, "wishlist")
 
         # Step 5: Verify product in cart
-        try:
-            self.helper.verify_product_in_cart(product_name, "wishlist")
-        except AssertionError as error:
-            self.helper.log_failure(
-                "wishlist_cart_verification_failed.png",
-                f"Product '{product_name}' missing in cart after wishlist add",
-                error
-            )
+        self.helper.verify_product_in_cart(product_name, "wishlist")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression
     def test_add_to_cart_from_search_result(self):
         product_name = "iMac"
@@ -147,18 +121,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Clicked 'Add to Cart' for '{product_name}'")
 
         # Step 3: Verify success message
-        try:
-            self.helper.verify_success_message_contains_product(
-                "Success: You have added",
-                product_name,
-                "search_results"
-            )
-        except AssertionError as error:
-            self.helper.log_failure(
-                "search_result_success_message_failed.png",
-                f"Success message mismatch after adding '{product_name}' from search results",
-                error
-            )
+        self.helper.verify_success_message_contains_product("Success: You have added", product_name, "search_results")
 
         # Step 4: Wait for cart count to update
         self.logger.info(
@@ -170,14 +133,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Cart count updated: before='{cart_count_before}', after='{cart_count_after}'")
 
         # Step 5: Verify product in cart
-        try:
-            self.helper.verify_product_in_cart(product_name, "search_results")
-        except AssertionError as error:
-            self.helper.log_failure(
-                "search_result_cart_verification_failed.png",
-                f"Product '{product_name}' missing in cart after search result add",
-                error
-            )
+        self.helper.verify_product_in_cart(product_name, "search_results")
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     # @pytest.mark.regression

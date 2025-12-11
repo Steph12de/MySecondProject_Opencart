@@ -38,15 +38,6 @@ class Test_003_productDisplayPage(unittest.TestCase):
                               self.wishList_page,
                               self.search_page, self.product_page, self.cart_page, self.logout_page)
 
-    # def add_to_cart_and_check(self, quantity):
-    #     self.product_page.input_quantity(quantity)
-    #     self.product_page.click_on_add_to_cart_button()
-    #     # self.product_page.scroll_element_into_shopping_link_view()
-    #     element_result = self.product_page.get_success_message_box()
-    #     if element_result:
-    #         self.logger.info("The product has been successfully added")
-    #     self.product_page.click_on_shopping_cart_link()
-
     def validate_field(self, expected, actual, field_name, screenshot_name):
         try:
             self.assertEqual(
@@ -58,7 +49,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         except AssertionError as e:
             self.helper.log_failure(screenshot_name, f"{field_name} validation failed", e)
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_product_detail_displays_name_brand_and_code(self):
         self.logger.info("Test started: validating product name, brand, and code.")
         product_name = "iMac"
@@ -87,7 +78,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.logger.info("Validating product code")
         self.validate_field(expected_product_code, actual_product_code, "Product code", "product_code_error.png")
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_default_quantity_is_one_when_minimum_not_set(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
         product_name = "iMac"
@@ -115,15 +106,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         # Step 5: Validate success message after adding product
         actual_success = self.product_page.get_success_message_text()
         self.logger.info(f"Validating success message after adding product: '{actual_success}'")
-        try:
-            self.helper.verify_success_message_contains_product(
-                "Success: You have added",
-                product_name,
-                "product_display")
-        except AssertionError as e:
-            self.helper.log_failure("default_quantity_add_to_cart_error.png",
-                                    "Success message validation failed after adding product.",
-                                    e)
+        self.helper.verify_success_message_contains_product("Success: You have added", product_name, "product_display")
 
         # Step 6: Validate updated quantity shown in cart icon
         expected_total_quantity = increase_by
@@ -132,13 +115,13 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self.validate_field(expected_total_quantity, actual_cart_quantity, "Cart icon quantity",
                                 "cart_icon_quantity_error.png"
                                 )
-        except (IndexError, ValueError, AssertionError) as e:
+        except (ValueError, AssertionError) as e:
             self.helper.log_failure("cart_icon_quantity_error.png",
                                     "Cart quantity validation failed – either due to unreadable cart icon format or "
                                     "mismatch.",
                                     e)
 
-    @pytest.mark.skip(reason="Just skipped it right now")
+    # @pytest.mark.skip(reason="Just skipped it right now")
     def test_product_minimum_quantity_is_correctly_set(self):
         self.logger.info("Test started: validating that minimum product quantity is correctly set.")
         product_name = 'Apple Cinema 30"'

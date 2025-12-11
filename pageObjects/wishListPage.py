@@ -51,9 +51,11 @@ class WishListPage(BaseDriver):
 
     def is_product_in_wishlist(self, product_name):
         # Check if the wishlist empty message is displayed
-        if self.get_wishlist_empty_message() is not None:
+        # print("in into class")
+        # print(self.get_wishlist_empty_message())
+        if self.get_wishlist_empty_message() != "Element not visible":  # is not None:
+            print("step one return false")
             return False
-
         # Iterate through all rows in the wishlist table
         else:
             row_total_number = len(self.wait_for_elements_visible(self.locators.numbers_of_rows))
@@ -62,6 +64,7 @@ class WishListPage(BaseDriver):
                 actual_product_name = self.driver.find_element(By.XPATH,
                                                                "//div[@class='table-responsive']//table//tbody//tr[" + str(
                                                                    row) + "]//td[2]//a").text
+                print(actual_product_name)
                 # Compare the actual product name with the expected one
                 if actual_product_name == product_name:
                     return True

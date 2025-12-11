@@ -131,11 +131,19 @@ class Helpers:
             self.logger.warning(f"Unknown source '{source}' — defaulting to product page cart link")
             self.product_page.click_on_shopping_cart_link()
 
-        # Step 2: Verify product presence in cart
-        assert self.cart_page.check_product_name(product_name), (
-            f"Product '{product_name}' not found in cart after adding from '{source}'"
-        )
-        self.logger.info(f"Product '{product_name}' successfully verified in shopping cart")
+        # Step 2: Verify product presence in cart with error handling
+        try:
+            assert self.cart_page.check_product_name(product_name), (
+                f"Product '{product_name}' not found in cart after adding from '{source}'"
+            )
+            self.logger.info(f"Product '{product_name}' successfully verified in shopping cart")
+        except AssertionError as e:
+            screenshot_name = f"{source}_cart_validation_error.png"
+            self.log_failure(
+                screenshot_name,
+                f"Cart validation failed – product '{product_name}' not found (source: {source})",
+                e
+            )
 
     def verify_success_message_contains_product(self, expected_start, product_name, source="product_display"):
         self.logger.info(f"Verifying success message after adding '{product_name}' to cart (source: {source})")
@@ -167,10 +175,10 @@ class Helpers:
             self.logger.info(f"Success message contains correct product name: '{product_name}'")
 
         except AssertionError as e:
-            screenshot_name = f"{source}_success_message_error.png"
+            screenshot_name = f"{source}_success_message_validation_error.png"
             self.log_failure(
                 screenshot_name,
-                f"Success message validation failed for product '{product_name}' (source: {source})",
+                f"Success message validation failed for product '{product_name}' (source: {source}) – {str(e)}",
                 e
             )
 

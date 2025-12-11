@@ -9412,3 +9412,441 @@ Details: 2 != 1 : Minimum quantity mismatch: expected '1', but got '2'
 2025-12-10 13:35:16,163 :INFO :Verifying product 'iMac' in cart (source: product_display)
 2025-12-10 13:35:17,391 :INFO :Navigated to cart via product display page
 2025-12-10 13:35:17,456 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 10:32:41,318 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 10:32:41,320 :INFO :Initiating search for product: 'iMac'
+2025-12-11 10:32:42,979 :INFO :Search triggered for 'iMac'
+2025-12-11 10:32:43,837 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 10:32:44,045 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 10:32:44,046 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 10:32:44,635 :INFO :Retrieved success message from product display flow
+2025-12-11 10:32:44,635 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 10:32:44,636 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 10:32:44,636 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 10:32:45,168 :INFO :Navigated to cart via product display page
+2025-12-11 10:32:45,257 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:06:19,140 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:06:19,142 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:06:20,292 :INFO :Search triggered for 'iMac'
+2025-12-11 11:06:22,497 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:06:22,734 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:06:22,734 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:06:23,354 :INFO :Retrieved success message from product display flow
+2025-12-11 11:06:23,354 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:06:23,354 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:06:23,355 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:06:23,926 :INFO :Navigated to cart via product display page
+2025-12-11 11:06:24,006 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:06:28,428 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:06:28,428 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:06:29,276 :INFO :Search triggered for 'iMac'
+2025-12-11 11:06:29,330 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:06:29,522 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:06:29,522 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:06:30,120 :INFO :Retrieved success message from search results flow
+2025-12-11 11:06:30,121 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:06:30,122 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:06:30,122 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:06:30,177 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:06:30,177 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:06:30,990 :INFO :Navigated to cart via search results
+2025-12-11 11:06:31,060 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:06:34,557 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:06:35,349 :INFO :Navigated to wishlist login section
+2025-12-11 11:06:47,253 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:07:59,555 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:07:59,556 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:08:00,816 :INFO :Search triggered for 'iMac'
+2025-12-11 11:08:01,489 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:08:01,639 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:08:01,640 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:08:02,241 :INFO :Retrieved success message from product display flow
+2025-12-11 11:08:02,242 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:08:02,242 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:08:02,242 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:08:02,720 :INFO :Navigated to cart via product display page
+2025-12-11 11:08:02,797 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:08:06,639 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:08:06,640 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:08:07,860 :INFO :Search triggered for 'iMac'
+2025-12-11 11:08:07,923 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:08:08,073 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:08:08,074 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:08:08,710 :INFO :Retrieved success message from search results flow
+2025-12-11 11:08:08,710 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:08:08,710 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:08:08,711 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:08:08,758 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:08:08,758 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:08:09,357 :INFO :Navigated to cart via search results
+2025-12-11 11:08:09,436 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:08:14,041 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:08:14,799 :INFO :Navigated to wishlist login section
+2025-12-11 11:08:26,583 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:10:34,308 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:10:34,308 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:10:35,174 :INFO :Search triggered for 'iMac'
+2025-12-11 11:10:35,867 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:10:36,029 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:10:36,029 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:10:36,718 :INFO :Retrieved success message from product display flow
+2025-12-11 11:10:36,720 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:10:36,720 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:10:36,721 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:10:37,406 :INFO :Navigated to cart via product display page
+2025-12-11 11:10:37,473 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:10:45,179 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:10:45,179 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:10:45,970 :INFO :Search triggered for 'iMac'
+2025-12-11 11:10:46,023 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:10:46,138 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:10:46,138 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:10:46,766 :INFO :Retrieved success message from search results flow
+2025-12-11 11:10:46,767 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:10:46,767 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:10:46,767 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:10:46,839 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:10:46,840 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:10:47,578 :INFO :Navigated to cart via search results
+2025-12-11 11:10:47,690 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:10:51,482 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:10:52,124 :INFO :Navigated to wishlist login section
+2025-12-11 11:11:03,809 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:12:15,729 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:12:15,729 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:12:16,729 :INFO :Search triggered for 'iMac'
+2025-12-11 11:12:17,459 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:12:17,583 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:12:17,583 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:12:18,260 :INFO :Retrieved success message from product display flow
+2025-12-11 11:12:18,261 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:12:18,262 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:12:18,263 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:12:19,001 :INFO :Navigated to cart via product display page
+2025-12-11 11:12:19,057 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:12:23,966 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:12:23,966 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:12:25,261 :INFO :Search triggered for 'iMac'
+2025-12-11 11:12:25,308 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:12:25,521 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:12:25,521 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:12:26,130 :INFO :Retrieved success message from search results flow
+2025-12-11 11:12:26,130 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:12:26,130 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:12:26,130 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:12:26,168 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:12:26,168 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:12:26,819 :INFO :Navigated to cart via search results
+2025-12-11 11:12:26,984 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:12:30,540 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:12:31,205 :INFO :Navigated to wishlist login section
+2025-12-11 11:12:42,866 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:18:55,586 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:18:55,587 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:18:57,253 :INFO :Search triggered for 'iMac'
+2025-12-11 11:18:59,332 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:18:59,510 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:18:59,511 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:19:00,104 :INFO :Retrieved success message from product display flow
+2025-12-11 11:19:00,104 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:19:00,105 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:19:00,105 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:19:00,662 :INFO :Navigated to cart via product display page
+2025-12-11 11:19:00,718 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:19:04,916 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:19:04,917 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:19:05,794 :INFO :Search triggered for 'iMac'
+2025-12-11 11:19:05,845 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:19:05,974 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:19:05,975 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:19:20,157 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:19:20,843 :INFO :Navigated to wishlist login section
+2025-12-11 11:19:32,211 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:23:19,167 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:23:19,168 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:23:20,025 :INFO :Search triggered for 'iMac'
+2025-12-11 11:23:21,030 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:23:21,166 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:23:21,166 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:23:21,842 :INFO :Retrieved success message from product display flow
+2025-12-11 11:23:21,843 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:23:21,844 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:23:21,844 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:23:23,338 :INFO :Navigated to cart via product display page
+2025-12-11 11:23:23,573 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:23:27,558 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:23:27,559 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:23:28,437 :INFO :Search triggered for 'iMac'
+2025-12-11 11:23:28,495 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:23:28,625 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:23:28,625 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:23:29,266 :INFO :Retrieved success message from search results flow
+2025-12-11 11:23:29,266 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:23:29,267 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:23:29,267 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:23:29,334 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:23:29,334 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:23:30,154 :INFO :Navigated to cart via search results
+2025-12-11 11:23:30,339 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:23:33,866 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:23:34,632 :INFO :Navigated to wishlist login section
+2025-12-11 11:23:46,384 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:25:45,301 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:25:45,301 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:25:46,298 :INFO :Search triggered for 'iMac'
+2025-12-11 11:25:47,084 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:25:47,282 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:25:47,282 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:25:47,868 :INFO :Retrieved success message from product display flow
+2025-12-11 11:25:47,868 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:25:47,869 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:25:47,869 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:25:48,408 :INFO :Navigated to cart via product display page
+2025-12-11 11:25:48,574 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:25:52,639 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:25:52,639 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:25:53,500 :INFO :Search triggered for 'iMac'
+2025-12-11 11:25:53,583 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:25:53,732 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:25:53,732 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:25:54,358 :INFO :Retrieved success message from search results flow
+2025-12-11 11:25:54,358 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:25:54,358 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:25:54,358 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:25:54,400 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:25:54,400 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:25:55,110 :INFO :Navigated to cart via search results
+2025-12-11 11:25:55,175 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:26:01,116 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:26:03,123 :INFO :Navigated to wishlist login section
+2025-12-11 11:26:25,609 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:38:42,032 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:38:42,033 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:38:43,417 :INFO :Search triggered for 'iMac'
+2025-12-11 11:38:45,558 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:38:45,729 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:38:45,850 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:38:46,418 :INFO :Retrieved success message from product display flow
+2025-12-11 11:38:46,418 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:38:46,418 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:38:46,419 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:38:47,000 :INFO :Navigated to cart via product display page
+2025-12-11 11:38:47,117 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:38:52,808 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:38:52,808 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:38:53,712 :INFO :Search triggered for 'iMac'
+2025-12-11 11:38:53,799 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:38:54,057 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:38:54,058 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:38:54,650 :INFO :Retrieved success message from search results flow
+2025-12-11 11:38:54,650 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:38:54,650 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:38:54,651 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:38:54,692 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:38:54,693 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:38:55,346 :INFO :Navigated to cart via search results
+2025-12-11 11:38:55,422 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:38:59,229 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:38:59,875 :INFO :Navigated to wishlist login section
+2025-12-11 11:39:21,919 :ERROR :Product 'Samsung SyncMaster 941BW' not found in wishlist or wishlist is empty
+Screenshot saved at: screenshots\wishlist_product_missing.png
+Details: False is not true : Product 'Samsung SyncMaster 941BW' not found in wishlist. Please add it first
+2025-12-11 11:43:03,254 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:43:03,254 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:43:04,176 :INFO :Search triggered for 'iMac'
+2025-12-11 11:43:04,881 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:43:05,027 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:43:05,027 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:43:05,705 :INFO :Retrieved success message from product display flow
+2025-12-11 11:43:05,707 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:43:05,707 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:43:05,708 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:43:06,297 :INFO :Navigated to cart via product display page
+2025-12-11 11:43:06,380 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:43:15,163 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:43:15,163 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:43:16,121 :INFO :Search triggered for 'iMac'
+2025-12-11 11:43:16,184 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:43:16,431 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:43:16,431 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:43:17,112 :INFO :Retrieved success message from search results flow
+2025-12-11 11:43:17,112 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:43:17,113 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:43:17,113 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:43:17,183 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:43:17,183 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:43:18,018 :INFO :Navigated to cart via search results
+2025-12-11 11:43:18,123 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:43:21,508 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:43:22,226 :INFO :Navigated to wishlist login section
+2025-12-11 11:43:43,945 :INFO :Product 'Samsung SyncMaster 941BW' is available in the wishlist
+2025-12-11 11:43:44,249 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:43:44,249 :INFO :Verifying success message after adding 'Samsung SyncMaster 941BW' to cart (source: wishlist)
+2025-12-11 11:43:44,830 :INFO :Retrieved success message from wishlist flow
+2025-12-11 11:43:45,198 :ERROR :Success message validation failed for product 'Samsung SyncMaster 941BW' (source: wishlist) – Success message does not start with expected text
+Screenshot saved at: screenshots\wishlist_success_message_validation_error.png
+Details: Success message does not start with expected text
+2025-12-11 11:51:23,648 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:51:23,649 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:51:24,880 :INFO :Search triggered for 'iMac'
+2025-12-11 11:51:25,843 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:51:26,029 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:51:26,029 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:51:26,703 :INFO :Retrieved success message from product display flow
+2025-12-11 11:51:26,703 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:51:26,704 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:51:26,704 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:51:27,232 :INFO :Navigated to cart via product display page
+2025-12-11 11:51:27,311 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:51:30,760 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:51:30,760 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:51:31,711 :INFO :Search triggered for 'iMac'
+2025-12-11 11:51:31,758 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:51:31,879 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:51:31,879 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:51:32,463 :INFO :Retrieved success message from search results flow
+2025-12-11 11:51:32,464 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:51:32,464 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:51:32,464 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:51:32,515 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:51:32,518 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:51:33,270 :INFO :Navigated to cart via search results
+2025-12-11 11:51:33,327 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:51:36,893 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:51:37,698 :INFO :Navigated to wishlist login section
+2025-12-11 11:55:39,997 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:55:39,997 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:55:41,095 :INFO :Search triggered for 'iMac'
+2025-12-11 11:55:42,718 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:55:42,859 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:55:42,860 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:55:43,552 :INFO :Retrieved success message from product display flow
+2025-12-11 11:55:43,552 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:55:43,553 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:55:43,553 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:55:44,369 :INFO :Navigated to cart via product display page
+2025-12-11 11:55:44,437 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:55:47,888 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:55:47,888 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:55:48,754 :INFO :Search triggered for 'iMac'
+2025-12-11 11:55:48,809 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:55:48,963 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:55:48,963 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:55:49,570 :INFO :Retrieved success message from search results flow
+2025-12-11 11:55:49,573 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:55:49,573 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:55:49,573 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:55:49,644 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:55:49,644 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:55:50,391 :INFO :Navigated to cart via search results
+2025-12-11 11:55:50,495 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:55:55,798 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:55:58,396 :INFO :Navigated to wishlist login section
+2025-12-11 11:56:20,387 :INFO :Product 'Samsung SyncMaster 941BW' is available in the wishlist
+2025-12-11 11:56:20,609 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:56:20,609 :INFO :Verifying success message after adding 'Samsung SyncMaster 941BW' to cart (source: wishlist)
+2025-12-11 11:56:21,222 :INFO :Retrieved success message from wishlist flow
+2025-12-11 11:56:21,518 :ERROR :Success message validation failed for product 'Samsung SyncMaster 941BW' (source: wishlist) – Success message does not start with expected text
+Screenshot saved at: screenshots\wishlist_success_message_validation_error.png
+Details: Success message does not start with expected text
+2025-12-11 11:57:33,518 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-11 11:57:33,520 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:57:34,400 :INFO :Search triggered for 'iMac'
+2025-12-11 11:57:35,078 :INFO :Navigated to 'iMac' product detail page
+2025-12-11 11:57:35,209 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-11 11:57:35,209 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 11:57:35,869 :INFO :Retrieved success message from product display flow
+2025-12-11 11:57:35,870 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:57:35,870 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:57:35,871 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-11 11:57:37,288 :INFO :Navigated to cart via product display page
+2025-12-11 11:57:37,358 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:57:41,061 :INFO :Test: Add 'iMac' to cart from search results
+2025-12-11 11:57:41,061 :INFO :Initiating search for product: 'iMac'
+2025-12-11 11:57:42,108 :INFO :Search triggered for 'iMac'
+2025-12-11 11:57:42,154 :INFO :Cart count before add: '0 item(s) - $0.00'
+2025-12-11 11:57:42,340 :INFO :Clicked 'Add to Cart' for 'iMac'
+2025-12-11 11:57:42,340 :INFO :Verifying success message after adding 'iMac' to cart (source: search_results)
+2025-12-11 11:57:43,510 :INFO :Retrieved success message from search results flow
+2025-12-11 11:57:43,511 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:57:43,512 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 11:57:43,513 :INFO :Waiting for shopping cart count to change from '0 item(s) - $0.00' to a new updated value.
+2025-12-11 11:57:43,607 :INFO :Cart count updated: before='0 item(s) - $0.00', after='1 item(s) - $122.00'
+2025-12-11 11:57:43,608 :INFO :Verifying product 'iMac' in cart (source: search_results)
+2025-12-11 11:57:44,316 :INFO :Navigated to cart via search results
+2025-12-11 11:57:44,514 :INFO :Product 'iMac' successfully verified in shopping cart
+2025-12-11 11:57:48,264 :INFO :Test: Add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:57:49,070 :INFO :Navigated to wishlist login section
+2025-12-11 11:58:00,954 :INFO :Product 'Samsung SyncMaster 941BW' is available in the wishlist
+2025-12-11 11:58:01,200 :INFO :Attempting to add 'Samsung SyncMaster 941BW' to cart from wishlist
+2025-12-11 11:58:01,200 :INFO :Verifying success message after adding 'Samsung SyncMaster 941BW' to cart (source: wishlist)
+2025-12-11 11:58:01,819 :INFO :Retrieved success message from wishlist flow
+2025-12-11 11:58:01,819 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 11:58:01,820 :INFO :Success message contains correct product name: 'Samsung SyncMaster 941BW'
+2025-12-11 11:58:01,820 :INFO :Verifying product 'Samsung SyncMaster 941BW' in cart (source: wishlist)
+2025-12-11 11:58:02,575 :INFO :Navigated to cart via wishlist header icon
+2025-12-11 11:58:02,637 :INFO :Product 'Samsung SyncMaster 941BW' successfully verified in shopping cart
+2025-12-11 12:08:30,089 :INFO :Test started: validating that default product quantity is set to 1.
+2025-12-11 12:08:30,093 :INFO :Initiating search for product: 'iMac'
+2025-12-11 12:08:31,584 :INFO :Search triggered for 'iMac'
+2025-12-11 12:08:31,584 :INFO :Search completed for product: iMac
+2025-12-11 12:08:31,584 :INFO :Opens the product detail page based on product name
+2025-12-11 12:08:31,584 :INFO :Navigating to product detail page for 'iMac'
+2025-12-11 12:08:33,945 :INFO :Opened product detail page for: iMac
+2025-12-11 12:08:34,030 :INFO :Checking default quantity: expected '1', found '1'
+2025-12-11 12:08:34,030 :INFO :Default quantity validation passed.
+2025-12-11 12:08:34,031 :INFO :Increasing quantity by 4 and adding product to cart.
+2025-12-11 12:08:35,079 :INFO :Validating success message after adding product: 'Success: You have added iMac to your shopping cart!
+×'
+2025-12-11 12:08:35,080 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-11 12:08:35,134 :INFO :Retrieved success message from product display flow
+2025-12-11 12:08:35,135 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-11 12:08:35,135 :INFO :Success message contains correct product name: 'iMac'
+2025-12-11 12:08:35,196 :INFO :Cart icon quantity validation passed.
+2025-12-11 12:08:40,591 :INFO :Test started: validating product name, brand, and code.
+2025-12-11 12:08:40,591 :INFO :Initiating search for product: 'iMac'
+2025-12-11 12:08:41,441 :INFO :Search triggered for 'iMac'
+2025-12-11 12:08:41,441 :INFO :Opens the product detail page based on product name
+2025-12-11 12:08:41,441 :INFO :Navigating to product detail page for 'iMac'
+2025-12-11 12:08:42,391 :INFO :Validating product name
+2025-12-11 12:08:42,391 :INFO :Product name validation passed.
+2025-12-11 12:08:42,487 :INFO :Validating brand
+2025-12-11 12:08:42,487 :INFO :Brand validation passed.
+2025-12-11 12:08:42,549 :INFO :Validating product code
+2025-12-11 12:08:42,549 :INFO :Product code validation passed.
+2025-12-11 12:08:46,190 :INFO :Test started: validating that minimum product quantity is correctly set.
+2025-12-11 12:08:46,191 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-11 12:08:47,297 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-11 12:08:47,297 :INFO :Opens the product detail page based on product name
+2025-12-11 12:08:47,297 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-11 12:08:48,253 :INFO :Validating minimum quantity value and minimum quantity message
+2025-12-11 12:08:48,253 :INFO :Minimum quantity validation passed.
+2025-12-11 12:08:48,253 :INFO :Minimum quantity info text validation passed.
+2025-12-11 12:08:48,253 :INFO :Filling mandatory fields on product display page.
+2025-12-11 12:09:12,159 :INFO :Success box has been successfully displayed
+2025-12-11 12:09:13,257 :INFO :Minimum quantity warning validation passed.
+2025-12-11 12:09:19,408 :INFO :Success box has been successfully displayed
+2025-12-11 12:09:30,751 :INFO :No warning — product added successfully with correct quantity
+2025-12-11 12:09:31,145 :INFO :Product name and quantity successfully verified in cart
+2025-12-11 12:09:37,579 :INFO :Test: validating product review submission and system response.
+2025-12-11 12:09:37,581 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-11 12:09:37,581 :INFO :Initiating search for product: 'iMac'
+2025-12-11 12:09:38,613 :INFO :Search triggered for 'iMac'
+2025-12-11 12:09:38,613 :INFO :Opens the product detail page based on product name
+2025-12-11 12:09:38,613 :INFO :Navigating to product detail page for 'iMac'
+2025-12-11 12:09:39,313 :INFO :Writing review...
+2025-12-11 12:09:40,948 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
+2025-12-11 12:09:40,948 :INFO :Review success message validation passed.

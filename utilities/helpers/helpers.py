@@ -3,7 +3,8 @@ from unittest import TestCase
 
 
 class Helpers:
-    def __init__(self, driver, logger, home_page, login_page, my_account, wish_list, search_page, product_page, cart_page, logout_page):
+    def __init__(self, driver, logger, home_page, login_page, my_account, wish_list, search_page, product_page,
+                 cart_page, logout_page):
         self.driver = driver
         self.logger = logger
         self.home_page = home_page
@@ -156,13 +157,22 @@ class Helpers:
             self.logger.warning(f"Unknown source '{source}' — defaulting to product page")
             success_message = self.product_page.get_success_message_text()
 
-        # Check if success message starts with expected text
-        assert success_message.startswith(expected_start), "Success message does not start with expected text"
-        self.logger.info(f"Success message starts with expected text: '{expected_start}'")
+        # Step 2: Validate success message starts with expected text
+        try:
+            assert success_message.startswith(expected_start), "Success message does not start with expected text"
+            self.logger.info(f"Success message starts with expected text: '{expected_start}'")
 
-        # Check if product name is included
-        assert product_name in success_message, f"Success message does not contain product name '{product_name}'"
-        self.logger.info(f"Success message contains correct product name: '{product_name}'")
+            # Step 3: Validate success message contains product name
+            assert product_name in success_message, f"Success message does not contain product name '{product_name}'"
+            self.logger.info(f"Success message contains correct product name: '{product_name}'")
+
+        except AssertionError as e:
+            screenshot_name = f"{source}_success_message_error.png"
+            self.log_failure(
+                screenshot_name,
+                f"Success message validation failed for product '{product_name}' (source: {source})",
+                e
+            )
 
     def add_to_cart_and_check(self, quantity):
         self.product_page.input_quantity(quantity)

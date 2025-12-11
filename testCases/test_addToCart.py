@@ -60,24 +60,7 @@ class Test_004_addToCart(unittest.TestCase):
         self.logger.info(f"Attempting to add '{product_name}' to shopping cart")
 
         # Step 3: Verify success message
-        self.helper.verify_success_message_contains_product(
-            "Success: You have added",
-            product_name,
-            "product_display"
-        )
-
-        # try:
-        #     self.helper.verify_success_message_contains_product(
-        #         "Success: You have added",
-        #         product_name,
-        #         "product_display"
-        #     )
-        # except AssertionError as error:
-        #     self.helper.log_failure(
-        #         "product_display_success_validation_failed.png",
-        #         f"Validation failed for success message after adding '{product_name}' from product display page",
-        #         error
-        #     )
+        self.helper.verify_success_message_contains_product("Success: You have added",product_name,"product_display")
 
         # Step 4: Verify product in cart
         try:

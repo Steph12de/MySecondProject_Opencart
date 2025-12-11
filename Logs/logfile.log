@@ -9400,3 +9400,15 @@ Details: 2 != 1 : Minimum quantity mismatch: expected '1', but got '2'
 2025-12-09 17:02:09,135 :INFO :Writing review...
 2025-12-09 17:02:10,910 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
 2025-12-09 17:02:10,911 :INFO :Review success message validation passed.
+2025-12-10 13:35:11,159 :INFO :Test: Add 'iMac' to cart from product detail page
+2025-12-10 13:35:11,161 :INFO :Initiating search for product: 'iMac'
+2025-12-10 13:35:13,807 :INFO :Search triggered for 'iMac'
+2025-12-10 13:35:15,380 :INFO :Navigated to 'iMac' product detail page
+2025-12-10 13:35:15,569 :INFO :Attempting to add 'iMac' to shopping cart
+2025-12-10 13:35:15,569 :INFO :Verifying success message after adding 'iMac' to cart (source: product_display)
+2025-12-10 13:35:16,163 :INFO :Retrieved success message from product display flow
+2025-12-10 13:35:16,163 :INFO :Success message starts with expected text: 'Success: You have added'
+2025-12-10 13:35:16,163 :INFO :Success message contains correct product name: 'iMac'
+2025-12-10 13:35:16,163 :INFO :Verifying product 'iMac' in cart (source: product_display)
+2025-12-10 13:35:17,391 :INFO :Navigated to cart via product display page
+2025-12-10 13:35:17,456 :INFO :Product 'iMac' successfully verified in shopping cart

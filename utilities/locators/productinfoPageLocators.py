@@ -54,3 +54,4 @@ class ProductInfoPageLocators:
     success_message_reviews = (By.XPATH, "//div[@class='alert alert-success alert-dismissible' and contains(text(), 'Thank you for your review.')]")
     warning_review_text_message = (By.XPATH, "//div[contains(@class, 'alert-danger') and contains(text(), 'Warning') and contains(text(), 'Review Text')]")
     warning_review_name_message = (By.XPATH, "//div[contains(@class, 'alert-danger') and contains(text(), 'Warning') and contains(text(), 'Review Name')]")
+    warning_review_rating_message = (By.XPATH, "//div[contains(@class, 'alert-danger') and contains(text(), 'Warning') and contains(text(), 'Review rating')]")

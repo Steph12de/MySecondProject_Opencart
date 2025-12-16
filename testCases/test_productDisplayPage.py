@@ -49,7 +49,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         except AssertionError as e:
             self.helper.log_failure(screenshot_name, f"{field_name} validation failed", e)
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_product_detail_displays_name_brand_and_code(self):
         self.logger.info("Test started: validating product name, brand, and code.")
         product_name = "iMac"
@@ -78,7 +78,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.logger.info("Validating product code")
         self.validate_field(expected_product_code, actual_product_code, "Product code", "product_code_error.png")
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_default_quantity_is_one_when_minimum_not_set(self):
         self.logger.info("Test started: validating that default product quantity is set to 1.")
         product_name = "iMac"
@@ -121,7 +121,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
                                     "mismatch.",
                                     e)
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_product_minimum_quantity_is_correctly_set(self):
         self.logger.info("Test started: validating that minimum product quantity is correctly set.")
         product_name = 'Apple Cinema 30"'
@@ -183,7 +183,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
             self.helper.log_failure("product_name_quantity_error.png",
                                     "Either product name or quantity in cart does not match expected values ", e)
 
-    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.skip(reason="Just skipped it right now")
     def test_user_can_submit_product_review_on_display_page(self):
         """
             Test case: User can submit a valid review for a product.
@@ -210,53 +210,79 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.validate_field(expected_success_message, actual_success_message, "Review success message",
                             "review_submission_error.png")
 
+    # @pytest.mark.skip(reason="Just skipped it right now")
+    @pytest.mark.parametrize(
+        "product_name, reviewer_name, review_text, rating_value, expected_name_error, expected_text_error, "
+        "expected_rating_error",
+        [
+            # Name zu kurz
+            ("iMac", "", "Very good product, recommended!", 4,
+             "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
-    def test_review_text_length_outside_valid_range(self):
-        self.logger.info("Test: Submit invalid review and verify warning messages")
+            # Name zu lang
+            ("iMac", "S" * 30, "Very good product, recommended!", 4,
+             "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
-        reviewer_name = "St"  # Zu kurz (<3)
-        review_text = "Good!"  # Zu kurz (<25)
+            # Review zu kurz
+            ("iMac", "Steph", "Very good", 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
+             None),
 
-        self.submit_review("iMac", reviewer_name, review_text)
+            # Review zu lang
+            (
+            "iMac", "Steph", "V" * 1001, 4, None, "Warning: Review Text must be between 25 and 1000 characters!", None),
 
-        expected_text_warning = "Warning: Review Text must be between 25 and 1000 characters!"
-        expected_name_warning = "Warning: Review Name must be between 3 and 25 characters!"
+            # Review fehlt
+            ("iMac", "Steph", "Very good product, recommended!", 0, None, None,
+             "Warning: Please select a review rating!"),
+        ]
+    )
+    def test_invalid_review_submission(self, product_name, reviewer_name, review_text, rating_value,
+                                       expected_name_error, expected_text_error, expected_rating_error):
+        """
+                Test case: User cannot submit invalid review.
+                Fields: Your name, Your review, Rating
+                Techniques: Equivalence classes, Boundary value analysis, Negative test
+        """
 
-        name_invalid = len(reviewer_name) < 3 or len(reviewer_name) > 25
-        text_invalid = len(review_text) < 25 or len(review_text) > 1000
+        self.logger.info("Test: validating invalid review submission and warning messages.")
 
-        self.logger.info(f"🔍 Input lengths — Name: {len(reviewer_name)}, Text: {len(review_text)}")
+        # Step 1: Define test data
+        self.logger.info(f"Test data, Name: '{reviewer_name}, Review_text: '{review_text}, Rating: '{rating_value}'")
 
-        if name_invalid and not text_invalid:
-            actual_name_warning = self.product_page.get_warning_review_name_message()
-            self.logger.info(f" Received name warning: '{actual_name_warning}'")
+        # Step 2: Navigate to product display page and submit the review
+        self.helper.submit_review(product_name, reviewer_name, review_text, rating_value)
 
+        # Step 3: Validate warning messages
+        if expected_name_error:
             try:
-                self.assertEqual(
-                    actual_name_warning,
-                    expected_name_warning,
-                    f"Name warning mismatch:\nExpected: '{expected_name_warning}'\nGot: '{actual_name_warning}'"
-                )
-                self.logger.info("✅ Correct warning message for reviewer name length.")
+                actual_name_warning = self.product_page.get_warning_review_name_message()
+                self.assertEqual(actual_name_warning,
+                                 expected_name_error,
+                                 f"Name warning mismatch:\nExpected: '{expected_name_error}\nGot: '{actual_name_warning}"
+                                 )
+                self.logger.info("Correct warning message for reviewer name")
             except AssertionError as e:
-                self._log_failure("review_name_warning_error.png",
-                                  "Reviewer name length validation failed.",
-                                  e)
-
-        elif text_invalid:
-            actual_text_warning = self.product_page.get_warning_review_text_message()
-            self.logger.info(f"Received text warning: '{actual_text_warning}'")
-
+                self.helper.log_failure("reviewer_name_warning.png", "reviewer name validation failed", e)
+        if expected_text_error:
             try:
+                actual_text_warning = self.product_page.get_warning_review_text_message()
                 self.assertEqual(
                     actual_text_warning,
-                    expected_text_warning,
-                    f"Text warning mismatch:\nExpected: '{expected_text_warning}'\nGot: '{actual_text_warning}'"
+                    expected_text_error,
+                    f"Text warning mismatch:\nExpected: '{expected_text_error}'\nGot: '{actual_text_warning}'"
                 )
-                self.logger.info("Correct warning message for review text length.")
+                self.logger.info("Correct warning message for review text.")
             except AssertionError as e:
-                self._log_failure("review_text_warning_error.png",
-                                  "Review text length validation failed.",
-                                  e)
-        else:
-            self.logger.warning("Reviewer name and review text length are valid — no warning expected.")
+                self.helper.log_failure("review_text_warning_error.png", "Review text validation failed.", e)
+
+        if expected_rating_error:
+            try:
+                actual_rating_warning = self.product_page.get_warning_review_rating_message()
+                self.assertEqual(
+                    actual_rating_warning,
+                    expected_rating_error,
+                    f"Rating warning mismatch:\nExpected: '{expected_rating_error}'\nGot: '{actual_rating_warning}'"
+                )
+                self.logger.info("Correct warning message for rating.")
+            except AssertionError as e:
+                self.helper.log_failure("review_rating_warning_error.png", "Review rating validation failed.", e)

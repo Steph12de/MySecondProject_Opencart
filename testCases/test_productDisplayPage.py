@@ -211,52 +211,52 @@ class Test_003_productDisplayPage(unittest.TestCase):
                             "review_submission_error.png")
 
 
-    # def test_review_text_length_outside_valid_range(self):
-    #     self.logger.info("Test: Submit invalid review and verify warning messages")
-    #
-    #     reviewer_name = "St"  # Zu kurz (<3)
-    #     review_text = "Good!"  # Zu kurz (<25)
-    #
-    #     self.submit_review("iMac", reviewer_name, review_text)
-    #
-    #     expected_text_warning = "Warning: Review Text must be between 25 and 1000 characters!"
-    #     expected_name_warning = "Warning: Review Name must be between 3 and 25 characters!"
-    #
-    #     name_invalid = len(reviewer_name) < 3 or len(reviewer_name) > 25
-    #     text_invalid = len(review_text) < 25 or len(review_text) > 1000
-    #
-    #     self.logger.info(f"🔍 Input lengths — Name: {len(reviewer_name)}, Text: {len(review_text)}")
-    #
-    #     if name_invalid and not text_invalid:
-    #         actual_name_warning = self.product_page.get_warning_review_name_message()
-    #         self.logger.info(f" Received name warning: '{actual_name_warning}'")
-    #
-    #         try:
-    #             self.assertEqual(
-    #                 actual_name_warning,
-    #                 expected_name_warning,
-    #                 f"Name warning mismatch:\nExpected: '{expected_name_warning}'\nGot: '{actual_name_warning}'"
-    #             )
-    #             self.logger.info("✅ Correct warning message for reviewer name length.")
-    #         except AssertionError as e:
-    #             self._log_failure("review_name_warning_error.png",
-    #                               "Reviewer name length validation failed.",
-    #                               e)
-    #
-    #     elif text_invalid:
-    #         actual_text_warning = self.product_page.get_warning_review_text_message()
-    #         self.logger.info(f"Received text warning: '{actual_text_warning}'")
-    #
-    #         try:
-    #             self.assertEqual(
-    #                 actual_text_warning,
-    #                 expected_text_warning,
-    #                 f"Text warning mismatch:\nExpected: '{expected_text_warning}'\nGot: '{actual_text_warning}'"
-    #             )
-    #             self.logger.info("Correct warning message for review text length.")
-    #         except AssertionError as e:
-    #             self._log_failure("review_text_warning_error.png",
-    #                               "Review text length validation failed.",
-    #                               e)
-    #     else:
-    #         self.logger.warning("Reviewer name and review text length are valid — no warning expected.")
+    def test_review_text_length_outside_valid_range(self):
+        self.logger.info("Test: Submit invalid review and verify warning messages")
+
+        reviewer_name = "St"  # Zu kurz (<3)
+        review_text = "Good!"  # Zu kurz (<25)
+
+        self.submit_review("iMac", reviewer_name, review_text)
+
+        expected_text_warning = "Warning: Review Text must be between 25 and 1000 characters!"
+        expected_name_warning = "Warning: Review Name must be between 3 and 25 characters!"
+
+        name_invalid = len(reviewer_name) < 3 or len(reviewer_name) > 25
+        text_invalid = len(review_text) < 25 or len(review_text) > 1000
+
+        self.logger.info(f"🔍 Input lengths — Name: {len(reviewer_name)}, Text: {len(review_text)}")
+
+        if name_invalid and not text_invalid:
+            actual_name_warning = self.product_page.get_warning_review_name_message()
+            self.logger.info(f" Received name warning: '{actual_name_warning}'")
+
+            try:
+                self.assertEqual(
+                    actual_name_warning,
+                    expected_name_warning,
+                    f"Name warning mismatch:\nExpected: '{expected_name_warning}'\nGot: '{actual_name_warning}'"
+                )
+                self.logger.info("✅ Correct warning message for reviewer name length.")
+            except AssertionError as e:
+                self._log_failure("review_name_warning_error.png",
+                                  "Reviewer name length validation failed.",
+                                  e)
+
+        elif text_invalid:
+            actual_text_warning = self.product_page.get_warning_review_text_message()
+            self.logger.info(f"Received text warning: '{actual_text_warning}'")
+
+            try:
+                self.assertEqual(
+                    actual_text_warning,
+                    expected_text_warning,
+                    f"Text warning mismatch:\nExpected: '{expected_text_warning}'\nGot: '{actual_text_warning}'"
+                )
+                self.logger.info("Correct warning message for review text length.")
+            except AssertionError as e:
+                self._log_failure("review_text_warning_error.png",
+                                  "Review text length validation failed.",
+                                  e)
+        else:
+            self.logger.warning("Reviewer name and review text length are valid — no warning expected.")

@@ -1,6 +1,8 @@
 import os
 import time
 import unittest
+from ddt import ddt, data, unpack
+
 
 import pytest
 
@@ -17,7 +19,7 @@ from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
 from utilities.helpers.helpers import Helpers
 
-
+@ddt
 class Test_003_productDisplayPage(unittest.TestCase):
     logger = LogGen.loggen()
 
@@ -211,31 +213,30 @@ class Test_003_productDisplayPage(unittest.TestCase):
                             "review_submission_error.png")
 
     # @pytest.mark.skip(reason="Just skipped it right now")
-    @pytest.mark.parametrize(
-        "product_name, reviewer_name, review_text, rating_value, expected_name_error, expected_text_error, "
-        "expected_rating_error",
-        [
-            # Name zu kurz
-            ("iMac", "", "Very good product, recommended!", 4,
-             "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
-            # Name zu lang
-            ("iMac", "S" * 30, "Very good product, recommended!", 4,
-             "Warning: Review Name must be between 3 and 25 characters!", None, None),
+    @data(
+        # Name zu kurz
+        ("iMac", "", "Very good product, recommended!", 4,
+         "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
-            # Review zu kurz
-            ("iMac", "Steph", "Very good", 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
-             None),
+        # Name zu lang
+        ("iMac", "S" * 30, "Very good product, recommended!", 4,
+         "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
-            # Review zu lang
-            (
-            "iMac", "Steph", "V" * 1001, 4, None, "Warning: Review Text must be between 25 and 1000 characters!", None),
+        # Review zu kurz
+        ("iMac", "Steph", "Very good", 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
+         None),
 
-            # Review fehlt
-            ("iMac", "Steph", "Very good product, recommended!", 0, None, None,
-             "Warning: Please select a review rating!"),
-        ]
+        # Review zu lang
+        (
+                "iMac", "Steph", "V" * 1001, 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
+                None),
+
+        # Review fehlt
+        ("iMac", "Steph", "Very good product, recommended!", 0, None, None,
+         "Warning: Please select a review rating!"),
     )
+    @unpack
     def test_invalid_review_submission(self, product_name, reviewer_name, review_text, rating_value,
                                        expected_name_error, expected_text_error, expected_rating_error):
         """

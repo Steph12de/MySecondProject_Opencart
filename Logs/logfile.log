@@ -9850,3 +9850,136 @@ Details: Success message does not start with expected text
 2025-12-11 12:09:39,313 :INFO :Writing review...
 2025-12-11 12:09:40,948 :INFO :Received success message: 'Thank you for your review. It has been submitted to the webmaster for approval.'
 2025-12-11 12:09:40,948 :INFO :Review success message validation passed.
+2025-12-17 10:56:32,628 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 10:56:32,632 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 10:56:32,632 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 10:56:32,633 :INFO :Initiating search for product: 'iMac'
+2025-12-17 10:56:34,371 :INFO :Search triggered for 'iMac'
+2025-12-17 10:56:34,371 :INFO :Opens the product detail page based on product name
+2025-12-17 10:56:34,371 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 10:56:35,508 :INFO :Writing review...
+2025-12-17 10:56:36,996 :INFO :Correct warning message for reviewer name
+2025-12-17 10:56:41,569 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 10:56:41,569 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 10:56:41,570 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 10:56:41,570 :INFO :Initiating search for product: 'iMac'
+2025-12-17 10:56:42,498 :INFO :Search triggered for 'iMac'
+2025-12-17 10:56:42,499 :INFO :Opens the product detail page based on product name
+2025-12-17 10:56:42,499 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 10:56:43,299 :INFO :Writing review...
+2025-12-17 10:56:45,231 :INFO :Correct warning message for reviewer name
+2025-12-17 10:56:49,039 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 10:56:49,039 :INFO :Test data, Name: 'Steph, Review_text: 'Very good, Rating: '4'
+2025-12-17 10:56:49,039 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 10:56:49,039 :INFO :Initiating search for product: 'iMac'
+2025-12-17 10:56:50,160 :INFO :Search triggered for 'iMac'
+2025-12-17 10:56:50,160 :INFO :Opens the product detail page based on product name
+2025-12-17 10:56:50,160 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 10:56:51,847 :INFO :Writing review...
+2025-12-17 10:56:53,366 :INFO :Correct warning message for review text.
+2025-12-17 10:56:59,204 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 10:56:59,204 :INFO :Test data, Name: 'Steph, Review_text: 'VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV, Rating: '4'
+2025-12-17 10:56:59,204 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 10:56:59,206 :INFO :Initiating search for product: 'iMac'
+2025-12-17 10:57:00,099 :INFO :Search triggered for 'iMac'
+2025-12-17 10:57:00,100 :INFO :Opens the product detail page based on product name
+2025-12-17 10:57:00,100 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 10:57:01,618 :INFO :Writing review...
+2025-12-17 10:57:07,923 :INFO :Correct warning message for review text.
+2025-12-17 10:57:13,658 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 10:57:13,659 :INFO :Test data, Name: 'Steph, Review_text: 'Very good product, recommended!, Rating: '0'
+2025-12-17 10:57:13,660 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 10:57:13,660 :INFO :Initiating search for product: 'iMac'
+2025-12-17 10:57:14,932 :INFO :Search triggered for 'iMac'
+2025-12-17 10:57:14,932 :INFO :Opens the product detail page based on product name
+2025-12-17 10:57:14,933 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 10:57:15,838 :INFO :Writing review...
+2025-12-17 11:00:59,358 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:00:59,359 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:00:59,359 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:00:59,359 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:01:00,326 :INFO :Search triggered for 'iMac'
+2025-12-17 11:01:00,326 :INFO :Opens the product detail page based on product name
+2025-12-17 11:01:00,326 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:01:01,210 :INFO :Writing review...
+2025-12-17 11:01:02,794 :INFO :Correct warning message for reviewer name
+2025-12-17 11:01:08,403 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:01:08,403 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:01:08,403 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:01:08,403 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:01:09,225 :INFO :Search triggered for 'iMac'
+2025-12-17 11:01:09,225 :INFO :Opens the product detail page based on product name
+2025-12-17 11:01:09,225 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:01:09,916 :INFO :Writing review...
+2025-12-17 11:01:11,583 :INFO :Correct warning message for reviewer name
+2025-12-17 11:01:17,512 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:01:17,512 :INFO :Test data, Name: 'Steph, Review_text: 'Very good, Rating: '4'
+2025-12-17 11:01:17,513 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:01:17,513 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:01:18,473 :INFO :Search triggered for 'iMac'
+2025-12-17 11:01:18,473 :INFO :Opens the product detail page based on product name
+2025-12-17 11:01:18,473 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:01:19,177 :INFO :Writing review...
+2025-12-17 11:01:20,748 :INFO :Correct warning message for review text.
+2025-12-17 11:01:24,874 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:01:24,875 :INFO :Test data, Name: 'Steph, Review_text: 'VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV, Rating: '4'
+2025-12-17 11:01:24,876 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:01:24,877 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:01:25,775 :INFO :Search triggered for 'iMac'
+2025-12-17 11:01:25,777 :INFO :Opens the product detail page based on product name
+2025-12-17 11:01:25,777 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:01:26,799 :INFO :Writing review...
+2025-12-17 11:01:32,825 :INFO :Correct warning message for review text.
+2025-12-17 11:01:37,085 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:01:37,085 :INFO :Test data, Name: 'Steph, Review_text: 'Very good product, recommended!, Rating: '0'
+2025-12-17 11:01:37,086 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:01:37,086 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:01:38,184 :INFO :Search triggered for 'iMac'
+2025-12-17 11:01:38,184 :INFO :Opens the product detail page based on product name
+2025-12-17 11:01:38,184 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:01:39,098 :INFO :Writing review...
+2025-12-17 11:03:22,880 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:03:22,880 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:03:22,887 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:03:22,887 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:03:24,149 :INFO :Search triggered for 'iMac'
+2025-12-17 11:03:24,149 :INFO :Opens the product detail page based on product name
+2025-12-17 11:03:24,149 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:03:24,884 :INFO :Writing review...
+2025-12-17 11:03:26,931 :INFO :Correct warning message for reviewer name
+2025-12-17 11:03:33,296 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:03:33,296 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:03:33,296 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:03:33,296 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:03:34,296 :INFO :Search triggered for 'iMac'
+2025-12-17 11:03:34,296 :INFO :Opens the product detail page based on product name
+2025-12-17 11:03:34,297 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:03:35,683 :INFO :Writing review...
+2025-12-17 11:03:37,263 :INFO :Correct warning message for reviewer name
+2025-12-17 11:03:41,182 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:03:41,182 :INFO :Test data, Name: 'Steph, Review_text: 'Very good, Rating: '4'
+2025-12-17 11:03:41,182 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:03:41,182 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:03:42,004 :INFO :Search triggered for 'iMac'
+2025-12-17 11:03:42,004 :INFO :Opens the product detail page based on product name
+2025-12-17 11:03:42,005 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:03:42,636 :INFO :Writing review...
+2025-12-17 11:03:44,359 :INFO :Correct warning message for review text.
+2025-12-17 11:03:50,418 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:03:50,418 :INFO :Test data, Name: 'Steph, Review_text: 'VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV, Rating: '4'
+2025-12-17 11:03:50,418 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:03:50,419 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:03:51,692 :INFO :Search triggered for 'iMac'
+2025-12-17 11:03:51,692 :INFO :Opens the product detail page based on product name
+2025-12-17 11:03:51,692 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:03:53,552 :INFO :Writing review...
+2025-12-17 11:03:59,654 :INFO :Correct warning message for review text.
+2025-12-17 11:04:04,150 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:04:04,150 :INFO :Test data, Name: 'Steph, Review_text: 'Very good product, recommended!, Rating: '0'
+2025-12-17 11:04:04,150 :INFO :Test started: validating product review submission for 'iMac'
+2025-12-17 11:04:04,150 :INFO :Initiating search for product: 'iMac'
+2025-12-17 11:04:04,996 :INFO :Search triggered for 'iMac'
+2025-12-17 11:04:04,996 :INFO :Opens the product detail page based on product name
+2025-12-17 11:04:04,996 :INFO :Navigating to product detail page for 'iMac'
+2025-12-17 11:04:05,905 :INFO :Writing review...
+2025-12-17 11:04:07,347 :INFO :Correct warning message for rating.

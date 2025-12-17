@@ -9983,3 +9983,72 @@ Details: Success message does not start with expected text
 2025-12-17 11:04:04,996 :INFO :Navigating to product detail page for 'iMac'
 2025-12-17 11:04:05,905 :INFO :Writing review...
 2025-12-17 11:04:07,347 :INFO :Correct warning message for rating.
+2025-12-17 11:51:27,862 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:51:27,863 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:51:27,864 :INFO :Test started: validating product review submission for 'Apple Cinema 30'
+2025-12-17 11:51:27,864 :INFO :Initiating search for product: 'Apple Cinema 30'
+2025-12-17 11:51:30,048 :INFO :Search triggered for 'Apple Cinema 30'
+2025-12-17 11:51:30,048 :INFO :Opens the product detail page based on product name
+2025-12-17 11:51:30,048 :WARNING :No click action defined for product: 'Apple Cinema 30'
+2025-12-17 11:51:30,049 :INFO :Writing review...
+2025-12-17 11:51:46,962 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:51:46,962 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:51:46,962 :INFO :Test started: validating product review submission for 'Apple Cinema 30'
+2025-12-17 11:51:46,962 :INFO :Initiating search for product: 'Apple Cinema 30'
+2025-12-17 11:51:47,931 :INFO :Search triggered for 'Apple Cinema 30'
+2025-12-17 11:51:47,931 :INFO :Opens the product detail page based on product name
+2025-12-17 11:51:47,932 :WARNING :No click action defined for product: 'Apple Cinema 30'
+2025-12-17 11:51:47,933 :INFO :Writing review...
+2025-12-17 11:51:54,516 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:51:54,516 :INFO :Test data, Name: 'Steph, Review_text: 'Very good, Rating: '4'
+2025-12-17 11:51:54,516 :INFO :Test started: validating product review submission for 'Apple Cinema 30'
+2025-12-17 11:51:54,516 :INFO :Initiating search for product: 'Apple Cinema 30'
+2025-12-17 11:51:55,418 :INFO :Search triggered for 'Apple Cinema 30'
+2025-12-17 11:51:55,418 :INFO :Opens the product detail page based on product name
+2025-12-17 11:51:55,418 :WARNING :No click action defined for product: 'Apple Cinema 30'
+2025-12-17 11:51:55,418 :INFO :Writing review...
+2025-12-17 11:52:55,338 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:52:55,339 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:52:55,339 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2025-12-17 11:52:55,339 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-17 11:52:56,855 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-17 11:52:56,855 :INFO :Opens the product detail page based on product name
+2025-12-17 11:52:56,855 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-17 11:52:58,970 :INFO :Writing review...
+2025-12-17 11:53:00,807 :INFO :Correct warning message for reviewer name
+2025-12-17 11:53:04,384 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:53:04,385 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2025-12-17 11:53:04,385 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2025-12-17 11:53:04,385 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-17 11:53:05,567 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-17 11:53:05,568 :INFO :Opens the product detail page based on product name
+2025-12-17 11:53:05,568 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-17 11:53:06,375 :INFO :Writing review...
+2025-12-17 11:53:08,149 :INFO :Correct warning message for reviewer name
+2025-12-17 11:53:15,118 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:53:15,118 :INFO :Test data, Name: 'Steph, Review_text: 'Very good, Rating: '4'
+2025-12-17 11:53:15,118 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2025-12-17 11:53:15,118 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-17 11:53:16,504 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-17 11:53:16,505 :INFO :Opens the product detail page based on product name
+2025-12-17 11:53:16,505 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-17 11:53:17,828 :INFO :Writing review...
+2025-12-17 11:53:19,403 :INFO :Correct warning message for review text.
+2025-12-17 11:53:23,601 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:53:23,601 :INFO :Test data, Name: 'Steph, Review_text: 'VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV, Rating: '4'
+2025-12-17 11:53:23,606 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2025-12-17 11:53:23,606 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-17 11:53:24,646 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-17 11:53:24,646 :INFO :Opens the product detail page based on product name
+2025-12-17 11:53:24,646 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-17 11:53:25,693 :INFO :Writing review...
+2025-12-17 11:53:32,506 :INFO :Correct warning message for review text.
+2025-12-17 11:53:36,501 :INFO :Test: validating invalid review submission and warning messages.
+2025-12-17 11:53:36,503 :INFO :Test data, Name: 'Steph, Review_text: 'Very good product, recommended!, Rating: '0'
+2025-12-17 11:53:36,504 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2025-12-17 11:53:36,504 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2025-12-17 11:53:38,326 :INFO :Search triggered for 'Apple Cinema 30"'
+2025-12-17 11:53:38,326 :INFO :Opens the product detail page based on product name
+2025-12-17 11:53:38,326 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2025-12-17 11:53:40,109 :INFO :Writing review...
+2025-12-17 11:53:41,762 :INFO :Correct warning message for rating.

@@ -216,28 +216,26 @@ class Test_003_productDisplayPage(unittest.TestCase):
 
     @data(
         # Name zu kurz
-        ("iMac", "", "Very good product, recommended!", 4,
+        ("", "Very good product, recommended!", 4,
          "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
         # Name zu lang
-        ("iMac", "S" * 30, "Very good product, recommended!", 4,
+        ("S" * 30, "Very good product, recommended!", 4,
          "Warning: Review Name must be between 3 and 25 characters!", None, None),
 
         # Review zu kurz
-        ("iMac", "Steph", "Very good", 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
+        ("Steph", "Very good", 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
          None),
 
         # Review zu lang
-        (
-                "iMac", "Steph", "V" * 1001, 4, None, "Warning: Review Text must be between 25 and 1000 characters!",
-                None),
+        ("Steph", "V" * 1001, 4, None, "Warning: Review Text must be between 25 and 1000 characters!", None),
 
         # Review fehlt
-        ("iMac", "Steph", "Very good product, recommended!", 0, None, None,
+        ("Steph", "Very good product, recommended!", 0, None, None,
          "Warning: Please select a review rating!"),
     )
     @unpack
-    def test_invalid_review_submission(self, product_name, reviewer_name, review_text, rating_value,
+    def test_invalid_review_submission(self, reviewer_name, review_text, rating_value,
                                        expected_name_error, expected_text_error, expected_rating_error):
         """
                 Test case: User cannot submit invalid review.
@@ -251,6 +249,7 @@ class Test_003_productDisplayPage(unittest.TestCase):
         self.logger.info(f"Test data, Name: '{reviewer_name}, Review_text: '{review_text}, Rating: '{rating_value}'")
 
         # Step 2: Navigate to product display page and submit the review
+        product_name = 'Apple Cinema 30"'
         self.helper.submit_review(product_name, reviewer_name, review_text, rating_value)
 
         # Step 3: Validate warning messages

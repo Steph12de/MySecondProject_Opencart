@@ -1,8 +1,11 @@
 import os
 from unittest import TestCase
+from utilities.helpers.database_helpers import DatabaseHelpers
 
 
 class Helpers:
+    database_helpers = DatabaseHelpers
+
     def __init__(self, driver, logger, home_page, login_page, my_account, wish_list, search_page, product_page,
                  cart_page, logout_page):
         self.driver = driver
@@ -62,6 +65,13 @@ class Helpers:
         self.logger.info(f"Actual page title after login: '{actual_title}'")
 
         return actual_title
+
+    def navigate_to_register_page(self):
+        self.logger.info("Starting test: Register via 'My Account'")
+
+        self.home_page.bring_me_to_register_page()
+        self.logger.info("Navigated to the registration page.")
+
 
     def verify_login_successful(self, actual_title, expected_title, method="standard"):
         assert actual_title == expected_title, (

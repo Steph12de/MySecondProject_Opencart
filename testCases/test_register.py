@@ -9,8 +9,15 @@ import pytest
 from pageObjects.accountCreatedPage import AccountCreatedPage
 from pageObjects.homePage import HomePage
 from pageObjects.loginPage import LoginPage
+from pageObjects.logoutPage import LogoutPage
+from pageObjects.myAccountPage import MyAccountPage
+from pageObjects.productInfoPage import ProductInfoPage
 from pageObjects.registerPage import RegisterPage
+from pageObjects.searchPage import SearchPage
+from pageObjects.shoppingCartPage import ShoppingCartPage
+from pageObjects.wishListPage import WishListPage
 from utilities.custom_logger import LogGen
+from utilities.helpers.helpers import Helpers
 from utilities.utils import Utils
 from utilities.helpers.database_helpers import DatabaseHelpers
 
@@ -26,89 +33,73 @@ class Test_001_Register(unittest.TestCase):
         self.register_page = RegisterPage(self.driver)
         self.created_page = AccountCreatedPage(self.driver)
         self.random_mail = Utils.random_email()
-        database_helpers = DatabaseHelpers()
+        self.database_helpers = DatabaseHelpers()
+        self.myAccount_page = MyAccountPage(self.driver)
+        self.wishList_page = WishListPage(self.driver)
+        self.search_page = SearchPage(self.driver)
+        self.product_page = ProductInfoPage(self.driver)
+        self.logout_page = LogoutPage(self.driver)
+        self.cart_page = ShoppingCartPage(self.driver)
+        self.helper = Helpers(self.driver, self.logger, self.home_page, self.login_page, self.myAccount_page,
+                              self.wishList_page,
+                              self.search_page, self.product_page, self.cart_page, self.logout_page)
 
-    # @classmethod
-    # def setup_class(cls):
-    #     try:
-    #         cls.logger.info("Establishing database connection...")
-    #         cls.mydb = (mysql.connector.connect
-    #                     (host="localhost",
-    #                      port="3306",
-    #                      user="root",
-    #                      password="MyPassword1234",
-    #                      database="mydb")
-    #                     )
-    #         cls.cursor = cls.mydb.cursor(buffered=True)
-    #         cls.logger.info("Database connection established successfully.")
-    #     except mysql.connector.Error as e:
-    #         cls.logger.error(f"Database connection failed: {e}")
-    #         raise
-    #
-    # @classmethod
-    # def teardown_class(cls):
-    #     if hasattr(cls, 'cursor') and hasattr(cls, 'mydb'):
-    #         cls.cursor.close()
-    #         cls.mydb.close()
-    #         cls.logger.info("Database connection closed.")
+    def validate_title(self, current_title, expected_title, field_name, screenshot_name):
+        try:
+            self.assertEqual(
+                current_title,
+                expected_title,
+                f"Expected title '{expected_title}', but got '{current_title}'."
+            )
+            self.logger.info(f"{field_name} validated successfully.")
+        except AssertionError as e:
+            self.helper.log_failure(screenshot_name,
+                                    f"{field_name} validation failed.",
+                                    f"Error details: {e}")
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_my_account(self):
-        self.logger.info("Starting test: Register via 'My Account'")
+        # Step 1: Establish database connection
+        self.logger.info("Test started: Connecting to the database...")
+        self.database_helpers.connect_to_database()
 
+        # Step 2: Navigate to registration page
+        self.logger.info("Navigating to registration page via 'My Account'")
         self.home_page.bring_me_to_register_page()
-        self.logger.info("Navigated to the registration page.")
 
-        self.logger.info("Fetching data from 'Registration' table.")
-        self.cursor.execute("SELECT * FROM Registration")
-        result = self.cursor.fetchone()
+        # Step 3: Fetch registration data from DB
+        self.logger.info("Fetching registration data from database...")
+        result = self.database_helpers.read_from_database("SELECT * FROM Registration")
 
-        if result:
-            self.logger.info(f"Retrieved registration data: {result}")
-            self.register_page.register_with_newsletter(result[1], result[2], self.random_mail, result[4],
-                                                        result[5], result[6], newsletter=False
-                                                        )
-            self.logger.info("Registration process completed.")
+        if not result:
+            self.logger.warning("No registration data found in the database. Test aborted.")
 
-            current_title = self.driver.title
-            expected_title = "Your Account Has Been Created!"
-            try:
-                assert current_title == expected_title, (
-                    f"Title mismatch: Expected '{expected_title}', but got '{current_title}'."
-                )
-                self.logger.info("Registration page test via 'My Account' passed.")
-            except AssertionError as e:
-                self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "Registration_page_error.png"))
-                self.logger.error(
-                    "Registration via 'My Account' failed\n"
-                    f"Error details: {e} "
-                )
-                raise
+        self.logger.info(f"Registration data retrieved: {result}")
 
-            # Proceed to the account page
-            self.created_page.click_on_continue_button()
-            self.logger.info("Redirecting to 'My Account' page.")
+        # Step 4: Perform registration
+        self.logger.info("Filling out registration form")
+        self.register_page.register_with_newsletter(result[1], result[2], self.random_mail,
+                                                    result[4], result[5], result[6], False)
+        self.logger.info("Registration form submitted successfully.")
 
-            # Verify account page title
-            current_title = self.driver.title
-            expected_title = "My Account"
-            try:
-                assert current_title == expected_title, (
-                    f"Title mismatch: Expected '{expected_title}', but got '{current_title}'."
-                )
-                self.logger.info("My Account page test passed.")
-            except AssertionError as e:
-                self.driver.save_screenshot(os.path.join(os.getcwd(), "Screenshots", "My_Account_page_error.png"))
-                self.logger.error(
-                    "Account verification page failed\n"
-                    f"Error details: {e} "
-                )
+        # Step 5: Validate registration success page
+        self.logger.info("Validating registration success page")
+        self.validate_title(self.driver.title,
+                            "Your Account Has Been Created!",
+                            "Registration page",
+                            "Registration_page_error.png")
 
-                raise
-        else:
-            self.logger.warning("No registration data found in the database.")
+        # Step 6: Continue to account page
+        self.logger.info("STEP 6: Navigating to 'My Account' page...")
+        self.created_page.click_on_continue_button()
 
-        self.driver.close()
+        # Step 7: Validate account page
+        self.logger.info("Validating 'My Account' page")
+        self.validate_title(self.driver.title,
+                            "My Account",
+                            "Registration page",
+                            "My_Account_page_error.png")
+
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     # def test_registration_via_new_customer(self):

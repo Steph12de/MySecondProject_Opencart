@@ -23,7 +23,18 @@ class DatabaseHelpers:
             self.cursor = self.connection.cursor(buffered=True)
             self.logger.info("Database connection established")
         except mysql.connector.Error as e:
-            self.logger.error("Database connection failed : {e} ")
+            self.logger.error(f"Database connection failed : {e} ")
+            raise
+
+    def read_from_database(self, query):
+        try:
+            self.cursor.execute(query)
+            result = self.cursor.fetchone()
+            self.logger.info(f"Query '{query}' executed successfully.")
+            print(result)
+            return result
+        except mysql.connector.Error as e:
+            self.logger.error(f"Query failed: {e}")
             raise
 
     def close_database_connection(self):

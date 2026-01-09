@@ -26,12 +26,13 @@ def pytest_addoption(parser):
 
 @pytest.fixture()
 def browser(request):
-    print(request)
     return request.config.getoption("--browser")
+
 
 def pytest_html_report_title(report):
     report.title = "OpenCart Reports"
+
+
 def pytest_configure(config):
     config.stash[metadata_key]['Project Name'] = 'OpenCart Project'
     config.stash[metadata_key]['Tester'] = 'Stephanie'
-

@@ -10304,3 +10304,685 @@ Details: Error details: 'Your Account Has Been Created!' != 'My Account'
 2026-01-09 13:42:30,220 :INFO :Validating 'My Account' page
 2026-01-09 13:42:30,230 :INFO :Registration page validated successfully.
 2026-01-09 13:42:30,230 :INFO :Registration page validated successfully.
+2026-01-12 09:27:42,436 :INFO :Test started: Connecting to the database...
+2026-01-12 09:27:42,436 :INFO :Test started: Connecting to the database...
+2026-01-12 09:27:42,439 :INFO :Establishing database connection...
+2026-01-12 09:27:42,439 :INFO :Establishing database connection...
+2026-01-12 09:27:42,721 :INFO :Database connection established
+2026-01-12 09:27:42,721 :INFO :Database connection established
+2026-01-12 09:27:42,721 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 09:27:42,721 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 09:27:44,029 :INFO :Fetching registration data from database...
+2026-01-12 09:27:44,029 :INFO :Fetching registration data from database...
+2026-01-12 09:27:44,085 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 09:27:44,085 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 09:27:44,087 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 09:27:44,087 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 09:27:44,087 :INFO :Filling out registration form
+2026-01-12 09:27:44,087 :INFO :Filling out registration form
+2026-01-12 09:27:46,801 :INFO :Registration form submitted successfully.
+2026-01-12 09:27:46,801 :INFO :Registration form submitted successfully.
+2026-01-12 09:27:46,802 :INFO :Validating registration success page
+2026-01-12 09:27:46,802 :INFO :Validating registration success page
+2026-01-12 09:27:46,814 :INFO :Registration page validated successfully.
+2026-01-12 09:27:46,814 :INFO :Registration page validated successfully.
+2026-01-12 09:27:46,814 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 09:27:46,814 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 09:27:47,204 :INFO :Validating 'My Account' page
+2026-01-12 09:27:47,204 :INFO :Validating 'My Account' page
+2026-01-12 09:27:47,217 :INFO :Registration page validated successfully.
+2026-01-12 09:27:47,217 :INFO :Registration page validated successfully.
+2026-01-12 09:27:57,840 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 09:27:57,840 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 09:27:58,532 :INFO :Navigated to the login page.
+2026-01-12 09:27:58,532 :INFO :Navigated to the login page.
+2026-01-12 09:27:59,210 :INFO :Proceeding with new customer registration.
+2026-01-12 09:27:59,210 :INFO :Proceeding with new customer registration.
+2026-01-12 09:27:59,211 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 09:27:59,211 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 09:40:44,266 :INFO :Test: validating invalid review submission and warning messages.
+2026-01-12 09:40:44,266 :INFO :Test: validating invalid review submission and warning messages.
+2026-01-12 09:40:44,267 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2026-01-12 09:40:44,267 :INFO :Test data, Name: ', Review_text: 'Very good product, recommended!, Rating: '4'
+2026-01-12 09:40:44,268 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2026-01-12 09:40:44,268 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2026-01-12 09:40:44,268 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2026-01-12 09:40:44,268 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2026-01-12 09:40:45,107 :INFO :Search triggered for 'Apple Cinema 30"'
+2026-01-12 09:40:45,107 :INFO :Search triggered for 'Apple Cinema 30"'
+2026-01-12 09:40:45,107 :INFO :Opens the product detail page based on product name
+2026-01-12 09:40:45,107 :INFO :Opens the product detail page based on product name
+2026-01-12 09:40:45,107 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2026-01-12 09:40:45,107 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2026-01-12 09:40:45,956 :INFO :Writing review...
+2026-01-12 09:40:45,956 :INFO :Writing review...
+2026-01-12 09:40:47,496 :INFO :Correct warning message for reviewer name
+2026-01-12 09:40:47,496 :INFO :Correct warning message for reviewer name
+2026-01-12 09:40:51,607 :INFO :Test: validating invalid review submission and warning messages.
+2026-01-12 09:40:51,607 :INFO :Test: validating invalid review submission and warning messages.
+2026-01-12 09:40:51,618 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2026-01-12 09:40:51,618 :INFO :Test data, Name: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS, Review_text: 'Very good product, recommended!, Rating: '4'
+2026-01-12 09:40:51,620 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2026-01-12 09:40:51,620 :INFO :Test started: validating product review submission for 'Apple Cinema 30"'
+2026-01-12 09:40:51,622 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2026-01-12 09:40:51,622 :INFO :Initiating search for product: 'Apple Cinema 30"'
+2026-01-12 09:40:52,755 :INFO :Search triggered for 'Apple Cinema 30"'
+2026-01-12 09:40:52,755 :INFO :Search triggered for 'Apple Cinema 30"'
+2026-01-12 09:40:52,755 :INFO :Opens the product detail page based on product name
+2026-01-12 09:40:52,755 :INFO :Opens the product detail page based on product name
+2026-01-12 09:40:52,755 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2026-01-12 09:40:52,755 :INFO :Navigating to product detail page for 'Apple Cinema 30"'
+2026-01-12 09:40:53,718 :INFO :Writing review...
+2026-01-12 09:40:53,718 :INFO :Writing review...
+2026-01-12 09:41:26,655 :INFO :Test started: Connecting to the database...
+2026-01-12 09:41:26,655 :INFO :Test started: Connecting to the database...
+2026-01-12 09:41:26,656 :INFO :Establishing database connection...
+2026-01-12 09:41:26,656 :INFO :Establishing database connection...
+2026-01-12 09:41:26,895 :INFO :Database connection established
+2026-01-12 09:41:26,895 :INFO :Database connection established
+2026-01-12 09:41:26,896 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 09:41:26,896 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 09:41:27,919 :INFO :Fetching registration data from database...
+2026-01-12 09:41:27,919 :INFO :Fetching registration data from database...
+2026-01-12 09:41:33,227 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 09:41:33,227 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 09:41:33,906 :INFO :Navigated to the login page.
+2026-01-12 09:41:33,906 :INFO :Navigated to the login page.
+2026-01-12 09:41:34,535 :INFO :Proceeding with new customer registration.
+2026-01-12 09:41:34,535 :INFO :Proceeding with new customer registration.
+2026-01-12 09:41:34,535 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 09:41:34,535 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 09:42:25,760 :INFO :Test started: Connecting to the database...
+2026-01-12 09:42:25,760 :INFO :Test started: Connecting to the database...
+2026-01-12 09:42:25,761 :INFO :Establishing database connection...
+2026-01-12 09:42:25,761 :INFO :Establishing database connection...
+2026-01-12 09:42:25,802 :INFO :Database connection established
+2026-01-12 09:42:25,802 :INFO :Database connection established
+2026-01-12 09:42:25,803 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 09:42:25,803 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 09:42:26,659 :INFO :Fetching registration data from database...
+2026-01-12 09:42:26,659 :INFO :Fetching registration data from database...
+2026-01-12 09:42:26,665 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 09:42:26,665 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 09:42:26,667 :INFO :Registration data retrieved: [(1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller'), (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen'), (3, '', '', '', '', '', ''), (4, 'Sven', 'Frieß', 'svenfriess@gmail.com', '333333333', 'sven', 'sventest'), (5, 'Alexa', 'Friedhof', 'alexafriedhof@gmail.com', '444444444', 'alexa', 'alexa'), (6, 'Stefanie', 'Brot', 'username@gmail.com', '444444444', 'Stefanie', 'Stefanie'), (7, 'Max', 'Hunger', 'maxhunger@gmail.com', '&%12_?&/+ ', 'maxi', 'maxi')]
+2026-01-12 09:42:26,667 :INFO :Registration data retrieved: [(1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller'), (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen'), (3, '', '', '', '', '', ''), (4, 'Sven', 'Frieß', 'svenfriess@gmail.com', '333333333', 'sven', 'sventest'), (5, 'Alexa', 'Friedhof', 'alexafriedhof@gmail.com', '444444444', 'alexa', 'alexa'), (6, 'Stefanie', 'Brot', 'username@gmail.com', '444444444', 'Stefanie', 'Stefanie'), (7, 'Max', 'Hunger', 'maxhunger@gmail.com', '&%12_?&/+ ', 'maxi', 'maxi')]
+2026-01-12 09:42:26,668 :INFO :Filling out registration form
+2026-01-12 09:42:26,668 :INFO :Filling out registration form
+2026-01-12 09:42:30,958 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 09:42:30,958 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 09:42:31,670 :INFO :Navigated to the login page.
+2026-01-12 09:42:31,670 :INFO :Navigated to the login page.
+2026-01-12 09:42:32,578 :INFO :Proceeding with new customer registration.
+2026-01-12 09:42:32,578 :INFO :Proceeding with new customer registration.
+2026-01-12 09:42:32,578 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 09:42:32,578 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:09:29,372 :INFO :Test started: Connecting to the database...
+2026-01-12 10:09:29,372 :INFO :Test started: Connecting to the database...
+2026-01-12 10:09:29,376 :INFO :Establishing database connection...
+2026-01-12 10:09:29,376 :INFO :Establishing database connection...
+2026-01-12 10:09:29,758 :INFO :Database connection established
+2026-01-12 10:09:29,758 :INFO :Database connection established
+2026-01-12 10:09:29,759 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 10:09:29,759 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 10:09:30,998 :INFO :Fetching registration data from database...
+2026-01-12 10:09:30,998 :INFO :Fetching registration data from database...
+2026-01-12 10:09:31,070 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 10:09:31,070 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 10:09:31,076 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 10:09:31,076 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 10:09:31,077 :INFO :Filling out registration form
+2026-01-12 10:09:31,077 :INFO :Filling out registration form
+2026-01-12 10:09:34,526 :INFO :Registration form submitted successfully.
+2026-01-12 10:09:34,526 :INFO :Registration form submitted successfully.
+2026-01-12 10:09:34,526 :INFO :Validating registration success page
+2026-01-12 10:09:34,526 :INFO :Validating registration success page
+2026-01-12 10:09:34,542 :INFO :Registration page validated successfully.
+2026-01-12 10:09:34,542 :INFO :Registration page validated successfully.
+2026-01-12 10:09:34,543 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 10:09:34,543 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 10:09:35,015 :INFO :Validating 'My Account' page
+2026-01-12 10:09:35,015 :INFO :Validating 'My Account' page
+2026-01-12 10:09:35,025 :INFO :Registration page validated successfully.
+2026-01-12 10:09:35,025 :INFO :Registration page validated successfully.
+2026-01-12 10:09:38,857 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:09:38,857 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:09:40,201 :INFO :Navigated to the login page.
+2026-01-12 10:09:40,201 :INFO :Navigated to the login page.
+2026-01-12 10:09:40,912 :INFO :Proceeding with new customer registration.
+2026-01-12 10:09:40,912 :INFO :Proceeding with new customer registration.
+2026-01-12 10:09:40,912 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:09:40,912 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:22:35,211 :INFO :Test started: Connecting to the database...
+2026-01-12 10:22:35,211 :INFO :Test started: Connecting to the database...
+2026-01-12 10:22:35,218 :INFO :Establishing database connection...
+2026-01-12 10:22:35,218 :INFO :Establishing database connection...
+2026-01-12 10:22:36,100 :INFO :Database connection established
+2026-01-12 10:22:36,100 :INFO :Database connection established
+2026-01-12 10:22:36,102 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 10:22:36,102 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 10:22:37,158 :INFO :Fetching registration data from database...
+2026-01-12 10:22:37,158 :INFO :Fetching registration data from database...
+2026-01-12 10:22:37,214 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 10:22:37,214 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 10:22:37,219 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 10:22:37,219 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 10:22:37,220 :INFO :Filling out registration form
+2026-01-12 10:22:37,220 :INFO :Filling out registration form
+2026-01-12 10:22:39,699 :INFO :Registration form submitted successfully.
+2026-01-12 10:22:39,699 :INFO :Registration form submitted successfully.
+2026-01-12 10:22:39,699 :INFO :Validating registration success page
+2026-01-12 10:22:39,699 :INFO :Validating registration success page
+2026-01-12 10:22:39,710 :INFO :Registration page validated successfully.
+2026-01-12 10:22:39,710 :INFO :Registration page validated successfully.
+2026-01-12 10:22:39,711 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 10:22:39,711 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 10:22:40,110 :INFO :Validating 'My Account' page
+2026-01-12 10:22:40,110 :INFO :Validating 'My Account' page
+2026-01-12 10:22:40,121 :INFO :Registration page validated successfully.
+2026-01-12 10:22:40,121 :INFO :Registration page validated successfully.
+2026-01-12 10:22:40,122 :INFO :Database connection closed.
+2026-01-12 10:22:40,122 :INFO :Database connection closed.
+2026-01-12 10:22:45,782 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:22:45,782 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:22:46,418 :INFO :Navigated to the login page.
+2026-01-12 10:22:46,418 :INFO :Navigated to the login page.
+2026-01-12 10:22:47,041 :INFO :Proceeding with new customer registration.
+2026-01-12 10:22:47,041 :INFO :Proceeding with new customer registration.
+2026-01-12 10:22:47,042 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:22:47,042 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:23:11,876 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:23:11,876 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:23:12,904 :INFO :Navigated to the login page.
+2026-01-12 10:23:12,904 :INFO :Navigated to the login page.
+2026-01-12 10:23:13,793 :INFO :Proceeding with new customer registration.
+2026-01-12 10:23:13,793 :INFO :Proceeding with new customer registration.
+2026-01-12 10:23:13,794 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:23:13,794 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:23:51,687 :INFO :Test started: Connecting to the database...
+2026-01-12 10:23:51,687 :INFO :Test started: Connecting to the database...
+2026-01-12 10:23:51,687 :INFO :Establishing database connection...
+2026-01-12 10:23:51,687 :INFO :Establishing database connection...
+2026-01-12 10:23:51,729 :INFO :Database connection established
+2026-01-12 10:23:51,729 :INFO :Database connection established
+2026-01-12 10:23:51,729 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:23:51,729 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:23:52,370 :INFO :Navigated to the login page.
+2026-01-12 10:23:52,370 :INFO :Navigated to the login page.
+2026-01-12 10:23:52,985 :INFO :Proceeding with new customer registration.
+2026-01-12 10:23:52,985 :INFO :Proceeding with new customer registration.
+2026-01-12 10:23:52,986 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:23:52,986 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:23:53,014 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 10:23:53,014 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 10:23:53,015 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 10:23:53,015 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 10:23:55,289 :INFO :Registration process completed successfully.
+2026-01-12 10:23:55,289 :INFO :Registration process completed successfully.
+2026-01-12 10:23:55,300 :INFO :Registration page validated successfully.
+2026-01-12 10:23:55,300 :INFO :Registration page validated successfully.
+2026-01-12 10:23:55,783 :INFO :Redirecting to 'My Account' page.
+2026-01-12 10:23:55,783 :INFO :Redirecting to 'My Account' page.
+2026-01-12 10:23:55,818 :INFO :Registration page validated successfully.
+2026-01-12 10:23:55,818 :INFO :Registration page validated successfully.
+2026-01-12 10:23:58,145 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2026-01-12 10:23:58,145 :ERROR :Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Python-Selenium\QA-Automation-Learning\MySecondProject_Opencart\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 181, in _terminate_process
+    self.process.terminate()
+  File "C:\Program Files\Python312\Lib\subprocess.py", line 1671, in terminate
+    _winapi.TerminateProcess(self._handle, 1)
+OSError: [WinError 6] Das Handle ist ungültig
+2026-01-12 10:24:11,320 :INFO :Test started: Connecting to the database...
+2026-01-12 10:24:11,320 :INFO :Test started: Connecting to the database...
+2026-01-12 10:24:11,321 :INFO :Establishing database connection...
+2026-01-12 10:24:11,321 :INFO :Establishing database connection...
+2026-01-12 10:24:11,365 :INFO :Database connection established
+2026-01-12 10:24:11,365 :INFO :Database connection established
+2026-01-12 10:24:11,365 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 10:24:11,365 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 10:24:12,963 :INFO :Fetching registration data from database...
+2026-01-12 10:24:12,963 :INFO :Fetching registration data from database...
+2026-01-12 10:24:12,971 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 10:24:12,971 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 10:24:12,977 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 10:24:12,977 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 10:24:12,979 :INFO :Filling out registration form
+2026-01-12 10:24:12,979 :INFO :Filling out registration form
+2026-01-12 10:24:15,495 :INFO :Registration form submitted successfully.
+2026-01-12 10:24:15,495 :INFO :Registration form submitted successfully.
+2026-01-12 10:24:15,496 :INFO :Validating registration success page
+2026-01-12 10:24:15,496 :INFO :Validating registration success page
+2026-01-12 10:24:15,512 :INFO :Registration page validated successfully.
+2026-01-12 10:24:15,512 :INFO :Registration page validated successfully.
+2026-01-12 10:24:15,512 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 10:24:15,512 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 10:24:15,928 :INFO :Validating 'My Account' page
+2026-01-12 10:24:15,928 :INFO :Validating 'My Account' page
+2026-01-12 10:24:15,943 :INFO :Registration page validated successfully.
+2026-01-12 10:24:15,943 :INFO :Registration page validated successfully.
+2026-01-12 10:24:15,945 :INFO :Database connection closed.
+2026-01-12 10:24:15,945 :INFO :Database connection closed.
+2026-01-12 10:24:19,553 :INFO :Test started: Connecting to the database...
+2026-01-12 10:24:19,553 :INFO :Test started: Connecting to the database...
+2026-01-12 10:24:19,554 :INFO :Establishing database connection...
+2026-01-12 10:24:19,554 :INFO :Establishing database connection...
+2026-01-12 10:24:19,581 :INFO :Database connection established
+2026-01-12 10:24:19,581 :INFO :Database connection established
+2026-01-12 10:24:19,582 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:24:19,582 :INFO :Starting test: Registration via 'New Customer'
+2026-01-12 10:24:20,345 :INFO :Navigated to the login page.
+2026-01-12 10:24:20,345 :INFO :Navigated to the login page.
+2026-01-12 10:24:21,094 :INFO :Proceeding with new customer registration.
+2026-01-12 10:24:21,094 :INFO :Proceeding with new customer registration.
+2026-01-12 10:24:21,094 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:24:21,094 :INFO :Fetching registration data for person_id=2 from 'Registration' table.
+2026-01-12 10:24:21,099 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 10:24:21,099 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 10:24:21,101 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 10:24:21,101 :INFO :Retrieved registration data: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 10:24:23,842 :INFO :Registration process completed successfully.
+2026-01-12 10:24:23,842 :INFO :Registration process completed successfully.
+2026-01-12 10:24:23,853 :INFO :Registration page validated successfully.
+2026-01-12 10:24:23,853 :INFO :Registration page validated successfully.
+2026-01-12 10:24:24,244 :INFO :Redirecting to 'My Account' page.
+2026-01-12 10:24:24,244 :INFO :Redirecting to 'My Account' page.
+2026-01-12 10:24:24,257 :INFO :Registration page validated successfully.
+2026-01-12 10:24:24,257 :INFO :Registration page validated successfully.
+2026-01-12 11:10:28,432 :INFO :Connecting to the database...
+2026-01-12 11:10:28,432 :INFO :Connecting to the database...
+2026-01-12 11:10:28,449 :INFO :Establishing database connection...
+2026-01-12 11:10:28,449 :INFO :Establishing database connection...
+2026-01-12 11:10:29,353 :INFO :Database connection established
+2026-01-12 11:10:29,353 :INFO :Database connection established
+2026-01-12 11:10:29,353 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:10:29,353 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:10:30,713 :INFO :Fetching registration data from database...
+2026-01-12 11:10:30,713 :INFO :Fetching registration data from database...
+2026-01-12 11:10:30,786 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:10:30,786 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:10:30,789 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:10:30,789 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:10:30,790 :INFO :Filling out registration form
+2026-01-12 11:10:30,790 :INFO :Filling out registration form
+2026-01-12 11:10:33,262 :INFO :Registration form submitted successfully.
+2026-01-12 11:10:33,262 :INFO :Registration form submitted successfully.
+2026-01-12 11:10:33,263 :INFO :Validating registration success page
+2026-01-12 11:10:33,263 :INFO :Validating registration success page
+2026-01-12 11:10:33,278 :INFO :Registration page validated successfully.
+2026-01-12 11:10:33,278 :INFO :Registration page validated successfully.
+2026-01-12 11:10:33,278 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:10:33,278 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:10:33,769 :INFO :Validating 'My Account' page
+2026-01-12 11:10:33,769 :INFO :Validating 'My Account' page
+2026-01-12 11:10:33,781 :INFO :Registration page validated successfully.
+2026-01-12 11:10:33,781 :INFO :Registration page validated successfully.
+2026-01-12 11:10:33,782 :INFO :Database connection closed.
+2026-01-12 11:10:33,782 :INFO :Database connection closed.
+2026-01-12 11:10:43,990 :INFO :Connecting to the database...
+2026-01-12 11:10:43,990 :INFO :Connecting to the database...
+2026-01-12 11:10:43,990 :INFO :Establishing database connection...
+2026-01-12 11:10:43,990 :INFO :Establishing database connection...
+2026-01-12 11:10:44,015 :INFO :Database connection established
+2026-01-12 11:10:44,015 :INFO :Database connection established
+2026-01-12 11:10:44,015 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:10:44,015 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:10:44,701 :INFO :Proceeding with new customer registration...
+2026-01-12 11:10:44,701 :INFO :Proceeding with new customer registration...
+2026-01-12 11:10:45,354 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:10:45,354 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:10:45,377 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:10:45,377 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:10:45,378 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:10:45,378 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:10:45,379 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:10:45,379 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:10:47,864 :INFO :Registration process completed successfully.
+2026-01-12 11:10:47,864 :INFO :Registration process completed successfully.
+2026-01-12 11:10:47,864 :INFO :Validating registration success page...
+2026-01-12 11:10:47,864 :INFO :Validating registration success page...
+2026-01-12 11:10:47,876 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:10:47,876 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:10:47,877 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:10:47,877 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:10:48,302 :INFO :Validating 'My Account' page...
+2026-01-12 11:10:48,302 :INFO :Validating 'My Account' page...
+2026-01-12 11:10:48,316 :INFO :My Account Page validated successfully.
+2026-01-12 11:10:48,316 :INFO :My Account Page validated successfully.
+2026-01-12 11:14:08,105 :INFO :Connecting to the database...
+2026-01-12 11:14:08,105 :INFO :Connecting to the database...
+2026-01-12 11:14:08,108 :INFO :Establishing database connection...
+2026-01-12 11:14:08,108 :INFO :Establishing database connection...
+2026-01-12 11:14:08,469 :INFO :Database connection established
+2026-01-12 11:14:08,469 :INFO :Database connection established
+2026-01-12 11:14:08,470 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:14:08,470 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:14:10,293 :INFO :Fetching registration data from database...
+2026-01-12 11:14:10,293 :INFO :Fetching registration data from database...
+2026-01-12 11:14:10,336 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:14:10,336 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:14:10,337 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:14:10,337 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:14:10,338 :INFO :Filling out registration form
+2026-01-12 11:14:10,338 :INFO :Filling out registration form
+2026-01-12 11:14:13,067 :INFO :Registration form submitted successfully.
+2026-01-12 11:14:13,067 :INFO :Registration form submitted successfully.
+2026-01-12 11:14:13,068 :INFO :Validating registration success page
+2026-01-12 11:14:13,068 :INFO :Validating registration success page
+2026-01-12 11:14:13,079 :INFO :Registration page validated successfully.
+2026-01-12 11:14:13,079 :INFO :Registration page validated successfully.
+2026-01-12 11:14:13,080 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:14:13,080 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:14:13,640 :INFO :Validating 'My Account' page
+2026-01-12 11:14:13,640 :INFO :Validating 'My Account' page
+2026-01-12 11:14:13,652 :INFO :Registration page validated successfully.
+2026-01-12 11:14:13,652 :INFO :Registration page validated successfully.
+2026-01-12 11:14:13,653 :INFO :Database connection closed.
+2026-01-12 11:14:13,653 :INFO :Database connection closed.
+2026-01-12 11:14:23,833 :INFO :Connecting to the database...
+2026-01-12 11:14:23,833 :INFO :Connecting to the database...
+2026-01-12 11:14:23,834 :INFO :Establishing database connection...
+2026-01-12 11:14:23,834 :INFO :Establishing database connection...
+2026-01-12 11:14:23,854 :INFO :Database connection established
+2026-01-12 11:14:23,854 :INFO :Database connection established
+2026-01-12 11:14:23,854 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:14:23,854 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:14:24,558 :INFO :Proceeding with new customer registration...
+2026-01-12 11:14:24,558 :INFO :Proceeding with new customer registration...
+2026-01-12 11:14:25,238 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:14:25,238 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:14:25,278 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:14:25,278 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:14:25,279 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:14:25,279 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:14:25,279 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:14:25,279 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:14:27,540 :INFO :Registration process completed successfully.
+2026-01-12 11:14:27,540 :INFO :Registration process completed successfully.
+2026-01-12 11:14:27,540 :INFO :Validating registration success page...
+2026-01-12 11:14:27,540 :INFO :Validating registration success page...
+2026-01-12 11:14:27,553 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:14:27,553 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:14:27,553 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:14:27,553 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:14:27,993 :INFO :Validating 'My Account' page...
+2026-01-12 11:14:27,993 :INFO :Validating 'My Account' page...
+2026-01-12 11:14:28,025 :INFO :My Account Page validated successfully.
+2026-01-12 11:14:28,025 :INFO :My Account Page validated successfully.
+2026-01-12 11:32:41,181 :INFO :Establishing database connection...
+2026-01-12 11:32:41,181 :INFO :Establishing database connection...
+2026-01-12 11:32:41,446 :INFO :Database connection established
+2026-01-12 11:32:41,446 :INFO :Database connection established
+2026-01-12 11:32:45,972 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:32:45,972 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:32:49,002 :INFO :Fetching registration data from database...
+2026-01-12 11:32:49,002 :INFO :Fetching registration data from database...
+2026-01-12 11:32:49,221 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:32:49,221 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:32:49,222 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:32:49,222 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:32:49,223 :INFO :Filling out registration form
+2026-01-12 11:32:49,223 :INFO :Filling out registration form
+2026-01-12 11:32:52,550 :INFO :Registration form submitted successfully.
+2026-01-12 11:32:52,550 :INFO :Registration form submitted successfully.
+2026-01-12 11:32:52,550 :INFO :Validating registration success page
+2026-01-12 11:32:52,550 :INFO :Validating registration success page
+2026-01-12 11:32:52,565 :INFO :Registration page validated successfully.
+2026-01-12 11:32:52,565 :INFO :Registration page validated successfully.
+2026-01-12 11:32:52,566 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:32:52,566 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:32:53,050 :INFO :Validating 'My Account' page
+2026-01-12 11:32:53,050 :INFO :Validating 'My Account' page
+2026-01-12 11:32:53,076 :INFO :Registration page validated successfully.
+2026-01-12 11:32:53,076 :INFO :Registration page validated successfully.
+2026-01-12 11:33:09,864 :INFO :Connecting to the database...
+2026-01-12 11:33:09,864 :INFO :Connecting to the database...
+2026-01-12 11:33:09,864 :INFO :Establishing database connection...
+2026-01-12 11:33:09,864 :INFO :Establishing database connection...
+2026-01-12 11:33:09,953 :INFO :Database connection established
+2026-01-12 11:33:09,953 :INFO :Database connection established
+2026-01-12 11:33:09,954 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:33:09,954 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:33:10,724 :INFO :Proceeding with new customer registration...
+2026-01-12 11:33:10,724 :INFO :Proceeding with new customer registration...
+2026-01-12 11:33:12,039 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:33:12,039 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:33:12,134 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:33:12,134 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:33:12,136 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:33:12,136 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:33:12,136 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:33:12,136 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:33:14,438 :INFO :Registration process completed successfully.
+2026-01-12 11:33:14,438 :INFO :Registration process completed successfully.
+2026-01-12 11:33:14,442 :INFO :Validating registration success page...
+2026-01-12 11:33:14,442 :INFO :Validating registration success page...
+2026-01-12 11:33:14,541 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:33:14,541 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:33:14,541 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:33:14,541 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:33:15,021 :INFO :Validating 'My Account' page...
+2026-01-12 11:33:15,021 :INFO :Validating 'My Account' page...
+2026-01-12 11:33:15,034 :INFO :My Account Page validated successfully.
+2026-01-12 11:33:15,034 :INFO :My Account Page validated successfully.
+2026-01-12 11:33:15,038 :INFO :Database connection closed.
+2026-01-12 11:33:15,038 :INFO :Database connection closed.
+2026-01-12 11:34:50,978 :INFO :Establishing database connection...
+2026-01-12 11:34:50,978 :INFO :Establishing database connection...
+2026-01-12 11:34:51,023 :INFO :Database connection established
+2026-01-12 11:34:51,023 :INFO :Database connection established
+2026-01-12 11:34:54,672 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:34:54,672 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:34:55,750 :INFO :Fetching registration data from database...
+2026-01-12 11:34:55,750 :INFO :Fetching registration data from database...
+2026-01-12 11:34:55,754 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:34:55,754 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:34:55,755 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:34:55,755 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:34:55,755 :INFO :Filling out registration form
+2026-01-12 11:34:55,755 :INFO :Filling out registration form
+2026-01-12 11:34:58,745 :INFO :Registration form submitted successfully.
+2026-01-12 11:34:58,745 :INFO :Registration form submitted successfully.
+2026-01-12 11:34:58,745 :INFO :Validating registration success page
+2026-01-12 11:34:58,745 :INFO :Validating registration success page
+2026-01-12 11:34:58,759 :INFO :Registration page validated successfully.
+2026-01-12 11:34:58,759 :INFO :Registration page validated successfully.
+2026-01-12 11:34:58,760 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:34:58,760 :INFO :STEP 6: Navigating to 'My Account' page...
+2026-01-12 11:34:59,302 :INFO :Validating 'My Account' page
+2026-01-12 11:34:59,302 :INFO :Validating 'My Account' page
+2026-01-12 11:34:59,311 :INFO :Registration page validated successfully.
+2026-01-12 11:34:59,311 :INFO :Registration page validated successfully.
+2026-01-12 11:34:59,320 :INFO :Database connection closed.
+2026-01-12 11:34:59,320 :INFO :Database connection closed.
+2026-01-12 11:54:05,777 :INFO :Establishing database connection...
+2026-01-12 11:54:05,777 :INFO :Establishing database connection...
+2026-01-12 11:54:06,024 :INFO :Database connection established
+2026-01-12 11:54:06,024 :INFO :Database connection established
+2026-01-12 11:54:11,209 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:54:11,209 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:54:12,378 :INFO :Fetching registration data from database...
+2026-01-12 11:54:12,378 :INFO :Fetching registration data from database...
+2026-01-12 11:54:12,487 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:54:12,487 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:54:12,489 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:54:12,489 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:54:12,490 :INFO :Filling out registration form
+2026-01-12 11:54:12,490 :INFO :Filling out registration form
+2026-01-12 11:54:15,699 :INFO :Registration form submitted successfully.
+2026-01-12 11:54:15,699 :INFO :Registration form submitted successfully.
+2026-01-12 11:54:15,699 :INFO :Validating registration success page
+2026-01-12 11:54:15,699 :INFO :Validating registration success page
+2026-01-12 11:54:15,712 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:54:15,712 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:54:15,713 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:54:15,713 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:54:16,286 :INFO :Validating 'My Account' page
+2026-01-12 11:54:16,286 :INFO :Validating 'My Account' page
+2026-01-12 11:54:16,306 :INFO :My Account Page validated successfully.
+2026-01-12 11:54:16,306 :INFO :My Account Page validated successfully.
+2026-01-12 11:54:16,307 :INFO :Registration via 'My Account' completed successfully.
+2026-01-12 11:54:16,307 :INFO :Registration via 'My Account' completed successfully.
+2026-01-12 11:54:22,398 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:54:22,398 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:54:23,244 :INFO :Proceeding with new customer registration...
+2026-01-12 11:54:23,244 :INFO :Proceeding with new customer registration...
+2026-01-12 11:54:23,977 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:54:23,977 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:54:23,995 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:54:23,995 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:54:23,997 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:54:23,997 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:54:23,998 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:54:23,998 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:54:26,775 :INFO :Registration process completed successfully.
+2026-01-12 11:54:26,775 :INFO :Registration process completed successfully.
+2026-01-12 11:54:26,776 :INFO :Validating registration success page...
+2026-01-12 11:54:26,776 :INFO :Validating registration success page...
+2026-01-12 11:54:26,802 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:54:26,802 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:54:26,802 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:54:26,802 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:54:27,282 :INFO :Validating 'My Account' page...
+2026-01-12 11:54:27,282 :INFO :Validating 'My Account' page...
+2026-01-12 11:54:27,774 :ERROR :My Account Page validation failed.
+Screenshot saved at: screenshots\registration_new_customer_my_account_error.png
+Details: Error details: Expected title 'My account', but got 'My Account'.
+assert 'My Account' == 'My account'
+  
+  - My account
+  ?    ^
+  + My Account
+  ?    ^
+2026-01-12 11:54:27,774 :ERROR :My Account Page validation failed.
+Screenshot saved at: screenshots\registration_new_customer_my_account_error.png
+Details: Error details: Expected title 'My account', but got 'My Account'.
+assert 'My Account' == 'My account'
+  
+  - My account
+  ?    ^
+  + My Account
+  ?    ^
+2026-01-12 11:54:28,296 :INFO :Database connection closed.
+2026-01-12 11:54:28,296 :INFO :Database connection closed.
+2026-01-12 11:56:33,442 :INFO :Establishing database connection...
+2026-01-12 11:56:33,442 :INFO :Establishing database connection...
+2026-01-12 11:56:33,493 :INFO :Database connection established
+2026-01-12 11:56:33,493 :INFO :Database connection established
+2026-01-12 11:56:37,121 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:56:37,121 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 11:56:38,481 :INFO :Fetching registration data from database...
+2026-01-12 11:56:38,481 :INFO :Fetching registration data from database...
+2026-01-12 11:56:38,491 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:56:38,491 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 11:56:38,492 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:56:38,492 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 11:56:38,492 :INFO :Filling out registration form
+2026-01-12 11:56:38,492 :INFO :Filling out registration form
+2026-01-12 11:56:41,358 :INFO :Registration form submitted successfully.
+2026-01-12 11:56:41,358 :INFO :Registration form submitted successfully.
+2026-01-12 11:56:41,359 :INFO :Validating registration success page
+2026-01-12 11:56:41,359 :INFO :Validating registration success page
+2026-01-12 11:56:41,781 :ERROR :Registration Success Page validation failed.
+Screenshot saved at: screenshots\Registration_my_account_success_error.png
+Details: Error details: Expected title 'your Account Has Been Created!', but got 'Your Account Has Been Created!'.
+assert 'Your Account...Been Created!' == 'your Account...Been Created!'
+  
+  - your Account Has Been Created!
+  ? ^
+  + Your Account Has Been Created!
+  ? ^
+2026-01-12 11:56:41,781 :ERROR :Registration Success Page validation failed.
+Screenshot saved at: screenshots\Registration_my_account_success_error.png
+Details: Error details: Expected title 'your Account Has Been Created!', but got 'Your Account Has Been Created!'.
+assert 'Your Account...Been Created!' == 'your Account...Been Created!'
+  
+  - your Account Has Been Created!
+  ? ^
+  + Your Account Has Been Created!
+  ? ^
+2026-01-12 11:56:46,737 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:56:46,737 :INFO :Navigating to login page for new customer registration...
+2026-01-12 11:56:47,626 :INFO :Proceeding with new customer registration...
+2026-01-12 11:56:47,626 :INFO :Proceeding with new customer registration...
+2026-01-12 11:56:49,252 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:56:49,252 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 11:56:49,279 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:56:49,279 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 11:56:49,282 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:56:49,282 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 11:56:49,284 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:56:49,284 :INFO :Filling out registration form with retrieved data...
+2026-01-12 11:56:51,844 :INFO :Registration process completed successfully.
+2026-01-12 11:56:51,844 :INFO :Registration process completed successfully.
+2026-01-12 11:56:51,844 :INFO :Validating registration success page...
+2026-01-12 11:56:51,844 :INFO :Validating registration success page...
+2026-01-12 11:56:51,853 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:56:51,853 :INFO :Registration Success Page validated successfully.
+2026-01-12 11:56:51,854 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:56:51,854 :INFO :Navigating to 'My Account' page...
+2026-01-12 11:56:52,396 :INFO :Validating 'My Account' page...
+2026-01-12 11:56:52,396 :INFO :Validating 'My Account' page...
+2026-01-12 11:56:52,408 :INFO :My Account Page validated successfully.
+2026-01-12 11:56:52,408 :INFO :My Account Page validated successfully.
+2026-01-12 11:56:52,414 :INFO :Database connection closed.
+2026-01-12 11:56:52,414 :INFO :Database connection closed.
+2026-01-12 12:17:21,092 :INFO :Establishing database connection...
+2026-01-12 12:17:21,092 :INFO :Establishing database connection...
+2026-01-12 12:17:21,383 :INFO :Database connection established
+2026-01-12 12:17:21,383 :INFO :Database connection established
+2026-01-12 12:17:32,261 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 12:17:32,261 :INFO :Navigating to registration page via 'My Account'
+2026-01-12 12:17:33,832 :INFO :Fetching registration data from database...
+2026-01-12 12:17:33,832 :INFO :Fetching registration data from database...
+2026-01-12 12:17:33,911 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 12:17:33,911 :INFO :Query 'SELECT * FROM Registration' executed successfully.
+2026-01-12 12:17:33,912 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 12:17:33,912 :INFO :Registration data retrieved: (1, 'Alex', 'Müller', 'alexmuellertest@gmail.com', '111111111', 'alexmueller', 'alexmueller')
+2026-01-12 12:17:33,912 :INFO :Filling out registration form
+2026-01-12 12:17:33,912 :INFO :Filling out registration form
+2026-01-12 12:17:37,965 :INFO :Registration form submitted successfully.
+2026-01-12 12:17:37,965 :INFO :Registration form submitted successfully.
+2026-01-12 12:17:37,966 :INFO :Validating registration success page
+2026-01-12 12:17:37,966 :INFO :Validating registration success page
+2026-01-12 12:17:37,998 :INFO :Registration Success Page validated successfully.
+2026-01-12 12:17:37,998 :INFO :Registration Success Page validated successfully.
+2026-01-12 12:17:37,999 :INFO :Navigating to 'My Account' page...
+2026-01-12 12:17:37,999 :INFO :Navigating to 'My Account' page...
+2026-01-12 12:17:38,643 :INFO :Validating 'My Account' page
+2026-01-12 12:17:38,643 :INFO :Validating 'My Account' page
+2026-01-12 12:17:38,659 :INFO :My Account Page validated successfully.
+2026-01-12 12:17:38,659 :INFO :My Account Page validated successfully.
+2026-01-12 12:17:38,659 :INFO :Registration via 'My Account' completed successfully.
+2026-01-12 12:17:38,659 :INFO :Registration via 'My Account' completed successfully.
+2026-01-12 12:17:45,562 :INFO :Navigating to login page for new customer registration...
+2026-01-12 12:17:45,562 :INFO :Navigating to login page for new customer registration...
+2026-01-12 12:17:46,662 :INFO :Proceeding with new customer registration...
+2026-01-12 12:17:46,662 :INFO :Proceeding with new customer registration...
+2026-01-12 12:17:47,514 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 12:17:47,514 :INFO :Fetching registration data for Person_id=2...
+2026-01-12 12:17:47,537 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 12:17:47,537 :INFO :Query 'SELECT * FROM Registration WHERE Person_id=2' executed successfully.
+2026-01-12 12:17:47,538 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 12:17:47,538 :INFO :Registration data retrieved: (2, 'Glen', 'Mustermann', 'glenmustermann@gmail.com', '222222222', 'glen', 'glen')
+2026-01-12 12:17:47,539 :INFO :Filling out registration form with retrieved data...
+2026-01-12 12:17:47,539 :INFO :Filling out registration form with retrieved data...
+2026-01-12 12:17:50,423 :INFO :Registration process completed successfully.
+2026-01-12 12:17:50,423 :INFO :Registration process completed successfully.
+2026-01-12 12:17:50,423 :INFO :Validating registration success page...
+2026-01-12 12:17:50,423 :INFO :Validating registration success page...
+2026-01-12 12:17:50,435 :INFO :Registration Success Page validated successfully.
+2026-01-12 12:17:50,435 :INFO :Registration Success Page validated successfully.
+2026-01-12 12:17:50,436 :INFO :Navigating to 'My Account' page...
+2026-01-12 12:17:50,436 :INFO :Navigating to 'My Account' page...
+2026-01-12 12:17:50,961 :INFO :Validating 'My Account' page...
+2026-01-12 12:17:50,961 :INFO :Validating 'My Account' page...
+2026-01-12 12:17:50,971 :INFO :My Account Page validated successfully.
+2026-01-12 12:17:50,971 :INFO :My Account Page validated successfully.
+2026-01-12 12:17:50,978 :INFO :Database connection closed.
+2026-01-12 12:17:50,978 :INFO :Database connection closed.

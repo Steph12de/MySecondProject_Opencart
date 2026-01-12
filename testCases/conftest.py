@@ -1,6 +1,7 @@
 import pytest
 from pytest_metadata.plugin import metadata_key
 from selenium import webdriver
+from utilities.helpers.database_helpers import DatabaseHelpers
 
 
 @pytest.fixture
@@ -18,6 +19,15 @@ def setUp(browser):
     # driver.get("https://demo.opencart.com/")
     driver.maximize_window()
     return driver
+
+
+@pytest.fixture(scope="class")
+def db(request):
+    db = DatabaseHelpers()
+    db.connect_to_database()
+    request.cls.db = db
+    yield
+    db.close_database_connection()
 
 
 def pytest_addoption(parser):

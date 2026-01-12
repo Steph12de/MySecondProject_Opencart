@@ -22,7 +22,8 @@ from utilities.utils import Utils
 from utilities.helpers.database_helpers import DatabaseHelpers
 
 
-class Test_001_Register(unittest.TestCase):
+@pytest.mark.usefixtures("db")
+class Test_001_Register:
     logger = LogGen.loggen()
 
     @pytest.fixture(autouse=True)
@@ -44,130 +45,107 @@ class Test_001_Register(unittest.TestCase):
                               self.wishList_page,
                               self.search_page, self.product_page, self.cart_page, self.logout_page)
 
-    def validate_title(self, current_title, expected_title, field_name, screenshot_name):
+    def validate_title(self, current_title, expected_title, page_name, screenshot_name):
         try:
-            self.assertEqual(
-                current_title,
-                expected_title,
+            assert current_title == expected_title, (
                 f"Expected title '{expected_title}', but got '{current_title}'."
             )
-            self.logger.info(f"{field_name} validated successfully.")
+            self.logger.info(f"{page_name} validated successfully.")
         except AssertionError as e:
             self.helper.log_failure(screenshot_name,
-                                    f"{field_name} validation failed.",
-                                    f"Error details: {e}")
+                                    f"{page_name} validation failed.",
+                                    f"Error details: {e}"
+                                    )
+            raise
 
     # @pytest.mark.skip(reason="Just skipped it right now")
     def test_registration_via_my_account(self):
-        # Step 1: Establish database connection
-        self.logger.info("Test started: Connecting to the database...")
-        self.database_helpers.connect_to_database()
-
-        # Step 2: Navigate to registration page
+        # Step 1: Navigate to registration page
         self.logger.info("Navigating to registration page via 'My Account'")
         self.home_page.bring_me_to_register_page()
 
-        # Step 3: Fetch registration data from DB
+        # Step 2: Fetch registration data from DB
         self.logger.info("Fetching registration data from database...")
-        result = self.database_helpers.read_from_database("SELECT * FROM Registration")
+        result = self.db.read_from_database("SELECT * FROM Registration")
 
         if not result:
-            self.logger.warning("No registration data found in the database. Test aborted.")
+            self.logger.warning("No registration data found in the database. Test skipped.")
+            pytest.skip("Missing registration data for 'My Account' registration test.")
 
         self.logger.info(f"Registration data retrieved: {result}")
 
-        # Step 4: Perform registration
+        # Step 3: Perform registration
         self.logger.info("Filling out registration form")
         self.register_page.register_with_newsletter(result[1], result[2], self.random_mail,
                                                     result[4], result[5], result[6], False)
         self.logger.info("Registration form submitted successfully.")
 
-        # Step 5: Validate registration success page
+        # Step 4: Validate registration success page
         self.logger.info("Validating registration success page")
         self.validate_title(self.driver.title,
                             "Your Account Has Been Created!",
-                            "Registration page",
-                            "Registration_page_error.png")
+                            "Registration Success Page",
+                            "Registration_my_account_success_error.png")
 
-        # Step 6: Continue to account page
-        self.logger.info("STEP 6: Navigating to 'My Account' page...")
+        # Step 5: Continue to account page
+        self.logger.info("Navigating to 'My Account' page...")
         self.created_page.click_on_continue_button()
 
-        # Step 7: Validate account page
+        # Step 6: Validate account page
         self.logger.info("Validating 'My Account' page")
         self.validate_title(self.driver.title,
                             "My Account",
-                            "Registration page",
-                            "My_Account_page_error.png")
+                            "My Account Page",
+                            "registration_my_account_page_error.png")
 
+        self.logger.info("Registration via 'My Account' completed successfully.")
 
     # @pytest.mark.skip(reason="Just skipped it right now")
-    # def test_registration_via_new_customer(self):
-    #     self.logger.info("Starting test: Registration via 'New Customer'")
-    #
-    #     # Navigate to the login page
-    #     self.home_page.open_login_page()
-    #     self.logger.info("Navigated to the login page.")
-    #
-    #     # Click on the 'Continue' button for new customer registration
-    #     self.login_page.click_on_continue_button()
-    #     self.logger.info("Proceeding with new customer registration.")
-    #
-    #     # Retrieve registration data from the database
-    #     self.logger.info("Fetching registration data for person_id=2 from 'Registration' table.")
-    #     self.cursor.execute("SELECT * FROM Registration WHERE Person_id=2")
-    #     result = self.cursor.fetchall()
-    #
-    #     if result:
-    #         result = result[0]
-    #         self.logger.info(f"Retrieved registration data: {result}")
-    #
-    #         # Perform registration process
-    #         self.register_page.register_with_newsletter(
-    #             result[1], result[2], self.random_mail, result[4],
-    #             result[5], result[6], newsletter=False
-    #         )
-    #         self.logger.info("Registration process completed successfully.")
-    #
-    #         current_title = self.driver.title
-    #         expected_title = "Your Account Has Been Created!"
-    #         try:
-    #             assert current_title == expected_title, (
-    #                 f"Title mismatch: Expected '{expected_title}', but got '{current_title}'."
-    #             )
-    #             self.logger.info("Registration page test via 'New Customer' passed.")
-    #         except AssertionError as e:
-    #             self.driver.save_screenshot(
-    #                 os.path.join(os.getcwd(), "Screenshots", "RegistrationNewCustomer_page_error.png"))
-    #             self.logger.error(
-    #                 "Registration via 'My Account' failed\n"
-    #                 f"Error details: {e} "
-    #             )
-    #             raise
-    #
-    #         # Proceed to the account page
-    #         self.created_page.click_on_continue_button()
-    #         self.logger.info("Redirecting to 'My Account' page.")
-    #
-    #         # Verify account page title
-    #         current_title = self.driver.title
-    #         expected_title = "My Account"
-    #         try:
-    #             assert current_title == expected_title, (
-    #                 f"Title mismatch: Expected '{expected_title}', but got '{current_title}'."
-    #             )
-    #             self.logger.info("My Account page test passed.")
-    #         except AssertionError as e:
-    #             self.logger.error("Registration form validation failed: Expected warning messages were not displayed."
-    #                               "Account verification page failed\n"
-    #                               f"Error details: {e} "
-    #                               )
-    #             raise
-    #     else:
-    #         self.logger.warning("No registration data found in the database.")
-    #
-    #     self.driver.close()
-    #
+    def test_registration_via_new_customer(self):
+        # Step 1: Navigate to login page
+        self.logger.info("Navigating to login page for new customer registration...")
+        self.home_page.open_login_page()
+
+        # Step 2: Click on the 'Continue' button for new customer registration
+        self.logger.info("Proceeding with new customer registration...")
+        self.login_page.click_on_continue_button()
+
+        # Step 3: Retrieve registration data from the database
+        self.logger.info("Fetching registration data for Person_id=2...")
+        result = self.db.read_from_database("SELECT * FROM Registration WHERE Person_id=2")
+
+        if not result:
+            self.logger.warning("No registration data found for Person_id=2.")
+            pytest.skip("Missing registration data for new customer registration test.")
+
+        self.logger.info(f"Registration data retrieved: {result}")
+
+        # Step 4: Fill out registration form
+        self.logger.info("Filling out registration form with retrieved data...")
+        self.register_page.register_with_newsletter(
+            result[1], result[2], self.random_mail, result[4],
+            result[5], result[6], newsletter=False
+        )
+        self.logger.info("Registration process completed successfully.")
+
+        # Step 5: Validate registration success page
+        self.logger.info("Validating registration success page...")
+        self.validate_title(self.driver.title,
+                            "Your Account Has Been Created!",
+                            "Registration Success Page",
+                            "registration_new_customer_success_error.png")
+
+        # Step 6: Continue to account page
+        self.logger.info("Navigating to 'My Account' page...")
+        self.created_page.click_on_continue_button()
+
+        # Step 7: Validate 'My Account' page
+        self.logger.info("Validating 'My Account' page...")
+        self.validate_title(self.driver.title,
+                            "My Account",
+                            "My Account Page",
+                            "registration_new_customer_my_account_error.png")
+
     # # @pytest.mark.skip(reason="Just skipped it right now")
     # def test_registration_without_filling_form(self):
     #     self.logger.info("Starting test: Registration without filling in the form")

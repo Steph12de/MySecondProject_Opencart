@@ -66,13 +66,6 @@ class Helpers:
 
         return actual_title
 
-    def navigate_to_register_page(self):
-        self.logger.info("Starting test: Register via 'My Account'")
-
-        self.home_page.bring_me_to_register_page()
-        self.logger.info("Navigated to the registration page.")
-
-
     def verify_login_successful(self, actual_title, expected_title, method="standard"):
         assert actual_title == expected_title, (
             f"Login using {method} failed\nExpected title: '{expected_title}'\nGot: '{actual_title}'"

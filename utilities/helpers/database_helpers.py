@@ -7,10 +7,12 @@ class DatabaseHelpers:
     logger = LogGen.loggen()
 
     def __init__(self):
+        # Step 1: Initialize connection attributes
         self.connection = None,
         self.cursor = None
 
     def connect_to_database(self):
+        # Step 2: Establish database connection
         try:
             self.logger.info("Establishing database connection...")
             self.connection = mysql.connector.connect(
@@ -27,19 +29,24 @@ class DatabaseHelpers:
             raise
 
     def read_from_database(self, query):
+        # Step 3: Execute SELECT queries
         try:
             self.cursor.execute(query)
             result = self.cursor.fetchone()
             self.logger.info(f"Query '{query}' executed successfully.")
-            print(result)
             return result
         except mysql.connector.Error as e:
             self.logger.error(f"Query failed: {e}")
             raise
 
     def close_database_connection(self):
-        if self.cursor:
-            self.cursor.close()
-        if self.connection:
-            self.connection.close()
-        self.logger.info("Database connection closed.")
+        # Step 4: Close cursor and connection
+        try:
+            if self.cursor:
+                self.cursor.close()
+            if self.connection:
+                self.connection.close()
+            self.logger.info("Database connection closed.")
+        except mysql.connector.Error as e:
+            self.logger.error(f"Error while closing database connection: {e}")
+            raise
